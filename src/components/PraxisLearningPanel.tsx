@@ -6,7 +6,7 @@ export function PraxisLearningPanel({ authed, tenantDashboard }: { authed: boole
   const reports = tenantDashboard?.reports?.slice(0, 6) || (authed ? listPraxisLearningReports(6) : status.recentReports);
   const mockHermes = status.availableAgents.find((agent) => agent.agent === 'mock-hermes');
   const mockOpenClaw = status.availableAgents.find((agent) => agent.agent === 'mock-openclaw');
-  const realBlocked = status.availableAgents.filter((agent) => !agent.available && agent.mode === 'external');
+  const realBlocked = status.availableAgents.filter((agent) => !agent.available && agent.mode !== 'mock');
   const firstCandidate = status.candidates[0];
   const aggregate = status.latestMorningReport || status.latestAggregate;
   const latestJob = tenantDashboard?.latestJob;
@@ -16,7 +16,7 @@ export function PraxisLearningPanel({ authed, tenantDashboard }: { authed: boole
       <div className="dcSectionIntro">
         <p className="dcEyebrow">Praxis learning loop</p>
         <h2>Agents learn from Praxis and report back.</h2>
-        <p>Mock Hermes/OpenClaw run locally with no side effects. Real runtimes stay blocked until explicit runner config exists.</p>
+        <p>Mock Hermes/OpenClaw run locally with no side effects. Read-only runtime can inspect workflows/logs/state only. Real execution stays disabled.</p>
       </div>
       <div className="dcMcpCards">
         <span><strong>{mockHermes?.available ? 'ready' : 'blocked'}</strong><span>mock Hermes</span></span>
@@ -52,7 +52,7 @@ export function PraxisLearningPanel({ authed, tenantDashboard }: { authed: boole
       ) : <p className="dcEmpty">No Praxis candidate available yet.</p>}
       {realBlocked.length ? (
         <div className="dcBlockedList">
-          {realBlocked.map((agent) => <p key={agent.agent}><strong>{agent.agent}</strong>: {agent.blockedReason}</p>)}
+          {realBlocked.map((agent) => <p key={agent.agent}><strong>{agent.agent}</strong>: {agent.mode === 'read-only' ? 'Runtime Status: Read-Only • Real execution disabled' : agent.blockedReason}</p>)}
         </div>
       ) : null}
       <div className="dcReportList">

@@ -30,7 +30,8 @@
     "praxis:learn": "node --experimental-strip-types scripts/run-praxis-learning-loop.ts",
     "test:praxis-learning-loop": "node --experimental-strip-types scripts/check-praxis-learning-loop.ts",
     "test:praxis-quality-gate": "node --experimental-strip-types scripts/check-praxis-quality-gate.ts",
-    "test:praxis-saas": "node --experimental-strip-types scripts/check-praxis-saas-readiness.ts"
+    "test:praxis-saas": "node --experimental-strip-types scripts/check-praxis-saas-readiness.ts",
+    "test:runtime-contracts": "node --experimental-strip-types scripts/check-runtime-contracts.ts"
   },
   "dependencies": {
     "@types/node": "25.8.0",
