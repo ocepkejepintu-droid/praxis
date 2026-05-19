@@ -1,0 +1,34 @@
+{
+  "claimId": "claim-e418a8e1",
+  "statement": "x_search corroborated OpenAI/Codex linked-device workflow discussion.",
+  "sourceCardIds": [
+    "pending"
+  ],
+  "confidence": "high",
+  "firstSeen": "2026-05-17T16:54:11.688Z",
+  "lastReinforced": "2026-05-17T17:44:16.689Z",
+  "verificationStatus": "verified",
+  "evidenceStrength": "strong",
+  "sourceUrls": [
+    "https://x.com/gdb/status/2056046844921172243"
+  ],
+  "originatingItems": [
+    "action-fab178fc",
+    "action-fdb17db5"
+  ],
+  "dependencyUrls": [],
+  "runIds": [
+    "2026-05-17-16-49-17-830-fast"
+  ],
+  "observedInLanes": [],
+  "owner": "Hermes",
+  "latestPriority": "medium",
+  "reinforcementCount": 2,
+  "traceability": {
+    "latestSourceNotePath": "pending",
+    "latestSourceUrls": [
+      "https://x.com/gdb/status/2056046844921172243"
+    ],
+    "latestRunId": "manual"
+  }
+}

@@ -1,0 +1,21 @@
+node_modules/
+.next/
+out/
+.env
+.env*.local
+.DS_Store
+*.tsbuildinfo
+
+# Local runtime state / secrets / generated session data
+.radar/
+.omx/
+test-results/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Per-user SaaS runtime data
+research-vault/tenants/

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "school-log-1779129176094-4626bo",
+    "createdAt": "2026-05-18T18:32:56.094Z",
+    "provider": "mock-school",
+    "courseId": "praxis-101",
+    "action": "smoke_progress",
+    "summary": "HTTP smoke progress log from Hermes school adapter.",
+    "metadata": {
+      "source": "smoke"
+    },
+    "source": "hermes-acp-school"
+  }
+]

@@ -1,0 +1,37 @@
+{
+  "claimId": "claim-67c430c9",
+  "statement": "Good free learning resource for practical AI usage.",
+  "sourceCardIds": [
+    "Inbox/2026-05-18 x-signal-robin-delta-heyrobinai-37m-no-way-this-is-free-anthropic-released-10-fr.md"
+  ],
+  "sourceUrls": [
+    "https://x.com/heyrobinai/status/2056333587889463645",
+    "https://x.com/heyrobinai"
+  ],
+  "dependencyUrls": [],
+  "runIds": [
+    "2026-05-18-11-55-40-814-fast"
+  ],
+  "confidence": "low",
+  "firstSeen": "2026-05-18T12:03:35.115Z",
+  "lastReinforced": "2026-05-18T12:03:35.115Z",
+  "verificationStatus": "partially_verified",
+  "evidenceStrength": "weak",
+  "originatingItems": [
+    "action-44c1ff5a"
+  ],
+  "observedInLanes": [
+    "verify"
+  ],
+  "owner": "Hermes",
+  "latestPriority": "low",
+  "reinforcementCount": 1,
+  "traceability": {
+    "latestSourceNotePath": "Inbox/2026-05-18 x-signal-robin-delta-heyrobinai-37m-no-way-this-is-free-anthropic-released-10-fr.md",
+    "latestSourceUrls": [
+      "https://x.com/heyrobinai/status/2056333587889463645",
+      "https://x.com/heyrobinai"
+    ],
+    "latestRunId": "2026-05-18-11-55-40-814-fast"
+  }
+}

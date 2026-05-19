@@ -1,0 +1,33 @@
+{
+  "claimId": "claim-592779c5",
+  "statement": "Grok/x_search corroborated the CodexBar cost UI update.",
+  "sourceCardIds": [
+    "pending"
+  ],
+  "confidence": "medium",
+  "firstSeen": "2026-05-17T16:28:08.759Z",
+  "lastReinforced": "2026-05-17T16:28:08.759Z",
+  "verificationStatus": "partially_verified",
+  "evidenceStrength": "medium",
+  "sourceUrls": [
+    "https://x.com/steipete/status/2055346265869721905"
+  ],
+  "originatingItems": [
+    "action-bb740fd1"
+  ],
+  "dependencyUrls": [],
+  "runIds": [
+    "2026-05-17T16-27-29-499-x-home-grok-factcheck-external"
+  ],
+  "observedInLanes": [],
+  "owner": "Hermes",
+  "latestPriority": "medium",
+  "reinforcementCount": 1,
+  "traceability": {
+    "latestSourceNotePath": "pending",
+    "latestSourceUrls": [
+      "https://x.com/steipete/status/2055346265869721905"
+    ],
+    "latestRunId": "manual"
+  }
+}

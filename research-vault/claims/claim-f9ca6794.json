@@ -1,0 +1,41 @@
+{
+  "claimId": "claim-f9ca6794",
+  "statement": "This thread recommends \"IT Tools\" (it-tools.tech), a free open-source collection of 100+ developer utilities that run entirely in the browser.",
+  "sourceCardIds": [
+    "Use Cases/2026-05-17 x-signal-hasan-toor-hasantoxr-4h-this-is-the-kind-of-website-google-should-rank-.md"
+  ],
+  "sourceUrls": [
+    "https://x.com/hasantoxr/status/2055979358284869919",
+    "https://x.com/i/status/2055979358284869919",
+    "https://it-tools.tech/",
+    "https://x.com/hasantoxr"
+  ],
+  "dependencyUrls": [],
+  "runIds": [
+    "2026-05-17-16-49-17-830-fast"
+  ],
+  "confidence": "low",
+  "firstSeen": "2026-05-18T09:21:43.443Z",
+  "lastReinforced": "2026-05-18T10:09:55.056Z",
+  "verificationStatus": "partially_verified",
+  "evidenceStrength": "weak",
+  "originatingItems": [
+    "action-648d1766"
+  ],
+  "observedInLanes": [
+    "watch"
+  ],
+  "owner": "Hermes",
+  "latestPriority": "low",
+  "reinforcementCount": 1,
+  "traceability": {
+    "latestSourceNotePath": "Use Cases/2026-05-17 x-signal-hasan-toor-hasantoxr-4h-this-is-the-kind-of-website-google-should-rank-.md",
+    "latestSourceUrls": [
+      "https://x.com/hasantoxr/status/2055979358284869919",
+      "https://x.com/i/status/2055979358284869919",
+      "https://it-tools.tech/",
+      "https://x.com/hasantoxr"
+    ],
+    "latestRunId": "2026-05-17-16-49-17-830-fast"
+  }
+}

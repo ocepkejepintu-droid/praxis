@@ -1,0 +1,44 @@
+{
+  "claimId": "claim-a35849e4",
+  "statement": "**Summary of the X Thread (ID: 2055863376929316868)** This thread by **@Lonely__MH** (an indie developer focused on AI tools) celebrates the extremely fast integration of **X Premium** with **Nous Research’s Hermes Agent**.",
+  "sourceCardIds": [
+    "Inbox/2026-05-17 x-signal-lonely-lonely-mh-12h-translated-from-chinese-show-original-how-to-confi.md"
+  ],
+  "sourceUrls": [
+    "https://x.com/Lonely__MH/status/2055863376929316868",
+    "https://x.com/i/status/2055863376929316868",
+    "https://www.youtube.com/watch?v=sPK8oIGOOLY",
+    "https://www.youtube.com/watch?v=sPK8oIGOOLY&t=889s",
+    "https://x.com/Lonely__MH"
+  ],
+  "dependencyUrls": [],
+  "runIds": [
+    "2026-05-17-16-49-17-830-fast"
+  ],
+  "confidence": "low",
+  "firstSeen": "2026-05-18T08:25:56.199Z",
+  "lastReinforced": "2026-05-18T10:09:55.056Z",
+  "verificationStatus": "partially_verified",
+  "evidenceStrength": "weak",
+  "originatingItems": [
+    "idea-7f03f50f",
+    "idea-7e03f37c"
+  ],
+  "observedInLanes": [
+    "verify"
+  ],
+  "owner": "Hermes",
+  "latestPriority": "medium",
+  "reinforcementCount": 2,
+  "traceability": {
+    "latestSourceNotePath": "Inbox/2026-05-17 x-signal-lonely-lonely-mh-12h-translated-from-chinese-show-original-how-to-confi.md",
+    "latestSourceUrls": [
+      "https://x.com/Lonely__MH/status/2055863376929316868",
+      "https://x.com/i/status/2055863376929316868",
+      "https://www.youtube.com/watch?v=sPK8oIGOOLY",
+      "https://www.youtube.com/watch?v=sPK8oIGOOLY&t=889s",
+      "https://x.com/Lonely__MH"
+    ],
+    "latestRunId": "2026-05-17-16-49-17-830-fast"
+  }
+}

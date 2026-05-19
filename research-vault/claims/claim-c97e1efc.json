@@ -1,0 +1,39 @@
+{
+  "claimId": "claim-c97e1efc",
+  "statement": "Over 140 expert-level Agent roles, CEO, lawyer, programmer, growth Show more 61 181 958",
+  "sourceCardIds": [
+    "Repos/2026-05-18 x-signal-nftcps-19h-translated-from-chinese-show-original-brothers-i-have-to.md"
+  ],
+  "sourceUrls": [
+    "https://x.com/NFTCPS/status/2056188353490595903",
+    "https://x.com/NFTCPS",
+    "https://t.co/X3Tdcb84fE"
+  ],
+  "dependencyUrls": [],
+  "runIds": [
+    "2026-05-18-21-01-28-500-fast"
+  ],
+  "confidence": "low",
+  "firstSeen": "2026-05-18T21:03:55.810Z",
+  "lastReinforced": "2026-05-18T21:03:55.810Z",
+  "verificationStatus": "needs_verification",
+  "evidenceStrength": "weak",
+  "originatingItems": [
+    "idea-d3f25383"
+  ],
+  "observedInLanes": [
+    "verify"
+  ],
+  "owner": "Hermes",
+  "latestPriority": "low",
+  "reinforcementCount": 1,
+  "traceability": {
+    "latestSourceNotePath": "Repos/2026-05-18 x-signal-nftcps-19h-translated-from-chinese-show-original-brothers-i-have-to.md",
+    "latestSourceUrls": [
+      "https://x.com/NFTCPS/status/2056188353490595903",
+      "https://x.com/NFTCPS",
+      "https://t.co/X3Tdcb84fE"
+    ],
+    "latestRunId": "2026-05-18-21-01-28-500-fast"
+  }
+}

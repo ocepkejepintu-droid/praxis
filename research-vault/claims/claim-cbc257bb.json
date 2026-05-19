@@ -1,0 +1,39 @@
+{
+  "claimId": "claim-cbc257bb",
+  "statement": "# X signal: Tim Ferriss reposted Matt Hebard @HebardMatt · May 16 This is remarkable.",
+  "sourceCardIds": [
+    "Inbox/2026-05-18 x-signal-tim-ferriss-reposted-matt-hebard-hebardmatt-may-16-this-is-remarkable-w.md"
+  ],
+  "sourceUrls": [
+    "https://x.com/HebardMatt/status/2055605067290419405",
+    "https://x.com/tferriss",
+    "https://x.com/HebardMatt"
+  ],
+  "dependencyUrls": [],
+  "runIds": [
+    "2026-05-18-12-33-20-370-fast"
+  ],
+  "confidence": "low",
+  "firstSeen": "2026-05-18T12:36:45.868Z",
+  "lastReinforced": "2026-05-18T13:16:29.837Z",
+  "verificationStatus": "needs_verification",
+  "evidenceStrength": "weak",
+  "originatingItems": [
+    "idea-ddebe432"
+  ],
+  "observedInLanes": [
+    "verify"
+  ],
+  "owner": "Hermes",
+  "latestPriority": "low",
+  "reinforcementCount": 1,
+  "traceability": {
+    "latestSourceNotePath": "Inbox/2026-05-18 x-signal-tim-ferriss-reposted-matt-hebard-hebardmatt-may-16-this-is-remarkable-w.md",
+    "latestSourceUrls": [
+      "https://x.com/HebardMatt/status/2055605067290419405",
+      "https://x.com/tferriss",
+      "https://x.com/HebardMatt"
+    ],
+    "latestRunId": "2026-05-18-12-33-20-370-fast"
+  }
+}

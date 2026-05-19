@@ -1,0 +1,39 @@
+{
+  "claimId": "claim-b2237373",
+  "statement": "Trump literally executed $750 MILLION worth of stock trades in ONE quarter while being President.",
+  "sourceCardIds": [
+    "Inbox/2026-05-18 x-signal-yann-lecun-reposted-ricardo-ric-rtp-23h-trump-just-got-exposed-for-runn.md"
+  ],
+  "sourceUrls": [
+    "https://x.com/Ric_RTP/status/2056000508452651512",
+    "https://x.com/ylecun",
+    "https://x.com/Ric_RTP"
+  ],
+  "dependencyUrls": [],
+  "runIds": [
+    "2026-05-18-12-33-20-370-fast"
+  ],
+  "confidence": "low",
+  "firstSeen": "2026-05-18T12:36:45.868Z",
+  "lastReinforced": "2026-05-18T13:16:29.837Z",
+  "verificationStatus": "needs_verification",
+  "evidenceStrength": "weak",
+  "originatingItems": [
+    "idea-12f64778"
+  ],
+  "observedInLanes": [
+    "verify"
+  ],
+  "owner": "Hermes",
+  "latestPriority": "low",
+  "reinforcementCount": 1,
+  "traceability": {
+    "latestSourceNotePath": "Inbox/2026-05-18 x-signal-yann-lecun-reposted-ricardo-ric-rtp-23h-trump-just-got-exposed-for-runn.md",
+    "latestSourceUrls": [
+      "https://x.com/Ric_RTP/status/2056000508452651512",
+      "https://x.com/ylecun",
+      "https://x.com/Ric_RTP"
+    ],
+    "latestRunId": "2026-05-18-12-33-20-370-fast"
+  }
+}

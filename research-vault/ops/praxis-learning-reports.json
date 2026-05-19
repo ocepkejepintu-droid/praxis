@@ -1,0 +1,2541 @@
+[
+  {
+    "id": "praxis-learning-1779129663236-6bf7zk",
+    "createdAt": "2026-05-18T18:41:03.236Z",
+    "praxisId": "experiments-2026-05-15-qwen-3-6-plus-as-hermes-system-audit-reviewer",
+    "praxisTitle": "Qwen 3.6 Plus as Hermes system-audit reviewer",
+    "agent": "mock-hermes",
+    "status": "completed",
+    "learned": [
+      "Hermes learned the Praxis objective: Qwen 3.6 Plus may catch Hermes/system audit issues missed by the current default model, especially when reviewing logs and tool traces with visible reasoning.",
+      "Hermes identified the smallest safe first test: Run Qwen 3.6 Plus on one Hermes/Agent Radar log bundle and ask for concrete bugs, misconfigurations, and next fixes with file/line evidence.",
+      "Hermes mapped the stop rule: Kill if it only gives generic advice, cannot cite exact evidence, or takes longer/costs more than the current model for the same audit.",
+      "Hermes found 4 source URL(s) to verify before adoption."
+    ],
+    "artifacts": [
+      "praxis:experiments-2026-05-15-qwen-3-6-plus-as-hermes-system-audit-reviewer",
+      "source-path:Experiments/2026-05-15 qwen-3-6-plus-as-hermes-system-audit-reviewer.md",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"experiments-2026-05-15-qwen-3-6-plus-as-hermes-system-audit-reviewer\", agent: \"mock-hermes\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Run Qwen 3.6 Plus on one Hermes/Agent Radar log bundle and ask for concrete bugs, misconfigurations, and next fixes with file/line evidence.",
+      "Write a follow-up learning report after evidence improves."
+    ],
+    "sourceUrls": [
+      "https://x.com/boxmining/status/2055167192799535507",
+      "https://x.com/Alibaba_Qwen",
+      "https://chat.qwen.ai/",
+      "https://github.com/QwenLM"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779129663324-o46498",
+    "createdAt": "2026-05-18T18:41:03.324Z",
+    "praxisId": "experiments-2026-05-15-qwen-3-6-plus-as-hermes-system-audit-reviewer",
+    "praxisTitle": "Qwen 3.6 Plus as Hermes system-audit reviewer",
+    "agent": "mock-openclaw",
+    "status": "completed",
+    "learned": [
+      "OpenClaw learned the Praxis objective: Qwen 3.6 Plus may catch Hermes/system audit issues missed by the current default model, especially when reviewing logs and tool traces with visible reasoning.",
+      "OpenClaw identified the smallest safe first test: Run Qwen 3.6 Plus on one Hermes/Agent Radar log bundle and ask for concrete bugs, misconfigurations, and next fixes with file/line evidence.",
+      "OpenClaw mapped the stop rule: Kill if it only gives generic advice, cannot cite exact evidence, or takes longer/costs more than the current model for the same audit.",
+      "OpenClaw found 4 source URL(s) to verify before adoption."
+    ],
+    "artifacts": [
+      "praxis:experiments-2026-05-15-qwen-3-6-plus-as-hermes-system-audit-reviewer",
+      "source-path:Experiments/2026-05-15 qwen-3-6-plus-as-hermes-system-audit-reviewer.md",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"experiments-2026-05-15-qwen-3-6-plus-as-hermes-system-audit-reviewer\", agent: \"mock-openclaw\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Run Qwen 3.6 Plus on one Hermes/Agent Radar log bundle and ask for concrete bugs, misconfigurations, and next fixes with file/line evidence.",
+      "Write a follow-up learning report after evidence improves."
+    ],
+    "sourceUrls": [
+      "https://x.com/boxmining/status/2055167192799535507",
+      "https://x.com/Alibaba_Qwen",
+      "https://chat.qwen.ai/",
+      "https://github.com/QwenLM"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779129663409-234pxj",
+    "createdAt": "2026-05-18T18:41:03.409Z",
+    "praxisId": "experiments-2026-05-15-qwen-3-6-plus-as-hermes-system-audit-reviewer",
+    "praxisTitle": "Qwen 3.6 Plus as Hermes system-audit reviewer",
+    "agent": "hermes",
+    "status": "blocked",
+    "learned": [
+      "Hermes did not execute a real runtime. No learning was hallucinated."
+    ],
+    "artifacts": [
+      "praxis:experiments-2026-05-15-qwen-3-6-plus-as-hermes-system-audit-reviewer",
+      "runtime:not-executed"
+    ],
+    "blockers": [
+      "HERMES_LEARNER_COMMAND is not configured. Use mock-hermes for local safe learning or configure an approved runtime bridge."
+    ],
+    "nextActions": [
+      "Use mock-hermes for local safe learning, or configure HERMES_LEARNER_COMMAND with an approved runner."
+    ],
+    "sourceUrls": [
+      "https://x.com/boxmining/status/2055167192799535507",
+      "https://x.com/Alibaba_Qwen",
+      "https://chat.qwen.ai/",
+      "https://github.com/QwenLM"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779129942023-ot4tyl",
+    "createdAt": "2026-05-18T18:45:42.023Z",
+    "praxisId": "experiments-2026-05-15-qwen-3-6-plus-as-hermes-system-audit-reviewer",
+    "praxisTitle": "Qwen 3.6 Plus as Hermes system-audit reviewer",
+    "agent": "mock-hermes",
+    "status": "completed",
+    "learned": [
+      "Hermes read Praxis: Qwen 3.6 Plus as Hermes system-audit reviewer",
+      "Hermes learned the Praxis objective: Qwen 3.6 Plus may catch Hermes/system audit issues missed by the current default model, especially when reviewing logs and tool traces with visible reasoning.",
+      "Hermes identified the smallest safe first test: Run Qwen 3.6 Plus on one Hermes/Agent Radar log bundle and ask for concrete bugs, misconfigurations, and next fixes with file/line evidence.",
+      "Hermes mapped the execution path: Run Qwen 3.6 Plus on one Hermes/Agent Radar log bundle and ask for concrete bugs, misconfigurations, and next fixes with file/line evidence.",
+      "Hermes mapped the stop rule: Kill if it only gives generic advice, cannot cite exact evidence, or takes longer/costs more than the current model for the same audit.",
+      "Hermes found 4 source URL(s) to verify before adoption."
+    ],
+    "artifacts": [
+      "praxis:experiments-2026-05-15-qwen-3-6-plus-as-hermes-system-audit-reviewer",
+      "source-path:Experiments/2026-05-15 qwen-3-6-plus-as-hermes-system-audit-reviewer.md",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"experiments-2026-05-15-qwen-3-6-plus-as-hermes-system-audit-reviewer\", agent: \"mock-hermes\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Run Qwen 3.6 Plus on one Hermes/Agent Radar log bundle and ask for concrete bugs, misconfigurations, and next fixes with file/line evidence.",
+      "Write a follow-up learning report after evidence improves."
+    ],
+    "sourceUrls": [
+      "https://x.com/boxmining/status/2055167192799535507",
+      "https://x.com/Alibaba_Qwen",
+      "https://chat.qwen.ai/",
+      "https://github.com/QwenLM"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779131482479-ptdbfm",
+    "createdAt": "2026-05-18T19:11:22.479Z",
+    "praxisId": "experiments-2026-05-15-qwen-3-6-plus-as-hermes-system-audit-reviewer",
+    "praxisTitle": "Qwen 3.6 Plus as Hermes system-audit reviewer",
+    "agent": "mock-hermes",
+    "status": "completed",
+    "learned": [
+      "Hermes read Praxis: Qwen 3.6 Plus as Hermes system-audit reviewer",
+      "Hermes learned the Praxis objective: Learn from source-backed Praxis entries and produce concrete next actions.",
+      "Hermes identified the smallest safe first test: Run Qwen 3.6 Plus on one Hermes/Agent Radar log bundle and ask for concrete bugs, misconfigurations, and next fixes with file/line evidence.",
+      "Hermes mapped the execution path: Run Qwen 3.6 Plus on one Hermes/Agent Radar log bundle and ask for concrete bugs, misconfigurations, and next fixes with file/line evidence.",
+      "Hermes mapped the stop rule: Kill if it only gives generic advice, cannot cite exact evidence, or takes longer/costs more than the current model for the same audit.",
+      "Hermes found 4 source URL(s) to verify before adoption."
+    ],
+    "artifacts": [
+      "praxis:experiments-2026-05-15-qwen-3-6-plus-as-hermes-system-audit-reviewer",
+      "source-path:Experiments/2026-05-15 qwen-3-6-plus-as-hermes-system-audit-reviewer.md",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"experiments-2026-05-15-qwen-3-6-plus-as-hermes-system-audit-reviewer\", agent: \"mock-hermes\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Run Qwen 3.6 Plus on one Hermes/Agent Radar log bundle and ask for concrete bugs, misconfigurations, and next fixes with file/line evidence.",
+      "Write a follow-up learning report after evidence improves."
+    ],
+    "sourceUrls": [
+      "https://x.com/boxmining/status/2055167192799535507",
+      "https://x.com/Alibaba_Qwen",
+      "https://chat.qwen.ai/",
+      "https://github.com/QwenLM"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779131482578-wgf57g",
+    "createdAt": "2026-05-18T19:11:22.578Z",
+    "praxisId": "experiments-2026-05-15-qwen-3-6-plus-as-hermes-system-audit-reviewer",
+    "praxisTitle": "Qwen 3.6 Plus as Hermes system-audit reviewer",
+    "agent": "mock-openclaw",
+    "status": "completed",
+    "learned": [
+      "OpenClaw read Praxis: Qwen 3.6 Plus as Hermes system-audit reviewer",
+      "OpenClaw learned the Praxis objective: Learn from source-backed Praxis entries and produce concrete next actions.",
+      "OpenClaw identified the smallest safe first test: Run Qwen 3.6 Plus on one Hermes/Agent Radar log bundle and ask for concrete bugs, misconfigurations, and next fixes with file/line evidence.",
+      "OpenClaw mapped the execution path: Run Qwen 3.6 Plus on one Hermes/Agent Radar log bundle and ask for concrete bugs, misconfigurations, and next fixes with file/line evidence.",
+      "OpenClaw mapped the stop rule: Kill if it only gives generic advice, cannot cite exact evidence, or takes longer/costs more than the current model for the same audit.",
+      "OpenClaw found 4 source URL(s) to verify before adoption."
+    ],
+    "artifacts": [
+      "praxis:experiments-2026-05-15-qwen-3-6-plus-as-hermes-system-audit-reviewer",
+      "source-path:Experiments/2026-05-15 qwen-3-6-plus-as-hermes-system-audit-reviewer.md",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"experiments-2026-05-15-qwen-3-6-plus-as-hermes-system-audit-reviewer\", agent: \"mock-openclaw\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Run Qwen 3.6 Plus on one Hermes/Agent Radar log bundle and ask for concrete bugs, misconfigurations, and next fixes with file/line evidence.",
+      "Write a follow-up learning report after evidence improves."
+    ],
+    "sourceUrls": [
+      "https://x.com/boxmining/status/2055167192799535507",
+      "https://x.com/Alibaba_Qwen",
+      "https://chat.qwen.ai/",
+      "https://github.com/QwenLM"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779131482681-mb6s33",
+    "createdAt": "2026-05-18T19:11:22.681Z",
+    "praxisId": "hermes-atlas-335234131-agent-browser-mcp",
+    "praxisTitle": "agent-browser-mcp",
+    "agent": "mock-hermes",
+    "status": "completed",
+    "learned": [
+      "Hermes read Praxis: agent-browser-mcp",
+      "Hermes learned the Praxis objective: Learn from source-backed Praxis entries and produce concrete next actions.",
+      "Hermes identified the smallest safe first test: Open https://github.com/335234131/agent-browser-mcp, verify install/docs, and run the smallest safe smoke test.",
+      "Hermes mapped the execution path: Open Hermes Atlas project page. → Open canonical GitHub or primary dependency URL. → Verify README, install path, license/risk, and current maintenance signal. → Run the smallest safe local smoke test if permitted. → Write learning report: tried, learned, fai…",
+      "Hermes mapped the stop rule: Kill if source repo is unavailable, docs are missing, install path fails, or evidence stays social-only.",
+      "Hermes found 2 source URL(s) to verify before adoption."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-335234131-agent-browser-mcp",
+      "source-path:.omx/ingestion-runs/2026-05-18T10-09-41-500-hermes-atlas-external/normalized-cards.json",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"hermes-atlas-335234131-agent-browser-mcp\", agent: \"mock-hermes\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Open Hermes Atlas project page.",
+      "Write a follow-up learning report after evidence improves."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/335234131/agent-browser-mcp",
+      "https://github.com/335234131/agent-browser-mcp"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779131482784-bavi4l",
+    "createdAt": "2026-05-18T19:11:22.784Z",
+    "praxisId": "hermes-atlas-335234131-agent-browser-mcp",
+    "praxisTitle": "agent-browser-mcp",
+    "agent": "mock-openclaw",
+    "status": "completed",
+    "learned": [
+      "OpenClaw read Praxis: agent-browser-mcp",
+      "OpenClaw learned the Praxis objective: Learn from source-backed Praxis entries and produce concrete next actions.",
+      "OpenClaw identified the smallest safe first test: Open https://github.com/335234131/agent-browser-mcp, verify install/docs, and run the smallest safe smoke test.",
+      "OpenClaw mapped the execution path: Open Hermes Atlas project page. → Open canonical GitHub or primary dependency URL. → Verify README, install path, license/risk, and current maintenance signal. → Run the smallest safe local smoke test if permitted. → Write learning report: tried, learned, fai…",
+      "OpenClaw mapped the stop rule: Kill if source repo is unavailable, docs are missing, install path fails, or evidence stays social-only.",
+      "OpenClaw found 2 source URL(s) to verify before adoption."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-335234131-agent-browser-mcp",
+      "source-path:.omx/ingestion-runs/2026-05-18T10-09-41-500-hermes-atlas-external/normalized-cards.json",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"hermes-atlas-335234131-agent-browser-mcp\", agent: \"mock-openclaw\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Open Hermes Atlas project page.",
+      "Write a follow-up learning report after evidence improves."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/335234131/agent-browser-mcp",
+      "https://github.com/335234131/agent-browser-mcp"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779131482875-6t0358",
+    "createdAt": "2026-05-18T19:11:22.875Z",
+    "praxisId": "hermes-atlas-mukul975-anthropic-cybersecurity-skills",
+    "praxisTitle": "Anthropic-Cybersecurity-Skills",
+    "agent": "mock-hermes",
+    "status": "completed",
+    "learned": [
+      "Hermes read Praxis: Anthropic-Cybersecurity-Skills",
+      "Hermes learned the Praxis objective: Learn from source-backed Praxis entries and produce concrete next actions.",
+      "Hermes identified the smallest safe first test: Open https://github.com/mukul975/Anthropic-Cybersecurity-Skills, verify install/docs, and run the smallest safe smoke test.",
+      "Hermes mapped the execution path: Open Hermes Atlas project page. → Open canonical GitHub or primary dependency URL. → Verify README, install path, license/risk, and current maintenance signal. → Run the smallest safe local smoke test if permitted. → Write learning report: tried, learned, fai…",
+      "Hermes mapped the stop rule: Kill if source repo is unavailable, docs are missing, install path fails, or evidence stays social-only.",
+      "Hermes found 2 source URL(s) to verify before adoption."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-mukul975-anthropic-cybersecurity-skills",
+      "source-path:.omx/ingestion-runs/2026-05-18T10-09-41-500-hermes-atlas-external/normalized-cards.json",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"hermes-atlas-mukul975-anthropic-cybersecurity-skills\", agent: \"mock-hermes\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Open Hermes Atlas project page.",
+      "Write a follow-up learning report after evidence improves."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/mukul975/Anthropic-Cybersecurity-Skills",
+      "https://github.com/mukul975/Anthropic-Cybersecurity-Skills"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779131482964-2pmz5q",
+    "createdAt": "2026-05-18T19:11:22.964Z",
+    "praxisId": "hermes-atlas-mukul975-anthropic-cybersecurity-skills",
+    "praxisTitle": "Anthropic-Cybersecurity-Skills",
+    "agent": "mock-openclaw",
+    "status": "completed",
+    "learned": [
+      "OpenClaw read Praxis: Anthropic-Cybersecurity-Skills",
+      "OpenClaw learned the Praxis objective: Learn from source-backed Praxis entries and produce concrete next actions.",
+      "OpenClaw identified the smallest safe first test: Open https://github.com/mukul975/Anthropic-Cybersecurity-Skills, verify install/docs, and run the smallest safe smoke test.",
+      "OpenClaw mapped the execution path: Open Hermes Atlas project page. → Open canonical GitHub or primary dependency URL. → Verify README, install path, license/risk, and current maintenance signal. → Run the smallest safe local smoke test if permitted. → Write learning report: tried, learned, fai…",
+      "OpenClaw mapped the stop rule: Kill if source repo is unavailable, docs are missing, install path fails, or evidence stays social-only.",
+      "OpenClaw found 2 source URL(s) to verify before adoption."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-mukul975-anthropic-cybersecurity-skills",
+      "source-path:.omx/ingestion-runs/2026-05-18T10-09-41-500-hermes-atlas-external/normalized-cards.json",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"hermes-atlas-mukul975-anthropic-cybersecurity-skills\", agent: \"mock-openclaw\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Open Hermes Atlas project page.",
+      "Write a follow-up learning report after evidence improves."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/mukul975/Anthropic-Cybersecurity-Skills",
+      "https://github.com/mukul975/Anthropic-Cybersecurity-Skills"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779131483058-u7d9x0",
+    "createdAt": "2026-05-18T19:11:23.058Z",
+    "praxisId": "hermes-atlas-nousresearch-atropos",
+    "praxisTitle": "atropos",
+    "agent": "mock-hermes",
+    "status": "completed",
+    "learned": [
+      "Hermes read Praxis: atropos",
+      "Hermes learned the Praxis objective: Learn from source-backed Praxis entries and produce concrete next actions.",
+      "Hermes identified the smallest safe first test: Open https://github.com/NousResearch/atropos, verify install/docs, and run the smallest safe smoke test.",
+      "Hermes mapped the execution path: Open Hermes Atlas project page. → Open canonical GitHub or primary dependency URL. → Verify README, install path, license/risk, and current maintenance signal. → Run the smallest safe local smoke test if permitted. → Write learning report: tried, learned, fai…",
+      "Hermes mapped the stop rule: Kill if source repo is unavailable, docs are missing, install path fails, or evidence stays social-only.",
+      "Hermes found 2 source URL(s) to verify before adoption."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-nousresearch-atropos",
+      "source-path:.omx/ingestion-runs/2026-05-18T10-09-41-500-hermes-atlas-external/normalized-cards.json",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"hermes-atlas-nousresearch-atropos\", agent: \"mock-hermes\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Open Hermes Atlas project page.",
+      "Write a follow-up learning report after evidence improves."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/NousResearch/atropos",
+      "https://github.com/NousResearch/atropos"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779131483159-w41p4b",
+    "createdAt": "2026-05-18T19:11:23.159Z",
+    "praxisId": "hermes-atlas-nousresearch-atropos",
+    "praxisTitle": "atropos",
+    "agent": "mock-openclaw",
+    "status": "completed",
+    "learned": [
+      "OpenClaw read Praxis: atropos",
+      "OpenClaw learned the Praxis objective: Learn from source-backed Praxis entries and produce concrete next actions.",
+      "OpenClaw identified the smallest safe first test: Open https://github.com/NousResearch/atropos, verify install/docs, and run the smallest safe smoke test.",
+      "OpenClaw mapped the execution path: Open Hermes Atlas project page. → Open canonical GitHub or primary dependency URL. → Verify README, install path, license/risk, and current maintenance signal. → Run the smallest safe local smoke test if permitted. → Write learning report: tried, learned, fai…",
+      "OpenClaw mapped the stop rule: Kill if source repo is unavailable, docs are missing, install path fails, or evidence stays social-only.",
+      "OpenClaw found 2 source URL(s) to verify before adoption."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-nousresearch-atropos",
+      "source-path:.omx/ingestion-runs/2026-05-18T10-09-41-500-hermes-atlas-external/normalized-cards.json",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"hermes-atlas-nousresearch-atropos\", agent: \"mock-openclaw\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Open Hermes Atlas project page.",
+      "Write a follow-up learning report after evidence improves."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/NousResearch/atropos",
+      "https://github.com/NousResearch/atropos"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779131483252-hc8vln",
+    "createdAt": "2026-05-18T19:11:23.252Z",
+    "praxisId": "hermes-atlas-greyhaven-ai-autocontext",
+    "praxisTitle": "autocontext",
+    "agent": "mock-hermes",
+    "status": "completed",
+    "learned": [
+      "Hermes read Praxis: autocontext",
+      "Hermes learned the Praxis objective: Learn from source-backed Praxis entries and produce concrete next actions.",
+      "Hermes identified the smallest safe first test: Open https://github.com/greyhaven-ai/autocontext, verify install/docs, and run the smallest safe smoke test.",
+      "Hermes mapped the execution path: Open Hermes Atlas project page. → Open canonical GitHub or primary dependency URL. → Verify README, install path, license/risk, and current maintenance signal. → Run the smallest safe local smoke test if permitted. → Write learning report: tried, learned, fai…",
+      "Hermes mapped the stop rule: Kill if source repo is unavailable, docs are missing, install path fails, or evidence stays social-only.",
+      "Hermes found 2 source URL(s) to verify before adoption."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-greyhaven-ai-autocontext",
+      "source-path:.omx/ingestion-runs/2026-05-18T10-09-41-500-hermes-atlas-external/normalized-cards.json",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"hermes-atlas-greyhaven-ai-autocontext\", agent: \"mock-hermes\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Open Hermes Atlas project page.",
+      "Write a follow-up learning report after evidence improves."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/greyhaven-ai/autocontext",
+      "https://github.com/greyhaven-ai/autocontext"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779131483347-8kysi2",
+    "createdAt": "2026-05-18T19:11:23.347Z",
+    "praxisId": "hermes-atlas-greyhaven-ai-autocontext",
+    "praxisTitle": "autocontext",
+    "agent": "mock-openclaw",
+    "status": "completed",
+    "learned": [
+      "OpenClaw read Praxis: autocontext",
+      "OpenClaw learned the Praxis objective: Learn from source-backed Praxis entries and produce concrete next actions.",
+      "OpenClaw identified the smallest safe first test: Open https://github.com/greyhaven-ai/autocontext, verify install/docs, and run the smallest safe smoke test.",
+      "OpenClaw mapped the execution path: Open Hermes Atlas project page. → Open canonical GitHub or primary dependency URL. → Verify README, install path, license/risk, and current maintenance signal. → Run the smallest safe local smoke test if permitted. → Write learning report: tried, learned, fai…",
+      "OpenClaw mapped the stop rule: Kill if source repo is unavailable, docs are missing, install path fails, or evidence stays social-only.",
+      "OpenClaw found 2 source URL(s) to verify before adoption."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-greyhaven-ai-autocontext",
+      "source-path:.omx/ingestion-runs/2026-05-18T10-09-41-500-hermes-atlas-external/normalized-cards.json",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"hermes-atlas-greyhaven-ai-autocontext\", agent: \"mock-openclaw\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Open Hermes Atlas project page.",
+      "Write a follow-up learning report after evidence improves."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/greyhaven-ai/autocontext",
+      "https://github.com/greyhaven-ai/autocontext"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779131507925-1vf8f1",
+    "createdAt": "2026-05-18T19:11:47.925Z",
+    "praxisId": "experiments-2026-05-15-qwen-3-6-plus-as-hermes-system-audit-reviewer",
+    "praxisTitle": "Qwen 3.6 Plus as Hermes system-audit reviewer",
+    "agent": "mock-hermes",
+    "status": "completed",
+    "learned": [
+      "Hermes read Praxis: Qwen 3.6 Plus as Hermes system-audit reviewer",
+      "Hermes followed the batch objective: Learn from source-backed Praxis entries and produce concrete next actions.",
+      "Hermes learned the Praxis objective: Qwen 3.6 Plus may catch Hermes/system audit issues missed by the current default model, especially when reviewing logs and tool traces with visible reasoning.",
+      "Hermes identified the smallest safe first test: Run Qwen 3.6 Plus on one Hermes/Agent Radar log bundle and ask for concrete bugs, misconfigurations, and next fixes with file/line evidence.",
+      "Hermes mapped the execution path: Run Qwen 3.6 Plus on one Hermes/Agent Radar log bundle and ask for concrete bugs, misconfigurations, and next fixes with file/line evidence.",
+      "Hermes mapped the stop rule: Kill if it only gives generic advice, cannot cite exact evidence, or takes longer/costs more than the current model for the same audit.",
+      "Hermes found 4 source URL(s) to verify before adoption."
+    ],
+    "artifacts": [
+      "praxis:experiments-2026-05-15-qwen-3-6-plus-as-hermes-system-audit-reviewer",
+      "source-path:Experiments/2026-05-15 qwen-3-6-plus-as-hermes-system-audit-reviewer.md",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"experiments-2026-05-15-qwen-3-6-plus-as-hermes-system-audit-reviewer\", agent: \"mock-hermes\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Run Qwen 3.6 Plus on one Hermes/Agent Radar log bundle and ask for concrete bugs, misconfigurations, and next fixes with file/line evidence.",
+      "Write a follow-up learning report after evidence improves."
+    ],
+    "sourceUrls": [
+      "https://x.com/boxmining/status/2055167192799535507",
+      "https://x.com/Alibaba_Qwen",
+      "https://chat.qwen.ai/",
+      "https://github.com/QwenLM"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779131508011-lsmg4b",
+    "createdAt": "2026-05-18T19:11:48.011Z",
+    "praxisId": "experiments-2026-05-15-qwen-3-6-plus-as-hermes-system-audit-reviewer",
+    "praxisTitle": "Qwen 3.6 Plus as Hermes system-audit reviewer",
+    "agent": "mock-openclaw",
+    "status": "completed",
+    "learned": [
+      "OpenClaw read Praxis: Qwen 3.6 Plus as Hermes system-audit reviewer",
+      "OpenClaw followed the batch objective: Learn from source-backed Praxis entries and produce concrete next actions.",
+      "OpenClaw learned the Praxis objective: Qwen 3.6 Plus may catch Hermes/system audit issues missed by the current default model, especially when reviewing logs and tool traces with visible reasoning.",
+      "OpenClaw identified the smallest safe first test: Run Qwen 3.6 Plus on one Hermes/Agent Radar log bundle and ask for concrete bugs, misconfigurations, and next fixes with file/line evidence.",
+      "OpenClaw mapped the execution path: Run Qwen 3.6 Plus on one Hermes/Agent Radar log bundle and ask for concrete bugs, misconfigurations, and next fixes with file/line evidence.",
+      "OpenClaw mapped the stop rule: Kill if it only gives generic advice, cannot cite exact evidence, or takes longer/costs more than the current model for the same audit.",
+      "OpenClaw found 4 source URL(s) to verify before adoption."
+    ],
+    "artifacts": [
+      "praxis:experiments-2026-05-15-qwen-3-6-plus-as-hermes-system-audit-reviewer",
+      "source-path:Experiments/2026-05-15 qwen-3-6-plus-as-hermes-system-audit-reviewer.md",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"experiments-2026-05-15-qwen-3-6-plus-as-hermes-system-audit-reviewer\", agent: \"mock-openclaw\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Run Qwen 3.6 Plus on one Hermes/Agent Radar log bundle and ask for concrete bugs, misconfigurations, and next fixes with file/line evidence.",
+      "Write a follow-up learning report after evidence improves."
+    ],
+    "sourceUrls": [
+      "https://x.com/boxmining/status/2055167192799535507",
+      "https://x.com/Alibaba_Qwen",
+      "https://chat.qwen.ai/",
+      "https://github.com/QwenLM"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779131508106-dgk4ez",
+    "createdAt": "2026-05-18T19:11:48.106Z",
+    "praxisId": "hermes-atlas-335234131-agent-browser-mcp",
+    "praxisTitle": "agent-browser-mcp",
+    "agent": "mock-hermes",
+    "status": "completed",
+    "learned": [
+      "Hermes read Praxis: agent-browser-mcp",
+      "Hermes followed the batch objective: Learn from source-backed Praxis entries and produce concrete next actions.",
+      "Hermes learned the Praxis objective: Agent-browser-mcp is a Model Context Protocol server that enables AI agents to interact directly with a user's active Chrome browser session rather than a sandboxed environment. It works through a local bridge and a Chr…",
+      "Hermes identified the smallest safe first test: Open https://github.com/335234131/agent-browser-mcp, verify install/docs, and run the smallest safe smoke test.",
+      "Hermes mapped the execution path: Open Hermes Atlas project page. → Open canonical GitHub or primary dependency URL. → Verify README, install path, license/risk, and current maintenance signal. → Run the smallest safe local smoke test if permitted. → Write learning report: tried, learned, fai…",
+      "Hermes mapped the stop rule: Kill if source repo is unavailable, docs are missing, install path fails, or evidence stays social-only.",
+      "Hermes found 2 source URL(s) to verify before adoption."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-335234131-agent-browser-mcp",
+      "source-path:.omx/ingestion-runs/2026-05-18T10-09-41-500-hermes-atlas-external/normalized-cards.json",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"hermes-atlas-335234131-agent-browser-mcp\", agent: \"mock-hermes\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Open Hermes Atlas project page.",
+      "Write a follow-up learning report after evidence improves."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/335234131/agent-browser-mcp",
+      "https://github.com/335234131/agent-browser-mcp"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779131508227-ag06sk",
+    "createdAt": "2026-05-18T19:11:48.227Z",
+    "praxisId": "hermes-atlas-335234131-agent-browser-mcp",
+    "praxisTitle": "agent-browser-mcp",
+    "agent": "mock-openclaw",
+    "status": "completed",
+    "learned": [
+      "OpenClaw read Praxis: agent-browser-mcp",
+      "OpenClaw followed the batch objective: Learn from source-backed Praxis entries and produce concrete next actions.",
+      "OpenClaw learned the Praxis objective: Agent-browser-mcp is a Model Context Protocol server that enables AI agents to interact directly with a user's active Chrome browser session rather than a sandboxed environment. It works through a local bridge and a Chr…",
+      "OpenClaw identified the smallest safe first test: Open https://github.com/335234131/agent-browser-mcp, verify install/docs, and run the smallest safe smoke test.",
+      "OpenClaw mapped the execution path: Open Hermes Atlas project page. → Open canonical GitHub or primary dependency URL. → Verify README, install path, license/risk, and current maintenance signal. → Run the smallest safe local smoke test if permitted. → Write learning report: tried, learned, fai…",
+      "OpenClaw mapped the stop rule: Kill if source repo is unavailable, docs are missing, install path fails, or evidence stays social-only.",
+      "OpenClaw found 2 source URL(s) to verify before adoption."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-335234131-agent-browser-mcp",
+      "source-path:.omx/ingestion-runs/2026-05-18T10-09-41-500-hermes-atlas-external/normalized-cards.json",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"hermes-atlas-335234131-agent-browser-mcp\", agent: \"mock-openclaw\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Open Hermes Atlas project page.",
+      "Write a follow-up learning report after evidence improves."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/335234131/agent-browser-mcp",
+      "https://github.com/335234131/agent-browser-mcp"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779131508309-6dp9z4",
+    "createdAt": "2026-05-18T19:11:48.309Z",
+    "praxisId": "hermes-atlas-mukul975-anthropic-cybersecurity-skills",
+    "praxisTitle": "Anthropic-Cybersecurity-Skills",
+    "agent": "mock-hermes",
+    "status": "completed",
+    "learned": [
+      "Hermes read Praxis: Anthropic-Cybersecurity-Skills",
+      "Hermes followed the batch objective: Learn from source-backed Praxis entries and produce concrete next actions.",
+      "Hermes learned the Praxis objective: Anthropic Cybersecurity Skills is an open-source library of 754 structured skills designed to provide AI agents with the domain-specific workflows of a senior security analyst. Each skill follows the agentskills.io stan…",
+      "Hermes identified the smallest safe first test: Open https://github.com/mukul975/Anthropic-Cybersecurity-Skills, verify install/docs, and run the smallest safe smoke test.",
+      "Hermes mapped the execution path: Open Hermes Atlas project page. → Open canonical GitHub or primary dependency URL. → Verify README, install path, license/risk, and current maintenance signal. → Run the smallest safe local smoke test if permitted. → Write learning report: tried, learned, fai…",
+      "Hermes mapped the stop rule: Kill if source repo is unavailable, docs are missing, install path fails, or evidence stays social-only.",
+      "Hermes found 2 source URL(s) to verify before adoption."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-mukul975-anthropic-cybersecurity-skills",
+      "source-path:.omx/ingestion-runs/2026-05-18T10-09-41-500-hermes-atlas-external/normalized-cards.json",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"hermes-atlas-mukul975-anthropic-cybersecurity-skills\", agent: \"mock-hermes\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Open Hermes Atlas project page.",
+      "Write a follow-up learning report after evidence improves."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/mukul975/Anthropic-Cybersecurity-Skills",
+      "https://github.com/mukul975/Anthropic-Cybersecurity-Skills"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779131508390-c77jqi",
+    "createdAt": "2026-05-18T19:11:48.390Z",
+    "praxisId": "hermes-atlas-mukul975-anthropic-cybersecurity-skills",
+    "praxisTitle": "Anthropic-Cybersecurity-Skills",
+    "agent": "mock-openclaw",
+    "status": "completed",
+    "learned": [
+      "OpenClaw read Praxis: Anthropic-Cybersecurity-Skills",
+      "OpenClaw followed the batch objective: Learn from source-backed Praxis entries and produce concrete next actions.",
+      "OpenClaw learned the Praxis objective: Anthropic Cybersecurity Skills is an open-source library of 754 structured skills designed to provide AI agents with the domain-specific workflows of a senior security analyst. Each skill follows the agentskills.io stan…",
+      "OpenClaw identified the smallest safe first test: Open https://github.com/mukul975/Anthropic-Cybersecurity-Skills, verify install/docs, and run the smallest safe smoke test.",
+      "OpenClaw mapped the execution path: Open Hermes Atlas project page. → Open canonical GitHub or primary dependency URL. → Verify README, install path, license/risk, and current maintenance signal. → Run the smallest safe local smoke test if permitted. → Write learning report: tried, learned, fai…",
+      "OpenClaw mapped the stop rule: Kill if source repo is unavailable, docs are missing, install path fails, or evidence stays social-only.",
+      "OpenClaw found 2 source URL(s) to verify before adoption."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-mukul975-anthropic-cybersecurity-skills",
+      "source-path:.omx/ingestion-runs/2026-05-18T10-09-41-500-hermes-atlas-external/normalized-cards.json",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"hermes-atlas-mukul975-anthropic-cybersecurity-skills\", agent: \"mock-openclaw\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Open Hermes Atlas project page.",
+      "Write a follow-up learning report after evidence improves."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/mukul975/Anthropic-Cybersecurity-Skills",
+      "https://github.com/mukul975/Anthropic-Cybersecurity-Skills"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779131508473-u7caa5",
+    "createdAt": "2026-05-18T19:11:48.473Z",
+    "praxisId": "hermes-atlas-nousresearch-atropos",
+    "praxisTitle": "atropos",
+    "agent": "mock-hermes",
+    "status": "completed",
+    "learned": [
+      "Hermes read Praxis: atropos",
+      "Hermes followed the batch objective: Learn from source-backed Praxis entries and produce concrete next actions.",
+      "Hermes learned the Praxis objective: Atropos is an environment microservice framework designed for asynchronous reinforcement learning (RL) with large language models. It operates by setting up environments as services and utilizing a trajectory API to man…",
+      "Hermes identified the smallest safe first test: Open https://github.com/NousResearch/atropos, verify install/docs, and run the smallest safe smoke test.",
+      "Hermes mapped the execution path: Open Hermes Atlas project page. → Open canonical GitHub or primary dependency URL. → Verify README, install path, license/risk, and current maintenance signal. → Run the smallest safe local smoke test if permitted. → Write learning report: tried, learned, fai…",
+      "Hermes mapped the stop rule: Kill if source repo is unavailable, docs are missing, install path fails, or evidence stays social-only.",
+      "Hermes found 2 source URL(s) to verify before adoption."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-nousresearch-atropos",
+      "source-path:.omx/ingestion-runs/2026-05-18T10-09-41-500-hermes-atlas-external/normalized-cards.json",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"hermes-atlas-nousresearch-atropos\", agent: \"mock-hermes\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Open Hermes Atlas project page.",
+      "Write a follow-up learning report after evidence improves."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/NousResearch/atropos",
+      "https://github.com/NousResearch/atropos"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779131508558-xa63bs",
+    "createdAt": "2026-05-18T19:11:48.558Z",
+    "praxisId": "hermes-atlas-nousresearch-atropos",
+    "praxisTitle": "atropos",
+    "agent": "mock-openclaw",
+    "status": "completed",
+    "learned": [
+      "OpenClaw read Praxis: atropos",
+      "OpenClaw followed the batch objective: Learn from source-backed Praxis entries and produce concrete next actions.",
+      "OpenClaw learned the Praxis objective: Atropos is an environment microservice framework designed for asynchronous reinforcement learning (RL) with large language models. It operates by setting up environments as services and utilizing a trajectory API to man…",
+      "OpenClaw identified the smallest safe first test: Open https://github.com/NousResearch/atropos, verify install/docs, and run the smallest safe smoke test.",
+      "OpenClaw mapped the execution path: Open Hermes Atlas project page. → Open canonical GitHub or primary dependency URL. → Verify README, install path, license/risk, and current maintenance signal. → Run the smallest safe local smoke test if permitted. → Write learning report: tried, learned, fai…",
+      "OpenClaw mapped the stop rule: Kill if source repo is unavailable, docs are missing, install path fails, or evidence stays social-only.",
+      "OpenClaw found 2 source URL(s) to verify before adoption."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-nousresearch-atropos",
+      "source-path:.omx/ingestion-runs/2026-05-18T10-09-41-500-hermes-atlas-external/normalized-cards.json",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"hermes-atlas-nousresearch-atropos\", agent: \"mock-openclaw\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Open Hermes Atlas project page.",
+      "Write a follow-up learning report after evidence improves."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/NousResearch/atropos",
+      "https://github.com/NousResearch/atropos"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779131508644-efdqas",
+    "createdAt": "2026-05-18T19:11:48.644Z",
+    "praxisId": "hermes-atlas-greyhaven-ai-autocontext",
+    "praxisTitle": "autocontext",
+    "agent": "mock-hermes",
+    "status": "completed",
+    "learned": [
+      "Hermes read Praxis: autocontext",
+      "Hermes followed the batch objective: Learn from source-backed Praxis entries and produce concrete next actions.",
+      "Hermes learned the Praxis objective: Autocontext is a recursive self-improving harness that enables agents to succeed on complex tasks through iterative refinement. It operates by executing a goal against real-world evaluations, retaining successful strate…",
+      "Hermes identified the smallest safe first test: Open https://github.com/greyhaven-ai/autocontext, verify install/docs, and run the smallest safe smoke test.",
+      "Hermes mapped the execution path: Open Hermes Atlas project page. → Open canonical GitHub or primary dependency URL. → Verify README, install path, license/risk, and current maintenance signal. → Run the smallest safe local smoke test if permitted. → Write learning report: tried, learned, fai…",
+      "Hermes mapped the stop rule: Kill if source repo is unavailable, docs are missing, install path fails, or evidence stays social-only.",
+      "Hermes found 2 source URL(s) to verify before adoption."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-greyhaven-ai-autocontext",
+      "source-path:.omx/ingestion-runs/2026-05-18T10-09-41-500-hermes-atlas-external/normalized-cards.json",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"hermes-atlas-greyhaven-ai-autocontext\", agent: \"mock-hermes\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Open Hermes Atlas project page.",
+      "Write a follow-up learning report after evidence improves."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/greyhaven-ai/autocontext",
+      "https://github.com/greyhaven-ai/autocontext"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779131508743-a61l97",
+    "createdAt": "2026-05-18T19:11:48.743Z",
+    "praxisId": "hermes-atlas-greyhaven-ai-autocontext",
+    "praxisTitle": "autocontext",
+    "agent": "mock-openclaw",
+    "status": "completed",
+    "learned": [
+      "OpenClaw read Praxis: autocontext",
+      "OpenClaw followed the batch objective: Learn from source-backed Praxis entries and produce concrete next actions.",
+      "OpenClaw learned the Praxis objective: Autocontext is a recursive self-improving harness that enables agents to succeed on complex tasks through iterative refinement. It operates by executing a goal against real-world evaluations, retaining successful strate…",
+      "OpenClaw identified the smallest safe first test: Open https://github.com/greyhaven-ai/autocontext, verify install/docs, and run the smallest safe smoke test.",
+      "OpenClaw mapped the execution path: Open Hermes Atlas project page. → Open canonical GitHub or primary dependency URL. → Verify README, install path, license/risk, and current maintenance signal. → Run the smallest safe local smoke test if permitted. → Write learning report: tried, learned, fai…",
+      "OpenClaw mapped the stop rule: Kill if source repo is unavailable, docs are missing, install path fails, or evidence stays social-only.",
+      "OpenClaw found 2 source URL(s) to verify before adoption."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-greyhaven-ai-autocontext",
+      "source-path:.omx/ingestion-runs/2026-05-18T10-09-41-500-hermes-atlas-external/normalized-cards.json",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"hermes-atlas-greyhaven-ai-autocontext\", agent: \"mock-openclaw\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Open Hermes Atlas project page.",
+      "Write a follow-up learning report after evidence improves."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/greyhaven-ai/autocontext",
+      "https://github.com/greyhaven-ai/autocontext"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779131558386-boq760",
+    "createdAt": "2026-05-18T19:12:38.386Z",
+    "praxisId": "experiments-2026-05-15-qwen-3-6-plus-as-hermes-system-audit-reviewer",
+    "praxisTitle": "Qwen 3.6 Plus as Hermes system-audit reviewer",
+    "agent": "mock-hermes",
+    "status": "completed",
+    "learned": [
+      "Hermes read Praxis: Qwen 3.6 Plus as Hermes system-audit reviewer",
+      "Hermes followed the batch objective: Learn from source-backed Praxis entries and produce concrete next actions.",
+      "Hermes learned the Praxis objective: Qwen 3.6 Plus may catch Hermes/system audit issues missed by the current default model, especially when reviewing logs and tool traces with visible reasoning.",
+      "Hermes identified the smallest safe first test: Run Qwen 3.6 Plus on one Hermes/Agent Radar log bundle and ask for concrete bugs, misconfigurations, and next fixes with file/line evidence.",
+      "Hermes mapped the execution path: Run Qwen 3.6 Plus on one Hermes/Agent Radar log bundle and ask for concrete bugs, misconfigurations, and next fixes with file/line evidence.",
+      "Hermes mapped the stop rule: Kill if it only gives generic advice, cannot cite exact evidence, or takes longer/costs more than the current model for the same audit.",
+      "Hermes found 4 source URL(s) to verify before adoption."
+    ],
+    "artifacts": [
+      "praxis:experiments-2026-05-15-qwen-3-6-plus-as-hermes-system-audit-reviewer",
+      "source-path:Experiments/2026-05-15 qwen-3-6-plus-as-hermes-system-audit-reviewer.md",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"experiments-2026-05-15-qwen-3-6-plus-as-hermes-system-audit-reviewer\", agent: \"mock-hermes\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Run Qwen 3.6 Plus on one Hermes/Agent Radar log bundle and ask for concrete bugs, misconfigurations, and next fixes with file/line evidence.",
+      "Write a follow-up learning report after evidence improves."
+    ],
+    "sourceUrls": [
+      "https://x.com/boxmining/status/2055167192799535507",
+      "https://x.com/Alibaba_Qwen",
+      "https://chat.qwen.ai/",
+      "https://github.com/QwenLM"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779131558472-etzn0h",
+    "createdAt": "2026-05-18T19:12:38.472Z",
+    "praxisId": "experiments-2026-05-15-qwen-3-6-plus-as-hermes-system-audit-reviewer",
+    "praxisTitle": "Qwen 3.6 Plus as Hermes system-audit reviewer",
+    "agent": "mock-openclaw",
+    "status": "completed",
+    "learned": [
+      "OpenClaw read Praxis: Qwen 3.6 Plus as Hermes system-audit reviewer",
+      "OpenClaw followed the batch objective: Learn from source-backed Praxis entries and produce concrete next actions.",
+      "OpenClaw learned the Praxis objective: Qwen 3.6 Plus may catch Hermes/system audit issues missed by the current default model, especially when reviewing logs and tool traces with visible reasoning.",
+      "OpenClaw identified the smallest safe first test: Run Qwen 3.6 Plus on one Hermes/Agent Radar log bundle and ask for concrete bugs, misconfigurations, and next fixes with file/line evidence.",
+      "OpenClaw mapped the execution path: Run Qwen 3.6 Plus on one Hermes/Agent Radar log bundle and ask for concrete bugs, misconfigurations, and next fixes with file/line evidence.",
+      "OpenClaw mapped the stop rule: Kill if it only gives generic advice, cannot cite exact evidence, or takes longer/costs more than the current model for the same audit.",
+      "OpenClaw found 4 source URL(s) to verify before adoption."
+    ],
+    "artifacts": [
+      "praxis:experiments-2026-05-15-qwen-3-6-plus-as-hermes-system-audit-reviewer",
+      "source-path:Experiments/2026-05-15 qwen-3-6-plus-as-hermes-system-audit-reviewer.md",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"experiments-2026-05-15-qwen-3-6-plus-as-hermes-system-audit-reviewer\", agent: \"mock-openclaw\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Run Qwen 3.6 Plus on one Hermes/Agent Radar log bundle and ask for concrete bugs, misconfigurations, and next fixes with file/line evidence.",
+      "Write a follow-up learning report after evidence improves."
+    ],
+    "sourceUrls": [
+      "https://x.com/boxmining/status/2055167192799535507",
+      "https://x.com/Alibaba_Qwen",
+      "https://chat.qwen.ai/",
+      "https://github.com/QwenLM"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779131558560-jp4obq",
+    "createdAt": "2026-05-18T19:12:38.560Z",
+    "praxisId": "experiments-2026-05-15-qwen-3-6-plus-as-hermes-system-audit-reviewer",
+    "praxisTitle": "Qwen 3.6 Plus as Hermes system-audit reviewer",
+    "agent": "hermes",
+    "status": "blocked",
+    "learned": [
+      "Hermes did not execute a real runtime. No learning was hallucinated."
+    ],
+    "artifacts": [
+      "praxis:experiments-2026-05-15-qwen-3-6-plus-as-hermes-system-audit-reviewer",
+      "runtime:not-executed"
+    ],
+    "blockers": [
+      "HERMES_LEARNER_COMMAND is not configured. Use mock-hermes for local safe learning or configure an approved runtime bridge."
+    ],
+    "nextActions": [
+      "Use mock-hermes for local safe learning, or configure HERMES_LEARNER_COMMAND with an approved runner."
+    ],
+    "sourceUrls": [
+      "https://x.com/boxmining/status/2055167192799535507",
+      "https://x.com/Alibaba_Qwen",
+      "https://chat.qwen.ai/",
+      "https://github.com/QwenLM"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779131558645-izso6d",
+    "createdAt": "2026-05-18T19:12:38.645Z",
+    "praxisId": "experiments-2026-05-15-qwen-3-6-plus-as-hermes-system-audit-reviewer",
+    "praxisTitle": "Qwen 3.6 Plus as Hermes system-audit reviewer",
+    "agent": "openclaw",
+    "status": "blocked",
+    "learned": [
+      "OpenClaw did not execute a real runtime. No learning was hallucinated."
+    ],
+    "artifacts": [
+      "praxis:experiments-2026-05-15-qwen-3-6-plus-as-hermes-system-audit-reviewer",
+      "runtime:not-executed"
+    ],
+    "blockers": [
+      "OPENCLAW_LEARNER_COMMAND is not configured. Use mock-openclaw for local safe learning or configure an approved runtime bridge."
+    ],
+    "nextActions": [
+      "Use mock-openclaw for local safe learning, or configure OPENCLAW_LEARNER_COMMAND with an approved runner."
+    ],
+    "sourceUrls": [
+      "https://x.com/boxmining/status/2055167192799535507",
+      "https://x.com/Alibaba_Qwen",
+      "https://chat.qwen.ai/",
+      "https://github.com/QwenLM"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779131558730-51oj5d",
+    "createdAt": "2026-05-18T19:12:38.730Z",
+    "praxisId": "hermes-atlas-335234131-agent-browser-mcp",
+    "praxisTitle": "agent-browser-mcp",
+    "agent": "mock-hermes",
+    "status": "completed",
+    "learned": [
+      "Hermes read Praxis: agent-browser-mcp",
+      "Hermes followed the batch objective: Learn from source-backed Praxis entries and produce concrete next actions.",
+      "Hermes learned the Praxis objective: Agent-browser-mcp is a Model Context Protocol server that enables AI agents to interact directly with a user's active Chrome browser session rather than a sandboxed environment. It works through a local bridge and a Chr…",
+      "Hermes identified the smallest safe first test: Open https://github.com/335234131/agent-browser-mcp, verify install/docs, and run the smallest safe smoke test.",
+      "Hermes mapped the execution path: Open Hermes Atlas project page. → Open canonical GitHub or primary dependency URL. → Verify README, install path, license/risk, and current maintenance signal. → Run the smallest safe local smoke test if permitted. → Write learning report: tried, learned, fai…",
+      "Hermes mapped the stop rule: Kill if source repo is unavailable, docs are missing, install path fails, or evidence stays social-only.",
+      "Hermes found 2 source URL(s) to verify before adoption."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-335234131-agent-browser-mcp",
+      "source-path:.omx/ingestion-runs/2026-05-18T10-09-41-500-hermes-atlas-external/normalized-cards.json",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"hermes-atlas-335234131-agent-browser-mcp\", agent: \"mock-hermes\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Open Hermes Atlas project page.",
+      "Write a follow-up learning report after evidence improves."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/335234131/agent-browser-mcp",
+      "https://github.com/335234131/agent-browser-mcp"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779131558816-pkh36k",
+    "createdAt": "2026-05-18T19:12:38.816Z",
+    "praxisId": "hermes-atlas-335234131-agent-browser-mcp",
+    "praxisTitle": "agent-browser-mcp",
+    "agent": "mock-openclaw",
+    "status": "completed",
+    "learned": [
+      "OpenClaw read Praxis: agent-browser-mcp",
+      "OpenClaw followed the batch objective: Learn from source-backed Praxis entries and produce concrete next actions.",
+      "OpenClaw learned the Praxis objective: Agent-browser-mcp is a Model Context Protocol server that enables AI agents to interact directly with a user's active Chrome browser session rather than a sandboxed environment. It works through a local bridge and a Chr…",
+      "OpenClaw identified the smallest safe first test: Open https://github.com/335234131/agent-browser-mcp, verify install/docs, and run the smallest safe smoke test.",
+      "OpenClaw mapped the execution path: Open Hermes Atlas project page. → Open canonical GitHub or primary dependency URL. → Verify README, install path, license/risk, and current maintenance signal. → Run the smallest safe local smoke test if permitted. → Write learning report: tried, learned, fai…",
+      "OpenClaw mapped the stop rule: Kill if source repo is unavailable, docs are missing, install path fails, or evidence stays social-only.",
+      "OpenClaw found 2 source URL(s) to verify before adoption."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-335234131-agent-browser-mcp",
+      "source-path:.omx/ingestion-runs/2026-05-18T10-09-41-500-hermes-atlas-external/normalized-cards.json",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"hermes-atlas-335234131-agent-browser-mcp\", agent: \"mock-openclaw\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Open Hermes Atlas project page.",
+      "Write a follow-up learning report after evidence improves."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/335234131/agent-browser-mcp",
+      "https://github.com/335234131/agent-browser-mcp"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779131558898-xumbme",
+    "createdAt": "2026-05-18T19:12:38.898Z",
+    "praxisId": "hermes-atlas-335234131-agent-browser-mcp",
+    "praxisTitle": "agent-browser-mcp",
+    "agent": "hermes",
+    "status": "blocked",
+    "learned": [
+      "Hermes did not execute a real runtime. No learning was hallucinated."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-335234131-agent-browser-mcp",
+      "runtime:not-executed"
+    ],
+    "blockers": [
+      "HERMES_LEARNER_COMMAND is not configured. Use mock-hermes for local safe learning or configure an approved runtime bridge."
+    ],
+    "nextActions": [
+      "Use mock-hermes for local safe learning, or configure HERMES_LEARNER_COMMAND with an approved runner."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/335234131/agent-browser-mcp",
+      "https://github.com/335234131/agent-browser-mcp"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779131558987-vh6a30",
+    "createdAt": "2026-05-18T19:12:38.987Z",
+    "praxisId": "hermes-atlas-335234131-agent-browser-mcp",
+    "praxisTitle": "agent-browser-mcp",
+    "agent": "openclaw",
+    "status": "blocked",
+    "learned": [
+      "OpenClaw did not execute a real runtime. No learning was hallucinated."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-335234131-agent-browser-mcp",
+      "runtime:not-executed"
+    ],
+    "blockers": [
+      "OPENCLAW_LEARNER_COMMAND is not configured. Use mock-openclaw for local safe learning or configure an approved runtime bridge."
+    ],
+    "nextActions": [
+      "Use mock-openclaw for local safe learning, or configure OPENCLAW_LEARNER_COMMAND with an approved runner."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/335234131/agent-browser-mcp",
+      "https://github.com/335234131/agent-browser-mcp"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779131559075-dz8ia1",
+    "createdAt": "2026-05-18T19:12:39.075Z",
+    "praxisId": "hermes-atlas-mukul975-anthropic-cybersecurity-skills",
+    "praxisTitle": "Anthropic-Cybersecurity-Skills",
+    "agent": "mock-hermes",
+    "status": "completed",
+    "learned": [
+      "Hermes read Praxis: Anthropic-Cybersecurity-Skills",
+      "Hermes followed the batch objective: Learn from source-backed Praxis entries and produce concrete next actions.",
+      "Hermes learned the Praxis objective: Anthropic Cybersecurity Skills is an open-source library of 754 structured skills designed to provide AI agents with the domain-specific workflows of a senior security analyst. Each skill follows the agentskills.io stan…",
+      "Hermes identified the smallest safe first test: Open https://github.com/mukul975/Anthropic-Cybersecurity-Skills, verify install/docs, and run the smallest safe smoke test.",
+      "Hermes mapped the execution path: Open Hermes Atlas project page. → Open canonical GitHub or primary dependency URL. → Verify README, install path, license/risk, and current maintenance signal. → Run the smallest safe local smoke test if permitted. → Write learning report: tried, learned, fai…",
+      "Hermes mapped the stop rule: Kill if source repo is unavailable, docs are missing, install path fails, or evidence stays social-only.",
+      "Hermes found 2 source URL(s) to verify before adoption."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-mukul975-anthropic-cybersecurity-skills",
+      "source-path:.omx/ingestion-runs/2026-05-18T10-09-41-500-hermes-atlas-external/normalized-cards.json",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"hermes-atlas-mukul975-anthropic-cybersecurity-skills\", agent: \"mock-hermes\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Open Hermes Atlas project page.",
+      "Write a follow-up learning report after evidence improves."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/mukul975/Anthropic-Cybersecurity-Skills",
+      "https://github.com/mukul975/Anthropic-Cybersecurity-Skills"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779131559160-img8r2",
+    "createdAt": "2026-05-18T19:12:39.160Z",
+    "praxisId": "hermes-atlas-mukul975-anthropic-cybersecurity-skills",
+    "praxisTitle": "Anthropic-Cybersecurity-Skills",
+    "agent": "mock-openclaw",
+    "status": "completed",
+    "learned": [
+      "OpenClaw read Praxis: Anthropic-Cybersecurity-Skills",
+      "OpenClaw followed the batch objective: Learn from source-backed Praxis entries and produce concrete next actions.",
+      "OpenClaw learned the Praxis objective: Anthropic Cybersecurity Skills is an open-source library of 754 structured skills designed to provide AI agents with the domain-specific workflows of a senior security analyst. Each skill follows the agentskills.io stan…",
+      "OpenClaw identified the smallest safe first test: Open https://github.com/mukul975/Anthropic-Cybersecurity-Skills, verify install/docs, and run the smallest safe smoke test.",
+      "OpenClaw mapped the execution path: Open Hermes Atlas project page. → Open canonical GitHub or primary dependency URL. → Verify README, install path, license/risk, and current maintenance signal. → Run the smallest safe local smoke test if permitted. → Write learning report: tried, learned, fai…",
+      "OpenClaw mapped the stop rule: Kill if source repo is unavailable, docs are missing, install path fails, or evidence stays social-only.",
+      "OpenClaw found 2 source URL(s) to verify before adoption."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-mukul975-anthropic-cybersecurity-skills",
+      "source-path:.omx/ingestion-runs/2026-05-18T10-09-41-500-hermes-atlas-external/normalized-cards.json",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"hermes-atlas-mukul975-anthropic-cybersecurity-skills\", agent: \"mock-openclaw\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Open Hermes Atlas project page.",
+      "Write a follow-up learning report after evidence improves."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/mukul975/Anthropic-Cybersecurity-Skills",
+      "https://github.com/mukul975/Anthropic-Cybersecurity-Skills"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779131559245-4nqh4r",
+    "createdAt": "2026-05-18T19:12:39.245Z",
+    "praxisId": "hermes-atlas-mukul975-anthropic-cybersecurity-skills",
+    "praxisTitle": "Anthropic-Cybersecurity-Skills",
+    "agent": "hermes",
+    "status": "blocked",
+    "learned": [
+      "Hermes did not execute a real runtime. No learning was hallucinated."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-mukul975-anthropic-cybersecurity-skills",
+      "runtime:not-executed"
+    ],
+    "blockers": [
+      "HERMES_LEARNER_COMMAND is not configured. Use mock-hermes for local safe learning or configure an approved runtime bridge."
+    ],
+    "nextActions": [
+      "Use mock-hermes for local safe learning, or configure HERMES_LEARNER_COMMAND with an approved runner."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/mukul975/Anthropic-Cybersecurity-Skills",
+      "https://github.com/mukul975/Anthropic-Cybersecurity-Skills"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779131559330-qizhju",
+    "createdAt": "2026-05-18T19:12:39.330Z",
+    "praxisId": "hermes-atlas-mukul975-anthropic-cybersecurity-skills",
+    "praxisTitle": "Anthropic-Cybersecurity-Skills",
+    "agent": "openclaw",
+    "status": "blocked",
+    "learned": [
+      "OpenClaw did not execute a real runtime. No learning was hallucinated."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-mukul975-anthropic-cybersecurity-skills",
+      "runtime:not-executed"
+    ],
+    "blockers": [
+      "OPENCLAW_LEARNER_COMMAND is not configured. Use mock-openclaw for local safe learning or configure an approved runtime bridge."
+    ],
+    "nextActions": [
+      "Use mock-openclaw for local safe learning, or configure OPENCLAW_LEARNER_COMMAND with an approved runner."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/mukul975/Anthropic-Cybersecurity-Skills",
+      "https://github.com/mukul975/Anthropic-Cybersecurity-Skills"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779131559408-n5ubcz",
+    "createdAt": "2026-05-18T19:12:39.408Z",
+    "praxisId": "hermes-atlas-nousresearch-atropos",
+    "praxisTitle": "atropos",
+    "agent": "mock-hermes",
+    "status": "completed",
+    "learned": [
+      "Hermes read Praxis: atropos",
+      "Hermes followed the batch objective: Learn from source-backed Praxis entries and produce concrete next actions.",
+      "Hermes learned the Praxis objective: Atropos is an environment microservice framework designed for asynchronous reinforcement learning (RL) with large language models. It operates by setting up environments as services and utilizing a trajectory API to man…",
+      "Hermes identified the smallest safe first test: Open https://github.com/NousResearch/atropos, verify install/docs, and run the smallest safe smoke test.",
+      "Hermes mapped the execution path: Open Hermes Atlas project page. → Open canonical GitHub or primary dependency URL. → Verify README, install path, license/risk, and current maintenance signal. → Run the smallest safe local smoke test if permitted. → Write learning report: tried, learned, fai…",
+      "Hermes mapped the stop rule: Kill if source repo is unavailable, docs are missing, install path fails, or evidence stays social-only.",
+      "Hermes found 2 source URL(s) to verify before adoption."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-nousresearch-atropos",
+      "source-path:.omx/ingestion-runs/2026-05-18T10-09-41-500-hermes-atlas-external/normalized-cards.json",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"hermes-atlas-nousresearch-atropos\", agent: \"mock-hermes\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Open Hermes Atlas project page.",
+      "Write a follow-up learning report after evidence improves."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/NousResearch/atropos",
+      "https://github.com/NousResearch/atropos"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779131559488-u5bhe7",
+    "createdAt": "2026-05-18T19:12:39.488Z",
+    "praxisId": "hermes-atlas-nousresearch-atropos",
+    "praxisTitle": "atropos",
+    "agent": "mock-openclaw",
+    "status": "completed",
+    "learned": [
+      "OpenClaw read Praxis: atropos",
+      "OpenClaw followed the batch objective: Learn from source-backed Praxis entries and produce concrete next actions.",
+      "OpenClaw learned the Praxis objective: Atropos is an environment microservice framework designed for asynchronous reinforcement learning (RL) with large language models. It operates by setting up environments as services and utilizing a trajectory API to man…",
+      "OpenClaw identified the smallest safe first test: Open https://github.com/NousResearch/atropos, verify install/docs, and run the smallest safe smoke test.",
+      "OpenClaw mapped the execution path: Open Hermes Atlas project page. → Open canonical GitHub or primary dependency URL. → Verify README, install path, license/risk, and current maintenance signal. → Run the smallest safe local smoke test if permitted. → Write learning report: tried, learned, fai…",
+      "OpenClaw mapped the stop rule: Kill if source repo is unavailable, docs are missing, install path fails, or evidence stays social-only.",
+      "OpenClaw found 2 source URL(s) to verify before adoption."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-nousresearch-atropos",
+      "source-path:.omx/ingestion-runs/2026-05-18T10-09-41-500-hermes-atlas-external/normalized-cards.json",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"hermes-atlas-nousresearch-atropos\", agent: \"mock-openclaw\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Open Hermes Atlas project page.",
+      "Write a follow-up learning report after evidence improves."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/NousResearch/atropos",
+      "https://github.com/NousResearch/atropos"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779131559577-ozg461",
+    "createdAt": "2026-05-18T19:12:39.577Z",
+    "praxisId": "hermes-atlas-nousresearch-atropos",
+    "praxisTitle": "atropos",
+    "agent": "hermes",
+    "status": "blocked",
+    "learned": [
+      "Hermes did not execute a real runtime. No learning was hallucinated."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-nousresearch-atropos",
+      "runtime:not-executed"
+    ],
+    "blockers": [
+      "HERMES_LEARNER_COMMAND is not configured. Use mock-hermes for local safe learning or configure an approved runtime bridge."
+    ],
+    "nextActions": [
+      "Use mock-hermes for local safe learning, or configure HERMES_LEARNER_COMMAND with an approved runner."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/NousResearch/atropos",
+      "https://github.com/NousResearch/atropos"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779131559658-3gne2g",
+    "createdAt": "2026-05-18T19:12:39.658Z",
+    "praxisId": "hermes-atlas-nousresearch-atropos",
+    "praxisTitle": "atropos",
+    "agent": "openclaw",
+    "status": "blocked",
+    "learned": [
+      "OpenClaw did not execute a real runtime. No learning was hallucinated."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-nousresearch-atropos",
+      "runtime:not-executed"
+    ],
+    "blockers": [
+      "OPENCLAW_LEARNER_COMMAND is not configured. Use mock-openclaw for local safe learning or configure an approved runtime bridge."
+    ],
+    "nextActions": [
+      "Use mock-openclaw for local safe learning, or configure OPENCLAW_LEARNER_COMMAND with an approved runner."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/NousResearch/atropos",
+      "https://github.com/NousResearch/atropos"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779131559737-m88mnf",
+    "createdAt": "2026-05-18T19:12:39.737Z",
+    "praxisId": "hermes-atlas-greyhaven-ai-autocontext",
+    "praxisTitle": "autocontext",
+    "agent": "mock-hermes",
+    "status": "completed",
+    "learned": [
+      "Hermes read Praxis: autocontext",
+      "Hermes followed the batch objective: Learn from source-backed Praxis entries and produce concrete next actions.",
+      "Hermes learned the Praxis objective: Autocontext is a recursive self-improving harness that enables agents to succeed on complex tasks through iterative refinement. It operates by executing a goal against real-world evaluations, retaining successful strate…",
+      "Hermes identified the smallest safe first test: Open https://github.com/greyhaven-ai/autocontext, verify install/docs, and run the smallest safe smoke test.",
+      "Hermes mapped the execution path: Open Hermes Atlas project page. → Open canonical GitHub or primary dependency URL. → Verify README, install path, license/risk, and current maintenance signal. → Run the smallest safe local smoke test if permitted. → Write learning report: tried, learned, fai…",
+      "Hermes mapped the stop rule: Kill if source repo is unavailable, docs are missing, install path fails, or evidence stays social-only.",
+      "Hermes found 2 source URL(s) to verify before adoption."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-greyhaven-ai-autocontext",
+      "source-path:.omx/ingestion-runs/2026-05-18T10-09-41-500-hermes-atlas-external/normalized-cards.json",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"hermes-atlas-greyhaven-ai-autocontext\", agent: \"mock-hermes\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Open Hermes Atlas project page.",
+      "Write a follow-up learning report after evidence improves."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/greyhaven-ai/autocontext",
+      "https://github.com/greyhaven-ai/autocontext"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779131559817-h1xpfh",
+    "createdAt": "2026-05-18T19:12:39.817Z",
+    "praxisId": "hermes-atlas-greyhaven-ai-autocontext",
+    "praxisTitle": "autocontext",
+    "agent": "mock-openclaw",
+    "status": "completed",
+    "learned": [
+      "OpenClaw read Praxis: autocontext",
+      "OpenClaw followed the batch objective: Learn from source-backed Praxis entries and produce concrete next actions.",
+      "OpenClaw learned the Praxis objective: Autocontext is a recursive self-improving harness that enables agents to succeed on complex tasks through iterative refinement. It operates by executing a goal against real-world evaluations, retaining successful strate…",
+      "OpenClaw identified the smallest safe first test: Open https://github.com/greyhaven-ai/autocontext, verify install/docs, and run the smallest safe smoke test.",
+      "OpenClaw mapped the execution path: Open Hermes Atlas project page. → Open canonical GitHub or primary dependency URL. → Verify README, install path, license/risk, and current maintenance signal. → Run the smallest safe local smoke test if permitted. → Write learning report: tried, learned, fai…",
+      "OpenClaw mapped the stop rule: Kill if source repo is unavailable, docs are missing, install path fails, or evidence stays social-only.",
+      "OpenClaw found 2 source URL(s) to verify before adoption."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-greyhaven-ai-autocontext",
+      "source-path:.omx/ingestion-runs/2026-05-18T10-09-41-500-hermes-atlas-external/normalized-cards.json",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"hermes-atlas-greyhaven-ai-autocontext\", agent: \"mock-openclaw\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Open Hermes Atlas project page.",
+      "Write a follow-up learning report after evidence improves."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/greyhaven-ai/autocontext",
+      "https://github.com/greyhaven-ai/autocontext"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779131559896-t4ubct",
+    "createdAt": "2026-05-18T19:12:39.896Z",
+    "praxisId": "hermes-atlas-greyhaven-ai-autocontext",
+    "praxisTitle": "autocontext",
+    "agent": "hermes",
+    "status": "blocked",
+    "learned": [
+      "Hermes did not execute a real runtime. No learning was hallucinated."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-greyhaven-ai-autocontext",
+      "runtime:not-executed"
+    ],
+    "blockers": [
+      "HERMES_LEARNER_COMMAND is not configured. Use mock-hermes for local safe learning or configure an approved runtime bridge."
+    ],
+    "nextActions": [
+      "Use mock-hermes for local safe learning, or configure HERMES_LEARNER_COMMAND with an approved runner."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/greyhaven-ai/autocontext",
+      "https://github.com/greyhaven-ai/autocontext"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779131559974-um1e7n",
+    "createdAt": "2026-05-18T19:12:39.974Z",
+    "praxisId": "hermes-atlas-greyhaven-ai-autocontext",
+    "praxisTitle": "autocontext",
+    "agent": "openclaw",
+    "status": "blocked",
+    "learned": [
+      "OpenClaw did not execute a real runtime. No learning was hallucinated."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-greyhaven-ai-autocontext",
+      "runtime:not-executed"
+    ],
+    "blockers": [
+      "OPENCLAW_LEARNER_COMMAND is not configured. Use mock-openclaw for local safe learning or configure an approved runtime bridge."
+    ],
+    "nextActions": [
+      "Use mock-openclaw for local safe learning, or configure OPENCLAW_LEARNER_COMMAND with an approved runner."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/greyhaven-ai/autocontext",
+      "https://github.com/greyhaven-ai/autocontext"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779133227541-h87ya6",
+    "createdAt": "2026-05-18T19:40:27.541Z",
+    "praxisId": "experiments-2026-05-16-mobile-remote-agent-ops-bakeoff-current-termius-tmux-vs-c3",
+    "praxisTitle": "Mobile remote-agent ops bakeoff: current Termius/tmux vs C3",
+    "agent": "mock-hermes",
+    "status": "completed",
+    "learned": [
+      "Hermes read Praxis: Mobile remote-agent ops bakeoff: current Termius/tmux vs C3",
+      "Hermes followed the batch objective: Study real-world agent workflows overnight, extract reusable lessons, and draft skills only from evidence-backed Praxis.",
+      "Hermes learned the reusable workflow: A dedicated mobile coding-agent IDE only matters if it beats the existing Termius+tmux workflow on visibility or handoff.",
+      "Hermes identified the smallest safe first test: Perform the same small repo inspection/fix from phone workflow using current setup; compare against C3 only if available without major setup.",
+      "Hermes mapped the execution path: Perform the same small repo inspection/fix from phone workflow using current setup; compare against C3 only if available without major setup.",
+      "Hermes mapped the verification/stop rule: Kill if it requires account/setup friction or does not beat Termius+tmux for one real fix.",
+      "Hermes found 3 evidence URL(s) to verify before skill adoption."
+    ],
+    "artifacts": [
+      "praxis:experiments-2026-05-16-mobile-remote-agent-ops-bakeoff-current-termius-tmux-vs-c3",
+      "source-path:Experiments/2026-05-16 mobile-remote-agent-ops-bakeoff-current-termius-tmux-vs-c3.md",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"experiments-2026-05-16-mobile-remote-agent-ops-bakeoff-current-termius-tmux-vs-c3\", agent: \"mock-hermes\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Perform the same small repo inspection/fix from phone workflow using current setup; compare against C3 only if available without major setup.",
+      "Convert this pattern into a skill draft only after source evidence and verification stay strong."
+    ],
+    "sourceUrls": [
+      "https://x.com/naa_rang/status/2055589765756686382",
+      "https://x.com/fcoury/status/2055315105055694869",
+      "https://getc3.app"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779133227647-g71hev",
+    "createdAt": "2026-05-18T19:40:27.647Z",
+    "praxisId": "experiments-2026-05-16-mobile-remote-agent-ops-bakeoff-current-termius-tmux-vs-c3",
+    "praxisTitle": "Mobile remote-agent ops bakeoff: current Termius/tmux vs C3",
+    "agent": "mock-openclaw",
+    "status": "completed",
+    "learned": [
+      "OpenClaw read Praxis: Mobile remote-agent ops bakeoff: current Termius/tmux vs C3",
+      "OpenClaw followed the batch objective: Study real-world agent workflows overnight, extract reusable lessons, and draft skills only from evidence-backed Praxis.",
+      "OpenClaw learned the reusable workflow: A dedicated mobile coding-agent IDE only matters if it beats the existing Termius+tmux workflow on visibility or handoff.",
+      "OpenClaw identified the smallest safe first test: Perform the same small repo inspection/fix from phone workflow using current setup; compare against C3 only if available without major setup.",
+      "OpenClaw mapped the execution path: Perform the same small repo inspection/fix from phone workflow using current setup; compare against C3 only if available without major setup.",
+      "OpenClaw mapped the verification/stop rule: Kill if it requires account/setup friction or does not beat Termius+tmux for one real fix.",
+      "OpenClaw found 3 evidence URL(s) to verify before skill adoption."
+    ],
+    "artifacts": [
+      "praxis:experiments-2026-05-16-mobile-remote-agent-ops-bakeoff-current-termius-tmux-vs-c3",
+      "source-path:Experiments/2026-05-16 mobile-remote-agent-ops-bakeoff-current-termius-tmux-vs-c3.md",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"experiments-2026-05-16-mobile-remote-agent-ops-bakeoff-current-termius-tmux-vs-c3\", agent: \"mock-openclaw\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Perform the same small repo inspection/fix from phone workflow using current setup; compare against C3 only if available without major setup.",
+      "Convert this pattern into a skill draft only after source evidence and verification stay strong."
+    ],
+    "sourceUrls": [
+      "https://x.com/naa_rang/status/2055589765756686382",
+      "https://x.com/fcoury/status/2055315105055694869",
+      "https://getc3.app"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779133227767-6ekz8a",
+    "createdAt": "2026-05-18T19:40:27.767Z",
+    "praxisId": "experiments-2026-05-16-mobile-remote-agent-ops-bakeoff-current-termius-tmux-vs-c3",
+    "praxisTitle": "Mobile remote-agent ops bakeoff: current Termius/tmux vs C3",
+    "agent": "hermes",
+    "status": "blocked",
+    "learned": [
+      "Hermes did not execute a real runtime. No learning was hallucinated."
+    ],
+    "artifacts": [
+      "praxis:experiments-2026-05-16-mobile-remote-agent-ops-bakeoff-current-termius-tmux-vs-c3",
+      "runtime:not-executed"
+    ],
+    "blockers": [
+      "HERMES_LEARNER_COMMAND is not configured. Use mock-hermes for local safe learning or configure an approved runtime bridge."
+    ],
+    "nextActions": [
+      "Use mock-hermes for local safe learning, or configure HERMES_LEARNER_COMMAND with an approved runner."
+    ],
+    "sourceUrls": [
+      "https://x.com/naa_rang/status/2055589765756686382",
+      "https://x.com/fcoury/status/2055315105055694869",
+      "https://getc3.app"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779133227875-u7gjfm",
+    "createdAt": "2026-05-18T19:40:27.875Z",
+    "praxisId": "experiments-2026-05-16-mobile-remote-agent-ops-bakeoff-current-termius-tmux-vs-c3",
+    "praxisTitle": "Mobile remote-agent ops bakeoff: current Termius/tmux vs C3",
+    "agent": "openclaw",
+    "status": "blocked",
+    "learned": [
+      "OpenClaw did not execute a real runtime. No learning was hallucinated."
+    ],
+    "artifacts": [
+      "praxis:experiments-2026-05-16-mobile-remote-agent-ops-bakeoff-current-termius-tmux-vs-c3",
+      "runtime:not-executed"
+    ],
+    "blockers": [
+      "OPENCLAW_LEARNER_COMMAND is not configured. Use mock-openclaw for local safe learning or configure an approved runtime bridge."
+    ],
+    "nextActions": [
+      "Use mock-openclaw for local safe learning, or configure OPENCLAW_LEARNER_COMMAND with an approved runner."
+    ],
+    "sourceUrls": [
+      "https://x.com/naa_rang/status/2055589765756686382",
+      "https://x.com/fcoury/status/2055315105055694869",
+      "https://getc3.app"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779133228002-g10z0n",
+    "createdAt": "2026-05-18T19:40:28.002Z",
+    "praxisId": "experiments-2026-05-15-n8n-style-multi-agent-research-flow-for-competitor-updates",
+    "praxisTitle": "n8n-style multi-agent research flow for competitor updates",
+    "agent": "mock-hermes",
+    "status": "completed",
+    "learned": [
+      "Hermes read Praxis: n8n-style multi-agent research flow for competitor updates",
+      "Hermes followed the batch objective: Study real-world agent workflows overnight, extract reusable lessons, and draft skills only from evidence-backed Praxis.",
+      "Hermes learned the reusable workflow: A simple multi-agent research workflow can convert competitor/product monitoring into higher-quality Agent Radar actions than raw X doomscroll cards.",
+      "Hermes identified the smallest safe first test: Create a 5-source monitor that detects one product update and has Hermes write a sourced action with kill/next-step fields.",
+      "Hermes mapped the execution path: Create a 5-source monitor that detects one product update and has Hermes write a sourced action with kill/next-step fields.",
+      "Hermes mapped the verification/stop rule: Kill if it produces duplicate noise, misses source URLs, or cannot generate one useful action from 5 monitored sources in a day.",
+      "Hermes found 3 evidence URL(s) to verify before skill adoption."
+    ],
+    "artifacts": [
+      "praxis:experiments-2026-05-15-n8n-style-multi-agent-research-flow-for-competitor-updates",
+      "source-path:Experiments/2026-05-15 n8n-style-multi-agent-research-flow-for-competitor-updates.md",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"experiments-2026-05-15-n8n-style-multi-agent-research-flow-for-competitor-updates\", agent: \"mock-hermes\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Create a 5-source monitor that detects one product update and has Hermes write a sourced action with kill/next-step fields.",
+      "Convert this pattern into a skill draft only after source evidence and verification stay strong."
+    ],
+    "sourceUrls": [
+      "https://x.com/neil_xbt/status/2055168802036576600",
+      "https://n8n.io/",
+      "https://docs.n8n.io/"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779133228176-6stljk",
+    "createdAt": "2026-05-18T19:40:28.176Z",
+    "praxisId": "experiments-2026-05-15-n8n-style-multi-agent-research-flow-for-competitor-updates",
+    "praxisTitle": "n8n-style multi-agent research flow for competitor updates",
+    "agent": "mock-openclaw",
+    "status": "completed",
+    "learned": [
+      "OpenClaw read Praxis: n8n-style multi-agent research flow for competitor updates",
+      "OpenClaw followed the batch objective: Study real-world agent workflows overnight, extract reusable lessons, and draft skills only from evidence-backed Praxis.",
+      "OpenClaw learned the reusable workflow: A simple multi-agent research workflow can convert competitor/product monitoring into higher-quality Agent Radar actions than raw X doomscroll cards.",
+      "OpenClaw identified the smallest safe first test: Create a 5-source monitor that detects one product update and has Hermes write a sourced action with kill/next-step fields.",
+      "OpenClaw mapped the execution path: Create a 5-source monitor that detects one product update and has Hermes write a sourced action with kill/next-step fields.",
+      "OpenClaw mapped the verification/stop rule: Kill if it produces duplicate noise, misses source URLs, or cannot generate one useful action from 5 monitored sources in a day.",
+      "OpenClaw found 3 evidence URL(s) to verify before skill adoption."
+    ],
+    "artifacts": [
+      "praxis:experiments-2026-05-15-n8n-style-multi-agent-research-flow-for-competitor-updates",
+      "source-path:Experiments/2026-05-15 n8n-style-multi-agent-research-flow-for-competitor-updates.md",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"experiments-2026-05-15-n8n-style-multi-agent-research-flow-for-competitor-updates\", agent: \"mock-openclaw\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Create a 5-source monitor that detects one product update and has Hermes write a sourced action with kill/next-step fields.",
+      "Convert this pattern into a skill draft only after source evidence and verification stay strong."
+    ],
+    "sourceUrls": [
+      "https://x.com/neil_xbt/status/2055168802036576600",
+      "https://n8n.io/",
+      "https://docs.n8n.io/"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779133228290-kfu046",
+    "createdAt": "2026-05-18T19:40:28.290Z",
+    "praxisId": "experiments-2026-05-15-n8n-style-multi-agent-research-flow-for-competitor-updates",
+    "praxisTitle": "n8n-style multi-agent research flow for competitor updates",
+    "agent": "hermes",
+    "status": "blocked",
+    "learned": [
+      "Hermes did not execute a real runtime. No learning was hallucinated."
+    ],
+    "artifacts": [
+      "praxis:experiments-2026-05-15-n8n-style-multi-agent-research-flow-for-competitor-updates",
+      "runtime:not-executed"
+    ],
+    "blockers": [
+      "HERMES_LEARNER_COMMAND is not configured. Use mock-hermes for local safe learning or configure an approved runtime bridge."
+    ],
+    "nextActions": [
+      "Use mock-hermes for local safe learning, or configure HERMES_LEARNER_COMMAND with an approved runner."
+    ],
+    "sourceUrls": [
+      "https://x.com/neil_xbt/status/2055168802036576600",
+      "https://n8n.io/",
+      "https://docs.n8n.io/"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779133228388-viwra2",
+    "createdAt": "2026-05-18T19:40:28.388Z",
+    "praxisId": "experiments-2026-05-15-n8n-style-multi-agent-research-flow-for-competitor-updates",
+    "praxisTitle": "n8n-style multi-agent research flow for competitor updates",
+    "agent": "openclaw",
+    "status": "blocked",
+    "learned": [
+      "OpenClaw did not execute a real runtime. No learning was hallucinated."
+    ],
+    "artifacts": [
+      "praxis:experiments-2026-05-15-n8n-style-multi-agent-research-flow-for-competitor-updates",
+      "runtime:not-executed"
+    ],
+    "blockers": [
+      "OPENCLAW_LEARNER_COMMAND is not configured. Use mock-openclaw for local safe learning or configure an approved runtime bridge."
+    ],
+    "nextActions": [
+      "Use mock-openclaw for local safe learning, or configure OPENCLAW_LEARNER_COMMAND with an approved runner."
+    ],
+    "sourceUrls": [
+      "https://x.com/neil_xbt/status/2055168802036576600",
+      "https://n8n.io/",
+      "https://docs.n8n.io/"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779133228491-9s575h",
+    "createdAt": "2026-05-18T19:40:28.491Z",
+    "praxisId": "hermes-atlas-cablate-agentic-mcp-skill",
+    "praxisTitle": "Agentic-MCP-Skill",
+    "agent": "mock-hermes",
+    "status": "completed",
+    "learned": [
+      "Hermes read Praxis: Agentic-MCP-Skill",
+      "Hermes followed the batch objective: Study real-world agent workflows overnight, extract reusable lessons, and draft skills only from evidence-backed Praxis.",
+      "Hermes learned the reusable workflow: Agentic-MCP-Skill is an experimental MCP client and daemon designed to optimize token consumption through a three-layer lazy loading architecture. It implements the AgentSkills.io pattern by progressively disclosing ser…",
+      "Hermes identified the smallest safe first test: Open https://github.com/cablate/Agentic-MCP-Skill, verify install/docs, and run the smallest safe smoke test.",
+      "Hermes mapped the execution path: Open Hermes Atlas project page. → Open canonical GitHub or primary dependency URL. → Verify README, install path, license/risk, and current maintenance signal. → Run the smallest safe local smoke test if permitted. → Write learning report: tried, learned, fai…",
+      "Hermes mapped the verification/stop rule: Kill if source repo is unavailable, docs are missing, install path fails, or evidence stays social-only.",
+      "Hermes found 2 evidence URL(s) to verify before skill adoption."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-cablate-agentic-mcp-skill",
+      "source-path:.omx/ingestion-runs/2026-05-18T10-09-41-500-hermes-atlas-external/normalized-cards.json",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"hermes-atlas-cablate-agentic-mcp-skill\", agent: \"mock-hermes\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Open Hermes Atlas project page.",
+      "Convert this pattern into a skill draft only after source evidence and verification stay strong."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/cablate/Agentic-MCP-Skill",
+      "https://github.com/cablate/Agentic-MCP-Skill"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779133228598-iz7kx5",
+    "createdAt": "2026-05-18T19:40:28.598Z",
+    "praxisId": "hermes-atlas-cablate-agentic-mcp-skill",
+    "praxisTitle": "Agentic-MCP-Skill",
+    "agent": "mock-openclaw",
+    "status": "completed",
+    "learned": [
+      "OpenClaw read Praxis: Agentic-MCP-Skill",
+      "OpenClaw followed the batch objective: Study real-world agent workflows overnight, extract reusable lessons, and draft skills only from evidence-backed Praxis.",
+      "OpenClaw learned the reusable workflow: Agentic-MCP-Skill is an experimental MCP client and daemon designed to optimize token consumption through a three-layer lazy loading architecture. It implements the AgentSkills.io pattern by progressively disclosing ser…",
+      "OpenClaw identified the smallest safe first test: Open https://github.com/cablate/Agentic-MCP-Skill, verify install/docs, and run the smallest safe smoke test.",
+      "OpenClaw mapped the execution path: Open Hermes Atlas project page. → Open canonical GitHub or primary dependency URL. → Verify README, install path, license/risk, and current maintenance signal. → Run the smallest safe local smoke test if permitted. → Write learning report: tried, learned, fai…",
+      "OpenClaw mapped the verification/stop rule: Kill if source repo is unavailable, docs are missing, install path fails, or evidence stays social-only.",
+      "OpenClaw found 2 evidence URL(s) to verify before skill adoption."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-cablate-agentic-mcp-skill",
+      "source-path:.omx/ingestion-runs/2026-05-18T10-09-41-500-hermes-atlas-external/normalized-cards.json",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"hermes-atlas-cablate-agentic-mcp-skill\", agent: \"mock-openclaw\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Open Hermes Atlas project page.",
+      "Convert this pattern into a skill draft only after source evidence and verification stay strong."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/cablate/Agentic-MCP-Skill",
+      "https://github.com/cablate/Agentic-MCP-Skill"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779133228693-n529nj",
+    "createdAt": "2026-05-18T19:40:28.693Z",
+    "praxisId": "hermes-atlas-cablate-agentic-mcp-skill",
+    "praxisTitle": "Agentic-MCP-Skill",
+    "agent": "hermes",
+    "status": "blocked",
+    "learned": [
+      "Hermes did not execute a real runtime. No learning was hallucinated."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-cablate-agentic-mcp-skill",
+      "runtime:not-executed"
+    ],
+    "blockers": [
+      "HERMES_LEARNER_COMMAND is not configured. Use mock-hermes for local safe learning or configure an approved runtime bridge."
+    ],
+    "nextActions": [
+      "Use mock-hermes for local safe learning, or configure HERMES_LEARNER_COMMAND with an approved runner."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/cablate/Agentic-MCP-Skill",
+      "https://github.com/cablate/Agentic-MCP-Skill"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779133228788-2f9f5e",
+    "createdAt": "2026-05-18T19:40:28.788Z",
+    "praxisId": "hermes-atlas-cablate-agentic-mcp-skill",
+    "praxisTitle": "Agentic-MCP-Skill",
+    "agent": "openclaw",
+    "status": "blocked",
+    "learned": [
+      "OpenClaw did not execute a real runtime. No learning was hallucinated."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-cablate-agentic-mcp-skill",
+      "runtime:not-executed"
+    ],
+    "blockers": [
+      "OPENCLAW_LEARNER_COMMAND is not configured. Use mock-openclaw for local safe learning or configure an approved runtime bridge."
+    ],
+    "nextActions": [
+      "Use mock-openclaw for local safe learning, or configure OPENCLAW_LEARNER_COMMAND with an approved runner."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/cablate/Agentic-MCP-Skill",
+      "https://github.com/cablate/Agentic-MCP-Skill"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779133228886-27y2iq",
+    "createdAt": "2026-05-18T19:40:28.886Z",
+    "praxisId": "hermes-atlas-rodmarkun-anihermes",
+    "praxisTitle": "anihermes",
+    "agent": "mock-hermes",
+    "status": "completed",
+    "learned": [
+      "Hermes read Praxis: anihermes",
+      "Hermes followed the batch objective: Study real-world agent workflows overnight, extract reusable lessons, and draft skills only from evidence-backed Praxis.",
+      "Hermes learned the reusable workflow: AniHermes is a natural language anime media server and tracker built on the Hermes Agent framework. It leverages LLM orchestration to manage downloads via qBittorrent, track series progress, and organize local libraries…",
+      "Hermes identified the smallest safe first test: Open https://github.com/rodmarkun/anihermes, verify install/docs, and run the smallest safe smoke test.",
+      "Hermes mapped the execution path: Open Hermes Atlas project page. → Open canonical GitHub or primary dependency URL. → Verify README, install path, license/risk, and current maintenance signal. → Run the smallest safe local smoke test if permitted. → Write learning report: tried, learned, fai…",
+      "Hermes mapped the verification/stop rule: Kill if source repo is unavailable, docs are missing, install path fails, or evidence stays social-only.",
+      "Hermes found 2 evidence URL(s) to verify before skill adoption."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-rodmarkun-anihermes",
+      "source-path:.omx/ingestion-runs/2026-05-18T10-09-41-500-hermes-atlas-external/normalized-cards.json",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"hermes-atlas-rodmarkun-anihermes\", agent: \"mock-hermes\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Open Hermes Atlas project page.",
+      "Convert this pattern into a skill draft only after source evidence and verification stay strong."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/rodmarkun/anihermes",
+      "https://github.com/rodmarkun/anihermes"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779133228979-6nnpvo",
+    "createdAt": "2026-05-18T19:40:28.979Z",
+    "praxisId": "hermes-atlas-rodmarkun-anihermes",
+    "praxisTitle": "anihermes",
+    "agent": "mock-openclaw",
+    "status": "completed",
+    "learned": [
+      "OpenClaw read Praxis: anihermes",
+      "OpenClaw followed the batch objective: Study real-world agent workflows overnight, extract reusable lessons, and draft skills only from evidence-backed Praxis.",
+      "OpenClaw learned the reusable workflow: AniHermes is a natural language anime media server and tracker built on the Hermes Agent framework. It leverages LLM orchestration to manage downloads via qBittorrent, track series progress, and organize local libraries…",
+      "OpenClaw identified the smallest safe first test: Open https://github.com/rodmarkun/anihermes, verify install/docs, and run the smallest safe smoke test.",
+      "OpenClaw mapped the execution path: Open Hermes Atlas project page. → Open canonical GitHub or primary dependency URL. → Verify README, install path, license/risk, and current maintenance signal. → Run the smallest safe local smoke test if permitted. → Write learning report: tried, learned, fai…",
+      "OpenClaw mapped the verification/stop rule: Kill if source repo is unavailable, docs are missing, install path fails, or evidence stays social-only.",
+      "OpenClaw found 2 evidence URL(s) to verify before skill adoption."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-rodmarkun-anihermes",
+      "source-path:.omx/ingestion-runs/2026-05-18T10-09-41-500-hermes-atlas-external/normalized-cards.json",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"hermes-atlas-rodmarkun-anihermes\", agent: \"mock-openclaw\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Open Hermes Atlas project page.",
+      "Convert this pattern into a skill draft only after source evidence and verification stay strong."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/rodmarkun/anihermes",
+      "https://github.com/rodmarkun/anihermes"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779133229093-8jd7uk",
+    "createdAt": "2026-05-18T19:40:29.093Z",
+    "praxisId": "hermes-atlas-rodmarkun-anihermes",
+    "praxisTitle": "anihermes",
+    "agent": "hermes",
+    "status": "blocked",
+    "learned": [
+      "Hermes did not execute a real runtime. No learning was hallucinated."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-rodmarkun-anihermes",
+      "runtime:not-executed"
+    ],
+    "blockers": [
+      "HERMES_LEARNER_COMMAND is not configured. Use mock-hermes for local safe learning or configure an approved runtime bridge."
+    ],
+    "nextActions": [
+      "Use mock-hermes for local safe learning, or configure HERMES_LEARNER_COMMAND with an approved runner."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/rodmarkun/anihermes",
+      "https://github.com/rodmarkun/anihermes"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779133229197-4pby2p",
+    "createdAt": "2026-05-18T19:40:29.197Z",
+    "praxisId": "hermes-atlas-rodmarkun-anihermes",
+    "praxisTitle": "anihermes",
+    "agent": "openclaw",
+    "status": "blocked",
+    "learned": [
+      "OpenClaw did not execute a real runtime. No learning was hallucinated."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-rodmarkun-anihermes",
+      "runtime:not-executed"
+    ],
+    "blockers": [
+      "OPENCLAW_LEARNER_COMMAND is not configured. Use mock-openclaw for local safe learning or configure an approved runtime bridge."
+    ],
+    "nextActions": [
+      "Use mock-openclaw for local safe learning, or configure OPENCLAW_LEARNER_COMMAND with an approved runner."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/rodmarkun/anihermes",
+      "https://github.com/rodmarkun/anihermes"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779133229299-yf0ke3",
+    "createdAt": "2026-05-18T19:40:29.299Z",
+    "praxisId": "hermes-atlas-nousresearch-autonovel",
+    "praxisTitle": "autonovel",
+    "agent": "mock-hermes",
+    "status": "completed",
+    "learned": [
+      "Hermes read Praxis: autonovel",
+      "Hermes followed the batch objective: Study real-world agent workflows overnight, extract reusable lessons, and draft skills only from evidence-backed Praxis.",
+      "Hermes learned the reusable workflow: Autonovel is an autonomous agent pipeline designed to transform a seed concept into a complete, publishable novel. It utilizes a multi-phase workflow that includes world-building, sequential drafting, and an adversarial…",
+      "Hermes identified the smallest safe first test: Open https://github.com/NousResearch/autonovel, verify install/docs, and run the smallest safe smoke test.",
+      "Hermes mapped the execution path: Open Hermes Atlas project page. → Open canonical GitHub or primary dependency URL. → Verify README, install path, license/risk, and current maintenance signal. → Run the smallest safe local smoke test if permitted. → Write learning report: tried, learned, fai…",
+      "Hermes mapped the verification/stop rule: Kill if source repo is unavailable, docs are missing, install path fails, or evidence stays social-only.",
+      "Hermes found 2 evidence URL(s) to verify before skill adoption."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-nousresearch-autonovel",
+      "source-path:.omx/ingestion-runs/2026-05-18T10-09-41-500-hermes-atlas-external/normalized-cards.json",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"hermes-atlas-nousresearch-autonovel\", agent: \"mock-hermes\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Open Hermes Atlas project page.",
+      "Convert this pattern into a skill draft only after source evidence and verification stay strong."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/NousResearch/autonovel",
+      "https://github.com/NousResearch/autonovel"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779133229391-ihi7cv",
+    "createdAt": "2026-05-18T19:40:29.391Z",
+    "praxisId": "hermes-atlas-nousresearch-autonovel",
+    "praxisTitle": "autonovel",
+    "agent": "mock-openclaw",
+    "status": "completed",
+    "learned": [
+      "OpenClaw read Praxis: autonovel",
+      "OpenClaw followed the batch objective: Study real-world agent workflows overnight, extract reusable lessons, and draft skills only from evidence-backed Praxis.",
+      "OpenClaw learned the reusable workflow: Autonovel is an autonomous agent pipeline designed to transform a seed concept into a complete, publishable novel. It utilizes a multi-phase workflow that includes world-building, sequential drafting, and an adversarial…",
+      "OpenClaw identified the smallest safe first test: Open https://github.com/NousResearch/autonovel, verify install/docs, and run the smallest safe smoke test.",
+      "OpenClaw mapped the execution path: Open Hermes Atlas project page. → Open canonical GitHub or primary dependency URL. → Verify README, install path, license/risk, and current maintenance signal. → Run the smallest safe local smoke test if permitted. → Write learning report: tried, learned, fai…",
+      "OpenClaw mapped the verification/stop rule: Kill if source repo is unavailable, docs are missing, install path fails, or evidence stays social-only.",
+      "OpenClaw found 2 evidence URL(s) to verify before skill adoption."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-nousresearch-autonovel",
+      "source-path:.omx/ingestion-runs/2026-05-18T10-09-41-500-hermes-atlas-external/normalized-cards.json",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"hermes-atlas-nousresearch-autonovel\", agent: \"mock-openclaw\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Open Hermes Atlas project page.",
+      "Convert this pattern into a skill draft only after source evidence and verification stay strong."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/NousResearch/autonovel",
+      "https://github.com/NousResearch/autonovel"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779133229488-mdo69z",
+    "createdAt": "2026-05-18T19:40:29.488Z",
+    "praxisId": "hermes-atlas-nousresearch-autonovel",
+    "praxisTitle": "autonovel",
+    "agent": "hermes",
+    "status": "blocked",
+    "learned": [
+      "Hermes did not execute a real runtime. No learning was hallucinated."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-nousresearch-autonovel",
+      "runtime:not-executed"
+    ],
+    "blockers": [
+      "HERMES_LEARNER_COMMAND is not configured. Use mock-hermes for local safe learning or configure an approved runtime bridge."
+    ],
+    "nextActions": [
+      "Use mock-hermes for local safe learning, or configure HERMES_LEARNER_COMMAND with an approved runner."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/NousResearch/autonovel",
+      "https://github.com/NousResearch/autonovel"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779133229587-mbxnzl",
+    "createdAt": "2026-05-18T19:40:29.587Z",
+    "praxisId": "hermes-atlas-nousresearch-autonovel",
+    "praxisTitle": "autonovel",
+    "agent": "openclaw",
+    "status": "blocked",
+    "learned": [
+      "OpenClaw did not execute a real runtime. No learning was hallucinated."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-nousresearch-autonovel",
+      "runtime:not-executed"
+    ],
+    "blockers": [
+      "OPENCLAW_LEARNER_COMMAND is not configured. Use mock-openclaw for local safe learning or configure an approved runtime bridge."
+    ],
+    "nextActions": [
+      "Use mock-openclaw for local safe learning, or configure OPENCLAW_LEARNER_COMMAND with an approved runner."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/NousResearch/autonovel",
+      "https://github.com/NousResearch/autonovel"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779133229693-rsy7fm",
+    "createdAt": "2026-05-18T19:40:29.693Z",
+    "praxisId": "hermes-atlas-0xnyk-awesome-hermes-agent",
+    "praxisTitle": "awesome-hermes-agent",
+    "agent": "mock-hermes",
+    "status": "completed",
+    "learned": [
+      "Hermes read Praxis: awesome-hermes-agent",
+      "Hermes followed the batch objective: Study real-world agent workflows overnight, extract reusable lessons, and draft skills only from evidence-backed Praxis.",
+      "Hermes learned the reusable workflow: Awesome Hermes Agent is a curated repository of resources designed to support the ecosystem of the self-improving Hermes Agent by Nous Research. It centralizes documentation, deployment tools, and a library of community…",
+      "Hermes identified the smallest safe first test: Open https://github.com/0xNyk/awesome-hermes-agent, verify install/docs, and run the smallest safe smoke test.",
+      "Hermes mapped the execution path: Open Hermes Atlas project page. → Open canonical GitHub or primary dependency URL. → Verify README, install path, license/risk, and current maintenance signal. → Run the smallest safe local smoke test if permitted. → Write learning report: tried, learned, fai…",
+      "Hermes mapped the verification/stop rule: Kill if source repo is unavailable, docs are missing, install path fails, or evidence stays social-only.",
+      "Hermes found 2 evidence URL(s) to verify before skill adoption."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-0xnyk-awesome-hermes-agent",
+      "source-path:.omx/ingestion-runs/2026-05-18T10-09-41-500-hermes-atlas-external/normalized-cards.json",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"hermes-atlas-0xnyk-awesome-hermes-agent\", agent: \"mock-hermes\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Open Hermes Atlas project page.",
+      "Convert this pattern into a skill draft only after source evidence and verification stay strong."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/0xNyk/awesome-hermes-agent",
+      "https://github.com/0xNyk/awesome-hermes-agent"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779133229786-kntmfb",
+    "createdAt": "2026-05-18T19:40:29.786Z",
+    "praxisId": "hermes-atlas-0xnyk-awesome-hermes-agent",
+    "praxisTitle": "awesome-hermes-agent",
+    "agent": "mock-openclaw",
+    "status": "completed",
+    "learned": [
+      "OpenClaw read Praxis: awesome-hermes-agent",
+      "OpenClaw followed the batch objective: Study real-world agent workflows overnight, extract reusable lessons, and draft skills only from evidence-backed Praxis.",
+      "OpenClaw learned the reusable workflow: Awesome Hermes Agent is a curated repository of resources designed to support the ecosystem of the self-improving Hermes Agent by Nous Research. It centralizes documentation, deployment tools, and a library of community…",
+      "OpenClaw identified the smallest safe first test: Open https://github.com/0xNyk/awesome-hermes-agent, verify install/docs, and run the smallest safe smoke test.",
+      "OpenClaw mapped the execution path: Open Hermes Atlas project page. → Open canonical GitHub or primary dependency URL. → Verify README, install path, license/risk, and current maintenance signal. → Run the smallest safe local smoke test if permitted. → Write learning report: tried, learned, fai…",
+      "OpenClaw mapped the verification/stop rule: Kill if source repo is unavailable, docs are missing, install path fails, or evidence stays social-only.",
+      "OpenClaw found 2 evidence URL(s) to verify before skill adoption."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-0xnyk-awesome-hermes-agent",
+      "source-path:.omx/ingestion-runs/2026-05-18T10-09-41-500-hermes-atlas-external/normalized-cards.json",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"hermes-atlas-0xnyk-awesome-hermes-agent\", agent: \"mock-openclaw\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Open Hermes Atlas project page.",
+      "Convert this pattern into a skill draft only after source evidence and verification stay strong."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/0xNyk/awesome-hermes-agent",
+      "https://github.com/0xNyk/awesome-hermes-agent"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779133229878-xw1xnh",
+    "createdAt": "2026-05-18T19:40:29.878Z",
+    "praxisId": "hermes-atlas-0xnyk-awesome-hermes-agent",
+    "praxisTitle": "awesome-hermes-agent",
+    "agent": "hermes",
+    "status": "blocked",
+    "learned": [
+      "Hermes did not execute a real runtime. No learning was hallucinated."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-0xnyk-awesome-hermes-agent",
+      "runtime:not-executed"
+    ],
+    "blockers": [
+      "HERMES_LEARNER_COMMAND is not configured. Use mock-hermes for local safe learning or configure an approved runtime bridge."
+    ],
+    "nextActions": [
+      "Use mock-hermes for local safe learning, or configure HERMES_LEARNER_COMMAND with an approved runner."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/0xNyk/awesome-hermes-agent",
+      "https://github.com/0xNyk/awesome-hermes-agent"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779133229980-1vblvf",
+    "createdAt": "2026-05-18T19:40:29.980Z",
+    "praxisId": "hermes-atlas-0xnyk-awesome-hermes-agent",
+    "praxisTitle": "awesome-hermes-agent",
+    "agent": "openclaw",
+    "status": "blocked",
+    "learned": [
+      "OpenClaw did not execute a real runtime. No learning was hallucinated."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-0xnyk-awesome-hermes-agent",
+      "runtime:not-executed"
+    ],
+    "blockers": [
+      "OPENCLAW_LEARNER_COMMAND is not configured. Use mock-openclaw for local safe learning or configure an approved runtime bridge."
+    ],
+    "nextActions": [
+      "Use mock-openclaw for local safe learning, or configure OPENCLAW_LEARNER_COMMAND with an approved runner."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/0xNyk/awesome-hermes-agent",
+      "https://github.com/0xNyk/awesome-hermes-agent"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779133230099-end1q4",
+    "createdAt": "2026-05-18T19:40:30.099Z",
+    "praxisId": "hermes-atlas-supermodeltools-bigiron",
+    "praxisTitle": "bigiron",
+    "agent": "mock-hermes",
+    "status": "completed",
+    "learned": [
+      "Hermes read Praxis: bigiron",
+      "Hermes followed the batch objective: Study real-world agent workflows overnight, extract reusable lessons, and draft skills only from evidence-backed Praxis.",
+      "Hermes learned the reusable workflow: Big Iron is an experimental AI-native software development system that automates the full development lifecycle through a graph-gated workflow. It integrates Hermes Agent with the Supermodel Code Graph API to replace tr…",
+      "Hermes identified the smallest safe first test: Open https://github.com/supermodeltools/bigiron, verify install/docs, and run the smallest safe smoke test.",
+      "Hermes mapped the execution path: Open Hermes Atlas project page. → Open canonical GitHub or primary dependency URL. → Verify README, install path, license/risk, and current maintenance signal. → Run the smallest safe local smoke test if permitted. → Write learning report: tried, learned, fai…",
+      "Hermes mapped the verification/stop rule: Kill if source repo is unavailable, docs are missing, install path fails, or evidence stays social-only.",
+      "Hermes found 2 evidence URL(s) to verify before skill adoption."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-supermodeltools-bigiron",
+      "source-path:.omx/ingestion-runs/2026-05-18T10-09-41-500-hermes-atlas-external/normalized-cards.json",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"hermes-atlas-supermodeltools-bigiron\", agent: \"mock-hermes\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Open Hermes Atlas project page.",
+      "Convert this pattern into a skill draft only after source evidence and verification stay strong."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/supermodeltools/bigiron",
+      "https://github.com/supermodeltools/bigiron"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779133230225-etkvlb",
+    "createdAt": "2026-05-18T19:40:30.225Z",
+    "praxisId": "hermes-atlas-supermodeltools-bigiron",
+    "praxisTitle": "bigiron",
+    "agent": "mock-openclaw",
+    "status": "completed",
+    "learned": [
+      "OpenClaw read Praxis: bigiron",
+      "OpenClaw followed the batch objective: Study real-world agent workflows overnight, extract reusable lessons, and draft skills only from evidence-backed Praxis.",
+      "OpenClaw learned the reusable workflow: Big Iron is an experimental AI-native software development system that automates the full development lifecycle through a graph-gated workflow. It integrates Hermes Agent with the Supermodel Code Graph API to replace tr…",
+      "OpenClaw identified the smallest safe first test: Open https://github.com/supermodeltools/bigiron, verify install/docs, and run the smallest safe smoke test.",
+      "OpenClaw mapped the execution path: Open Hermes Atlas project page. → Open canonical GitHub or primary dependency URL. → Verify README, install path, license/risk, and current maintenance signal. → Run the smallest safe local smoke test if permitted. → Write learning report: tried, learned, fai…",
+      "OpenClaw mapped the verification/stop rule: Kill if source repo is unavailable, docs are missing, install path fails, or evidence stays social-only.",
+      "OpenClaw found 2 evidence URL(s) to verify before skill adoption."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-supermodeltools-bigiron",
+      "source-path:.omx/ingestion-runs/2026-05-18T10-09-41-500-hermes-atlas-external/normalized-cards.json",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"hermes-atlas-supermodeltools-bigiron\", agent: \"mock-openclaw\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Open Hermes Atlas project page.",
+      "Convert this pattern into a skill draft only after source evidence and verification stay strong."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/supermodeltools/bigiron",
+      "https://github.com/supermodeltools/bigiron"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779133230330-4h9drn",
+    "createdAt": "2026-05-18T19:40:30.330Z",
+    "praxisId": "hermes-atlas-supermodeltools-bigiron",
+    "praxisTitle": "bigiron",
+    "agent": "hermes",
+    "status": "blocked",
+    "learned": [
+      "Hermes did not execute a real runtime. No learning was hallucinated."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-supermodeltools-bigiron",
+      "runtime:not-executed"
+    ],
+    "blockers": [
+      "HERMES_LEARNER_COMMAND is not configured. Use mock-hermes for local safe learning or configure an approved runtime bridge."
+    ],
+    "nextActions": [
+      "Use mock-hermes for local safe learning, or configure HERMES_LEARNER_COMMAND with an approved runner."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/supermodeltools/bigiron",
+      "https://github.com/supermodeltools/bigiron"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779133230422-amfv7n",
+    "createdAt": "2026-05-18T19:40:30.422Z",
+    "praxisId": "hermes-atlas-supermodeltools-bigiron",
+    "praxisTitle": "bigiron",
+    "agent": "openclaw",
+    "status": "blocked",
+    "learned": [
+      "OpenClaw did not execute a real runtime. No learning was hallucinated."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-supermodeltools-bigiron",
+      "runtime:not-executed"
+    ],
+    "blockers": [
+      "OPENCLAW_LEARNER_COMMAND is not configured. Use mock-openclaw for local safe learning or configure an approved runtime bridge."
+    ],
+    "nextActions": [
+      "Use mock-openclaw for local safe learning, or configure OPENCLAW_LEARNER_COMMAND with an approved runner."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/supermodeltools/bigiron",
+      "https://github.com/supermodeltools/bigiron"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779133230520-zvob87",
+    "createdAt": "2026-05-18T19:40:30.520Z",
+    "praxisId": "hermes-atlas-black-forest-labs-skills",
+    "praxisTitle": "black-forest-labs/skills",
+    "agent": "mock-hermes",
+    "status": "completed",
+    "learned": [
+      "Hermes read Praxis: black-forest-labs/skills",
+      "Hermes followed the batch objective: Study real-world agent workflows overnight, extract reusable lessons, and draft skills only from evidence-backed Praxis.",
+      "Hermes learned the reusable workflow: This project provides official image generation skills for FLUX models, offering standardized prompting guidelines and API integration patterns following the agentskills.io specification. It functions as a technical res…",
+      "Hermes identified the smallest safe first test: Open https://github.com/black-forest-labs/skills, verify install/docs, and run the smallest safe smoke test.",
+      "Hermes mapped the execution path: Open Hermes Atlas project page. → Open canonical GitHub or primary dependency URL. → Verify README, install path, license/risk, and current maintenance signal. → Run the smallest safe local smoke test if permitted. → Write learning report: tried, learned, fai…",
+      "Hermes mapped the verification/stop rule: Kill if source repo is unavailable, docs are missing, install path fails, or evidence stays social-only.",
+      "Hermes found 2 evidence URL(s) to verify before skill adoption."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-black-forest-labs-skills",
+      "source-path:.omx/ingestion-runs/2026-05-18T10-09-41-500-hermes-atlas-external/normalized-cards.json",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"hermes-atlas-black-forest-labs-skills\", agent: \"mock-hermes\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Open Hermes Atlas project page.",
+      "Convert this pattern into a skill draft only after source evidence and verification stay strong."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/black-forest-labs/skills",
+      "https://github.com/black-forest-labs/skills"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779133230619-zp4n2q",
+    "createdAt": "2026-05-18T19:40:30.619Z",
+    "praxisId": "hermes-atlas-black-forest-labs-skills",
+    "praxisTitle": "black-forest-labs/skills",
+    "agent": "mock-openclaw",
+    "status": "completed",
+    "learned": [
+      "OpenClaw read Praxis: black-forest-labs/skills",
+      "OpenClaw followed the batch objective: Study real-world agent workflows overnight, extract reusable lessons, and draft skills only from evidence-backed Praxis.",
+      "OpenClaw learned the reusable workflow: This project provides official image generation skills for FLUX models, offering standardized prompting guidelines and API integration patterns following the agentskills.io specification. It functions as a technical res…",
+      "OpenClaw identified the smallest safe first test: Open https://github.com/black-forest-labs/skills, verify install/docs, and run the smallest safe smoke test.",
+      "OpenClaw mapped the execution path: Open Hermes Atlas project page. → Open canonical GitHub or primary dependency URL. → Verify README, install path, license/risk, and current maintenance signal. → Run the smallest safe local smoke test if permitted. → Write learning report: tried, learned, fai…",
+      "OpenClaw mapped the verification/stop rule: Kill if source repo is unavailable, docs are missing, install path fails, or evidence stays social-only.",
+      "OpenClaw found 2 evidence URL(s) to verify before skill adoption."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-black-forest-labs-skills",
+      "source-path:.omx/ingestion-runs/2026-05-18T10-09-41-500-hermes-atlas-external/normalized-cards.json",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"hermes-atlas-black-forest-labs-skills\", agent: \"mock-openclaw\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Open Hermes Atlas project page.",
+      "Convert this pattern into a skill draft only after source evidence and verification stay strong."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/black-forest-labs/skills",
+      "https://github.com/black-forest-labs/skills"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779133230727-zaztdj",
+    "createdAt": "2026-05-18T19:40:30.727Z",
+    "praxisId": "hermes-atlas-black-forest-labs-skills",
+    "praxisTitle": "black-forest-labs/skills",
+    "agent": "hermes",
+    "status": "blocked",
+    "learned": [
+      "Hermes did not execute a real runtime. No learning was hallucinated."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-black-forest-labs-skills",
+      "runtime:not-executed"
+    ],
+    "blockers": [
+      "HERMES_LEARNER_COMMAND is not configured. Use mock-hermes for local safe learning or configure an approved runtime bridge."
+    ],
+    "nextActions": [
+      "Use mock-hermes for local safe learning, or configure HERMES_LEARNER_COMMAND with an approved runner."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/black-forest-labs/skills",
+      "https://github.com/black-forest-labs/skills"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779133230837-jsvjid",
+    "createdAt": "2026-05-18T19:40:30.837Z",
+    "praxisId": "hermes-atlas-black-forest-labs-skills",
+    "praxisTitle": "black-forest-labs/skills",
+    "agent": "openclaw",
+    "status": "blocked",
+    "learned": [
+      "OpenClaw did not execute a real runtime. No learning was hallucinated."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-black-forest-labs-skills",
+      "runtime:not-executed"
+    ],
+    "blockers": [
+      "OPENCLAW_LEARNER_COMMAND is not configured. Use mock-openclaw for local safe learning or configure an approved runtime bridge."
+    ],
+    "nextActions": [
+      "Use mock-openclaw for local safe learning, or configure OPENCLAW_LEARNER_COMMAND with an approved runner."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/black-forest-labs/skills",
+      "https://github.com/black-forest-labs/skills"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779133230934-q1rtes",
+    "createdAt": "2026-05-18T19:40:30.934Z",
+    "praxisId": "hermes-atlas-armelhbobdad-bmad-module-skill-forge",
+    "praxisTitle": "bmad-module-skill-forge",
+    "agent": "mock-hermes",
+    "status": "completed",
+    "learned": [
+      "Hermes read Praxis: bmad-module-skill-forge",
+      "Hermes followed the batch objective: Study real-world agent workflows overnight, extract reusable lessons, and draft skills only from evidence-backed Praxis.",
+      "Hermes learned the reusable workflow: Skill Forge is a development tool that converts source code, documentation, and developer discourse into verified instruction files for AI agents. It uses Abstract Syntax Tree (AST) analysis to extract precise function…",
+      "Hermes identified the smallest safe first test: Open https://github.com/armelhbobdad/bmad-module-skill-forge, verify install/docs, and run the smallest safe smoke test.",
+      "Hermes mapped the execution path: Open Hermes Atlas project page. → Open canonical GitHub or primary dependency URL. → Verify README, install path, license/risk, and current maintenance signal. → Run the smallest safe local smoke test if permitted. → Write learning report: tried, learned, fai…",
+      "Hermes mapped the verification/stop rule: Kill if source repo is unavailable, docs are missing, install path fails, or evidence stays social-only.",
+      "Hermes found 2 evidence URL(s) to verify before skill adoption."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-armelhbobdad-bmad-module-skill-forge",
+      "source-path:.omx/ingestion-runs/2026-05-18T10-09-41-500-hermes-atlas-external/normalized-cards.json",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"hermes-atlas-armelhbobdad-bmad-module-skill-forge\", agent: \"mock-hermes\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Open Hermes Atlas project page.",
+      "Convert this pattern into a skill draft only after source evidence and verification stay strong."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/armelhbobdad/bmad-module-skill-forge",
+      "https://github.com/armelhbobdad/bmad-module-skill-forge"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779133231032-todbt8",
+    "createdAt": "2026-05-18T19:40:31.032Z",
+    "praxisId": "hermes-atlas-armelhbobdad-bmad-module-skill-forge",
+    "praxisTitle": "bmad-module-skill-forge",
+    "agent": "mock-openclaw",
+    "status": "completed",
+    "learned": [
+      "OpenClaw read Praxis: bmad-module-skill-forge",
+      "OpenClaw followed the batch objective: Study real-world agent workflows overnight, extract reusable lessons, and draft skills only from evidence-backed Praxis.",
+      "OpenClaw learned the reusable workflow: Skill Forge is a development tool that converts source code, documentation, and developer discourse into verified instruction files for AI agents. It uses Abstract Syntax Tree (AST) analysis to extract precise function…",
+      "OpenClaw identified the smallest safe first test: Open https://github.com/armelhbobdad/bmad-module-skill-forge, verify install/docs, and run the smallest safe smoke test.",
+      "OpenClaw mapped the execution path: Open Hermes Atlas project page. → Open canonical GitHub or primary dependency URL. → Verify README, install path, license/risk, and current maintenance signal. → Run the smallest safe local smoke test if permitted. → Write learning report: tried, learned, fai…",
+      "OpenClaw mapped the verification/stop rule: Kill if source repo is unavailable, docs are missing, install path fails, or evidence stays social-only.",
+      "OpenClaw found 2 evidence URL(s) to verify before skill adoption."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-armelhbobdad-bmad-module-skill-forge",
+      "source-path:.omx/ingestion-runs/2026-05-18T10-09-41-500-hermes-atlas-external/normalized-cards.json",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"hermes-atlas-armelhbobdad-bmad-module-skill-forge\", agent: \"mock-openclaw\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Open Hermes Atlas project page.",
+      "Convert this pattern into a skill draft only after source evidence and verification stay strong."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/armelhbobdad/bmad-module-skill-forge",
+      "https://github.com/armelhbobdad/bmad-module-skill-forge"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779133231145-sndlds",
+    "createdAt": "2026-05-18T19:40:31.145Z",
+    "praxisId": "hermes-atlas-armelhbobdad-bmad-module-skill-forge",
+    "praxisTitle": "bmad-module-skill-forge",
+    "agent": "hermes",
+    "status": "blocked",
+    "learned": [
+      "Hermes did not execute a real runtime. No learning was hallucinated."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-armelhbobdad-bmad-module-skill-forge",
+      "runtime:not-executed"
+    ],
+    "blockers": [
+      "HERMES_LEARNER_COMMAND is not configured. Use mock-hermes for local safe learning or configure an approved runtime bridge."
+    ],
+    "nextActions": [
+      "Use mock-hermes for local safe learning, or configure HERMES_LEARNER_COMMAND with an approved runner."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/armelhbobdad/bmad-module-skill-forge",
+      "https://github.com/armelhbobdad/bmad-module-skill-forge"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779133231248-zh1n44",
+    "createdAt": "2026-05-18T19:40:31.248Z",
+    "praxisId": "hermes-atlas-armelhbobdad-bmad-module-skill-forge",
+    "praxisTitle": "bmad-module-skill-forge",
+    "agent": "openclaw",
+    "status": "blocked",
+    "learned": [
+      "OpenClaw did not execute a real runtime. No learning was hallucinated."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-armelhbobdad-bmad-module-skill-forge",
+      "runtime:not-executed"
+    ],
+    "blockers": [
+      "OPENCLAW_LEARNER_COMMAND is not configured. Use mock-openclaw for local safe learning or configure an approved runtime bridge."
+    ],
+    "nextActions": [
+      "Use mock-openclaw for local safe learning, or configure OPENCLAW_LEARNER_COMMAND with an approved runner."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/armelhbobdad/bmad-module-skill-forge",
+      "https://github.com/armelhbobdad/bmad-module-skill-forge"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779133231349-ykupg0",
+    "createdAt": "2026-05-18T19:40:31.349Z",
+    "praxisId": "hermes-atlas-yepyhun-brainstack",
+    "praxisTitle": "Brainstack",
+    "agent": "mock-hermes",
+    "status": "completed",
+    "learned": [
+      "Hermes read Praxis: Brainstack",
+      "Hermes followed the batch objective: Study real-world agent workflows overnight, extract reusable lessons, and draft skills only from evidence-backed Praxis.",
+      "Hermes learned the reusable workflow: Brainstack is a local-first memory kernel designed to provide Hermes agents with a structured memory model rather than a flat data blob. It integrates three distinct memory lines—Hindsight, Graphiti, and MemPalace—to ma…",
+      "Hermes identified the smallest safe first test: Open https://github.com/yepyhun/Brainstack, verify install/docs, and run the smallest safe smoke test.",
+      "Hermes mapped the execution path: Open Hermes Atlas project page. → Open canonical GitHub or primary dependency URL. → Verify README, install path, license/risk, and current maintenance signal. → Run the smallest safe local smoke test if permitted. → Write learning report: tried, learned, fai…",
+      "Hermes mapped the verification/stop rule: Kill if source repo is unavailable, docs are missing, install path fails, or evidence stays social-only.",
+      "Hermes found 2 evidence URL(s) to verify before skill adoption."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-yepyhun-brainstack",
+      "source-path:.omx/ingestion-runs/2026-05-18T10-09-41-500-hermes-atlas-external/normalized-cards.json",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"hermes-atlas-yepyhun-brainstack\", agent: \"mock-hermes\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Open Hermes Atlas project page.",
+      "Convert this pattern into a skill draft only after source evidence and verification stay strong."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/yepyhun/Brainstack",
+      "https://github.com/yepyhun/Brainstack"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779133231454-ao450o",
+    "createdAt": "2026-05-18T19:40:31.454Z",
+    "praxisId": "hermes-atlas-yepyhun-brainstack",
+    "praxisTitle": "Brainstack",
+    "agent": "mock-openclaw",
+    "status": "completed",
+    "learned": [
+      "OpenClaw read Praxis: Brainstack",
+      "OpenClaw followed the batch objective: Study real-world agent workflows overnight, extract reusable lessons, and draft skills only from evidence-backed Praxis.",
+      "OpenClaw learned the reusable workflow: Brainstack is a local-first memory kernel designed to provide Hermes agents with a structured memory model rather than a flat data blob. It integrates three distinct memory lines—Hindsight, Graphiti, and MemPalace—to ma…",
+      "OpenClaw identified the smallest safe first test: Open https://github.com/yepyhun/Brainstack, verify install/docs, and run the smallest safe smoke test.",
+      "OpenClaw mapped the execution path: Open Hermes Atlas project page. → Open canonical GitHub or primary dependency URL. → Verify README, install path, license/risk, and current maintenance signal. → Run the smallest safe local smoke test if permitted. → Write learning report: tried, learned, fai…",
+      "OpenClaw mapped the verification/stop rule: Kill if source repo is unavailable, docs are missing, install path fails, or evidence stays social-only.",
+      "OpenClaw found 2 evidence URL(s) to verify before skill adoption."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-yepyhun-brainstack",
+      "source-path:.omx/ingestion-runs/2026-05-18T10-09-41-500-hermes-atlas-external/normalized-cards.json",
+      "safe-mode:true"
+    ],
+    "commands": [
+      "POST /api/acp/praxis-learning/run { praxisId: \"hermes-atlas-yepyhun-brainstack\", agent: \"mock-openclaw\", safeMode: true }"
+    ],
+    "nextActions": [
+      "Open Hermes Atlas project page.",
+      "Convert this pattern into a skill draft only after source evidence and verification stay strong."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/yepyhun/Brainstack",
+      "https://github.com/yepyhun/Brainstack"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779133231573-neuv2i",
+    "createdAt": "2026-05-18T19:40:31.573Z",
+    "praxisId": "hermes-atlas-yepyhun-brainstack",
+    "praxisTitle": "Brainstack",
+    "agent": "hermes",
+    "status": "blocked",
+    "learned": [
+      "Hermes did not execute a real runtime. No learning was hallucinated."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-yepyhun-brainstack",
+      "runtime:not-executed"
+    ],
+    "blockers": [
+      "HERMES_LEARNER_COMMAND is not configured. Use mock-hermes for local safe learning or configure an approved runtime bridge."
+    ],
+    "nextActions": [
+      "Use mock-hermes for local safe learning, or configure HERMES_LEARNER_COMMAND with an approved runner."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/yepyhun/Brainstack",
+      "https://github.com/yepyhun/Brainstack"
+    ]
+  },
+  {
+    "id": "praxis-learning-1779133231718-4j45z6",
+    "createdAt": "2026-05-18T19:40:31.718Z",
+    "praxisId": "hermes-atlas-yepyhun-brainstack",
+    "praxisTitle": "Brainstack",
+    "agent": "openclaw",
+    "status": "blocked",
+    "learned": [
+      "OpenClaw did not execute a real runtime. No learning was hallucinated."
+    ],
+    "artifacts": [
+      "praxis:hermes-atlas-yepyhun-brainstack",
+      "runtime:not-executed"
+    ],
+    "blockers": [
+      "OPENCLAW_LEARNER_COMMAND is not configured. Use mock-openclaw for local safe learning or configure an approved runtime bridge."
+    ],
+    "nextActions": [
+      "Use mock-openclaw for local safe learning, or configure OPENCLAW_LEARNER_COMMAND with an approved runner."
+    ],
+    "sourceUrls": [
+      "https://hermesatlas.com/projects/yepyhun/Brainstack",
+      "https://github.com/yepyhun/Brainstack"
+    ]
+  }
+]

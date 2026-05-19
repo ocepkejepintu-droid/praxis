@@ -1,0 +1,37 @@
+{
+  "claimId": "claim-8f949949",
+  "statement": "# X signal: The Smart Ape @the_smart_ape · May 17 > use a google account for 15+ years > do X author/context: The Smart Ape @the_smart_ape · May 17 ## Signal The Smart Ape @the_smart_ape · May 17 > use a google account for 15+ years > do everything with it: yo",
+  "sourceCardIds": [
+    "Inbox/2026-05-18 x-signal-the-smart-ape-the-smart-ape-may-17-use-a-google-account-for-15-years-do.md"
+  ],
+  "sourceUrls": [
+    "https://x.com/the_smart_ape/status/2055943973714424170",
+    "https://x.com/the_smart_ape"
+  ],
+  "dependencyUrls": [],
+  "runIds": [
+    "2026-05-18-21-01-28-500-fast"
+  ],
+  "confidence": "low",
+  "firstSeen": "2026-05-18T21:03:55.810Z",
+  "lastReinforced": "2026-05-18T21:03:55.810Z",
+  "verificationStatus": "needs_verification",
+  "evidenceStrength": "weak",
+  "originatingItems": [
+    "idea-ffd12f1d"
+  ],
+  "observedInLanes": [
+    "verify"
+  ],
+  "owner": "Hermes",
+  "latestPriority": "low",
+  "reinforcementCount": 1,
+  "traceability": {
+    "latestSourceNotePath": "Inbox/2026-05-18 x-signal-the-smart-ape-the-smart-ape-may-17-use-a-google-account-for-15-years-do.md",
+    "latestSourceUrls": [
+      "https://x.com/the_smart_ape/status/2055943973714424170",
+      "https://x.com/the_smart_ape"
+    ],
+    "latestRunId": "2026-05-18-21-01-28-500-fast"
+  }
+}

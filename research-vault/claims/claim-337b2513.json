@@ -1,0 +1,33 @@
+{
+  "claimId": "claim-337b2513",
+  "statement": "x_search reported explicit permissions and allow/block list discussion.",
+  "sourceCardIds": [
+    "Inbox/2026-05-17 x-signal-omar-shahine-omarshahine-22h-homeclaw-lets-you-use-any-agent-to-control.md"
+  ],
+  "confidence": "medium",
+  "firstSeen": "2026-05-17T16:54:11.688Z",
+  "lastReinforced": "2026-05-17T17:44:16.689Z",
+  "verificationStatus": "partially_verified",
+  "evidenceStrength": "medium",
+  "sourceUrls": [
+    "https://x.com/OmarShahine/status/2055707450125500514"
+  ],
+  "originatingItems": [
+    "experiment-73bb18cc"
+  ],
+  "dependencyUrls": [],
+  "runIds": [
+    "2026-05-17-16-49-17-830-fast"
+  ],
+  "observedInLanes": [],
+  "owner": "Hermes",
+  "latestPriority": "medium",
+  "reinforcementCount": 1,
+  "traceability": {
+    "latestSourceNotePath": "Inbox/2026-05-17 x-signal-omar-shahine-omarshahine-22h-homeclaw-lets-you-use-any-agent-to-control.md",
+    "latestSourceUrls": [
+      "https://x.com/OmarShahine/status/2055707450125500514"
+    ],
+    "latestRunId": "manual"
+  }
+}

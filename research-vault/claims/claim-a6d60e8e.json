@@ -1,0 +1,37 @@
+{
+  "claimId": "claim-a6d60e8e",
+  "statement": "# X signal: AVB @neural_avb · 22h I have tried deepseek-v4 pro on all sorts of coding tasks.",
+  "sourceCardIds": [
+    "Inbox/2026-05-18 x-signal-avb-neural-avb-22h-i-have-tried-deepseek-v4-pro-on-all-sorts-of-coding-.md"
+  ],
+  "sourceUrls": [
+    "https://x.com/neural_avb/status/2056014407365480654",
+    "https://x.com/neural_avb"
+  ],
+  "dependencyUrls": [],
+  "runIds": [
+    "2026-05-18-12-33-20-370-fast"
+  ],
+  "confidence": "low",
+  "firstSeen": "2026-05-18T12:36:45.868Z",
+  "lastReinforced": "2026-05-18T13:16:29.837Z",
+  "verificationStatus": "needs_verification",
+  "evidenceStrength": "weak",
+  "originatingItems": [
+    "idea-8021a91c"
+  ],
+  "observedInLanes": [
+    "verify"
+  ],
+  "owner": "Hermes",
+  "latestPriority": "low",
+  "reinforcementCount": 1,
+  "traceability": {
+    "latestSourceNotePath": "Inbox/2026-05-18 x-signal-avb-neural-avb-22h-i-have-tried-deepseek-v4-pro-on-all-sorts-of-coding-.md",
+    "latestSourceUrls": [
+      "https://x.com/neural_avb/status/2056014407365480654",
+      "https://x.com/neural_avb"
+    ],
+    "latestRunId": "2026-05-18-12-33-20-370-fast"
+  }
+}

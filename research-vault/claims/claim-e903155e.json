@@ -1,0 +1,39 @@
+{
+  "claimId": "claim-e903155e",
+  "statement": "post highlighting that even a short 15-20 minute daily walk provides meaningful health and longevity benefits, especially for sedentary people.",
+  "sourceCardIds": [
+    "Inbox/2026-05-18 x-signal-inc-inc-23m-if-you-don-t-exercise-a-15-or-20-minute-walk-each-day-provi.md"
+  ],
+  "sourceUrls": [
+    "https://x.com/Inc/status/2056337090007163013",
+    "https://x.com/Inc",
+    "https://t.co/vDTJJy5GuO"
+  ],
+  "dependencyUrls": [],
+  "runIds": [
+    "2026-05-18-11-55-40-814-fast"
+  ],
+  "confidence": "low",
+  "firstSeen": "2026-05-18T12:03:35.115Z",
+  "lastReinforced": "2026-05-18T12:03:35.115Z",
+  "verificationStatus": "partially_verified",
+  "evidenceStrength": "weak",
+  "originatingItems": [
+    "idea-26aecd90"
+  ],
+  "observedInLanes": [
+    "verify"
+  ],
+  "owner": "Hermes",
+  "latestPriority": "medium",
+  "reinforcementCount": 1,
+  "traceability": {
+    "latestSourceNotePath": "Inbox/2026-05-18 x-signal-inc-inc-23m-if-you-don-t-exercise-a-15-or-20-minute-walk-each-day-provi.md",
+    "latestSourceUrls": [
+      "https://x.com/Inc/status/2056337090007163013",
+      "https://x.com/Inc",
+      "https://t.co/vDTJJy5GuO"
+    ],
+    "latestRunId": "2026-05-18-11-55-40-814-fast"
+  }
+}

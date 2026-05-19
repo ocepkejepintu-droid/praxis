@@ -1,0 +1,41 @@
+{
+  "claimId": "claim-1bb2e11b",
+  "statement": "Nilson Onel sharing his first day building ClassQuake at Zerobase HQ in Seoul.",
+  "sourceCardIds": [
+    "Inbox/2026-05-18 x-signal-nilson-onel-nilson-onel-3h-first-day-building-at-the-zerobase-hq-in-seo.md"
+  ],
+  "sourceUrls": [
+    "https://x.com/nilson_onel/status/2056291534656688396",
+    "https://x.com/nilson_onel",
+    "https://x.com/samthekorean",
+    "https://x.com/classquake"
+  ],
+  "dependencyUrls": [],
+  "runIds": [
+    "2026-05-18-11-55-40-814-fast"
+  ],
+  "confidence": "low",
+  "firstSeen": "2026-05-18T12:03:35.115Z",
+  "lastReinforced": "2026-05-18T12:03:35.115Z",
+  "verificationStatus": "partially_verified",
+  "evidenceStrength": "weak",
+  "originatingItems": [
+    "action-9be42943"
+  ],
+  "observedInLanes": [
+    "verify"
+  ],
+  "owner": "Hermes",
+  "latestPriority": "low",
+  "reinforcementCount": 1,
+  "traceability": {
+    "latestSourceNotePath": "Inbox/2026-05-18 x-signal-nilson-onel-nilson-onel-3h-first-day-building-at-the-zerobase-hq-in-seo.md",
+    "latestSourceUrls": [
+      "https://x.com/nilson_onel/status/2056291534656688396",
+      "https://x.com/nilson_onel",
+      "https://x.com/samthekorean",
+      "https://x.com/classquake"
+    ],
+    "latestRunId": "2026-05-18-11-55-40-814-fast"
+  }
+}

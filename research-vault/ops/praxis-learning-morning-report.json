@@ -1,0 +1,382 @@
+{
+  "id": "praxis-learning-morning-1779133231721-44ecso",
+  "createdAt": "2026-05-18T19:40:31.721Z",
+  "reportKind": "morning",
+  "agentsUsed": [
+    "mock-hermes",
+    "mock-openclaw",
+    "hermes",
+    "openclaw"
+  ],
+  "selectedPraxisCount": 10,
+  "praxisLearnedCount": 10,
+  "reportsCreated": 40,
+  "counts": {
+    "completed": 20,
+    "blocked": 20,
+    "failed": 0
+  },
+  "candidates": [
+    {
+      "id": "experiments-2026-05-16-mobile-remote-agent-ops-bakeoff-current-termius-tmux-vs-c3",
+      "title": "Mobile remote-agent ops bakeoff: current Termius/tmux vs C3",
+      "score": 8,
+      "reasons": [
+        "+3 concrete agent workflow/use case",
+        "+2 concrete artifact",
+        "+2 agent ecosystem relevance",
+        "+1 credible source/social proof"
+      ],
+      "penalties": [],
+      "sourceUrls": [
+        "https://x.com/naa_rang/status/2055589765756686382",
+        "https://x.com/fcoury/status/2055315105055694869",
+        "https://getc3.app"
+      ],
+      "source": "Hermes LLM judgement",
+      "recentlyLearned": false
+    },
+    {
+      "id": "experiments-2026-05-15-n8n-style-multi-agent-research-flow-for-competitor-updates",
+      "title": "n8n-style multi-agent research flow for competitor updates",
+      "score": 8,
+      "reasons": [
+        "+3 concrete agent workflow/use case",
+        "+2 concrete artifact",
+        "+2 agent ecosystem relevance",
+        "+1 credible source/social proof"
+      ],
+      "penalties": [],
+      "sourceUrls": [
+        "https://x.com/neil_xbt/status/2055168802036576600",
+        "https://n8n.io/",
+        "https://docs.n8n.io/"
+      ],
+      "source": "Hermes LLM judgement",
+      "recentlyLearned": false
+    },
+    {
+      "id": "hermes-atlas-cablate-agentic-mcp-skill",
+      "title": "Agentic-MCP-Skill",
+      "score": 8,
+      "reasons": [
+        "+3 concrete agent workflow/use case",
+        "+2 concrete artifact",
+        "+2 agent ecosystem relevance",
+        "+1 credible source/social proof"
+      ],
+      "penalties": [],
+      "sourceUrls": [
+        "https://hermesatlas.com/projects/cablate/Agentic-MCP-Skill",
+        "https://github.com/cablate/Agentic-MCP-Skill"
+      ],
+      "source": "Hermes Atlas · Skills & Skill Registries",
+      "recentlyLearned": false
+    },
+    {
+      "id": "hermes-atlas-rodmarkun-anihermes",
+      "title": "anihermes",
+      "score": 8,
+      "reasons": [
+        "+3 concrete agent workflow/use case",
+        "+2 concrete artifact",
+        "+2 agent ecosystem relevance",
+        "+1 credible source/social proof"
+      ],
+      "penalties": [],
+      "sourceUrls": [
+        "https://hermesatlas.com/projects/rodmarkun/anihermes",
+        "https://github.com/rodmarkun/anihermes"
+      ],
+      "source": "Hermes Atlas · Domain Applications",
+      "recentlyLearned": false
+    },
+    {
+      "id": "hermes-atlas-nousresearch-autonovel",
+      "title": "autonovel",
+      "score": 8,
+      "reasons": [
+        "+3 concrete agent workflow/use case",
+        "+2 concrete artifact",
+        "+2 agent ecosystem relevance",
+        "+1 credible source/social proof"
+      ],
+      "penalties": [],
+      "sourceUrls": [
+        "https://hermesatlas.com/projects/NousResearch/autonovel",
+        "https://github.com/NousResearch/autonovel"
+      ],
+      "source": "Hermes Atlas · Core & Official",
+      "recentlyLearned": false
+    },
+    {
+      "id": "hermes-atlas-0xnyk-awesome-hermes-agent",
+      "title": "awesome-hermes-agent",
+      "score": 8,
+      "reasons": [
+        "+3 concrete agent workflow/use case",
+        "+2 concrete artifact",
+        "+2 agent ecosystem relevance",
+        "+1 credible source/social proof"
+      ],
+      "penalties": [],
+      "sourceUrls": [
+        "https://hermesatlas.com/projects/0xNyk/awesome-hermes-agent",
+        "https://github.com/0xNyk/awesome-hermes-agent"
+      ],
+      "source": "Hermes Atlas · Guides & Docs",
+      "recentlyLearned": false
+    },
+    {
+      "id": "hermes-atlas-supermodeltools-bigiron",
+      "title": "bigiron",
+      "score": 8,
+      "reasons": [
+        "+3 concrete agent workflow/use case",
+        "+2 concrete artifact",
+        "+2 agent ecosystem relevance",
+        "+1 credible source/social proof"
+      ],
+      "penalties": [],
+      "sourceUrls": [
+        "https://hermesatlas.com/projects/supermodeltools/bigiron",
+        "https://github.com/supermodeltools/bigiron"
+      ],
+      "source": "Hermes Atlas · Multi-Agent & Orchestration",
+      "recentlyLearned": false
+    },
+    {
+      "id": "hermes-atlas-black-forest-labs-skills",
+      "title": "black-forest-labs/skills",
+      "score": 8,
+      "reasons": [
+        "+3 concrete agent workflow/use case",
+        "+2 concrete artifact",
+        "+2 agent ecosystem relevance",
+        "+1 credible source/social proof"
+      ],
+      "penalties": [],
+      "sourceUrls": [
+        "https://hermesatlas.com/projects/black-forest-labs/skills",
+        "https://github.com/black-forest-labs/skills"
+      ],
+      "source": "Hermes Atlas · Skills & Skill Registries",
+      "recentlyLearned": false
+    },
+    {
+      "id": "hermes-atlas-armelhbobdad-bmad-module-skill-forge",
+      "title": "bmad-module-skill-forge",
+      "score": 8,
+      "reasons": [
+        "+3 concrete agent workflow/use case",
+        "+2 concrete artifact",
+        "+2 agent ecosystem relevance",
+        "+1 credible source/social proof"
+      ],
+      "penalties": [],
+      "sourceUrls": [
+        "https://hermesatlas.com/projects/armelhbobdad/bmad-module-skill-forge",
+        "https://github.com/armelhbobdad/bmad-module-skill-forge"
+      ],
+      "source": "Hermes Atlas · Skills & Skill Registries",
+      "recentlyLearned": false
+    },
+    {
+      "id": "hermes-atlas-yepyhun-brainstack",
+      "title": "Brainstack",
+      "score": 8,
+      "reasons": [
+        "+3 concrete agent workflow/use case",
+        "+2 concrete artifact",
+        "+2 agent ecosystem relevance",
+        "+1 credible source/social proof"
+      ],
+      "penalties": [],
+      "sourceUrls": [
+        "https://hermesatlas.com/projects/yepyhun/Brainstack",
+        "https://github.com/yepyhun/Brainstack"
+      ],
+      "source": "Hermes Atlas · Memory & Context",
+      "recentlyLearned": false
+    }
+  ],
+  "topLearnedPatterns": [
+    "Hermes found 2 evidence URL(s) to verify before skill adoption. (8x)",
+    "Hermes mapped the execution path: Open Hermes Atlas project page. → Open canonical GitHub or primary dependency URL. → Verify README, install path, license/risk, and current maint… (8x)",
+    "Hermes mapped the verification/stop rule: Kill if source repo is unavailable, docs are missing, install path fails, or evidence stays social-only. (8x)",
+    "OpenClaw found 2 evidence URL(s) to verify before skill adoption. (8x)",
+    "OpenClaw mapped the execution path: Open Hermes Atlas project page. → Open canonical GitHub or primary dependency URL. → Verify README, install path, license/risk, and current mai… (8x)",
+    "OpenClaw mapped the verification/stop rule: Kill if source repo is unavailable, docs are missing, install path fails, or evidence stays social-only. (8x)",
+    "Hermes found 3 evidence URL(s) to verify before skill adoption. (2x)",
+    "OpenClaw found 3 evidence URL(s) to verify before skill adoption. (2x)",
+    "Hermes identified the smallest safe first test: Create a 5-source monitor that detects one product update and has Hermes write a sourced action with kill/next-step fields.",
+    "Hermes identified the smallest safe first test: Open https://github.com/0xNyk/awesome-hermes-agent, verify install/docs, and run the smallest safe smoke test."
+  ],
+  "repeatedBlockers": [
+    "HERMES_LEARNER_COMMAND is not configured. Use mock-hermes for local safe learning or configure an approved runtime bridge. (10x)",
+    "OPENCLAW_LEARNER_COMMAND is not configured. Use mock-openclaw for local safe learning or configure an approved runtime bridge. (10x)"
+  ],
+  "bestNextActions": [
+    "Open Hermes Atlas project page. (16x)",
+    "Use mock-hermes for local safe learning, or configure HERMES_LEARNER_COMMAND with an approved runner. (10x)",
+    "Use mock-openclaw for local safe learning, or configure OPENCLAW_LEARNER_COMMAND with an approved runner. (10x)",
+    "Create a 5-source monitor that detects one product update and has Hermes write a sourced action with kill/next-step fields. (2x)",
+    "Perform the same small repo inspection/fix from phone workflow using current setup; compare against C3 only if available without major setup. (2x)"
+  ],
+  "promotedSkillDrafts": [
+    {
+      "slug": "mobile-remote-agent-ops-bakeoff-current-termius-tmux-vs-c3-mock-hermes",
+      "title": "Mobile remote-agent ops bakeoff: current Termius/tmux vs C3",
+      "path": "research-vault/ops/skill-drafts/mobile-remote-agent-ops-bakeoff-current-termius-tmux-vs-c3-mock-hermes/SKILL.md",
+      "praxisId": "experiments-2026-05-16-mobile-remote-agent-ops-bakeoff-current-termius-tmux-vs-c3",
+      "agent": "mock-hermes",
+      "sourceUrls": [
+        "https://x.com/naa_rang/status/2055589765756686382",
+        "https://x.com/fcoury/status/2055315105055694869",
+        "https://getc3.app"
+      ]
+    },
+    {
+      "slug": "mobile-remote-agent-ops-bakeoff-current-termius-tmux-vs-c3-mock-openclaw",
+      "title": "Mobile remote-agent ops bakeoff: current Termius/tmux vs C3",
+      "path": "research-vault/ops/skill-drafts/mobile-remote-agent-ops-bakeoff-current-termius-tmux-vs-c3-mock-openclaw/SKILL.md",
+      "praxisId": "experiments-2026-05-16-mobile-remote-agent-ops-bakeoff-current-termius-tmux-vs-c3",
+      "agent": "mock-openclaw",
+      "sourceUrls": [
+        "https://x.com/naa_rang/status/2055589765756686382",
+        "https://x.com/fcoury/status/2055315105055694869",
+        "https://getc3.app"
+      ]
+    },
+    {
+      "slug": "n8n-style-multi-agent-research-flow-for-competitor-updates-mock-hermes",
+      "title": "n8n-style multi-agent research flow for competitor updates",
+      "path": "research-vault/ops/skill-drafts/n8n-style-multi-agent-research-flow-for-competitor-updates-mock-hermes/SKILL.md",
+      "praxisId": "experiments-2026-05-15-n8n-style-multi-agent-research-flow-for-competitor-updates",
+      "agent": "mock-hermes",
+      "sourceUrls": [
+        "https://x.com/neil_xbt/status/2055168802036576600",
+        "https://n8n.io/",
+        "https://docs.n8n.io/"
+      ]
+    },
+    {
+      "slug": "n8n-style-multi-agent-research-flow-for-competitor-updates-mock-openclaw",
+      "title": "n8n-style multi-agent research flow for competitor updates",
+      "path": "research-vault/ops/skill-drafts/n8n-style-multi-agent-research-flow-for-competitor-updates-mock-openclaw/SKILL.md",
+      "praxisId": "experiments-2026-05-15-n8n-style-multi-agent-research-flow-for-competitor-updates",
+      "agent": "mock-openclaw",
+      "sourceUrls": [
+        "https://x.com/neil_xbt/status/2055168802036576600",
+        "https://n8n.io/",
+        "https://docs.n8n.io/"
+      ]
+    },
+    {
+      "slug": "agentic-mcp-skill-mock-hermes",
+      "title": "Agentic-MCP-Skill",
+      "path": "research-vault/ops/skill-drafts/agentic-mcp-skill-mock-hermes/SKILL.md",
+      "praxisId": "hermes-atlas-cablate-agentic-mcp-skill",
+      "agent": "mock-hermes",
+      "sourceUrls": [
+        "https://hermesatlas.com/projects/cablate/Agentic-MCP-Skill",
+        "https://github.com/cablate/Agentic-MCP-Skill"
+      ]
+    }
+  ],
+  "sourceUrls": [
+    "https://x.com/naa_rang/status/2055589765756686382",
+    "https://x.com/fcoury/status/2055315105055694869",
+    "https://getc3.app",
+    "https://x.com/neil_xbt/status/2055168802036576600",
+    "https://n8n.io/",
+    "https://docs.n8n.io/",
+    "https://hermesatlas.com/projects/cablate/Agentic-MCP-Skill",
+    "https://github.com/cablate/Agentic-MCP-Skill",
+    "https://hermesatlas.com/projects/rodmarkun/anihermes",
+    "https://github.com/rodmarkun/anihermes",
+    "https://hermesatlas.com/projects/NousResearch/autonovel",
+    "https://github.com/NousResearch/autonovel",
+    "https://hermesatlas.com/projects/0xNyk/awesome-hermes-agent",
+    "https://github.com/0xNyk/awesome-hermes-agent",
+    "https://hermesatlas.com/projects/supermodeltools/bigiron",
+    "https://github.com/supermodeltools/bigiron",
+    "https://hermesatlas.com/projects/black-forest-labs/skills",
+    "https://github.com/black-forest-labs/skills",
+    "https://hermesatlas.com/projects/armelhbobdad/bmad-module-skill-forge",
+    "https://github.com/armelhbobdad/bmad-module-skill-forge",
+    "https://hermesatlas.com/projects/yepyhun/Brainstack",
+    "https://github.com/yepyhun/Brainstack"
+  ],
+  "artifactsChanged": [
+    "research-vault/ops/praxis-learning-reports.json",
+    "research-vault/ops/praxis-learning-morning-report.json",
+    "research-vault/ops/praxis-learning-morning-report.md",
+    "research-vault/ops/praxis-learning-overnight-report.json",
+    "research-vault/ops/praxis-learning-overnight-report.md",
+    "research-vault/ops/skill-drafts/mobile-remote-agent-ops-bakeoff-current-termius-tmux-vs-c3-mock-hermes/SKILL.md",
+    "research-vault/ops/skill-drafts/mobile-remote-agent-ops-bakeoff-current-termius-tmux-vs-c3-mock-openclaw/SKILL.md",
+    "research-vault/ops/skill-drafts/n8n-style-multi-agent-research-flow-for-competitor-updates-mock-hermes/SKILL.md",
+    "research-vault/ops/skill-drafts/n8n-style-multi-agent-research-flow-for-competitor-updates-mock-openclaw/SKILL.md",
+    "research-vault/ops/skill-drafts/agentic-mcp-skill-mock-hermes/SKILL.md",
+    ".radar/acp-log.jsonl"
+  ],
+  "reportIds": [
+    "praxis-learning-1779133227541-h87ya6",
+    "praxis-learning-1779133227647-g71hev",
+    "praxis-learning-1779133227767-6ekz8a",
+    "praxis-learning-1779133227875-u7gjfm",
+    "praxis-learning-1779133228002-g10z0n",
+    "praxis-learning-1779133228176-6stljk",
+    "praxis-learning-1779133228290-kfu046",
+    "praxis-learning-1779133228388-viwra2",
+    "praxis-learning-1779133228491-9s575h",
+    "praxis-learning-1779133228598-iz7kx5",
+    "praxis-learning-1779133228693-n529nj",
+    "praxis-learning-1779133228788-2f9f5e",
+    "praxis-learning-1779133228886-27y2iq",
+    "praxis-learning-1779133228979-6nnpvo",
+    "praxis-learning-1779133229093-8jd7uk",
+    "praxis-learning-1779133229197-4pby2p",
+    "praxis-learning-1779133229299-yf0ke3",
+    "praxis-learning-1779133229391-ihi7cv",
+    "praxis-learning-1779133229488-mdo69z",
+    "praxis-learning-1779133229587-mbxnzl",
+    "praxis-learning-1779133229693-rsy7fm",
+    "praxis-learning-1779133229786-kntmfb",
+    "praxis-learning-1779133229878-xw1xnh",
+    "praxis-learning-1779133229980-1vblvf",
+    "praxis-learning-1779133230099-end1q4",
+    "praxis-learning-1779133230225-etkvlb",
+    "praxis-learning-1779133230330-4h9drn",
+    "praxis-learning-1779133230422-amfv7n",
+    "praxis-learning-1779133230520-zvob87",
+    "praxis-learning-1779133230619-zp4n2q",
+    "praxis-learning-1779133230727-zaztdj",
+    "praxis-learning-1779133230837-jsvjid",
+    "praxis-learning-1779133230934-q1rtes",
+    "praxis-learning-1779133231032-todbt8",
+    "praxis-learning-1779133231145-sndlds",
+    "praxis-learning-1779133231248-zh1n44",
+    "praxis-learning-1779133231349-ykupg0",
+    "praxis-learning-1779133231454-ao450o",
+    "praxis-learning-1779133231573-neuv2i",
+    "praxis-learning-1779133231718-4j45z6"
+  ],
+  "realRuntimeBlockers": {
+    "hermes": "HERMES_LEARNER_COMMAND is not configured. Use mock-hermes for local safe learning or configure an approved runtime bridge.",
+    "openclaw": "OPENCLAW_LEARNER_COMMAND is not configured. Use mock-openclaw for local safe learning or configure an approved runtime bridge."
+  },
+  "selectionNote": "Selected top 10 candidates with min score 5.",
+  "guardrails": {
+    "maxPraxisPerRun": 20,
+    "maxAgentsPerRun": 4,
+    "minScoreDefault": 5,
+    "xSearchEnabledDefault": false,
+    "skipRecentLearnedDefault": true,
+    "recentLearningWindowDays": 7,
+    "runtimeTimeoutMs": 30000,
+    "safeModeDefault": true,
+    "destructiveCommandsAllowed": false
+  }
+}

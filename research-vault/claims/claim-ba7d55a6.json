@@ -1,0 +1,37 @@
+{
+  "claimId": "claim-ba7d55a6",
+  "statement": "He breaks it down in a recent podcast: → the 14% lost to CLAUDE.md bloat → the 13% paid re-reading old history → Show more Quote Rahul @sairahul1 · May 17 Article Reason Why 90% of AI Workflows Di",
+  "sourceCardIds": [
+    "Inbox/2026-05-18 x-signal-rahul-sairahul1-may-17-boris-cherny-the-creator-of-claude-code-just.md"
+  ],
+  "sourceUrls": [
+    "https://x.com/sairahul1/status/2056050387678024143",
+    "https://x.com/sairahul1"
+  ],
+  "dependencyUrls": [],
+  "runIds": [
+    "2026-05-18-21-01-28-500-fast"
+  ],
+  "confidence": "low",
+  "firstSeen": "2026-05-18T21:03:55.810Z",
+  "lastReinforced": "2026-05-18T21:03:55.810Z",
+  "verificationStatus": "needs_verification",
+  "evidenceStrength": "weak",
+  "originatingItems": [
+    "idea-c1a1df8"
+  ],
+  "observedInLanes": [
+    "verify"
+  ],
+  "owner": "Hermes",
+  "latestPriority": "low",
+  "reinforcementCount": 1,
+  "traceability": {
+    "latestSourceNotePath": "Inbox/2026-05-18 x-signal-rahul-sairahul1-may-17-boris-cherny-the-creator-of-claude-code-just.md",
+    "latestSourceUrls": [
+      "https://x.com/sairahul1/status/2056050387678024143",
+      "https://x.com/sairahul1"
+    ],
+    "latestRunId": "2026-05-18-21-01-28-500-fast"
+  }
+}

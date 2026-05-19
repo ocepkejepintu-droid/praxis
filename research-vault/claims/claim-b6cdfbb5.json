@@ -1,0 +1,37 @@
+{
+  "claimId": "claim-b6cdfbb5",
+  "statement": "111 64 1.4K ## Next actions - Resolve primary source links and verify claims before adopting.",
+  "sourceCardIds": [
+    "Inbox/2026-05-17 x-signal-nivi-nivi-22h-memory-in-chatgpt-has-gotten-insanely-good-and-nobody-is-.md"
+  ],
+  "sourceUrls": [
+    "https://x.com/nivi/status/2055716086772023465",
+    "https://x.com/nivi"
+  ],
+  "dependencyUrls": [],
+  "runIds": [
+    "2026-05-17-16-49-17-830-fast"
+  ],
+  "confidence": "low",
+  "firstSeen": "2026-05-18T01:21:05.550Z",
+  "lastReinforced": "2026-05-18T01:21:05.550Z",
+  "verificationStatus": "needs_verification",
+  "evidenceStrength": "weak",
+  "originatingItems": [
+    "idea-4891c41e"
+  ],
+  "observedInLanes": [
+    "verify"
+  ],
+  "owner": "Hermes",
+  "latestPriority": "low",
+  "reinforcementCount": 1,
+  "traceability": {
+    "latestSourceNotePath": "Inbox/2026-05-17 x-signal-nivi-nivi-22h-memory-in-chatgpt-has-gotten-insanely-good-and-nobody-is-.md",
+    "latestSourceUrls": [
+      "https://x.com/nivi/status/2055716086772023465",
+      "https://x.com/nivi"
+    ],
+    "latestRunId": "2026-05-17-16-49-17-830-fast"
+  }
+}

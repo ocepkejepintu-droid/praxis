@@ -1,0 +1,41 @@
+{
+  "claimId": "claim-5031848c",
+  "statement": "Do lncRNAs commonly bind 1000s of genomic sites?",
+  "sourceCardIds": [
+    "Inbox/2026-05-18 x-signal-nature-biotechnology-reposted-igor-ulitsky-igorulitsky-may-15-now-out-i.md"
+  ],
+  "sourceUrls": [
+    "https://x.com/IgorUlitsky/status/2055284169329000804",
+    "https://x.com/NatureBiotech",
+    "https://x.com/IgorUlitsky",
+    "https://t.co/01NroM67dK"
+  ],
+  "dependencyUrls": [],
+  "runIds": [
+    "2026-05-18-12-33-20-370-fast"
+  ],
+  "confidence": "low",
+  "firstSeen": "2026-05-18T12:36:45.868Z",
+  "lastReinforced": "2026-05-18T13:16:29.837Z",
+  "verificationStatus": "needs_verification",
+  "evidenceStrength": "weak",
+  "originatingItems": [
+    "idea-3a392d31"
+  ],
+  "observedInLanes": [
+    "verify"
+  ],
+  "owner": "Hermes",
+  "latestPriority": "low",
+  "reinforcementCount": 1,
+  "traceability": {
+    "latestSourceNotePath": "Inbox/2026-05-18 x-signal-nature-biotechnology-reposted-igor-ulitsky-igorulitsky-may-15-now-out-i.md",
+    "latestSourceUrls": [
+      "https://x.com/IgorUlitsky/status/2055284169329000804",
+      "https://x.com/NatureBiotech",
+      "https://x.com/IgorUlitsky",
+      "https://t.co/01NroM67dK"
+    ],
+    "latestRunId": "2026-05-18-12-33-20-370-fast"
+  }
+}

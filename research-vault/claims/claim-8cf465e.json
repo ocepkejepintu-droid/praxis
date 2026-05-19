@@ -1,0 +1,39 @@
+{
+  "claimId": "claim-8cf465e",
+  "statement": "# X signal: Vaishnavi @_vmlops · May 17 This is the best site on the internet to learn X author/context: Vaishnavi @_vmlops · May 17 ## Signal Vaishnavi @_vmlops · May 17 This is the best site on the internet to learn harness engineering https:// walkinglabs.g",
+  "sourceCardIds": [
+    "Use Cases/2026-05-18 x-signal-vaishnavi-vmlops-may-17-this-is-the-best-site-on-the-internet-to-learn.md"
+  ],
+  "sourceUrls": [
+    "https://x.com/_vmlops/status/2055887618303570151",
+    "https://x.com/_vmlops",
+    "https://t.co/n8bV1yKSTS"
+  ],
+  "dependencyUrls": [],
+  "runIds": [
+    "2026-05-18-21-01-28-500-fast"
+  ],
+  "confidence": "low",
+  "firstSeen": "2026-05-18T21:03:55.810Z",
+  "lastReinforced": "2026-05-18T21:03:55.810Z",
+  "verificationStatus": "needs_verification",
+  "evidenceStrength": "weak",
+  "originatingItems": [
+    "idea-50fb8296"
+  ],
+  "observedInLanes": [
+    "verify"
+  ],
+  "owner": "Hermes",
+  "latestPriority": "low",
+  "reinforcementCount": 1,
+  "traceability": {
+    "latestSourceNotePath": "Use Cases/2026-05-18 x-signal-vaishnavi-vmlops-may-17-this-is-the-best-site-on-the-internet-to-learn.md",
+    "latestSourceUrls": [
+      "https://x.com/_vmlops/status/2055887618303570151",
+      "https://x.com/_vmlops",
+      "https://t.co/n8bV1yKSTS"
+    ],
+    "latestRunId": "2026-05-18-21-01-28-500-fast"
+  }
+}

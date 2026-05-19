@@ -1,0 +1,36 @@
+{
+  "claimId": "claim-beed0413",
+  "statement": "One quoted video claim had a reply saying it was a joke.",
+  "sourceCardIds": [
+    "pending"
+  ],
+  "confidence": "low",
+  "firstSeen": "2026-05-17T16:54:11.688Z",
+  "lastReinforced": "2026-05-17T17:44:16.689Z",
+  "verificationStatus": "needs_verification",
+  "evidenceStrength": "weak",
+  "sourceUrls": [
+    "https://x.com/leomeethewoo/status/2055633136906863036",
+    "https://x.com/Bhumimov/status/2055673813749375022"
+  ],
+  "originatingItems": [
+    "action-93674f46",
+    "action-92674db3"
+  ],
+  "dependencyUrls": [],
+  "runIds": [
+    "2026-05-17-16-49-17-830-fast"
+  ],
+  "observedInLanes": [],
+  "owner": "Hermes",
+  "latestPriority": "medium",
+  "reinforcementCount": 2,
+  "traceability": {
+    "latestSourceNotePath": "pending",
+    "latestSourceUrls": [
+      "https://x.com/leomeethewoo/status/2055633136906863036",
+      "https://x.com/Bhumimov/status/2055673813749375022"
+    ],
+    "latestRunId": "manual"
+  }
+}

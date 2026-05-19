@@ -1,0 +1,36 @@
+{
+  "claimId": "claim-2acac742",
+  "statement": "# X signal: Misbah Syed @MisbahSy · May 17 The new workflow: - Research the idea with Codex X author/context: Misbah Syed @MisbahSy · May 17 ## Signal Misbah Syed @MisbahSy · May 17 The new workflow: - Research the idea with Codex or ChatGPT deep research - br",
+  "sourceCardIds": [],
+  "sourceUrls": [
+    "https://x.com/MisbahSy/status/2055839801056940317",
+    "https://x.com/MisbahSy"
+  ],
+  "dependencyUrls": [],
+  "runIds": [
+    "2026-05-18-12-33-20-370-fast",
+    "Inbox/2026-05-18 x-signal-misbah-syed-misbahsy-may-17-the-new-workflow-research-the-idea-with-cod.md"
+  ],
+  "confidence": "low",
+  "firstSeen": "2026-05-18T12:36:45.868Z",
+  "lastReinforced": "2026-05-18T13:16:29.837Z",
+  "verificationStatus": "needs_verification",
+  "evidenceStrength": "weak",
+  "originatingItems": [
+    "idea-a041d5eb"
+  ],
+  "observedInLanes": [
+    "verify"
+  ],
+  "owner": "Hermes",
+  "latestPriority": "low",
+  "reinforcementCount": 1,
+  "traceability": {
+    "latestSourceNotePath": "Inbox/2026-05-18 x-signal-misbah-syed-misbahsy-may-17-the-new-workflow-research-the-idea-with-cod.md",
+    "latestSourceUrls": [
+      "https://x.com/MisbahSy/status/2055839801056940317",
+      "https://x.com/MisbahSy"
+    ],
+    "latestRunId": "2026-05-18-12-33-20-370-fast"
+  }
+}

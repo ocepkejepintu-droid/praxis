@@ -1,0 +1,43 @@
+{
+  "claimId": "claim-9831c04c",
+  "statement": "Repo: https://github.com/openai/codex-plugin-cc Users are excited about hybrid workflows and adversarial reviews to catch bugs.",
+  "sourceCardIds": [
+    "Inbox/2026-05-17 x-signal-divyansh-tiwari-divyansht91162-3h-claude-code-users-are-about-to-become.md"
+  ],
+  "sourceUrls": [
+    "https://x.com/DivyanshT91162/status/2056005894031425679",
+    "https://x.com/i/status/2056005894031425679",
+    "https://github.com/openai/codex-plugin-cc",
+    "https://x.com/DivyanshT91162"
+  ],
+  "dependencyUrls": [
+    "https://github.com/openai/codex-plugin-cc"
+  ],
+  "runIds": [
+    "2026-05-17-16-49-17-830-fast"
+  ],
+  "confidence": "medium",
+  "firstSeen": "2026-05-18T08:25:56.199Z",
+  "lastReinforced": "2026-05-18T10:09:55.056Z",
+  "verificationStatus": "partially_verified",
+  "evidenceStrength": "medium",
+  "originatingItems": [
+    "experiment-5b339b0f"
+  ],
+  "observedInLanes": [
+    "buildroom"
+  ],
+  "owner": "OMX",
+  "latestPriority": "medium",
+  "reinforcementCount": 1,
+  "traceability": {
+    "latestSourceNotePath": "Inbox/2026-05-17 x-signal-divyansh-tiwari-divyansht91162-3h-claude-code-users-are-about-to-become.md",
+    "latestSourceUrls": [
+      "https://x.com/DivyanshT91162/status/2056005894031425679",
+      "https://x.com/i/status/2056005894031425679",
+      "https://github.com/openai/codex-plugin-cc",
+      "https://x.com/DivyanshT91162"
+    ],
+    "latestRunId": "2026-05-17-16-49-17-830-fast"
+  }
+}

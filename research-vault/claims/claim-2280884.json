@@ -1,0 +1,39 @@
+{
+  "claimId": "claim-2280884",
+  "statement": "Testing the entire app experience on iOS.",
+  "sourceCardIds": [
+    "Inbox/2026-05-17 x-signal-daniel-bernal-afterxleep-9h-in-case-you-ve-missed-it-here-s-claude-tapp.md"
+  ],
+  "sourceUrls": [
+    "https://x.com/afterxleep/status/2055908889862828446",
+    "https://x.com/afterxleep",
+    "https://t.co/0bNo2SBeDs"
+  ],
+  "dependencyUrls": [],
+  "runIds": [
+    "2026-05-17-16-49-17-830-fast"
+  ],
+  "confidence": "low",
+  "firstSeen": "2026-05-17T18:18:50.099Z",
+  "lastReinforced": "2026-05-18T01:21:05.550Z",
+  "verificationStatus": "needs_verification",
+  "evidenceStrength": "weak",
+  "originatingItems": [
+    "idea-f4f8b21"
+  ],
+  "observedInLanes": [
+    "verify"
+  ],
+  "owner": "Hermes",
+  "latestPriority": "low",
+  "reinforcementCount": 1,
+  "traceability": {
+    "latestSourceNotePath": "Inbox/2026-05-17 x-signal-daniel-bernal-afterxleep-9h-in-case-you-ve-missed-it-here-s-claude-tapp.md",
+    "latestSourceUrls": [
+      "https://x.com/afterxleep/status/2055908889862828446",
+      "https://x.com/afterxleep",
+      "https://t.co/0bNo2SBeDs"
+    ],
+    "latestRunId": "2026-05-17-16-49-17-830-fast"
+  }
+}

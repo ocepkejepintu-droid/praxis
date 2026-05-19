@@ -1,0 +1,41 @@
+{
+  "claimId": "claim-f0858c",
+  "statement": "Mercor has faced scrutiny over data practices and a major contractor data breach.",
+  "sourceCardIds": [
+    "Inbox/2026-05-18 x-signal-forbes-forbes-25m-at-22-brendan-foody-is-among-the-world-s-youngest-sel.md"
+  ],
+  "sourceUrls": [
+    "https://x.com/Forbes/status/2056336514678952152",
+    "https://x.com/Forbes",
+    "https://x.com/hashtag/ForbesBillionaires?src=hashtag_click",
+    "https://t.co/EQLH8Y0bCO"
+  ],
+  "dependencyUrls": [],
+  "runIds": [
+    "2026-05-18-11-55-40-814-fast"
+  ],
+  "confidence": "low",
+  "firstSeen": "2026-05-18T12:03:35.115Z",
+  "lastReinforced": "2026-05-18T12:03:35.115Z",
+  "verificationStatus": "partially_verified",
+  "evidenceStrength": "weak",
+  "originatingItems": [
+    "idea-4f2be024"
+  ],
+  "observedInLanes": [
+    "verify"
+  ],
+  "owner": "Hermes",
+  "latestPriority": "medium",
+  "reinforcementCount": 1,
+  "traceability": {
+    "latestSourceNotePath": "Inbox/2026-05-18 x-signal-forbes-forbes-25m-at-22-brendan-foody-is-among-the-world-s-youngest-sel.md",
+    "latestSourceUrls": [
+      "https://x.com/Forbes/status/2056336514678952152",
+      "https://x.com/Forbes",
+      "https://x.com/hashtag/ForbesBillionaires?src=hashtag_click",
+      "https://t.co/EQLH8Y0bCO"
+    ],
+    "latestRunId": "2026-05-18-11-55-40-814-fast"
+  }
+}

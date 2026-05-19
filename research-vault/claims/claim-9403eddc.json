@@ -1,0 +1,39 @@
+{
+  "claimId": "claim-9403eddc",
+  "statement": "# X signal: Vox @Voxyz_ai · 18h ran clawpatch on my whole repo.",
+  "sourceCardIds": [
+    "Inbox/2026-05-17 x-signal-vox-voxyz-ai-18h-ran-clawpatch-on-my-whole-repo-didn-t-expect-87-findin.md"
+  ],
+  "sourceUrls": [
+    "https://x.com/Voxyz_ai/status/2055770273039683588",
+    "https://x.com/Voxyz_ai"
+  ],
+  "dependencyUrls": [],
+  "runIds": [
+    "2026-05-17-16-49-17-830-fast"
+  ],
+  "confidence": "low",
+  "firstSeen": "2026-05-17T18:18:50.099Z",
+  "lastReinforced": "2026-05-18T01:21:05.550Z",
+  "verificationStatus": "needs_verification",
+  "evidenceStrength": "weak",
+  "originatingItems": [
+    "idea-a63a8457",
+    "action-5e45fcb2"
+  ],
+  "observedInLanes": [
+    "verify",
+    "watch"
+  ],
+  "owner": "Hermes",
+  "latestPriority": "low",
+  "reinforcementCount": 2,
+  "traceability": {
+    "latestSourceNotePath": "Inbox/2026-05-17 x-signal-vox-voxyz-ai-18h-ran-clawpatch-on-my-whole-repo-didn-t-expect-87-findin.md",
+    "latestSourceUrls": [
+      "https://x.com/Voxyz_ai/status/2055770273039683588",
+      "https://x.com/Voxyz_ai"
+    ],
+    "latestRunId": "2026-05-17-16-49-17-830-fast"
+  }
+}

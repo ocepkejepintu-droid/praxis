@@ -1,0 +1,39 @@
+{
+  "claimId": "claim-d9d4424",
+  "statement": "# X signal: MiniMax (official) reposted Rudrank Riyam @rudrank · May 17 Interesting talk by X author/context: Rudrank Riyam @rudrank · May 17 ## Signal MiniMax (official) reposted Rudrank Riyam @rudrank · May 17 Interesting talk by Vincent from @MiniMax_AI abo",
+  "sourceCardIds": [
+    "Inbox/2026-05-18 x-signal-minimax-official-reposted-rudrank-riyam-rudrank-may-17-interesting-talk.md"
+  ],
+  "sourceUrls": [
+    "https://x.com/rudrank/status/2055896040675701063",
+    "https://x.com/MiniMax_AI",
+    "https://x.com/rudrank"
+  ],
+  "dependencyUrls": [],
+  "runIds": [
+    "2026-05-18-12-33-20-370-fast"
+  ],
+  "confidence": "low",
+  "firstSeen": "2026-05-18T12:36:45.868Z",
+  "lastReinforced": "2026-05-18T13:16:29.837Z",
+  "verificationStatus": "needs_verification",
+  "evidenceStrength": "weak",
+  "originatingItems": [
+    "idea-f67e6fcd"
+  ],
+  "observedInLanes": [
+    "verify"
+  ],
+  "owner": "Hermes",
+  "latestPriority": "low",
+  "reinforcementCount": 1,
+  "traceability": {
+    "latestSourceNotePath": "Inbox/2026-05-18 x-signal-minimax-official-reposted-rudrank-riyam-rudrank-may-17-interesting-talk.md",
+    "latestSourceUrls": [
+      "https://x.com/rudrank/status/2055896040675701063",
+      "https://x.com/MiniMax_AI",
+      "https://x.com/rudrank"
+    ],
+    "latestRunId": "2026-05-18-12-33-20-370-fast"
+  }
+}

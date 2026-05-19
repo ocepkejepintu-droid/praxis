@@ -1,0 +1,33 @@
+{
+  "claimId": "claim-3c51ebac",
+  "statement": "x_search corroborated Vox reported 87 Clawpatch findings.",
+  "sourceCardIds": [
+    "Inbox/2026-05-17 x-signal-vox-voxyz-ai-18h-ran-clawpatch-on-my-whole-repo-didn-t-expect-87-findin.md"
+  ],
+  "confidence": "medium",
+  "firstSeen": "2026-05-17T16:54:11.688Z",
+  "lastReinforced": "2026-05-17T17:44:16.689Z",
+  "verificationStatus": "partially_verified",
+  "evidenceStrength": "medium",
+  "sourceUrls": [
+    "https://x.com/Voxyz_ai/status/2055770273039683588"
+  ],
+  "originatingItems": [
+    "experiment-7fcdcbaf"
+  ],
+  "dependencyUrls": [],
+  "runIds": [
+    "2026-05-17-16-49-17-830-fast"
+  ],
+  "observedInLanes": [],
+  "owner": "Hermes",
+  "latestPriority": "medium",
+  "reinforcementCount": 1,
+  "traceability": {
+    "latestSourceNotePath": "Inbox/2026-05-17 x-signal-vox-voxyz-ai-18h-ran-clawpatch-on-my-whole-repo-didn-t-expect-87-findin.md",
+    "latestSourceUrls": [
+      "https://x.com/Voxyz_ai/status/2055770273039683588"
+    ],
+    "latestRunId": "manual"
+  }
+}

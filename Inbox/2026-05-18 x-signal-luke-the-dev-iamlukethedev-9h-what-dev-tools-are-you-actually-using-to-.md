@@ -1,0 +1,37 @@
+---
+type: capture
+status: inbox
+category: "coding-agent"
+risk: medium
+strategic_relevance: 3
+actionability: 3
+confidence: low
+ingestion_run_id: 2026-05-18-12-33-20-370-fast
+run_id: 2026-05-18-12-33-20-370-fast
+ingested_at: 2026-05-18T12:33:20.370Z
+source_channel: x_home
+source_status_url: "https://x.com/iamlukethedev/status/2056207462651363338"
+status_id: "2056207462651363338"
+status_identity_status: ok
+home_feed_rank: 57
+enrichment_status: pending
+reply_fetch_status: pending
+source_urls:
+  - https://x.com/iamlukethedev
+  - https://x.com/iamlukethedev/status/2056207462651363338
+last_checked: 2026-05-18
+---
+
+# X signal: Luke The Dev @iamlukethedev · 9h What dev tools are you actually using to manage
+
+X author/context: Luke The Dev @iamlukethedev · 9h
+
+## Signal
+Luke The Dev @iamlukethedev · 9h What dev tools are you actually using to manage AI agents in production? What does your real stack look like day to day? 1 4 330
+
+## Why it matters
+Luke The Dev @iamlukethedev · 9h What dev tools are you actually using to manage AI agents in production? What does your real stack look like day to day? 1 4
+
+## Next actions
+- Resolve primary source links and verify claims before adopting.
+- Promote to an experiment only if the first test is under one day.

@@ -1,0 +1,821 @@
+[
+  {
+    "name": "hermes-agent",
+    "url": "https://github.com/NousResearch/hermes-agent",
+    "category": "Core & Official",
+    "stars": 83290,
+    "official": true
+  },
+  {
+    "name": "mem0",
+    "url": "https://github.com/mem0ai/mem0",
+    "category": "Memory & Context",
+    "stars": 53915,
+    "official": false
+  },
+  {
+    "name": "gbrain",
+    "url": "https://github.com/garrytan/gbrain",
+    "category": "Memory & Context",
+    "stars": 8857,
+    "official": false
+  },
+  {
+    "name": "hindsight",
+    "url": "https://github.com/vectorize-io/hindsight",
+    "category": "Memory & Context",
+    "stars": 8362,
+    "official": true
+  },
+  {
+    "name": "Anthropic-Cybersecurity-Skills",
+    "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+    "category": "Skills & Skill Registries",
+    "stars": 4132,
+    "official": false
+  },
+  {
+    "name": "mission-control",
+    "url": "https://github.com/builderz-labs/mission-control",
+    "category": "Multi-Agent & Orchestration",
+    "stars": 3875,
+    "official": false
+  },
+  {
+    "name": "honcho",
+    "url": "https://github.com/plastic-labs/honcho",
+    "category": "Memory & Context",
+    "stars": 3143,
+    "official": true
+  },
+  {
+    "name": "hermes-webui",
+    "url": "https://github.com/nesquena/hermes-webui",
+    "category": "Workspaces & GUIs",
+    "stars": 2479,
+    "official": false
+  },
+  {
+    "name": "hermes-web-ui",
+    "url": "https://github.com/EKKOLearnAI/hermes-web-ui",
+    "category": "Workspaces & GUIs",
+    "stars": 1844,
+    "official": false
+  },
+  {
+    "name": "tokscale",
+    "url": "https://github.com/junhoyeo/tokscale",
+    "category": "Developer Tools",
+    "stars": 1690,
+    "official": false
+  },
+  {
+    "name": "Hermes-Function-Calling",
+    "url": "https://github.com/NousResearch/Hermes-Function-Calling",
+    "category": "Core & Official",
+    "stars": 1249,
+    "official": true
+  },
+  {
+    "name": "SkillClaw",
+    "url": "https://github.com/AMAP-ML/SkillClaw",
+    "category": "Skills & Skill Registries",
+    "stars": 1103,
+    "official": false
+  },
+  {
+    "name": "MeiGen-AI-Design-MCP",
+    "url": "https://github.com/jau123/MeiGen-AI-Design-MCP",
+    "category": "Plugins & Extensions",
+    "stars": 1096,
+    "official": false
+  },
+  {
+    "name": "atropos",
+    "url": "https://github.com/NousResearch/atropos",
+    "category": "Core & Official",
+    "stars": 997,
+    "official": true
+  },
+  {
+    "name": "llm-agents.nix",
+    "url": "https://github.com/numtide/llm-agents.nix",
+    "category": "Deployment & Infra",
+    "stars": 967,
+    "official": false
+  },
+  {
+    "name": "awesome-hermes-agent",
+    "url": "https://github.com/0xNyk/awesome-hermes-agent",
+    "category": "Guides & Docs",
+    "stars": 898,
+    "official": false
+  },
+  {
+    "name": "hermes-workspace",
+    "url": "https://github.com/outsourc-e/hermes-workspace",
+    "category": "Workspaces & GUIs",
+    "stars": 830,
+    "official": false
+  },
+  {
+    "name": "hermes-agent-self-evolution",
+    "url": "https://github.com/NousResearch/hermes-agent-self-evolution",
+    "category": "Core & Official",
+    "stars": 778,
+    "official": true
+  },
+  {
+    "name": "avoid-ai-writing",
+    "url": "https://github.com/conorbronsdon/avoid-ai-writing",
+    "category": "Skills & Skill Registries",
+    "stars": 759,
+    "official": false
+  },
+  {
+    "name": "autocontext",
+    "url": "https://github.com/greyhaven-ai/autocontext",
+    "category": "Memory & Context",
+    "stars": 711,
+    "official": false
+  },
+  {
+    "name": "hermes-paperclip-adapter",
+    "url": "https://github.com/NousResearch/hermes-paperclip-adapter",
+    "category": "Core & Official",
+    "stars": 663,
+    "official": true
+  },
+  {
+    "name": "wondelai/skills",
+    "url": "https://github.com/wondelai/skills",
+    "category": "Skills & Skill Registries",
+    "stars": 480,
+    "official": false
+  },
+  {
+    "name": "autonovel",
+    "url": "https://github.com/NousResearch/autonovel",
+    "category": "Core & Official",
+    "stars": 401,
+    "official": true
+  },
+  {
+    "name": "hermes-control-interface",
+    "url": "https://github.com/xaspx/hermes-control-interface",
+    "category": "Workspaces & GUIs",
+    "stars": 323,
+    "official": false
+  },
+  {
+    "name": "hermes-agent-orange-book",
+    "url": "https://github.com/alchaincyf/hermes-agent-orange-book",
+    "category": "Guides & Docs",
+    "stars": 315,
+    "official": false
+  },
+  {
+    "name": "hermes-desktop",
+    "url": "https://github.com/dodo-reach/hermes-desktop",
+    "category": "Workspaces & GUIs",
+    "stars": 313,
+    "official": false
+  },
+  {
+    "name": "swarmclaw",
+    "url": "https://github.com/swarmclawai/swarmclaw",
+    "category": "Multi-Agent & Orchestration",
+    "stars": 285,
+    "official": false
+  },
+  {
+    "name": "hermes-ecosystem",
+    "url": "https://github.com/ksimback/hermes-ecosystem",
+    "category": "Guides & Docs",
+    "stars": 263,
+    "official": false
+  },
+  {
+    "name": "clawshell",
+    "url": "https://github.com/clawshell/clawshell",
+    "category": "Plugins & Extensions",
+    "stars": 255,
+    "official": false
+  },
+  {
+    "name": "pydantic-ai-skills",
+    "url": "https://github.com/DougTrajano/pydantic-ai-skills",
+    "category": "Skills & Skill Registries",
+    "stars": 220,
+    "official": false
+  },
+  {
+    "name": "DashClaw",
+    "url": "https://github.com/ucsandman/DashClaw",
+    "category": "Domain Applications",
+    "stars": 204,
+    "official": false
+  },
+  {
+    "name": "hermes-telegram-miniapp",
+    "url": "https://github.com/clawvader-tech/hermes-telegram-miniapp",
+    "category": "Workspaces & GUIs",
+    "stars": 194,
+    "official": false
+  },
+  {
+    "name": "hermes-lcm",
+    "url": "https://github.com/stephenschoettler/hermes-lcm",
+    "category": "Memory & Context",
+    "stars": 178,
+    "official": false
+  },
+  {
+    "name": "agent-browser-mcp",
+    "url": "https://github.com/335234131/agent-browser-mcp",
+    "category": "Plugins & Extensions",
+    "stars": 167,
+    "official": false
+  },
+  {
+    "name": "drawio-skill",
+    "url": "https://github.com/Agents365-ai/drawio-skill",
+    "category": "Skills & Skill Registries",
+    "stars": 131,
+    "official": false
+  },
+  {
+    "name": "hermes-agent-guide",
+    "url": "https://github.com/jwangkun/hermes-agent-guide",
+    "category": "Guides & Docs",
+    "stars": 130,
+    "official": false
+  },
+  {
+    "name": "honcho-self-hosted",
+    "url": "https://github.com/elkimek/honcho-self-hosted",
+    "category": "Memory & Context",
+    "stars": 126,
+    "official": false
+  },
+  {
+    "name": "super-hermes",
+    "url": "https://github.com/Cranot/super-hermes",
+    "category": "Skills & Skill Registries",
+    "stars": 122,
+    "official": false
+  },
+  {
+    "name": "hermesclaw",
+    "url": "https://github.com/AaronWong1999/hermesclaw",
+    "category": "Integrations & Bridges",
+    "stars": 112,
+    "official": false
+  },
+  {
+    "name": "ClawMem",
+    "url": "https://github.com/yoloshii/ClawMem",
+    "category": "Memory & Context",
+    "stars": 86,
+    "official": false
+  },
+  {
+    "name": "chainlink-agent-skills",
+    "url": "https://github.com/smartcontractkit/chainlink-agent-skills",
+    "category": "Skills & Skill Registries",
+    "stars": 85,
+    "official": false
+  },
+  {
+    "name": "ContextPilot",
+    "url": "https://github.com/EfficientContext/ContextPilot",
+    "category": "Memory & Context",
+    "stars": 82,
+    "official": false
+  },
+  {
+    "name": "portable-hermes-agent",
+    "url": "https://github.com/aivrar/portable-hermes-agent",
+    "category": "Workspaces & GUIs",
+    "stars": 81,
+    "official": false
+  },
+  {
+    "name": "litprog-skill",
+    "url": "https://github.com/tlehman/litprog-skill",
+    "category": "Skills & Skill Registries",
+    "stars": 81,
+    "official": false
+  },
+  {
+    "name": "hermes-skins",
+    "url": "https://github.com/joeynyc/hermes-skins",
+    "category": "Developer Tools",
+    "stars": 76,
+    "official": false
+  },
+  {
+    "name": "learn-hermes-agent",
+    "url": "https://github.com/longyunfeigu/learn-hermes-agent",
+    "category": "Guides & Docs",
+    "stars": 73,
+    "official": false
+  },
+  {
+    "name": "hermes-desktop",
+    "url": "https://github.com/fathah/hermes-desktop",
+    "category": "Workspaces & GUIs",
+    "stars": 65,
+    "official": false
+  },
+  {
+    "name": "hermes-webui",
+    "url": "https://github.com/sanchomuzax/hermes-webui",
+    "category": "Workspaces & GUIs",
+    "stars": 57,
+    "official": false
+  },
+  {
+    "name": "hermes-CCC",
+    "url": "https://github.com/AlexAI-MCP/hermes-CCC",
+    "category": "Developer Tools",
+    "stars": 56,
+    "official": false
+  },
+  {
+    "name": "hermes-optimization-guide",
+    "url": "https://github.com/OnlyTerp/hermes-optimization-guide",
+    "category": "Guides & Docs",
+    "stars": 51,
+    "official": false
+  },
+  {
+    "name": "icarus-plugin",
+    "url": "https://github.com/esaradev/icarus-plugin",
+    "category": "Skills & Skill Registries",
+    "stars": 51,
+    "official": false
+  },
+  {
+    "name": "skilldock.io",
+    "url": "https://github.com/chigwell/skilldock.io",
+    "category": "Skills & Skill Registries",
+    "stars": 50,
+    "official": false
+  },
+  {
+    "name": "hermes-agent-metaharness",
+    "url": "https://github.com/howdymary/hermes-agent-metaharness",
+    "category": "Multi-Agent & Orchestration",
+    "stars": 46,
+    "official": false
+  },
+  {
+    "name": "vessel-browser",
+    "url": "https://github.com/unmodeled-tyler/vessel-browser",
+    "category": "Developer Tools",
+    "stars": 44,
+    "official": false
+  },
+  {
+    "name": "black-forest-labs/skills",
+    "url": "https://github.com/black-forest-labs/skills",
+    "category": "Skills & Skill Registries",
+    "stars": 44,
+    "official": false
+  },
+  {
+    "name": "hermes-android",
+    "url": "https://github.com/raulvidis/hermes-android",
+    "category": "Integrations & Bridges",
+    "stars": 38,
+    "official": false
+  },
+  {
+    "name": "hermes-skill-factory",
+    "url": "https://github.com/Romanescu11/hermes-skill-factory",
+    "category": "Skills & Skill Registries",
+    "stars": 34,
+    "official": false
+  },
+  {
+    "name": "keep",
+    "url": "https://github.com/keepnotes-ai/keep",
+    "category": "Memory & Context",
+    "stars": 31,
+    "official": false
+  },
+  {
+    "name": "plur",
+    "url": "https://github.com/plur-ai/plur",
+    "category": "Memory & Context",
+    "stars": 31,
+    "official": false
+  },
+  {
+    "name": "mnemosyne",
+    "url": "https://github.com/AxDSan/mnemosyne",
+    "category": "Memory & Context",
+    "stars": 29,
+    "official": false
+  },
+  {
+    "name": "gladiator",
+    "url": "https://github.com/runtimenoteslabs/gladiator",
+    "category": "Multi-Agent & Orchestration",
+    "stars": 29,
+    "official": false
+  },
+  {
+    "name": "opencode-hermes-multiagent",
+    "url": "https://github.com/1ilkhamov/opencode-hermes-multiagent",
+    "category": "Multi-Agent & Orchestration",
+    "stars": 28,
+    "official": false
+  },
+  {
+    "name": "Brainstack",
+    "url": "https://github.com/yepyhun/Brainstack",
+    "category": "Memory & Context",
+    "stars": 27,
+    "official": false
+  },
+  {
+    "name": "pan-ui",
+    "url": "https://github.com/Euraika-Labs/pan-ui",
+    "category": "Workspaces & GUIs",
+    "stars": 27,
+    "official": false
+  },
+  {
+    "name": "maestro",
+    "url": "https://github.com/ReinaMacCredy/maestro",
+    "category": "Skills & Skill Registries",
+    "stars": 25,
+    "official": false
+  },
+  {
+    "name": "hermes-ui",
+    "url": "https://github.com/pyrate-llama/hermes-ui",
+    "category": "Workspaces & GUIs",
+    "stars": 25,
+    "official": false
+  },
+  {
+    "name": "Ankh.md",
+    "url": "https://github.com/Abruptive/Ankh.md",
+    "category": "Developer Tools",
+    "stars": 25,
+    "official": false
+  },
+  {
+    "name": "lintlang",
+    "url": "https://github.com/roli-lpci/lintlang",
+    "category": "Developer Tools",
+    "stars": 24,
+    "official": false
+  },
+  {
+    "name": "execplan-skill",
+    "url": "https://github.com/tiann/execplan-skill",
+    "category": "Skills & Skill Registries",
+    "stars": 24,
+    "official": false
+  },
+  {
+    "name": "Agentic-MCP-Skill",
+    "url": "https://github.com/cablate/Agentic-MCP-Skill",
+    "category": "Skills & Skill Registries",
+    "stars": 22,
+    "official": false
+  },
+  {
+    "name": "hermes-web-search-plus",
+    "url": "https://github.com/robbyczgw-cla/hermes-web-search-plus",
+    "category": "Plugins & Extensions",
+    "stars": 21,
+    "official": false
+  },
+  {
+    "name": "openclaw-to-hermes",
+    "url": "https://github.com/0xNyk/openclaw-to-hermes",
+    "category": "Developer Tools",
+    "stars": 21,
+    "official": false
+  },
+  {
+    "name": "bmad-module-skill-forge",
+    "url": "https://github.com/armelhbobdad/bmad-module-skill-forge",
+    "category": "Skills & Skill Registries",
+    "stars": 17,
+    "official": false
+  },
+  {
+    "name": "hermesclaw",
+    "url": "https://github.com/TheAiSingularity/hermesclaw",
+    "category": "Deployment & Infra",
+    "stars": 16,
+    "official": false
+  },
+  {
+    "name": "hermes-plugins",
+    "url": "https://github.com/42-evey/hermes-plugins",
+    "category": "Plugins & Extensions",
+    "stars": 16,
+    "official": false
+  },
+  {
+    "name": "hermeshub",
+    "url": "https://github.com/amanning3390/hermeshub",
+    "category": "Skills & Skill Registries",
+    "stars": 15,
+    "official": false
+  },
+  {
+    "name": "hermes-agent-camel",
+    "url": "https://github.com/nativ3ai/hermes-agent-camel",
+    "category": "Forks & Derivatives",
+    "stars": 12,
+    "official": false
+  },
+  {
+    "name": "hermes-incident-commander",
+    "url": "https://github.com/Lethe044/hermes-incident-commander",
+    "category": "Domain Applications",
+    "stars": 11,
+    "official": false
+  },
+  {
+    "name": "job-scout-agent",
+    "url": "https://github.com/Christabel337/job-scout-agent",
+    "category": "Domain Applications",
+    "stars": 11,
+    "official": false
+  },
+  {
+    "name": "nix-hermes-agent",
+    "url": "https://github.com/0xrsydn/nix-hermes-agent",
+    "category": "Deployment & Infra",
+    "stars": 11,
+    "official": false
+  },
+  {
+    "name": "hermes-relay",
+    "url": "https://github.com/Codename-11/hermes-relay",
+    "category": "Integrations & Bridges",
+    "stars": 10,
+    "official": false
+  },
+  {
+    "name": "infra-monitoring-toolkit",
+    "url": "https://github.com/JackTheGit/hermes-ai-infrastructure-monitoring-toolkit",
+    "category": "Domain Applications",
+    "stars": 9,
+    "official": false
+  },
+  {
+    "name": "anihermes",
+    "url": "https://github.com/rodmarkun/anihermes",
+    "category": "Domain Applications",
+    "stars": 9,
+    "official": false
+  },
+  {
+    "name": "hermes-wsl-ubuntu",
+    "url": "https://github.com/metantonio/hermes-wsl-ubuntu",
+    "category": "Guides & Docs",
+    "stars": 8,
+    "official": false
+  },
+  {
+    "name": "hermes-alpha",
+    "url": "https://github.com/kaminocorp/hermes-alpha",
+    "category": "Forks & Derivatives",
+    "stars": 8,
+    "official": false
+  },
+  {
+    "name": "hermescraft",
+    "url": "https://github.com/bigph00t/hermescraft",
+    "category": "Domain Applications",
+    "stars": 8,
+    "official": false
+  },
+  {
+    "name": "hermes-miniverse",
+    "url": "https://github.com/teknium1/hermes-miniverse",
+    "category": "Integrations & Bridges",
+    "stars": 8,
+    "official": false
+  },
+  {
+    "name": "klodi-plugin",
+    "url": "https://github.com/Context4GPTs/klodi-plugin",
+    "category": "Plugins & Extensions",
+    "stars": 7,
+    "official": false
+  },
+  {
+    "name": "portable-hermes-agent",
+    "url": "https://github.com/rookiemann/portable-hermes-agent",
+    "category": "Deployment & Infra",
+    "stars": 7,
+    "official": false
+  },
+  {
+    "name": "evey-setup",
+    "url": "https://github.com/42-evey/evey-setup",
+    "category": "Developer Tools",
+    "stars": 7,
+    "official": false
+  },
+  {
+    "name": "bigiron",
+    "url": "https://github.com/supermodeltools/bigiron",
+    "category": "Multi-Agent & Orchestration",
+    "stars": 7,
+    "official": false
+  },
+  {
+    "name": "hermes-weather-plugin",
+    "url": "https://github.com/FahrenheitResearch/hermes-weather-plugin",
+    "category": "Plugins & Extensions",
+    "stars": 7,
+    "official": false
+  },
+  {
+    "name": "hermes-agent-docs",
+    "url": "https://github.com/mudrii/hermes-agent-docs",
+    "category": "Guides & Docs",
+    "stars": 6,
+    "official": false
+  },
+  {
+    "name": "hermes-council",
+    "url": "https://github.com/Ridwannurudeen/hermes-council",
+    "category": "Integrations & Bridges",
+    "stars": 6,
+    "official": false
+  },
+  {
+    "name": "skillsdotnet",
+    "url": "https://github.com/PederHP/skillsdotnet",
+    "category": "Skills & Skill Registries",
+    "stars": 6,
+    "official": false
+  },
+  {
+    "name": "hermes-agent-docker",
+    "url": "https://github.com/xmbshwll/hermes-agent-docker",
+    "category": "Deployment & Infra",
+    "stars": 6,
+    "official": false
+  },
+  {
+    "name": "hermeshq",
+    "url": "https://github.com/jpalmae/hermeshq",
+    "category": "Deployment & Infra",
+    "stars": 5,
+    "official": false
+  },
+  {
+    "name": "flowstate-qmd",
+    "url": "https://github.com/amanning3390/flowstate-qmd",
+    "category": "Memory & Context",
+    "stars": 5,
+    "official": false
+  },
+  {
+    "name": "mercury",
+    "url": "https://github.com/hxsteric/mercury",
+    "category": "Domain Applications",
+    "stars": 5,
+    "official": false
+  },
+  {
+    "name": "hermes-otel",
+    "url": "https://github.com/briancaffey/hermes-otel",
+    "category": "Plugins & Extensions",
+    "stars": 4,
+    "official": false
+  },
+  {
+    "name": "hermes-tool-slimmer",
+    "url": "https://github.com/alias8818/hermes-tool-slimmer",
+    "category": "Memory & Context",
+    "stars": 4,
+    "official": false
+  },
+  {
+    "name": "zouroboros-swarm-executors",
+    "url": "https://github.com/marlandoj/zouroboros-swarm-executors",
+    "category": "Integrations & Bridges",
+    "stars": 4,
+    "official": false
+  },
+  {
+    "name": "hermes-agent-acp-skill",
+    "url": "https://github.com/Rainhoole/hermes-agent-acp-skill",
+    "category": "Multi-Agent & Orchestration",
+    "stars": 4,
+    "official": false
+  },
+  {
+    "name": "hermes-payguard",
+    "url": "https://github.com/nativ3ai/hermes-payguard",
+    "category": "Plugins & Extensions",
+    "stars": 4,
+    "official": false
+  },
+  {
+    "name": "evey-bridge-plugin",
+    "url": "https://github.com/42-evey/evey-bridge-plugin",
+    "category": "Plugins & Extensions",
+    "stars": 4,
+    "official": false
+  },
+  {
+    "name": "hermes-blockchain-oracle",
+    "url": "https://github.com/gizdusum/hermes-blockchain-oracle",
+    "category": "Integrations & Bridges",
+    "stars": 3,
+    "official": false
+  },
+  {
+    "name": "HermesWiki",
+    "url": "https://github.com/martymcenroe/HermesWiki",
+    "category": "Guides & Docs",
+    "stars": 2,
+    "official": false
+  },
+  {
+    "name": "hermes-bort",
+    "url": "https://github.com/BORT-AGENTS/hermes-bort",
+    "category": "Integrations & Bridges",
+    "stars": 2,
+    "official": false
+  },
+  {
+    "name": "hermes-embodied",
+    "url": "https://github.com/bryercowan/hermes-embodied",
+    "category": "Domain Applications",
+    "stars": 2,
+    "official": false
+  },
+  {
+    "name": "hermes-autonomous-server",
+    "url": "https://github.com/JackTheGit/hermes-autonomous-server",
+    "category": "Deployment & Infra",
+    "stars": 2,
+    "official": false
+  },
+  {
+    "name": "hermes-skill-distillation",
+    "url": "https://github.com/beardthelion/hermes-skill-distillation",
+    "category": "Forks & Derivatives",
+    "stars": 1,
+    "official": false
+  },
+  {
+    "name": "hermes-claude-code-rc",
+    "url": "https://github.com/kevinmarmstrong/hermes-claude-code-rc",
+    "category": "Integrations & Bridges",
+    "stars": 1,
+    "official": false
+  },
+  {
+    "name": "hermes-nextcloud",
+    "url": "https://github.com/adnw-vinc/hermes-nextcloud",
+    "category": "Skills & Skill Registries",
+    "stars": 1,
+    "official": false
+  },
+  {
+    "name": "hermes-tweet",
+    "url": "https://github.com/Xquik-dev/hermes-tweet",
+    "category": "Plugins & Extensions",
+    "stars": 1,
+    "official": false
+  },
+  {
+    "name": "hermes-timetree-sync",
+    "url": "https://github.com/kfa-ai/hermes-timetree-sync",
+    "category": "Integrations & Bridges",
+    "stars": 1,
+    "official": false
+  },
+  {
+    "name": "hermes-cloudflare",
+    "url": "https://github.com/raulvidis/hermes-cloudflare",
+    "category": "Plugins & Extensions",
+    "stars": 1,
+    "official": false
+  },
+  {
+    "name": "portainer-stack-hermes",
+    "url": "https://github.com/ellickjohnson/portainer-stack-hermes",
+    "category": "Deployment & Infra",
+    "stars": 1,
+    "official": false
+  }
+]

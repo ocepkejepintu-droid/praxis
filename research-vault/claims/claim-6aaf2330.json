@@ -1,0 +1,41 @@
+{
+  "claimId": "claim-6aaf2330",
+  "statement": "This thread is a tutorial on getting cheap (~$6) access to Claude Code via a third-party proxy site (ailink.biz.id).",
+  "sourceCardIds": [
+    "Inbox/2026-05-17 x-signal-feyber-learn-ai-woleswoosh-8h-translated-from-indonesian-show-original.md"
+  ],
+  "sourceUrls": [
+    "https://x.com/woleswoosh/status/2055919713105088641",
+    "https://x.com/i/status/2055919713105088641",
+    "https://x.com/woleswoosh",
+    "https://t.co/VrRecfHBpO"
+  ],
+  "dependencyUrls": [],
+  "runIds": [
+    "2026-05-17-16-49-17-830-fast"
+  ],
+  "confidence": "low",
+  "firstSeen": "2026-05-18T08:25:56.199Z",
+  "lastReinforced": "2026-05-18T10:09:55.056Z",
+  "verificationStatus": "partially_verified",
+  "evidenceStrength": "weak",
+  "originatingItems": [
+    "idea-6e54d2c7"
+  ],
+  "observedInLanes": [
+    "verify"
+  ],
+  "owner": "Hermes",
+  "latestPriority": "medium",
+  "reinforcementCount": 1,
+  "traceability": {
+    "latestSourceNotePath": "Inbox/2026-05-17 x-signal-feyber-learn-ai-woleswoosh-8h-translated-from-indonesian-show-original.md",
+    "latestSourceUrls": [
+      "https://x.com/woleswoosh/status/2055919713105088641",
+      "https://x.com/i/status/2055919713105088641",
+      "https://x.com/woleswoosh",
+      "https://t.co/VrRecfHBpO"
+    ],
+    "latestRunId": "2026-05-17-16-49-17-830-fast"
+  }
+}

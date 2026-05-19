@@ -1,0 +1,39 @@
+{
+  "claimId": "claim-44fa8942",
+  "statement": "This thread recommends a high-quality free resource on AI agent engineering, focused on \"harness engineering\" — the infrastructure layer that makes agents reliable in production.",
+  "sourceCardIds": [
+    "Inbox/2026-05-17 x-signal-self-dll-seelffff-4h-one-of-the-best-free-resources-for-ai-agent-engine.md"
+  ],
+  "sourceUrls": [
+    "https://x.com/seelffff/status/2055985267555614768",
+    "https://x.com/i/status/2055985267555614768",
+    "https://x.com/seelffff"
+  ],
+  "dependencyUrls": [],
+  "runIds": [
+    "2026-05-17-16-49-17-830-fast"
+  ],
+  "confidence": "low",
+  "firstSeen": "2026-05-18T09:25:19.551Z",
+  "lastReinforced": "2026-05-18T10:09:55.056Z",
+  "verificationStatus": "partially_verified",
+  "evidenceStrength": "weak",
+  "originatingItems": [
+    "action-3dfcc64d"
+  ],
+  "observedInLanes": [
+    "verify"
+  ],
+  "owner": "Hermes",
+  "latestPriority": "low",
+  "reinforcementCount": 1,
+  "traceability": {
+    "latestSourceNotePath": "Inbox/2026-05-17 x-signal-self-dll-seelffff-4h-one-of-the-best-free-resources-for-ai-agent-engine.md",
+    "latestSourceUrls": [
+      "https://x.com/seelffff/status/2055985267555614768",
+      "https://x.com/i/status/2055985267555614768",
+      "https://x.com/seelffff"
+    ],
+    "latestRunId": "2026-05-17-16-49-17-830-fast"
+  }
+}

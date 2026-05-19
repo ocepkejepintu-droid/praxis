@@ -1,0 +1,35 @@
+{
+  "runId": "2026-05-18-21-01-28-500-fast",
+  "generatedAt": "2026-05-18T21:03:55.810Z",
+  "lane": "watch",
+  "items": [
+    {
+      "id": "action-59a01e81",
+      "kind": "action",
+      "title": "Watch/ignore noisy source: X signal: Matt Epstein reposted Matt Epstein @mattepstein · May 15 Article The secret",
+      "runId": "2026-05-18-21-01-28-500-fast",
+      "priority": "low",
+      "owner": "Hermes",
+      "statement": "promoted/tracking-heavy source",
+      "nextAction": "Watch/ignore noisy source: X signal: Matt Epstein reposted Matt Epstein @mattepstein · May 15 Article The secret",
+      "sourceUrls": [
+        "https://x.com/mattepstein/status/2054989194414465222",
+        "https://shownmedia.com/",
+        "https://x.com/mattepstein"
+      ],
+      "sourceNotePath": "Inbox/2026-05-18 x-signal-matt-epstein-reposted-matt-epstein-mattepstein-may-15-article-the-secre.md",
+      "dependencyUrls": [],
+      "targetLane": "watch",
+      "originalTargetLane": null,
+      "verificationStatus": "unverified",
+      "evidenceStrength": "weak",
+      "claims": [
+        "# X signal: Matt Epstein reposted Matt Epstein @mattepstein · May 15 Article The secret X author/context: Matt Epstein @mattepstein · May 15 ## Signal Matt Epstein reposted Matt Epstein @mattepstein · May 15 Article The secret behind every Viral Launch...",
+        "We've done 30 of the largest launches on X.",
+        "They all follow a specific formula that can be copied again and again..."
+      ],
+      "blockedReason": null,
+      "reroutedReason": null
+    }
+  ]
+}

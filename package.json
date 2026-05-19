@@ -1,0 +1,52 @@
+{
+  "name": "agent-radar-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "tsc --noEmit",
+    "test:parser": "node --experimental-strip-types scripts/check-parser.ts",
+    "ingest:x": "node --experimental-strip-types scripts/ingest-x.ts",
+    "test:ingestion": "node --experimental-strip-types scripts/check-ingestion.ts",
+    "ingest:hermes-atlas": "node --experimental-strip-types scripts/ingest-hermes-atlas.ts",
+    "test:research-layer": "node --experimental-strip-types scripts/check-research-layer.ts",
+    "test:judgement-route": "node --experimental-strip-types scripts/check-judgement-route.ts",
+    "test:research-operator": "node --experimental-strip-types scripts/check-research-operator-artifacts.ts",
+    "research:operator": "node --experimental-strip-types scripts/generate-research-operator-from-run.ts --run latest",
+    "test:xsearch": "node --experimental-strip-types scripts/check-fill-xsearch-sidecars.ts",
+    "test:auth-acp": "node --experimental-strip-types scripts/check-auth-account-acp.ts",
+    "test:praxis-status": "node --experimental-strip-types scripts/check-praxis-status.ts",
+    "test:mcp-operator": "node --experimental-strip-types scripts/check-mcp-operator.ts",
+    "ingest:atlas": "node --experimental-strip-types scripts/ingest-hermes-atlas.ts",
+    "test:atlas": "node --experimental-strip-types scripts/check-hermes-atlas-integration.ts",
+    "test:atlas-praxis": "node --experimental-strip-types scripts/check-hermes-atlas-praxis-map.ts",
+    "test:hermes-acp": "node --experimental-strip-types scripts/check-hermes-acp.ts",
+    "test:user-sessions": "node --experimental-strip-types scripts/check-user-scoped-acp-sessions.ts",
+    "test:security-hardening": "node --experimental-strip-types scripts/check-security-hardening.ts",
+    "test:school-acp": "node --experimental-strip-types scripts/check-school-acp.ts",
+    "test:praxis-learning": "node --experimental-strip-types scripts/check-praxis-learning.ts",
+    "praxis:learn": "node --experimental-strip-types scripts/run-praxis-learning-loop.ts",
+    "test:praxis-learning-loop": "node --experimental-strip-types scripts/check-praxis-learning-loop.ts",
+    "test:praxis-quality-gate": "node --experimental-strip-types scripts/check-praxis-quality-gate.ts",
+    "test:praxis-saas": "node --experimental-strip-types scripts/check-praxis-saas-readiness.ts"
+  },
+  "dependencies": {
+    "@types/node": "25.8.0",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "gray-matter": "4.0.3",
+    "markdown-it": "14.1.1",
+    "next": "16.2.6",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "typescript": "6.0.3",
+    "@types/markdown-it": "14.1.2"
+  },
+  "devDependencies": {},
+  "type": "module",
+  "overrides": {
+    "postcss": "8.5.14"
+  }
+}

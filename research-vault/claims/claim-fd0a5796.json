@@ -1,0 +1,37 @@
+{
+  "claimId": "claim-fd0a5796",
+  "statement": "x_search can be used from the current Hermes session.",
+  "sourceCardIds": [
+    "Inbox/2026-05-17 hermes-grok-oauth-x-search-is-live-enough-to-use-for-agent-fact-checking-9e0f7b8.md"
+  ],
+  "confidence": "high",
+  "firstSeen": "2026-05-17T16:28:08.759Z",
+  "lastReinforced": "2026-05-17T16:28:08.759Z",
+  "verificationStatus": "verified",
+  "evidenceStrength": "strong",
+  "sourceUrls": [
+    "https://x.com/IcarusHermes/status/2055900844441174235",
+    "https://x.com/taiyo_ai_gakuse/status/2055807592824479982",
+    "https://x.com/jumperz/status/2056001174709383457"
+  ],
+  "originatingItems": [
+    "idea-c2584cc8"
+  ],
+  "dependencyUrls": [],
+  "runIds": [
+    "2026-05-17T16-27-29-499-x-home-grok-factcheck-external"
+  ],
+  "observedInLanes": [],
+  "owner": "Hermes",
+  "latestPriority": "medium",
+  "reinforcementCount": 1,
+  "traceability": {
+    "latestSourceNotePath": "Inbox/2026-05-17 hermes-grok-oauth-x-search-is-live-enough-to-use-for-agent-fact-checking-9e0f7b8.md",
+    "latestSourceUrls": [
+      "https://x.com/IcarusHermes/status/2055900844441174235",
+      "https://x.com/taiyo_ai_gakuse/status/2055807592824479982",
+      "https://x.com/jumperz/status/2056001174709383457"
+    ],
+    "latestRunId": "manual"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "claimId": "claim-a40b260c",
+  "statement": "Free AI routing and persistent agent memory are the obsession dominating the builder community right now.",
+  "sourceCardIds": [
+    "Use Cases/2026-05-18 x-signal-cyrilxbt-cyrilxbt-11h-the-10-fastest-growing-github-repos-this-week-and.md"
+  ],
+  "sourceUrls": [
+    "https://x.com/cyrilXBT/status/2056302799508697343",
+    "https://x.com/cyrilXBT"
+  ],
+  "dependencyUrls": [],
+  "runIds": [
+    "2026-05-18-21-01-28-500-fast"
+  ],
+  "confidence": "low",
+  "firstSeen": "2026-05-18T21:03:55.810Z",
+  "lastReinforced": "2026-05-18T21:03:55.810Z",
+  "verificationStatus": "needs_verification",
+  "evidenceStrength": "weak",
+  "originatingItems": [
+    "idea-61d270d7"
+  ],
+  "observedInLanes": [
+    "verify"
+  ],
+  "owner": "Hermes",
+  "latestPriority": "low",
+  "reinforcementCount": 1,
+  "traceability": {
+    "latestSourceNotePath": "Use Cases/2026-05-18 x-signal-cyrilxbt-cyrilxbt-11h-the-10-fastest-growing-github-repos-this-week-and.md",
+    "latestSourceUrls": [
+      "https://x.com/cyrilXBT/status/2056302799508697343",
+      "https://x.com/cyrilXBT"
+    ],
+    "latestRunId": "2026-05-18-21-01-28-500-fast"
+  }
+}

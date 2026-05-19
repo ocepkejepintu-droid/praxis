@@ -1,0 +1,37 @@
+{
+  "claimId": "claim-64812eb3",
+  "statement": "# X signal: PA13L0 @Fluyeporlaweb · 15h Translated from Spanish Show original Your AI agent X author/context: PA13L0 @Fluyeporlaweb · 15h ## Signal PA13L0 @Fluyeporlaweb · 15h Translated from Spanish Show original Your AI agent is blind It knows how to reason,",
+  "sourceCardIds": [
+    "Inbox/2026-05-18 x-signal-pa13l0-fluyeporlaweb-15h-translated-from-spanish-show-original-your-ai-.md"
+  ],
+  "sourceUrls": [
+    "https://x.com/Fluyeporlaweb/status/2056253597239709793",
+    "https://x.com/Fluyeporlaweb"
+  ],
+  "dependencyUrls": [],
+  "runIds": [
+    "2026-05-18-21-01-28-500-fast"
+  ],
+  "confidence": "low",
+  "firstSeen": "2026-05-18T21:03:55.810Z",
+  "lastReinforced": "2026-05-18T21:03:55.810Z",
+  "verificationStatus": "needs_verification",
+  "evidenceStrength": "weak",
+  "originatingItems": [
+    "idea-fef6a243"
+  ],
+  "observedInLanes": [
+    "verify"
+  ],
+  "owner": "Hermes",
+  "latestPriority": "low",
+  "reinforcementCount": 1,
+  "traceability": {
+    "latestSourceNotePath": "Inbox/2026-05-18 x-signal-pa13l0-fluyeporlaweb-15h-translated-from-spanish-show-original-your-ai-.md",
+    "latestSourceUrls": [
+      "https://x.com/Fluyeporlaweb/status/2056253597239709793",
+      "https://x.com/Fluyeporlaweb"
+    ],
+    "latestRunId": "2026-05-18-21-01-28-500-fast"
+  }
+}

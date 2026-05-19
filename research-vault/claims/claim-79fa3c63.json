@@ -1,0 +1,37 @@
+{
+  "claimId": "claim-79fa3c63",
+  "statement": "# X signal: JB @Bhumimov · May 16 Made this Google video with just 1 prompt Quote Higgsfield X author/context: JB @Bhumimov · May 16 ## Signal JB @Bhumimov · May 16 Made this Google video with just 1 prompt Quote Higgsfield AI @higgsfield · May 15 0:10 Superco",
+  "sourceCardIds": [
+    "Inbox/2026-05-17 x-signal-jb-bhumimov-may-16-made-this-google-video-with-just-1-prompt-quote-higg.md"
+  ],
+  "sourceUrls": [
+    "https://x.com/Bhumimov/status/2055673813749375022",
+    "https://x.com/Bhumimov"
+  ],
+  "dependencyUrls": [],
+  "runIds": [
+    "2026-05-17-16-49-17-830-fast"
+  ],
+  "confidence": "low",
+  "firstSeen": "2026-05-17T18:18:50.099Z",
+  "lastReinforced": "2026-05-18T01:21:05.550Z",
+  "verificationStatus": "unverified",
+  "evidenceStrength": "weak",
+  "originatingItems": [
+    "action-391f09bb"
+  ],
+  "observedInLanes": [
+    "watch"
+  ],
+  "owner": "Hermes",
+  "latestPriority": "low",
+  "reinforcementCount": 1,
+  "traceability": {
+    "latestSourceNotePath": "Inbox/2026-05-17 x-signal-jb-bhumimov-may-16-made-this-google-video-with-just-1-prompt-quote-higg.md",
+    "latestSourceUrls": [
+      "https://x.com/Bhumimov/status/2055673813749375022",
+      "https://x.com/Bhumimov"
+    ],
+    "latestRunId": "2026-05-17-16-49-17-830-fast"
+  }
+}

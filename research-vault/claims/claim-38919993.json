@@ -1,0 +1,37 @@
+{
+  "claimId": "claim-38919993",
+  "statement": "Report on Apple gift card scams where criminals tamper with physical cards and return them to shelves.",
+  "sourceCardIds": [
+    "Inbox/2026-05-18 x-signal-digital-rocm301-57s.md"
+  ],
+  "sourceUrls": [
+    "https://x.com/RocM301/status/2056342746865303913",
+    "https://x.com/RocM301"
+  ],
+  "dependencyUrls": [],
+  "runIds": [
+    "2026-05-18-11-55-40-814-fast"
+  ],
+  "confidence": "low",
+  "firstSeen": "2026-05-18T12:03:35.115Z",
+  "lastReinforced": "2026-05-18T12:03:35.115Z",
+  "verificationStatus": "partially_verified",
+  "evidenceStrength": "weak",
+  "originatingItems": [
+    "idea-fa03cafb"
+  ],
+  "observedInLanes": [
+    "verify"
+  ],
+  "owner": "Hermes",
+  "latestPriority": "medium",
+  "reinforcementCount": 1,
+  "traceability": {
+    "latestSourceNotePath": "Inbox/2026-05-18 x-signal-digital-rocm301-57s.md",
+    "latestSourceUrls": [
+      "https://x.com/RocM301/status/2056342746865303913",
+      "https://x.com/RocM301"
+    ],
+    "latestRunId": "2026-05-18-11-55-40-814-fast"
+  }
+}

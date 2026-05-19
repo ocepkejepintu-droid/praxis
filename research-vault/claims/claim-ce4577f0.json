@@ -1,0 +1,39 @@
+{
+  "claimId": "claim-ce4577f0",
+  "statement": "Good practical resource for learning Claude and Claude Code effectively.",
+  "sourceCardIds": [
+    "Inbox/2026-05-18 x-signal-robin-delta-heyrobinai-37m-1-learn-how-to-use-claude-for-everyday-work-.md"
+  ],
+  "sourceUrls": [
+    "https://x.com/heyrobinai/status/2056333600606536026",
+    "https://x.com/heyrobinai",
+    "https://t.co/Rir2NUR7vu"
+  ],
+  "dependencyUrls": [],
+  "runIds": [
+    "2026-05-18-11-55-40-814-fast"
+  ],
+  "confidence": "low",
+  "firstSeen": "2026-05-18T12:03:35.115Z",
+  "lastReinforced": "2026-05-18T12:03:35.115Z",
+  "verificationStatus": "partially_verified",
+  "evidenceStrength": "weak",
+  "originatingItems": [
+    "action-3583f38d"
+  ],
+  "observedInLanes": [
+    "verify"
+  ],
+  "owner": "Hermes",
+  "latestPriority": "low",
+  "reinforcementCount": 1,
+  "traceability": {
+    "latestSourceNotePath": "Inbox/2026-05-18 x-signal-robin-delta-heyrobinai-37m-1-learn-how-to-use-claude-for-everyday-work-.md",
+    "latestSourceUrls": [
+      "https://x.com/heyrobinai/status/2056333600606536026",
+      "https://x.com/heyrobinai",
+      "https://t.co/Rir2NUR7vu"
+    ],
+    "latestRunId": "2026-05-18-11-55-40-814-fast"
+  }
+}

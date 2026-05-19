@@ -1,0 +1,43 @@
+{
+  "claimId": "claim-4f84f421",
+  "statement": "Simple, practical advice for people new to the practice.",
+  "sourceCardIds": [
+    "Inbox/2026-05-18 x-signal-cleveland-clinic-clevelandclinic-13m-yoga-has-many-different-pieces-and.md"
+  ],
+  "sourceUrls": [
+    "https://x.com/ClevelandClinic/status/2056339520300413327",
+    "https://x.com/i/status/2056339520300413327",
+    "https://health.clevelandclinic.org/yoga-for-beginners",
+    "https://x.com/ClevelandClinic",
+    "https://t.co/8r5c4Wtzz2"
+  ],
+  "dependencyUrls": [],
+  "runIds": [
+    "2026-05-18-11-55-40-814-fast"
+  ],
+  "confidence": "low",
+  "firstSeen": "2026-05-18T12:03:35.115Z",
+  "lastReinforced": "2026-05-18T12:03:35.115Z",
+  "verificationStatus": "partially_verified",
+  "evidenceStrength": "weak",
+  "originatingItems": [
+    "idea-efd45857"
+  ],
+  "observedInLanes": [
+    "verify"
+  ],
+  "owner": "Hermes",
+  "latestPriority": "medium",
+  "reinforcementCount": 1,
+  "traceability": {
+    "latestSourceNotePath": "Inbox/2026-05-18 x-signal-cleveland-clinic-clevelandclinic-13m-yoga-has-many-different-pieces-and.md",
+    "latestSourceUrls": [
+      "https://x.com/ClevelandClinic/status/2056339520300413327",
+      "https://x.com/i/status/2056339520300413327",
+      "https://health.clevelandclinic.org/yoga-for-beginners",
+      "https://x.com/ClevelandClinic",
+      "https://t.co/8r5c4Wtzz2"
+    ],
+    "latestRunId": "2026-05-18-11-55-40-814-fast"
+  }
+}

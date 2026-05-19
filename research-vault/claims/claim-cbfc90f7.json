@@ -1,0 +1,41 @@
+{
+  "claimId": "claim-cbfc90f7",
+  "statement": "It converts between 5,000+ formats with a simple drag-and-drop interface, emphasizing privacy and ease of use compared to random online converters.",
+  "sourceCardIds": [
+    "Inbox/2026-05-17 x-signal-jake-manger-jakemanger-3h-i-m-a-solo-dev-that-builds-this-little-file.md"
+  ],
+  "sourceUrls": [
+    "https://x.com/JakeManger/status/2056000458049905043",
+    "https://x.com/i/status/2056000458049905043",
+    "https://howtoconvert.co/",
+    "https://x.com/JakeManger"
+  ],
+  "dependencyUrls": [],
+  "runIds": [
+    "2026-05-17-16-49-17-830-fast"
+  ],
+  "confidence": "low",
+  "firstSeen": "2026-05-18T08:25:56.199Z",
+  "lastReinforced": "2026-05-18T08:25:56.199Z",
+  "verificationStatus": "partially_verified",
+  "evidenceStrength": "weak",
+  "originatingItems": [
+    "idea-9a637d73"
+  ],
+  "observedInLanes": [
+    "verify"
+  ],
+  "owner": "Hermes",
+  "latestPriority": "medium",
+  "reinforcementCount": 1,
+  "traceability": {
+    "latestSourceNotePath": "Inbox/2026-05-17 x-signal-jake-manger-jakemanger-3h-i-m-a-solo-dev-that-builds-this-little-file.md",
+    "latestSourceUrls": [
+      "https://x.com/JakeManger/status/2056000458049905043",
+      "https://x.com/i/status/2056000458049905043",
+      "https://howtoconvert.co/",
+      "https://x.com/JakeManger"
+    ],
+    "latestRunId": "2026-05-17-16-49-17-830-fast"
+  }
+}

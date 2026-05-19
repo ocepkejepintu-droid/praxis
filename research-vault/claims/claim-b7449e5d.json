@@ -1,0 +1,39 @@
+{
+  "claimId": "claim-b7449e5d",
+  "statement": "Sandarmokh, Bykivnia, Bucha – these are links in the same chain of Russian terror.",
+  "sourceCardIds": [
+    "Inbox/2026-05-18 x-signal-juris-ulmanis-reposted-kyrylo-budanov-kyrylo-budanov-may-17-replying-to.md"
+  ],
+  "sourceUrls": [
+    "https://x.com/Kyrylo_Budanov/status/2055907889139597645",
+    "https://x.com/Jurisu",
+    "https://x.com/Kyrylo_Budanov"
+  ],
+  "dependencyUrls": [],
+  "runIds": [
+    "2026-05-18-12-33-20-370-fast"
+  ],
+  "confidence": "low",
+  "firstSeen": "2026-05-18T12:36:45.868Z",
+  "lastReinforced": "2026-05-18T13:16:29.837Z",
+  "verificationStatus": "needs_verification",
+  "evidenceStrength": "weak",
+  "originatingItems": [
+    "idea-56e48e2c"
+  ],
+  "observedInLanes": [
+    "verify"
+  ],
+  "owner": "Hermes",
+  "latestPriority": "low",
+  "reinforcementCount": 1,
+  "traceability": {
+    "latestSourceNotePath": "Inbox/2026-05-18 x-signal-juris-ulmanis-reposted-kyrylo-budanov-kyrylo-budanov-may-17-replying-to.md",
+    "latestSourceUrls": [
+      "https://x.com/Kyrylo_Budanov/status/2055907889139597645",
+      "https://x.com/Jurisu",
+      "https://x.com/Kyrylo_Budanov"
+    ],
+    "latestRunId": "2026-05-18-12-33-20-370-fast"
+  }
+}

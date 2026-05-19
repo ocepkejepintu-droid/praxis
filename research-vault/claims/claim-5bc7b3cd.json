@@ -1,0 +1,41 @@
+{
+  "claimId": "claim-5bc7b3cd",
+  "statement": "It modifies Chromium source directly (not just patches) and reportedly passes many bot detection tests.",
+  "sourceCardIds": [
+    "Inbox/2026-05-17 x-signal-github-projects-community-githubprojects-2h-stealth-chromium-that-passe.md"
+  ],
+  "sourceUrls": [
+    "https://x.com/GithubProjects/status/2056023030485459043",
+    "https://x.com/i/status/2056023030485459043",
+    "https://www.opensourceprojects.dev/post/f1c379f8-4432-42c4-a4fd-09bd79f5d8f0",
+    "https://x.com/GithubProjects"
+  ],
+  "dependencyUrls": [],
+  "runIds": [
+    "2026-05-17-16-49-17-830-fast"
+  ],
+  "confidence": "low",
+  "firstSeen": "2026-05-18T09:21:43.443Z",
+  "lastReinforced": "2026-05-18T10:09:55.056Z",
+  "verificationStatus": "partially_verified",
+  "evidenceStrength": "weak",
+  "originatingItems": [
+    "idea-a5760d94"
+  ],
+  "observedInLanes": [
+    "verify"
+  ],
+  "owner": "Hermes",
+  "latestPriority": "medium",
+  "reinforcementCount": 1,
+  "traceability": {
+    "latestSourceNotePath": "Inbox/2026-05-17 x-signal-github-projects-community-githubprojects-2h-stealth-chromium-that-passe.md",
+    "latestSourceUrls": [
+      "https://x.com/GithubProjects/status/2056023030485459043",
+      "https://x.com/i/status/2056023030485459043",
+      "https://www.opensourceprojects.dev/post/f1c379f8-4432-42c4-a4fd-09bd79f5d8f0",
+      "https://x.com/GithubProjects"
+    ],
+    "latestRunId": "2026-05-17-16-49-17-830-fast"
+  }
+}

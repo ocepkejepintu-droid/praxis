@@ -1,0 +1,39 @@
+{
+  "claimId": "claim-ac566483",
+  "statement": "didn't expect 87 findings: high: 6 medium: 46 low: 35 the flow: review run the audit ↓ report generate the report ↓ next/show queue up findings (next or by id) ↓ triage mark: real bug / false positive / already Show more Quote Peter Steinberger @steipete · May",
+  "sourceCardIds": [
+    "Inbox/2026-05-17 x-signal-vox-voxyz-ai-18h-ran-clawpatch-on-my-whole-repo-didn-t-expect-87-findin.md"
+  ],
+  "sourceUrls": [
+    "https://x.com/Voxyz_ai/status/2055770273039683588",
+    "https://x.com/Voxyz_ai"
+  ],
+  "dependencyUrls": [],
+  "runIds": [
+    "2026-05-17-16-49-17-830-fast"
+  ],
+  "confidence": "low",
+  "firstSeen": "2026-05-17T18:18:50.099Z",
+  "lastReinforced": "2026-05-18T01:21:05.550Z",
+  "verificationStatus": "needs_verification",
+  "evidenceStrength": "weak",
+  "originatingItems": [
+    "idea-a63a8457",
+    "action-5e45fcb2"
+  ],
+  "observedInLanes": [
+    "verify",
+    "watch"
+  ],
+  "owner": "Hermes",
+  "latestPriority": "low",
+  "reinforcementCount": 2,
+  "traceability": {
+    "latestSourceNotePath": "Inbox/2026-05-17 x-signal-vox-voxyz-ai-18h-ran-clawpatch-on-my-whole-repo-didn-t-expect-87-findin.md",
+    "latestSourceUrls": [
+      "https://x.com/Voxyz_ai/status/2055770273039683588",
+      "https://x.com/Voxyz_ai"
+    ],
+    "latestRunId": "2026-05-17-16-49-17-830-fast"
+  }
+}

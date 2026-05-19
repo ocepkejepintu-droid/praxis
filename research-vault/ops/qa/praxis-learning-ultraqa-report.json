@@ -1,0 +1,154 @@
+{
+  "verdict": "APPROVE",
+  "completedAt": "2026-05-18T20:11:52.418Z",
+  "scope": "Praxis Learning $100/mo product loop final UltraQA gate",
+  "safetyBounds": {
+    "noSecrets": true,
+    "noFakeEvidence": true,
+    "noRealRuntimeExecution": true,
+    "xSearchDisabledByDefault": true,
+    "noDestructiveCommands": true
+  },
+  "bugsFound": [
+    {
+      "id": "ULTRAQA-PRAXIS-001",
+      "severity": "HIGH",
+      "title": "Real Hermes/OpenClaw status could become available when env command and allow flag were set even though runner execution is not implemented.",
+      "impact": "UI/API could imply real runtime can learn while run path still blocks or, later, invite unsafe external execution assumptions.",
+      "fix": "Real external agents now stay available:false/runtimeAvailable:false until REAL_PRAXIS_RUNTIME_RUNNER exists; configured commands produce explicit not implemented/approved blocker."
+    },
+    {
+      "id": "ULTRAQA-PRAXIS-002",
+      "severity": "MEDIUM",
+      "title": "CLI accepted non-finite numeric input and failed later with min score NaN.",
+      "impact": "Misleading operator error during nightly learning run.",
+      "fix": "CLI now validates --limit and --min-score up front and returns structured JSON error."
+    }
+  ],
+  "fixesApplied": [
+    "src/lib/praxis-learning.ts: real runtime availability hard-blocked until approved runner implementation exists.",
+    "scripts/run-praxis-learning-loop.ts: finite numeric CLI validation added.",
+    "scripts/check-praxis-quality-gate.ts: regression covers configured-but-unimplemented Hermes runtime staying blocked."
+  ],
+  "scenarioMatrix": [
+    {
+      "id": "ADV-001",
+      "scenario": "Static security grep for secrets, x_search, external calls, destructive commands",
+      "status": "PASS",
+      "evidence": "No secrets; no x_search calls; no fetch/spawn/exec/rm in Praxis loop runtime. Env var names only."
+    },
+    {
+      "id": "ADV-002",
+      "scenario": "Configured real Hermes env with allow flag",
+      "status": "FIXED_PASS",
+      "evidence": "Hermes remains available:false/runtimeAvailable:false; blocker says runtime execution not implemented/approved; no command executed."
+    },
+    {
+      "id": "ADV-003",
+      "scenario": "Malformed CLI agent",
+      "status": "PASS",
+      "evidence": "Exit 1 with JSON error: Invalid agent bad."
+    },
+    {
+      "id": "ADV-004",
+      "scenario": "Malformed CLI --min-score notnum",
+      "status": "FIXED_PASS",
+      "evidence": "Exit 1 with JSON error: --min-score must be finite number."
+    },
+    {
+      "id": "ADV-005",
+      "scenario": "Artifact integrity: sourceUrls, skill draft paths, real runtime blocked reports",
+      "status": "PASS",
+      "evidence": "5 safe relative skill draft paths; 84 reports checked; completed/blocked reports all have sourceUrls; real hermes/openclaw reports all blocked."
+    },
+    {
+      "id": "ADV-006",
+      "scenario": "HTTP API smoke on running localhost:3000",
+      "status": "PASS",
+      "evidence": "/status 200; /morning-report 401 without auth; /reports 401 without auth; real agents unavailable."
+    },
+    {
+      "id": "ADV-007",
+      "scenario": "Dashboard UI smoke",
+      "status": "PASS",
+      "evidence": "/dashboard 200 and contains Praxis learning panel, mock Hermes, latest batch learned."
+    },
+    {
+      "id": "ADV-008",
+      "scenario": "Full regression suite",
+      "status": "PASS",
+      "evidence": "test:praxis-learning, test:praxis-quality-gate, test:praxis-learning-loop, test:hermes-acp, test:school-acp, lint, build all passed."
+    }
+  ],
+  "commandsRun": [
+    {
+      "cmd": "npm run test:praxis-learning",
+      "status": "PASS"
+    },
+    {
+      "cmd": "npm run test:praxis-quality-gate",
+      "status": "PASS"
+    },
+    {
+      "cmd": "npm run test:praxis-learning-loop",
+      "status": "PASS"
+    },
+    {
+      "cmd": "npm run test:hermes-acp",
+      "status": "PASS"
+    },
+    {
+      "cmd": "npm run test:school-acp",
+      "status": "PASS"
+    },
+    {
+      "cmd": "npm run lint",
+      "status": "PASS"
+    },
+    {
+      "cmd": "npm run build",
+      "status": "PASS_WITH_WARNING",
+      "note": "Turbopack NFT trace warning from next.config.ts -> /api/hermes/judgement; unrelated pre-existing build warning."
+    },
+    {
+      "cmd": "curl http://localhost:3000/api/acp/praxis-learning/status",
+      "status": "PASS",
+      "httpStatus": 200
+    },
+    {
+      "cmd": "curl http://localhost:3000/api/acp/praxis-learning/morning-report",
+      "status": "PASS",
+      "httpStatus": 401,
+      "note": "expected without auth"
+    },
+    {
+      "cmd": "curl http://localhost:3000/api/acp/praxis-learning/reports",
+      "status": "PASS",
+      "httpStatus": 401,
+      "note": "expected without auth"
+    },
+    {
+      "cmd": "curl http://localhost:3000/dashboard",
+      "status": "PASS",
+      "httpStatus": 200
+    }
+  ],
+  "artifacts": {
+    "qaReport": "research-vault/ops/qa/praxis-learning-ultraqa-report.json",
+    "morningJson": "research-vault/ops/praxis-learning-morning-report.json",
+    "morningMarkdown": "research-vault/ops/praxis-learning-morning-report.md",
+    "overnightJson": "research-vault/ops/praxis-learning-overnight-report.json",
+    "overnightMarkdown": "research-vault/ops/praxis-learning-overnight-report.md",
+    "reports": "research-vault/ops/praxis-learning-reports.json",
+    "skillDraftDir": "research-vault/ops/skill-drafts/"
+  },
+  "remainingRealRuntimeBlockers": {
+    "hermes": "Real Hermes runner intentionally blocked until a repo-approved REAL_PRAXIS_RUNTIME_RUNNER implementation exists; HERMES_LEARNER_COMMAND alone is not enough.",
+    "openclaw": "Real OpenClaw runner intentionally blocked until a repo-approved REAL_PRAXIS_RUNTIME_RUNNER implementation exists; OPENCLAW_LEARNER_COMMAND alone is not enough."
+  },
+  "residualRisks": [
+    "Build emits unrelated Turbopack NFT trace warning involving next.config.ts and /api/hermes/judgement; build still exits 0.",
+    "Direct route import smoke with raw node is blocked by Next ESM package resolution; HTTP smoke through live Next server passed instead.",
+    "No real Hermes/OpenClaw execution adapter exists yet by design; mock loop proves product flow safely."
+  ]
+}

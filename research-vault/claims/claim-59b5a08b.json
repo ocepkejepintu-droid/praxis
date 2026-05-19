@@ -1,0 +1,38 @@
+{
+  "claimId": "claim-59b5a08b",
+  "statement": "It will: > analyze it frame-by-frame > reverse-engineer why it blew up > build a full storyboard for YOUR version > design scene mockups, write animation timing, voiceover, audio cues > package everything into a production-ready PDF I just did Show more 27 45",
+  "sourceCardIds": [
+    "Inbox/2026-05-17 x-signal-leo-leomeethewoo-may-16-upload-any-viral-video-to-claude-it-will-analyz.md"
+  ],
+  "sourceUrls": [
+    "https://x.com/leomeethewoo/status/2055633136906863036",
+    "https://x.com/leomeethewoo"
+  ],
+  "dependencyUrls": [],
+  "runIds": [
+    "2026-05-17-16-49-17-830-fast"
+  ],
+  "confidence": "low",
+  "firstSeen": "2026-05-17T18:18:50.099Z",
+  "lastReinforced": "2026-05-18T10:09:55.056Z",
+  "verificationStatus": "unverified",
+  "evidenceStrength": "weak",
+  "originatingItems": [
+    "action-9e91f505",
+    "action-9b91f04c"
+  ],
+  "observedInLanes": [
+    "watch"
+  ],
+  "owner": "Hermes",
+  "latestPriority": "low",
+  "reinforcementCount": 2,
+  "traceability": {
+    "latestSourceNotePath": "Inbox/2026-05-17 x-signal-leo-leomeethewoo-may-16-upload-any-viral-video-to-claude-it-will-analyz.md",
+    "latestSourceUrls": [
+      "https://x.com/leomeethewoo/status/2055633136906863036",
+      "https://x.com/leomeethewoo"
+    ],
+    "latestRunId": "2026-05-17-16-49-17-830-fast"
+  }
+}

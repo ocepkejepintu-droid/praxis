@@ -1,0 +1,39 @@
+{
+  "claimId": "claim-6c0fee8f",
+  "statement": "# X signal: Feyber | Learn AI @woleswoosh · 8h Translated from Indonesian Show original X author/context: Feyber | Learn AI @woleswoosh · 8h ## Signal Feyber | Learn AI @woleswoosh · 8h Translated from Indonesian Show original Yesterday CODEX, now claude code",
+  "sourceCardIds": [
+    "Inbox/2026-05-17 x-signal-feyber-learn-ai-woleswoosh-8h-translated-from-indonesian-show-original.md"
+  ],
+  "sourceUrls": [
+    "https://x.com/woleswoosh/status/2055919713105088641",
+    "https://x.com/woleswoosh",
+    "https://t.co/VrRecfHBpO"
+  ],
+  "dependencyUrls": [],
+  "runIds": [
+    "2026-05-17-16-49-17-830-fast"
+  ],
+  "confidence": "low",
+  "firstSeen": "2026-05-17T18:18:50.099Z",
+  "lastReinforced": "2026-05-18T01:21:05.550Z",
+  "verificationStatus": "needs_verification",
+  "evidenceStrength": "weak",
+  "originatingItems": [
+    "idea-6d54d134"
+  ],
+  "observedInLanes": [
+    "verify"
+  ],
+  "owner": "Hermes",
+  "latestPriority": "low",
+  "reinforcementCount": 1,
+  "traceability": {
+    "latestSourceNotePath": "Inbox/2026-05-17 x-signal-feyber-learn-ai-woleswoosh-8h-translated-from-indonesian-show-original.md",
+    "latestSourceUrls": [
+      "https://x.com/woleswoosh/status/2055919713105088641",
+      "https://x.com/woleswoosh",
+      "https://t.co/VrRecfHBpO"
+    ],
+    "latestRunId": "2026-05-17-16-49-17-830-fast"
+  }
+}

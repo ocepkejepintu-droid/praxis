@@ -1,0 +1,37 @@
+{
+  "claimId": "claim-a683ad8e",
+  "statement": "Thread showing how to use Claude 4.7 to generate clean, automated Excel spreadsheets quickly using 5 structured prompts for planning, base creation, automation, summary sheets, and optimization.",
+  "sourceCardIds": [
+    "Inbox/2026-05-18 x-signal-utkarsh-sharma-reposted-utkarsh-sharma-techxutkarsh-2h-goodbye-excel-no.md"
+  ],
+  "sourceUrls": [
+    "https://x.com/techxutkarsh/status/2056298729108549913",
+    "https://x.com/techxutkarsh"
+  ],
+  "dependencyUrls": [],
+  "runIds": [
+    "2026-05-18-11-55-40-814-fast"
+  ],
+  "confidence": "low",
+  "firstSeen": "2026-05-18T12:03:35.115Z",
+  "lastReinforced": "2026-05-18T12:03:35.115Z",
+  "verificationStatus": "partially_verified",
+  "evidenceStrength": "weak",
+  "originatingItems": [
+    "idea-89026528"
+  ],
+  "observedInLanes": [
+    "verify"
+  ],
+  "owner": "Hermes",
+  "latestPriority": "medium",
+  "reinforcementCount": 1,
+  "traceability": {
+    "latestSourceNotePath": "Inbox/2026-05-18 x-signal-utkarsh-sharma-reposted-utkarsh-sharma-techxutkarsh-2h-goodbye-excel-no.md",
+    "latestSourceUrls": [
+      "https://x.com/techxutkarsh/status/2056298729108549913",
+      "https://x.com/techxutkarsh"
+    ],
+    "latestRunId": "2026-05-18-11-55-40-814-fast"
+  }
+}

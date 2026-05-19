@@ -1,0 +1,178 @@
+{
+  "verdict": "APPROVE",
+  "completedAt": "2026-05-18T21:08:55.525Z",
+  "goal": "Make Praxis Learning SaaS-ready for strangers paying $100/mo",
+  "mode": "ultragoal+ralph+ultraqa",
+  "approvedFor": "alpha onboarding with accounts, tenant-safe reports/jobs, plan limits, mock safe learning, blocked real runtimes",
+  "changedFiles": [
+    ".env.example",
+    "package.json",
+    "src/lib/praxis-learning.ts",
+    "src/lib/praxis-learning-saas.ts",
+    "src/lib/hermes-acp.ts",
+    "src/app/api/acp/praxis-learning/_auth.ts",
+    "src/app/api/acp/praxis-learning/status/route.ts",
+    "src/app/api/acp/praxis-learning/run/route.ts",
+    "src/app/api/acp/praxis-learning/reports/route.ts",
+    "src/app/api/acp/praxis-learning/morning-report/route.ts",
+    "src/app/api/acp/praxis-learning/jobs/route.ts",
+    "src/app/api/acp/praxis-learning/jobs/[id]/route.ts",
+    "src/components/PraxisLearningPanel.tsx",
+    "src/app/dashboard/page.tsx",
+    "src/app/globals.css",
+    "scripts/check-praxis-saas-readiness.ts"
+  ],
+  "deliverables": {
+    "tenantIsolation": "research-vault/tenants/<ownerId>/ops plus .radar/tenants/<ownerId>/acp-log.jsonl; authenticated APIs route through tenantFromAuth.",
+    "jobQueue": "POST/GET /api/acp/praxis-learning/jobs and GET/DELETE /api/acp/praxis-learning/jobs/[id], file-backed queued->running->completed/failed/cancelled records.",
+    "plan": "Praxis Pro $100/mo skeleton with daily run, max Praxis/run, max agents/run, runtime, and x_search=0 limits.",
+    "runtimeBoundary": "RuntimeRunner type + mock runner default; real Hermes/OpenClaw blocked with required config and no command execution.",
+    "notifications": "Per-tenant notification target config skeleton for email/telegram/whatsapp, no external send.",
+    "observability": "Per-tenant usage counters: selected Praxis, agents, reports, runtime ms, x_search calls, failures, blockers.",
+    "ui": "Dashboard Praxis panel shows plan/usage/latest job/morning report/reports/drafts/blockers/empty states.",
+    "qa": "research-vault/ops/qa/praxis-saas-alpha-ultraqa-report.json"
+  },
+  "scenarioMatrix": [
+    {
+      "id": "TENANT-001",
+      "scenario": "user A reports and jobs inaccessible to user B",
+      "status": "PASS",
+      "evidence": "test:praxis-saas alphaReports=8 betaReports=0 betaJobLookup=null"
+    },
+    {
+      "id": "JOBS-001",
+      "scenario": "durable per-user job lifecycle",
+      "status": "PASS",
+      "evidence": "job create completed with tenant-scoped jobs.json, reports, morning report, skill drafts, ACP log"
+    },
+    {
+      "id": "LIMIT-001",
+      "scenario": "plan max Praxis/run over-limit",
+      "status": "PASS",
+      "evidence": "HTTP overlimit returned 429 PLAN_LIMIT_EXCEEDED field=maxPraxisPerRun; unit guard also covers nightlyRunsPerDay and xSearchCallsPerDay"
+    },
+    {
+      "id": "RUNTIME-001",
+      "scenario": "real Hermes/OpenClaw blocked by default and with fake env command",
+      "status": "PASS",
+      "evidence": "runtimeAvailable=false; no spawn/exec/child_process; blockers say not configured or not implemented/approved"
+    },
+    {
+      "id": "SECRETS-001",
+      "scenario": "secret scan on changed files and artifacts",
+      "status": "PASS",
+      "evidence": "targeted grep found no raw API keys/tokens/passwords/private keys; .env.example has placeholders only"
+    },
+    {
+      "id": "XSEARCH-001",
+      "scenario": "x_search quota leak",
+      "status": "PASS",
+      "evidence": "xSearchCallsPerDay=0, over request rejected, usage xSearchCalls=0, grep found no x_search execution path"
+    },
+    {
+      "id": "PATH-001",
+      "scenario": "skill draft path traversal",
+      "status": "PASS",
+      "evidence": "draft paths are relative, no .. segments, rooted under research-vault/tenants/<ownerId>/ops/skill-drafts"
+    },
+    {
+      "id": "AUTH-001",
+      "scenario": "public status does not leak reports/aggregates",
+      "status": "PASS",
+      "evidence": "GET /status public returns candidates but recentReports=[], latestAggregate=null"
+    },
+    {
+      "id": "HTTP-001",
+      "scenario": "authenticated job/status/reports API smoke",
+      "status": "PASS",
+      "evidence": "status 200, jobs POST 202, job GET 200, reports 200, overlimit 429"
+    },
+    {
+      "id": "UI-001",
+      "scenario": "dashboard alpha surface",
+      "status": "PASS",
+      "evidence": "build includes /dashboard and component asserts plan/latest job/tenant-safe state"
+    }
+  ],
+  "commandsRun": [
+    {
+      "cmd": "npm run test:praxis-saas",
+      "status": "PASS"
+    },
+    {
+      "cmd": "npm run test:praxis-learning",
+      "status": "PASS"
+    },
+    {
+      "cmd": "npm run test:praxis-quality-gate",
+      "status": "PASS"
+    },
+    {
+      "cmd": "npm run test:praxis-learning-loop",
+      "status": "PASS"
+    },
+    {
+      "cmd": "npm run test:hermes-acp",
+      "status": "PASS"
+    },
+    {
+      "cmd": "npm run test:school-acp",
+      "status": "PASS"
+    },
+    {
+      "cmd": "npm run test:auth-acp",
+      "status": "PASS"
+    },
+    {
+      "cmd": "npm run test:user-sessions",
+      "status": "PASS"
+    },
+    {
+      "cmd": "npm run test:security-hardening",
+      "status": "PASS"
+    },
+    {
+      "cmd": "npm run lint",
+      "status": "PASS"
+    },
+    {
+      "cmd": "npm run build",
+      "status": "PASS_WITH_WARNING",
+      "note": "pre-existing Turbopack NFT trace warning for next.config.ts via /api/hermes/judgement"
+    },
+    {
+      "cmd": "HTTP smoke localhost:3000 /api/acp/praxis-learning/status/jobs/reports",
+      "status": "PASS"
+    },
+    {
+      "cmd": "targeted secret/dangerous-call grep",
+      "status": "PASS"
+    }
+  ],
+  "aiSlopCleaner": {
+    "status": "passed",
+    "scope": "changed Praxis SaaS files",
+    "cleanup": [
+      "removed unused aggregatePaths helper",
+      "kept tenant SaaS layer bounded instead of broad DB/framework rewrite",
+      "public status sanitized to avoid report leak"
+    ]
+  },
+  "codeReview": {
+    "recommendation": "APPROVE",
+    "architectStatus": "CLEAR",
+    "findingsFixed": [
+      "Public status endpoint could leak global recent reports; fixed by returning candidates only when unauthenticated.",
+      "Stale unused helper removed."
+    ],
+    "residualWatch": [
+      "File-backed inline job runner is alpha/dev mode, not production worker. Acceptable per brief.",
+      "Build has unrelated Turbopack NFT trace warning."
+    ]
+  },
+  "remainingBlockers": {
+    "realHermes": "No approved real RuntimeRunner implementation yet; intentionally blocked. Need allowlist, workspace dir, timeout, and vetted bridge before real external execution.",
+    "realOpenClaw": "No approved real RuntimeRunner implementation yet; intentionally blocked. Need allowlist, workspace dir, timeout, and vetted bridge before real external execution.",
+    "payments": "Stripe checkout intentionally out of scope; plan skeleton exists."
+  }
+}

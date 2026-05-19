@@ -1,0 +1,35 @@
+{
+  "claimId": "claim-743fa6f1",
+  "statement": "Manual x_search returned citations for top candidates.",
+  "sourceCardIds": [
+    "pending"
+  ],
+  "confidence": "high",
+  "firstSeen": "2026-05-17T16:54:11.688Z",
+  "lastReinforced": "2026-05-17T17:44:16.689Z",
+  "verificationStatus": "verified",
+  "evidenceStrength": "strong",
+  "sourceUrls": [
+    "https://x.com/Voxyz_ai/status/2055770273039683588",
+    "https://x.com/gdb/status/2056046844921172243"
+  ],
+  "originatingItems": [
+    "action-6d35a144"
+  ],
+  "dependencyUrls": [],
+  "runIds": [
+    "2026-05-17-16-49-17-830-fast"
+  ],
+  "observedInLanes": [],
+  "owner": "Hermes",
+  "latestPriority": "medium",
+  "reinforcementCount": 1,
+  "traceability": {
+    "latestSourceNotePath": "pending",
+    "latestSourceUrls": [
+      "https://x.com/Voxyz_ai/status/2055770273039683588",
+      "https://x.com/gdb/status/2056046844921172243"
+    ],
+    "latestRunId": "manual"
+  }
+}

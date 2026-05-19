@@ -1,0 +1,39 @@
+{
+  "claimId": "claim-fd585f9b",
+  "statement": "Agencies are charging businesses thousands to automate workflows they used to do manually.",
+  "sourceCardIds": [
+    "Repos/2026-05-18 x-signal-kshitij-mishra-ai-tech-daievolutionhub-11h-here-are-10-github-repos.md"
+  ],
+  "sourceUrls": [
+    "https://x.com/DAIEvolutionHub/status/2056311359265227151",
+    "https://x.com/DAIEvolutionHub",
+    "https://t.co/zkSKnzzq1v"
+  ],
+  "dependencyUrls": [],
+  "runIds": [
+    "2026-05-18-21-01-28-500-fast"
+  ],
+  "confidence": "low",
+  "firstSeen": "2026-05-18T21:03:55.810Z",
+  "lastReinforced": "2026-05-18T21:03:55.810Z",
+  "verificationStatus": "needs_verification",
+  "evidenceStrength": "weak",
+  "originatingItems": [
+    "idea-6095f5a0"
+  ],
+  "observedInLanes": [
+    "verify"
+  ],
+  "owner": "Hermes",
+  "latestPriority": "low",
+  "reinforcementCount": 1,
+  "traceability": {
+    "latestSourceNotePath": "Repos/2026-05-18 x-signal-kshitij-mishra-ai-tech-daievolutionhub-11h-here-are-10-github-repos.md",
+    "latestSourceUrls": [
+      "https://x.com/DAIEvolutionHub/status/2056311359265227151",
+      "https://x.com/DAIEvolutionHub",
+      "https://t.co/zkSKnzzq1v"
+    ],
+    "latestRunId": "2026-05-18-21-01-28-500-fast"
+  }
+}

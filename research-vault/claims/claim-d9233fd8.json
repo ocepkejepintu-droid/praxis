@@ -1,0 +1,39 @@
+{
+  "claimId": "claim-d9233fd8",
+  "statement": "We've done 30 of the largest launches on X.",
+  "sourceCardIds": [
+    "Inbox/2026-05-18 x-signal-matt-epstein-reposted-matt-epstein-mattepstein-may-15-article-the-secre.md"
+  ],
+  "sourceUrls": [
+    "https://x.com/mattepstein/status/2054989194414465222",
+    "https://shownmedia.com/",
+    "https://x.com/mattepstein"
+  ],
+  "dependencyUrls": [],
+  "runIds": [
+    "2026-05-18-21-01-28-500-fast"
+  ],
+  "confidence": "low",
+  "firstSeen": "2026-05-18T21:03:55.810Z",
+  "lastReinforced": "2026-05-18T21:03:55.810Z",
+  "verificationStatus": "unverified",
+  "evidenceStrength": "weak",
+  "originatingItems": [
+    "action-59a01e81"
+  ],
+  "observedInLanes": [
+    "watch"
+  ],
+  "owner": "Hermes",
+  "latestPriority": "low",
+  "reinforcementCount": 1,
+  "traceability": {
+    "latestSourceNotePath": "Inbox/2026-05-18 x-signal-matt-epstein-reposted-matt-epstein-mattepstein-may-15-article-the-secre.md",
+    "latestSourceUrls": [
+      "https://x.com/mattepstein/status/2054989194414465222",
+      "https://shownmedia.com/",
+      "https://x.com/mattepstein"
+    ],
+    "latestRunId": "2026-05-18-21-01-28-500-fast"
+  }
+}

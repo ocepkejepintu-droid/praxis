@@ -1,0 +1,37 @@
+{
+  "claimId": "claim-97ec952f",
+  "statement": "# X signal: 小鹏Digital @RocM301 · 15h Translated from Chinese Show original What exactly is X author/context: 小鹏Digital @RocM301 · 15h ## Signal 小鹏Digital @RocM301 · 15h Translated from Chinese Show original What exactly is the open-source project 【OpenHuman】 t",
+  "sourceCardIds": [
+    "Inbox/2026-05-18 x-signal-digital-rocm301-15h-translated-from-chinese-show-original-what-exactly-.md"
+  ],
+  "sourceUrls": [
+    "https://x.com/RocM301/status/2056246217781473350",
+    "https://x.com/RocM301"
+  ],
+  "dependencyUrls": [],
+  "runIds": [
+    "2026-05-18-21-01-28-500-fast"
+  ],
+  "confidence": "low",
+  "firstSeen": "2026-05-18T21:03:55.810Z",
+  "lastReinforced": "2026-05-18T21:03:55.810Z",
+  "verificationStatus": "needs_verification",
+  "evidenceStrength": "weak",
+  "originatingItems": [
+    "idea-76ded852"
+  ],
+  "observedInLanes": [
+    "verify"
+  ],
+  "owner": "Hermes",
+  "latestPriority": "low",
+  "reinforcementCount": 1,
+  "traceability": {
+    "latestSourceNotePath": "Inbox/2026-05-18 x-signal-digital-rocm301-15h-translated-from-chinese-show-original-what-exactly-.md",
+    "latestSourceUrls": [
+      "https://x.com/RocM301/status/2056246217781473350",
+      "https://x.com/RocM301"
+    ],
+    "latestRunId": "2026-05-18-21-01-28-500-fast"
+  }
+}

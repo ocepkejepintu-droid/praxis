@@ -1,0 +1,39 @@
+{
+  "claimId": "claim-b6c004bd",
+  "statement": "Focuses on using Claude Code effectively in daily development work, including skills, sub-agents, and workflow integration.",
+  "sourceCardIds": [
+    "Inbox/2026-05-18 x-signal-robin-delta-heyrobinai-37m-2-learn-how-to-use-claude-code-effectively-i.md"
+  ],
+  "sourceUrls": [
+    "https://x.com/heyrobinai/status/2056333612308734342",
+    "https://x.com/heyrobinai",
+    "https://t.co/dqcIOI4eGd"
+  ],
+  "dependencyUrls": [],
+  "runIds": [
+    "2026-05-18-11-55-40-814-fast"
+  ],
+  "confidence": "low",
+  "firstSeen": "2026-05-18T12:03:35.115Z",
+  "lastReinforced": "2026-05-18T12:03:35.115Z",
+  "verificationStatus": "partially_verified",
+  "evidenceStrength": "weak",
+  "originatingItems": [
+    "action-3ce50c6f"
+  ],
+  "observedInLanes": [
+    "verify"
+  ],
+  "owner": "Hermes",
+  "latestPriority": "low",
+  "reinforcementCount": 1,
+  "traceability": {
+    "latestSourceNotePath": "Inbox/2026-05-18 x-signal-robin-delta-heyrobinai-37m-2-learn-how-to-use-claude-code-effectively-i.md",
+    "latestSourceUrls": [
+      "https://x.com/heyrobinai/status/2056333612308734342",
+      "https://x.com/heyrobinai",
+      "https://t.co/dqcIOI4eGd"
+    ],
+    "latestRunId": "2026-05-18-11-55-40-814-fast"
+  }
+}

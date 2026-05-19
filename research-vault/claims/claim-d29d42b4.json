@@ -1,0 +1,43 @@
+{
+  "claimId": "claim-d29d42b4",
+  "statement": "This thread showcases FlowDeck, a native Swift tool that gives AI agents (Claude, Codex, etc.) direct visual access to the iOS simulator.",
+  "sourceCardIds": [
+    "Inbox/2026-05-17 x-signal-daniel-bernal-afterxleep-9h-in-case-you-ve-missed-it-here-s-claude-tapp.md"
+  ],
+  "sourceUrls": [
+    "https://x.com/afterxleep/status/2055908889862828446",
+    "https://x.com/i/status/2055908889862828446",
+    "https://flowdeck.studio/blog/2026/04/08/autonomous-ios-ui-testing-with-claude-code/",
+    "https://x.com/afterxleep",
+    "https://t.co/0bNo2SBeDs"
+  ],
+  "dependencyUrls": [],
+  "runIds": [
+    "2026-05-17-16-49-17-830-fast"
+  ],
+  "confidence": "low",
+  "firstSeen": "2026-05-18T08:25:56.199Z",
+  "lastReinforced": "2026-05-18T10:09:55.056Z",
+  "verificationStatus": "partially_verified",
+  "evidenceStrength": "weak",
+  "originatingItems": [
+    "idea-104f8cb4"
+  ],
+  "observedInLanes": [
+    "verify"
+  ],
+  "owner": "Hermes",
+  "latestPriority": "medium",
+  "reinforcementCount": 1,
+  "traceability": {
+    "latestSourceNotePath": "Inbox/2026-05-17 x-signal-daniel-bernal-afterxleep-9h-in-case-you-ve-missed-it-here-s-claude-tapp.md",
+    "latestSourceUrls": [
+      "https://x.com/afterxleep/status/2055908889862828446",
+      "https://x.com/i/status/2055908889862828446",
+      "https://flowdeck.studio/blog/2026/04/08/autonomous-ios-ui-testing-with-claude-code/",
+      "https://x.com/afterxleep",
+      "https://t.co/0bNo2SBeDs"
+    ],
+    "latestRunId": "2026-05-17-16-49-17-830-fast"
+  }
+}

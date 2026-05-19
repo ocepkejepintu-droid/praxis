@@ -1,0 +1,39 @@
+{
+  "claimId": "claim-a29b1d59",
+  "statement": "Some users love it for reducing repetitive prompting, while others are cautious because memory can sometimes contaminate fresh reasoning or make the model too good at imitating past patterns instead of solving new problems.",
+  "sourceCardIds": [
+    "Inbox/2026-05-17 x-signal-nivi-nivi-22h-memory-in-chatgpt-has-gotten-insanely-good-and-nobody-is-.md"
+  ],
+  "sourceUrls": [
+    "https://x.com/nivi/status/2055716086772023465",
+    "https://x.com/i/status/2055716086772023465",
+    "https://x.com/nivi"
+  ],
+  "dependencyUrls": [],
+  "runIds": [
+    "2026-05-17-16-49-17-830-fast"
+  ],
+  "confidence": "low",
+  "firstSeen": "2026-05-18T08:25:56.199Z",
+  "lastReinforced": "2026-05-18T10:09:55.056Z",
+  "verificationStatus": "partially_verified",
+  "evidenceStrength": "weak",
+  "originatingItems": [
+    "idea-4891c41e"
+  ],
+  "observedInLanes": [
+    "verify"
+  ],
+  "owner": "Hermes",
+  "latestPriority": "medium",
+  "reinforcementCount": 1,
+  "traceability": {
+    "latestSourceNotePath": "Inbox/2026-05-17 x-signal-nivi-nivi-22h-memory-in-chatgpt-has-gotten-insanely-good-and-nobody-is-.md",
+    "latestSourceUrls": [
+      "https://x.com/nivi/status/2055716086772023465",
+      "https://x.com/i/status/2055716086772023465",
+      "https://x.com/nivi"
+    ],
+    "latestRunId": "2026-05-17-16-49-17-830-fast"
+  }
+}
