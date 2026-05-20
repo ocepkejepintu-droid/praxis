@@ -2,6 +2,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { getDashboardData } from './markdown.ts';
 import { getOperatingSlice, type ExperimentCard } from './os.ts';
+import { hermesRuntimeStatus } from '../../packages/runtime/contracts/hermes-contract.ts';
+import { openClawRuntimeStatus } from '../../packages/runtime/contracts/omx-contract.ts';
 
 export type PraxisLearnerAgent = 'hermes' | 'openclaw' | 'mock-hermes' | 'mock-openclaw';
 
@@ -31,7 +33,7 @@ export type PraxisLearnerStatus = {
   agent: PraxisLearnerAgent;
   available: boolean;
   runtimeAvailable: boolean;
-  mode: 'mock' | 'external';
+  mode: 'mock' | 'read-only' | 'external';
   safeMode: boolean;
   blockedReason?: string;
   requiredConfig?: string[];
@@ -260,25 +262,28 @@ function runtimeEnv(agent: 'hermes' | 'openclaw') {
 }
 
 function realAgentStatus(agent: 'hermes' | 'openclaw'): PraxisLearnerStatus {
+  const contractStatus = agent === 'hermes' ? hermesRuntimeStatus() : openClawRuntimeStatus();
   const env = runtimeEnv(agent);
   const detectedCommand = process.env[env.command]?.trim();
   const safeRunnerAllowed = process.env[env.allow] === '1';
   const runnerImplemented = false;
-  const runtimeAvailable = Boolean(detectedCommand && safeRunnerAllowed && runnerImplemented);
-  const blockedReason = !detectedCommand
-    ? `${env.command} is not configured. Use mock-${agent} for local safe learning or configure an approved runtime bridge.`
-    : !safeRunnerAllowed
-      ? `${env.command} is configured (${detectedCommand}), but ${env.allow}=1 is not set. Real runtime execution remains blocked to avoid uncontrolled external actions.`
-      : `${env.command} and ${env.allow}=1 are configured, but real Praxis runtime execution is not implemented/approved in this repo yet. No external command was executed.`;
+  const runtimeAvailable = Boolean(contractStatus.readOnlyAvailable || (detectedCommand && safeRunnerAllowed && runnerImplemented));
+  const blockedReason = contractStatus.readOnlyAvailable
+    ? `${contractStatus.label}. Permissioned/autonomous execution is not implemented; no external command was executed.`
+    : !detectedCommand
+      ? `${env.command} is not configured. ${contractStatus.blockers[0]?.message || `Use mock-${agent} for local safe learning or configure an approved runtime bridge.`}`
+      : !safeRunnerAllowed
+        ? `${env.command} is configured (${detectedCommand}), but ${env.allow}=1 is not set. Real runtime execution remains blocked to avoid uncontrolled external actions.`
+        : `${env.command} and ${env.allow}=1 are configured, but real Praxis runtime execution is not implemented/approved in this repo yet. No external command was executed.`;
   return {
     agent,
     available: false,
     runtimeAvailable,
-    mode: 'external',
+    mode: contractStatus.readOnlyAvailable ? 'read-only' : 'external',
     safeMode: true,
     detectedCommand,
     blockedReason,
-    requiredConfig: detectedCommand ? [env.allow, 'REAL_PRAXIS_RUNTIME_RUNNER'] : [env.command],
+    requiredConfig: contractStatus.readOnlyAvailable ? [] : (contractStatus.requiredConfig.length ? contractStatus.requiredConfig : detectedCommand ? [env.allow, 'REAL_PRAXIS_RUNTIME_RUNNER'] : [env.command]),
   };
 }
 

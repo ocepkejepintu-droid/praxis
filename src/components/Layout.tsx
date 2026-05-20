@@ -19,19 +19,19 @@ export async function Shell({ children }: { children: ReactNode }) {
       <header className="dcTopbar" aria-label="Agent Praxis navigation">
         <div className="dcTopbarInner">
           <Link href="/" className="dcBrand" aria-label="Agent Praxis home">
-            <span className="dcBrandMark">ap</span>
+            <span className="dcBrandMark">$</span>
             <span>
               <strong>Agent Praxis</strong>
-              <em>real-world training ground</em>
+              <em>terminal workbench</em>
             </span>
           </Link>
           <NavLinks showAgentDashboard={hasConnectedAgents} />
           <div className="dcNavMeta" aria-label="Radar snapshot">
-            <span>{data.stats.notes} notes</span>
-            <span>{data.stats.repos} repos</span>
-            <span>{data.stats.verify} verify</span>
+            <span>signals {data.stats.notes}</span>
+            <span>repos {data.stats.repos}</span>
+            <span>verify {data.stats.verify}</span>
           </div>
-          <Link href="/dashboard" className="dcTopbarCta">{hasConnectedAgents ? 'Agent dashboard' : 'Connect agent'}</Link>
+          <Link href="/dashboard" className="dcTopbarCta">{hasConnectedAgents ? 'Open cockpit' : 'Connect agent'}</Link>
         </div>
       </header>
       <main id="main" className="dcMain">{children}</main>

@@ -1,0 +1,92 @@
+{
+  "status": "APPROVE",
+  "scope": "dashboard Praxis learning / ACP adapter visual consistency",
+  "issue": "Light paper-theme cards and CTA blocks were leaking into the black terminal workbench UI.",
+  "fixes": [
+    "Rebuilt Praxis learning report rows as dcLearningReportCard/dcLearningReportStack instead of raw dcReportRow markup.",
+    "Darkened Praxis learning report cards, dashboard report rows, MCP metric cards, agent mini cards, adapter cards, primary buttons, adapter CTA buttons, and topbar CTA.",
+    "Added mobile dashboard collapse/wrap guards for adapter grids, hero actions, endpoint code, reports, and long runtime text.",
+    "Added regression guards to npm run test:praxis-status for public Praxis leak, dark report cards, dashboard dark cards, mobile collapse, and dark buttons."
+  ],
+  "scenarioMatrix": [
+    {
+      "id": "VQA-001",
+      "intent": "Reject user screenshot regression where blocked/learning reports render as large white/gray slabs.",
+      "result": "pass",
+      "evidence": ".omx/artifacts/ultraqa/praxis-learning-theme/dashboard-theme-desktop-cdp.png",
+      "signal": "8 learning report cards computed with rgb(16, 16, 16) background."
+    },
+    {
+      "id": "VQA-002",
+      "intent": "Catch generic dashboard rows/metric cards that still use paper theme.",
+      "result": "pass",
+      "evidence": "/tmp/dashboard-cdp-final.json",
+      "signal": "Dashboard report rows and MCP cards computed dark, lightLeaks=0."
+    },
+    {
+      "id": "VQA-003",
+      "intent": "Mobile hostile viewport should not clip horizontally.",
+      "result": "pass",
+      "evidence": ".omx/artifacts/ultraqa/praxis-learning-theme/dashboard-theme-mobile-cdp.png",
+      "signal": "390px viewport, scrollWidth=390, overflow=0."
+    },
+    {
+      "id": "VQA-004",
+      "intent": "ACP adapter surface remains visible for Hermes/OpenClaw.",
+      "result": "pass",
+      "evidence": "/tmp/dashboard-cdp-final.json",
+      "signal": "hasAdapter=true, hasHermes=true, hasOpenClaw=true."
+    },
+    {
+      "id": "VQA-005",
+      "intent": "Static regression guard for future CSS drift.",
+      "result": "pass",
+      "evidence": "npm run test:praxis-status",
+      "signal": "learning-report-dark-theme, dashboard-report-dark-theme, dashboard-mobile-collapse, dashboard-dark-primary-buttons, dashboard-dark-adapter-buttons."
+    },
+    {
+      "id": "VQA-006",
+      "intent": "Build/type safety after visual patch.",
+      "result": "pass",
+      "evidence": "npm run lint; npm run build; npm run test:hermes-acp; npm run test:praxis-learning; npm run test:praxis-learning-loop",
+      "signal": "All commands exited 0."
+    }
+  ],
+  "cdpSummary": [
+    {
+      "viewport": "desktop",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "overflow": 0,
+      "lightLeaks": 0,
+      "learningCards": 8,
+      "learningCardBackground": "rgb(16, 16, 16)"
+    },
+    {
+      "viewport": "mobile",
+      "width": 390,
+      "scrollWidth": 390,
+      "overflow": 0,
+      "lightLeaks": 0,
+      "learningCards": 8,
+      "learningCardBackground": "rgb(16, 16, 16)"
+    }
+  ],
+  "commandsRun": [
+    "npm run lint",
+    "npm run test:praxis-status",
+    "npm run test:hermes-acp",
+    "npm run build",
+    "node /tmp/cdp-dashboard-qa.mjs",
+    "npm run test:praxis-learning",
+    "npm run test:praxis-learning-loop"
+  ],
+  "artifacts": [
+    ".omx/artifacts/ultraqa/praxis-learning-theme/dashboard-theme-desktop-cdp.png",
+    ".omx/artifacts/ultraqa/praxis-learning-theme/dashboard-theme-mobile-cdp.png",
+    "/tmp/dashboard-cdp-final.json"
+  ],
+  "remainingRisks": [
+    "This pass fixes dashboard/Praxis learning visual inconsistency. Other routes may still have unrelated legacy CSS from prior redesign work and should be audited route-by-route if user reports them."
+  ]
+}

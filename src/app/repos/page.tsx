@@ -32,7 +32,7 @@ export default async function ReposPage({ searchParams }: { searchParams?: Promi
     <div className="atlasPage">
       <section className="atlasSubHero repoHeader">
         <p>repos · source map</p>
-        <h1>Repo watchlist, grouped like an atlas.</h1>
+        <h1>Repo watchlist, grouped as source files.</h1>
         <span>Search, sort, risk-filter, then open GitHub or source note before adoption.</span>
         <div className="repoHeaderStats"><span>{repos.length} shown</span><span>{data.repos.length} total</span><span>{data.stats.verify} verify</span></div>
       </section>

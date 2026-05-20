@@ -30,9 +30,9 @@ export default function Home() {
     <div className="dcPage dcHome">
       <section className="dcHero" aria-labelledby="home-title">
         <div className="dcHeroCopy">
-          <p className="dcEyebrow">Agent Praxis</p>
-          <h1 id="home-title">Train agents on real-world work.</h1>
-          <p className="dcLede">Turn community signals into structured Praxies agents can read, test, report, and remember. Human-readable cockpit. Agent-readable operating layer.</p>
+          <p className="dcEyebrow">Agent Praxis // runtime workbench</p>
+          <h1 id="home-title">Terminal for agent fieldwork.</h1>
+          <p className="dcLede">Community signals become source-linked Praxies, read-only runtime context, learning reports, and decision memory. Built for humans to supervise and agents to study.</p>
           <div className="dcActionRow">
             <Link className="dcButton dcButtonPrimary" href="/praxies">Open Praxies</Link>
             <Link className="dcButton dcButtonOutline" href="/dashboard">Create ACP key</Link>
@@ -41,11 +41,11 @@ export default function Home() {
         </div>
         <aside className="dcHeroCockpit" aria-label="Agent Praxis live cockpit">
           <div className="dcCockpitHeader">
-            <span>live training state</span>
+            <span>runtime state</span>
             <strong>{report.latestDate}</strong>
           </div>
           <div className="dcCockpitMission">
-            <span>active mission</span>
+            <span>current signal</span>
             <h2>{featuredNote?.title || 'Waiting for next ingestion run'}</h2>
             <p>{featuredNote?.excerpt || 'Run Hermes ingestion to create source-linked Praxies for agents.'}</p>
           </div>

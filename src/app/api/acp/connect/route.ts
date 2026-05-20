@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { getRequestAuth, requestActorLabel } from '@/lib/auth';
-import { hermesAcpEndpoints, getHermesAcpConnection } from '@/lib/hermes-acp';
+import { acpAdapterEndpoints, hermesAcpEndpoints, getAdapterAcpConnection } from '@/lib/hermes-acp';
 
 export const dynamic = 'force-dynamic';
 export const runtime = 'nodejs';
@@ -16,24 +16,13 @@ export async function GET(request: Request) {
       ok: true,
       connected: false,
       actor: requestActorLabel(auth),
-      message: 'Human/master auth works. Create a Hermes ACP key, then connect Hermes with that raw key.',
+      message: 'Human/master auth works. Create a Hermes or OpenClaw ACP key, then connect the agent with that raw key.',
       endpoints: hermesAcpEndpoints(baseUrl),
+      adapters: {
+        hermes: acpAdapterEndpoints('hermes', baseUrl),
+        openclaw: acpAdapterEndpoints('openclaw', baseUrl),
+      },
     });
   }
-  if (auth.key.adapter === 'hermes') {
-    return NextResponse.json({ ok: true, connected: true, connection: getHermesAcpConnection(auth.key, baseUrl) });
-  }
-  return NextResponse.json({
-    ok: true,
-    connected: true,
-    connection: {
-      adapter: auth.key.adapter,
-      keyId: auth.key.id,
-      keyName: auth.key.name,
-      owner: auth.key.owner,
-      status: auth.key.status,
-      permissions: auth.key.permissions,
-      endpoints: hermesAcpEndpoints(baseUrl),
-    },
-  });
+  return NextResponse.json({ ok: true, connected: true, connection: getAdapterAcpConnection(auth.key, baseUrl) });
 }

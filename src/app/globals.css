@@ -6815,3 +6815,2787 @@ body::after {
 .dcUsageBox span { color: var(--dc-muted); text-transform: uppercase; letter-spacing: .12em; font-size: .72rem; }
 .dcUsageBox strong { color: var(--dc-ink); }
 .dcUsageBox p { margin: 0; color: var(--dc-muted); overflow-wrap: anywhere; }
+
+/* ACP adapter connect surface: make Hermes/OpenClaw read path visible on dashboard. */
+.dcAdapterConnectPanel {
+  grid-column: 1 / -1;
+}
+.dcAdapterConnectGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 18px;
+}
+.dcAdapterConnectCard {
+  display: grid;
+  gap: 14px;
+  min-width: 0;
+  border: 1px solid var(--dc-line);
+  border-radius: 24px;
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.06), rgba(255,255,255,.02)),
+    rgba(252,251,248,.06);
+  padding: 18px;
+}
+.dcAdapterConnectCard header {
+  display: grid;
+  gap: 7px;
+}
+.dcAdapterConnectCard header span,
+.dcAdapterEndpointBox span {
+  width: fit-content;
+  border: 1px solid var(--dc-line);
+  border-radius: 999px;
+  padding: 6px 8px;
+  color: var(--tw-dim) !important;
+  font-size: 9px !important;
+  letter-spacing: .12em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.dcAdapterConnectCard header strong {
+  color: var(--tw-white) !important;
+  font-size: clamp(18px, 1.6vw, 26px) !important;
+  line-height: 1 !important;
+  letter-spacing: -.035em;
+}
+.dcAdapterConnectCard header em,
+.dcAdapterConnectCard p,
+.dcAdapterConnectCard dd,
+.dcAdapterStatusLine b {
+  color: var(--tw-dim) !important;
+  font-size: 12px !important;
+  line-height: 1.45;
+  font-style: normal;
+}
+.dcAdapterConnectCard p {
+  margin: 0 !important;
+}
+.dcAdapterConnectCard dl {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin: 0;
+}
+.dcAdapterConnectCard dl div {
+  min-width: 0;
+  border: 1px solid var(--dc-line);
+  border-radius: 16px;
+  padding: 10px;
+}
+.dcAdapterConnectCard dt {
+  margin-bottom: 6px;
+  color: var(--tw-dim) !important;
+  font-size: 8.5px !important;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+.dcAdapterConnectCard dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.dcAdapterEndpointBox {
+  display: grid;
+  gap: 7px;
+  min-width: 0;
+  border: 1px solid var(--dc-line);
+  border-radius: 18px;
+  background: rgba(0,0,0,.22);
+  padding: 12px;
+  overflow-x: auto;
+}
+.dcAdapterEndpointBox code {
+  color: var(--tw-white) !important;
+  font-size: 11px !important;
+  line-height: 1.35;
+  white-space: nowrap;
+}
+.dcAdapterStatusLine {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.dcAdapterStatusLine a {
+  border: 1px solid var(--tw-white);
+  border-radius: 999px;
+  background: var(--tw-white);
+  color: var(--tw-midnight) !important;
+  padding: 9px 12px;
+  font-size: 11px;
+  line-height: 1;
+}
+@media (max-width: 980px) {
+  .dcAdapterConnectGrid,
+  .dcAdapterConnectCard dl {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Terminal Workbench redesign — /Users/yoseph/Downloads/terminal design.md
+   Goal: one mature, achromatic SaaS surface across every page and legacy class family. */
+:root {
+  --tw-midnight: #000000;
+  --tw-white: #ffffff;
+  --tw-steel: #1d1d1d;
+  --tw-ash: #383838;
+  --tw-dim: #888888;
+  --tw-font: 'Soehne Mono', 'Space Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --tw-radius: 10px;
+  --tw-max: 1600px;
+  --tw-gap: 16px;
+
+  --bg: var(--tw-midnight);
+  --bg-2: #050505;
+  --surface: #111111;
+  --surface-strong: var(--tw-steel);
+  --card: var(--tw-steel);
+  --border: var(--tw-ash);
+  --border-strong: #585858;
+  --text: var(--tw-white);
+  --muted: var(--tw-dim);
+  --muted-2: #666666;
+  --accent: var(--tw-white);
+  --accent-ink: var(--tw-midnight);
+  --amber: var(--tw-white);
+  --red: #bdbdbd;
+  --blue: var(--tw-white);
+  --shadow: none;
+  --radius: var(--tw-radius);
+
+  --atlas-ink: var(--tw-white);
+  --atlas-muted: var(--tw-dim);
+  --atlas-paper: var(--tw-midnight);
+  --atlas-paper-2: #0a0a0a;
+  --atlas-white: var(--tw-steel);
+  --atlas-line: var(--tw-ash);
+  --atlas-line-strong: #4a4a4a;
+  --atlas-gold: var(--tw-white);
+  --atlas-gold-dark: var(--tw-white);
+
+  --dc-ink: var(--tw-white);
+  --dc-orange: var(--tw-white);
+  --dc-storm: var(--tw-dim);
+  --dc-blue: var(--tw-white);
+  --dc-cream: var(--tw-midnight);
+  --dc-ash: var(--tw-dim);
+  --dc-parchment: var(--tw-steel);
+  --dc-paper-2: #0a0a0a;
+  --dc-line: var(--tw-ash);
+  --dc-line-strong: #5a5a5a;
+  --dc-font: var(--tw-font);
+  --dc-display: var(--tw-font);
+  --dc-radius-card: var(--tw-radius);
+  --dc-radius-button: var(--tw-radius);
+  --dc-max: var(--tw-max);
+}
+
+html {
+  background: var(--tw-midnight) !important;
+  color-scheme: dark;
+}
+
+body {
+  min-height: 100dvh;
+  overflow-x: hidden;
+  background:
+    linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px),
+    radial-gradient(circle at 82% 0%, rgba(255,255,255,.08), transparent 420px),
+    var(--tw-midnight) !important;
+  background-size: 32px 32px, 32px 32px, auto, auto;
+  color: var(--tw-white) !important;
+  font-family: var(--tw-font) !important;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: .24px;
+  font-feature-settings: "zero";
+}
+
+body::before {
+  opacity: .18 !important;
+  background-image: linear-gradient(to bottom, rgba(255,255,255,.08), transparent 1px) !important;
+  background-size: 100% 6px !important;
+  mask-image: linear-gradient(to bottom, black, transparent 80%) !important;
+}
+
+body::after {
+  opacity: .035 !important;
+  background-image: radial-gradient(circle at 1px 1px, #fff 1px, transparent 0) !important;
+  background-size: 10px 10px !important;
+}
+
+* { scrollbar-color: var(--tw-ash) var(--tw-midnight); }
+::selection { background: var(--tw-white); color: var(--tw-midnight); }
+
+h1, h2, h3, h4, strong, button, input, textarea, select, code, pre {
+  font-family: var(--tw-font) !important;
+}
+
+p, li, span, em, td, th, label {
+  letter-spacing: .24px;
+}
+
+.dcShell,
+.appFrame,
+.atlasPage,
+.openDesignHome,
+.dcPage,
+.dcHome,
+.dcWorkbenchPage,
+.dcDashboardPage {
+  background: transparent !important;
+  color: var(--tw-white) !important;
+}
+
+.dcTopbar,
+.topbar {
+  border-bottom: 1px solid var(--tw-ash) !important;
+  background: rgba(0,0,0,.86) !important;
+  backdrop-filter: blur(14px) !important;
+}
+
+.dcTopbarInner,
+.main,
+.dcMain {
+  width: min(var(--tw-max), calc(100% - 32px)) !important;
+}
+
+.dcMain { padding: 32px 0 72px !important; }
+.dcPage, .pageStack { gap: 48px !important; }
+
+.dcBrand,
+.brand { color: var(--tw-white) !important; }
+.dcBrandMark,
+.brandMark {
+  width: 38px !important;
+  height: 38px !important;
+  border-radius: var(--tw-radius) !important;
+  border: 1px solid var(--tw-white) !important;
+  background: var(--tw-white) !important;
+  color: var(--tw-midnight) !important;
+  box-shadow: none !important;
+  text-transform: uppercase;
+}
+.dcBrand strong,
+.brand strong { color: var(--tw-white) !important; font-weight: 400 !important; letter-spacing: .24px !important; }
+.dcBrand em,
+.brand em,
+.dcNavMeta,
+.dcNavMeta span,
+.brand em { color: var(--tw-dim) !important; opacity: 1 !important; }
+
+.dcNav,
+.topnav { gap: 5px !important; }
+.dcNav a,
+.topnav a,
+.dcTopbarCta,
+.dcButton,
+.buttonRow a,
+.filterBar a,
+.tableLinks a,
+.noteHeader a,
+.commandCopy,
+.repoActions a,
+.featuredActions a,
+.atlasToolbar button,
+.loginForm button,
+.praxisEditorPanel button,
+.acpKeyForm button,
+.keyRow button {
+  min-height: 40px !important;
+  border: 1px solid var(--tw-ash) !important;
+  border-radius: var(--tw-radius) !important;
+  background: transparent !important;
+  color: var(--tw-white) !important;
+  box-shadow: none !important;
+  font-weight: 400 !important;
+  text-transform: none !important;
+  letter-spacing: .24px !important;
+}
+.dcNav a,
+.topnav a { padding: 0 12px !important; }
+.dcNav a:hover,
+.dcNav a:focus-visible,
+.dcNav a[aria-current="page"],
+.topnav a:hover,
+.topnav a:focus-visible,
+.filterBar a:hover,
+.filterBar .active,
+.repoActions a:hover,
+.featuredActions a:hover {
+  background: var(--tw-steel) !important;
+  color: var(--tw-white) !important;
+  border-color: var(--tw-white) !important;
+  outline: none !important;
+}
+.dcNav a[aria-current="page"]::after { background: var(--tw-white) !important; bottom: 4px !important; }
+.dcTopbarCta,
+.dcButtonPrimary,
+.buttonRow a:first-child,
+.commandCopy.primary,
+.atlasToolbar button,
+.loginForm button,
+.praxisEditorPanel button,
+.acpKeyForm button {
+  background: var(--tw-white) !important;
+  color: var(--tw-midnight) !important;
+  border-color: var(--tw-white) !important;
+}
+.dcButtonOutline,
+.dcTextLink { color: var(--tw-white) !important; border-color: var(--tw-ash) !important; }
+.dcButton:hover,
+.dcTopbarCta:hover,
+.noteCard:hover,
+.repoCard:hover,
+.actionItem:hover,
+.ideaCard:hover,
+.commandCard:hover,
+.experimentCard:hover,
+.dcBentoCard:hover,
+.dcSignalCard:hover,
+.dcListCard:hover,
+.dcCategoryRow:hover,
+.dcPraxisRow:hover,
+.dcTaskCard:hover,
+.dcAgentCard:hover,
+.atlasPraxisRow:hover,
+.odLoopCard:hover,
+.odHeadline:hover,
+.odListCard:hover,
+.odThemeRow:hover,
+.odCategoryRow:hover {
+  transform: translateY(-2px) !important;
+  background: #242424 !important;
+  border-color: var(--tw-white) !important;
+}
+
+.dcHero,
+.dcPageHero,
+.dcSplitSection,
+.dcBento,
+.dcPipelineSection,
+.dcListSection,
+.dcCategoryBoard,
+.dcSourceMap,
+.dcBoardHeader,
+.dcReportsPanel,
+.dcSplitPanel,
+.dcOperatorDocs,
+.panel,
+.pageHeader,
+.hero,
+.atlasSubHero,
+.atlasHero,
+.decisionBrief,
+.fieldContract,
+.acpConsole,
+.atlasToolbar,
+.filterBar,
+.atlasRepoDirectory,
+.atlasCategory,
+.atlasPraxisMap,
+.atlasPraxisBoardIntro,
+.loopGrid,
+.dcDashboardPanel,
+.dcUsageBox,
+.dcAggregateBox,
+.dcCommandBox,
+.dcBlockedList,
+.dcReportList,
+.schoolProgressPanel,
+.praxisEditorPanel,
+.loginForm,
+.acpKeyForm,
+.acpKeyTable,
+.acpPermissionPanel,
+.acpEventPanel {
+  border: 1px solid var(--tw-ash) !important;
+  border-radius: var(--tw-radius) !important;
+  background: rgba(0,0,0,.72) !important;
+  color: var(--tw-white) !important;
+  box-shadow: none !important;
+}
+
+.dcHero,
+.dcPageHero,
+.atlasSubHero,
+.atlasHero,
+.pageHeader,
+.hero {
+  overflow: hidden;
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.08), transparent 35%),
+    #050505 !important;
+}
+
+.dcHeroCopy,
+.dcHeroCockpit,
+.dcPageHero,
+.dcBentoCard,
+.dcPipelineSection,
+.dcSplitSection,
+.dcListSection,
+.dcSourceMap,
+.dcBoardHeader,
+.dcReportsPanel,
+.dcEmptyPanel,
+.dcDocPanel,
+.dcSplitPanel > article,
+.dcMetricStrip article,
+.dcSignalCard,
+.dcListCard,
+.dcCategoryCard,
+.dcPraxisGroup,
+.dcLane,
+.dcTaskCard,
+.dcAgentCard,
+.noteCard,
+.repoCard,
+.actionItem,
+.ideaCard,
+.commandCard,
+.experimentCard,
+.stepCard,
+.stat,
+.loopCard,
+.keyReveal,
+.keyRow,
+.atlasPraxisGroup,
+.atlasPraxisRow,
+.repoWatchCard,
+.runHistoryItem,
+.statusConsole,
+.inflowContract,
+.odHeroPanel,
+.odBriefLead,
+.odAgentPanel,
+.odLoopCard,
+.odHeadline,
+.odListCard,
+.odThemeRow,
+.odCategoryRow,
+.odMatrix div {
+  border: 1px solid var(--tw-ash) !important;
+  border-radius: var(--tw-radius) !important;
+  background: var(--tw-steel) !important;
+  color: var(--tw-white) !important;
+  box-shadow: none !important;
+}
+
+.dcHeroCopy,
+.dcCockpitHeader,
+.dcCockpitMission,
+.dcCockpitGrid,
+.dcPipeline article,
+.dcPraxisGroup header,
+.dcCategoryCard header,
+.atlasPraxisGroup header,
+.loopCard,
+.odBriefCards article,
+.odStats div,
+.odHeroPanel li,
+.keyRow,
+.repoDirectory article,
+td,
+th {
+  border-color: var(--tw-ash) !important;
+}
+
+.dcHero h1,
+.dcPageHero h1,
+.atlasSubHero h1,
+.atlasHero h1,
+h1 {
+  max-width: 980px !important;
+  color: var(--tw-white) !important;
+  font-family: var(--tw-font) !important;
+  font-size: clamp(44px, 7vw, 92px) !important;
+  font-weight: 400 !important;
+  line-height: 1 !important;
+  letter-spacing: -0.04em !important;
+  text-transform: none !important;
+  text-wrap: balance;
+}
+.dcSectionIntro h2,
+.dcSplitSection h2,
+.dcReportsPanel h2,
+.dcSplitPanel h2,
+.dcBentoCard h2,
+.dcCategoryCard h2,
+.dcPraxisGroup header h3,
+.atlasPraxisGroup h3,
+.odBriefLead h2,
+.odSectionIntro h2,
+.odFeatured h2,
+.odThemes h2,
+.odLearningCuts h2,
+.odCategory h2,
+.odHeadline h3,
+.odListCard strong,
+.odThemeRow strong,
+.odCategoryRow strong,
+h2,
+h3 {
+  color: var(--tw-white) !important;
+  font-family: var(--tw-font) !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.02em !important;
+  text-transform: none !important;
+}
+
+.dcEyebrow,
+.eyebrow,
+.odKicker,
+.odSectionIntro span,
+.odHeroPanel > span,
+.odBriefCards span,
+.odAgentPanel > span,
+.odHeadline span,
+.odThemeRow span,
+.odThemeRow em,
+.odListCard em,
+.odCategory header > span,
+.odCategoryRow span,
+.odCategoryRow em,
+.atlasPraxisGroup header span,
+.atlasPraxisRow span,
+.atlasPraxisRow em,
+.repoCategory,
+.ideaColumn h2,
+.kanbanLane h2,
+.lane h2 {
+  color: var(--tw-dim) !important;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  letter-spacing: .24px !important;
+  text-transform: none !important;
+}
+
+.dcLede,
+.dcPageHero p,
+.dcMuted,
+.dcSectionIntro p:not(.dcEyebrow),
+.dcBentoCard p,
+.dcSignalCard p,
+.dcPraxisRow p,
+.dcTaskCard p,
+.dcAgentCard p,
+.dcPipeline p,
+.atlasSubHero span,
+.atlasPage p,
+.ideaCard p,
+.experimentCard p,
+.commandCard p,
+.noteCard p,
+.repoCard p,
+.mutedCopy,
+.emptyState,
+.keyRow span,
+.keyRow p,
+.permissionGrid label,
+.loopCard p,
+.loopCard span {
+  color: var(--tw-dim) !important;
+}
+
+.dcHeroCockpit,
+.dcInversePanel,
+.odAgentPanel,
+.dcPraxisGroup header,
+.atlasPraxisGroup header {
+  background: #050505 !important;
+  color: var(--tw-white) !important;
+}
+.dcCockpitGrid strong,
+.dcMetricMatrix strong,
+.dcMetricStrip strong,
+.stat strong,
+.score,
+.ownerTag,
+.dcSignalCard em,
+.dcListCard em,
+.dcPraxisRow em,
+.dcTaskCard em,
+.repoMiniList a,
+.linkStack a,
+.dcBentoCard a,
+.dcTextLink,
+.tableLinks a {
+  color: var(--tw-white) !important;
+}
+
+.dcBento,
+.dcMetricStrip,
+.dcPipeline,
+.dcListGrid,
+.dcCategoryBoard,
+.dcAgentGrid,
+.dcDashboardGrid,
+.dcMcpCards,
+.dcAgentMiniGrid,
+.ideaColumns,
+.repoGrid,
+.commandGrid,
+.fieldGrid,
+.loopGrid,
+.permissionGrid,
+.runStatusGrid,
+.odLoopGrid,
+.odHeadlineGrid,
+.odListGrid {
+  grid-auto-flow: dense !important;
+}
+
+.dcMetricStrip article,
+.dcBentoCard,
+.dcSignalCard,
+.dcListCard,
+.dcTaskCard,
+.dcAgentCard,
+.repoCard,
+.ideaCard,
+.experimentCard,
+.commandCard,
+.noteCard,
+.loopCard {
+  overflow: hidden;
+  transition: transform .22s ease, background .22s ease, border-color .22s ease !important;
+}
+
+input,
+select,
+textarea,
+.atlasToolbar input,
+.atlasToolbar select,
+.acpKeyForm input,
+.acpKeyForm select,
+.loginForm input,
+.praxisControls select,
+.praxisEditorPanel textarea {
+  border: 1px solid var(--tw-ash) !important;
+  border-radius: var(--tw-radius) !important;
+  background: var(--tw-steel) !important;
+  color: var(--tw-white) !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--tw-white) !important;
+}
+
+.pill,
+.stagePill,
+.status-test,
+.status-adopt,
+.status-now,
+.status-verify,
+.status-ignore,
+.status-watch,
+.status-promoted,
+.risk-low,
+.risk-medium,
+.risk-high,
+.stage-worth_trying,
+.stage-act_now,
+.stage-adopted,
+.stage-queued,
+.stage-tried,
+.stage-watch,
+.stage-ignore,
+.run-ok,
+.run-partial,
+.run-error {
+  border-color: var(--tw-ash) !important;
+  background: transparent !important;
+  color: var(--tw-white) !important;
+}
+
+code,
+pre,
+.codeBlock,
+.commandCard pre,
+.markdown pre,
+.dcDocPanel pre {
+  border: 1px solid var(--tw-ash) !important;
+  border-radius: var(--tw-radius) !important;
+  background: #050505 !important;
+  color: var(--tw-white) !important;
+  box-shadow: none !important;
+}
+
+table,
+.tablePanel {
+  border-color: var(--tw-ash) !important;
+  background: var(--tw-steel) !important;
+  color: var(--tw-white) !important;
+}
+th,
+td { color: var(--tw-white) !important; }
+table small { color: var(--tw-dim) !important; }
+
+.dcOfferChapter,
+.dcBrainpowerChapter,
+.dcHowChapter,
+.dcLearningChapter,
+.dcReportChapter,
+.dcProofChapter,
+.dcCtaChapter,
+.odHero,
+.odStats,
+.odCommandBoard,
+.odPraxisLoop,
+.odSignalBoard,
+.odFeatured,
+.odThemes,
+.odLearningCuts,
+.odCategories {
+  border: 1px solid var(--tw-ash) !important;
+  border-radius: var(--tw-radius) !important;
+  background: rgba(0,0,0,.72) !important;
+  color: var(--tw-white) !important;
+  overflow: hidden;
+}
+
+.dcChapterHead,
+.odStats,
+.odCommandBoard,
+.odBriefCards,
+.dcCockpitGrid,
+.dcMetricMatrix,
+.dcPipeline,
+.dcPraxisRows,
+.repoDirectory,
+.runHistoryList,
+.dcReportList {
+  border-color: var(--tw-ash) !important;
+}
+
+/* Mobile: keep workbench usable and prevent bleed. */
+@media (max-width: 980px) {
+  .dcHero,
+  .dcPageHero,
+  .dcSplitSection,
+  .dcOperatorDocs,
+  .dcPraxisGroup,
+  .atlasPraxisGroup,
+  .odHero,
+  .odCommandBoard,
+  .odFeatured,
+  .grid.two,
+  .grid.uneven,
+  .acpConsole {
+    grid-template-columns: 1fr !important;
+  }
+  .dcMetricStrip,
+  .dcPipeline,
+  .dcListGrid,
+  .dcCategoryBoard,
+  .dcAgentGrid,
+  .ideaColumns,
+  .loopGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+  .dcNavMeta { display: none !important; }
+}
+
+@media (max-width: 720px) {
+  .dcTopbarInner { min-height: auto !important; padding: 12px 0 !important; gap: 10px !important; flex-wrap: wrap; }
+  .dcBrand { width: 100%; }
+  .dcNav { order: 3; width: 100%; margin-left: 0; padding-bottom: 4px; }
+  .dcTopbarCta { margin-left: auto; }
+  .dcMain { width: min(100% - 20px, var(--tw-max)) !important; padding-top: 22px !important; }
+  .dcHero,
+  .dcPageHero,
+  .dcPipelineSection,
+  .dcListSection,
+  .dcSourceMap,
+  .dcBoardHeader,
+  .dcReportsPanel,
+  .dcSplitSection,
+  .panel,
+  .atlasSubHero,
+  .atlasPraxisMap,
+  .atlasPraxisBoardIntro {
+    padding: 20px !important;
+  }
+  .dcHero h1,
+  .dcPageHero h1,
+  .atlasSubHero h1,
+  h1 { font-size: clamp(36px, 12vw, 58px) !important; }
+  .dcMetricStrip,
+  .dcPipeline,
+  .dcListGrid,
+  .dcCategoryBoard,
+  .dcAgentGrid,
+  .ideaColumns,
+  .loopGrid,
+  .permissionGrid,
+  .runStatusGrid,
+  .odLoopGrid,
+  .odHeadlineGrid,
+  .odListGrid {
+    grid-template-columns: 1fr !important;
+  }
+  .dcPraxisRow,
+  .atlasPraxisRow,
+  .odThemeRow,
+  .odCategoryRow {
+    grid-template-columns: 1fr !important;
+  }
+  .dcKanbanWrap .kanbanBoard,
+  .kanbanBoard,
+  .actionBoard {
+    grid-template-columns: 1fr !important;
+    overflow-x: visible !important;
+  }
+}
+
+/* Terminal Workbench QA patch: readability + overflow fixes from Visual Ralph pass. */
+.dcHero h1,
+.dcPageHero h1,
+.atlasSubHero h1,
+.atlasHero h1,
+h1 {
+  max-width: 1320px !important;
+  font-size: clamp(42px, 5.6vw, 78px) !important;
+  line-height: 1.02 !important;
+  text-wrap: balance;
+}
+.dcMetricStrip article span,
+.dcMetricStrip article p,
+.dcBentoCard span,
+.dcBentoCard p,
+.dcDashboardPanel p,
+.dcDashboardPanel span,
+.dcUsageBox p,
+.dcUsageBox span,
+.dcAggregateBox p,
+.dcAggregateBox span,
+.dcCommandBox span,
+.dcReportRow span,
+.dcReportRow li,
+.dcBlockedList p,
+.dcListCard p,
+.dcSignalCard p,
+.dcTaskCard p,
+.dcAgentCard p,
+.repoCard p,
+.ideaCard p,
+.experimentCard p,
+.commandCard p,
+.noteCard p,
+.loopCard p,
+.loopCard span,
+.stat span,
+.stat p,
+.keyRow p,
+.keyRow span,
+.atlasPraxisRow p,
+.atlasPraxisRow span,
+.atlasPraxisRow em,
+.kanbanLane header span,
+.overviewMeta span,
+.overviewMeta em {
+  color: var(--tw-dim) !important;
+  opacity: 1 !important;
+}
+.dcMetricStrip article small,
+.dcMetricStrip small,
+.dcBentoCard small,
+.dcDashboardPanel small,
+.dcUsageBox small,
+.dcAggregateBox small {
+  color: var(--tw-dim) !important;
+  opacity: 1 !important;
+}
+.dcMetricStrip article strong,
+.dcDashboardPanel strong,
+.dcUsageBox strong,
+.dcAggregateBox strong,
+.dcBentoCard strong,
+.dcReportRow strong,
+.kanbanLane header h2,
+.experimentCard h3,
+.ideaCard h3,
+.repoCard h3,
+.commandCard h3,
+.noteCard h3 {
+  color: var(--tw-white) !important;
+  opacity: 1 !important;
+}
+.dcKanbanWrap {
+  max-width: 100% !important;
+  overflow: hidden !important;
+}
+.dcKanbanWrap .kanbanBoard,
+.kanbanBoard {
+  width: 100% !important;
+  max-width: 100% !important;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)) !important;
+  overflow-x: hidden !important;
+}
+.kanbanLane,
+.lane,
+.experimentCard,
+.ideaCard,
+.repoCard,
+.commandCard,
+.noteCard,
+.dcBentoCard,
+.dcMetricStrip article {
+  min-width: 0 !important;
+}
+.dcCommandBox {
+  max-width: 100% !important;
+  overflow: hidden !important;
+}
+.dcCommandBox code,
+.commandCard code,
+pre,
+code {
+  white-space: pre-wrap !important;
+  overflow-wrap: anywhere !important;
+  word-break: break-word !important;
+  max-width: 100% !important;
+}
+.dcStoryRail {
+  max-width: 100% !important;
+  overflow: hidden !important;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)) !important;
+}
+.dcHeroCockpit,
+.dcCockpitMission,
+.dcCockpitGrid,
+.dcStoryRail > * {
+  min-width: 0 !important;
+  overflow-wrap: anywhere !important;
+}
+html,
+body,
+.dcShell,
+.dcMain,
+.dcPage {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+@media (max-width: 720px) {
+  .dcHero h1,
+  .dcPageHero h1,
+  .atlasSubHero h1,
+  h1 {
+    font-size: clamp(34px, 11vw, 52px) !important;
+    line-height: 1.04 !important;
+  }
+  .dcCommandBox code { font-size: 12px !important; }
+  .dcStoryRail { grid-template-columns: 1fr !important; }
+}
+
+/* Terminal Workbench QA patch 2: force readable prose in legacy page-specific cards. */
+.dcPage article p,
+.dcPage section p:not(.dcEyebrow),
+.dcAdapterFlow article p,
+.dcEmptyPanel p,
+.dcHeroActionsCard p,
+.dcMcpCards span span,
+.dcAgentMiniCard p,
+.dcLane p,
+.schoolProgressPanel p,
+.schoolProgressPanel li,
+.acpKeyForm p,
+.acpPermissionPanel p,
+.acpEventPanel p,
+.loginForm p,
+.praxisEditorPanel p {
+  color: var(--tw-dim) !important;
+  opacity: 1 !important;
+}
+.dcAdapterFlow article strong,
+.dcEmptyPanel h2,
+.dcHeroActionsCard strong,
+.dcMcpCards strong,
+.dcAgentMiniCard strong,
+.dcLane h2,
+.schoolProgressPanel h2,
+.acpKeyForm h2,
+.acpPermissionPanel h2,
+.acpEventPanel h2,
+.loginForm h2,
+.praxisEditorPanel h2 {
+  color: var(--tw-white) !important;
+  opacity: 1 !important;
+}
+
+/* Terminal Workbench QA patch 3: remove leftover paper/white lane headers. */
+.ideaColumn header,
+.kanbanLane header,
+.lane header,
+.atlasPage .ideaColumn header,
+.atlasPage .kanbanLane header,
+.atlasPage .lane header {
+  background: #050505 !important;
+  border: 1px solid var(--tw-ash) !important;
+  border-radius: var(--tw-radius) !important;
+  color: var(--tw-white) !important;
+}
+.ideaColumn header h2,
+.ideaColumn header span,
+.kanbanLane header h2,
+.kanbanLane header span,
+.lane header h2,
+.lane header span,
+.atlasPage .ideaColumn header h2,
+.atlasPage .ideaColumn header span {
+  color: var(--tw-white) !important;
+  opacity: 1 !important;
+}
+.ideaColumn header span,
+.kanbanLane header span,
+.lane header span,
+.atlasPage .ideaColumn header span {
+  color: var(--tw-dim) !important;
+}
+
+/* Terminal Workbench QA patch 4: contrast sweep for legacy Atlas/DotConnect leftovers. */
+.dcPage span:not(.brandMark),
+.dcPage li,
+.dcPage em,
+.dcPage small,
+.atlasPage span,
+.atlasPage li,
+.atlasPage em,
+.atlasPage small,
+.dcCockpitHeader strong {
+  color: var(--tw-dim) !important;
+  opacity: 1 !important;
+}
+.dcCockpitHeader strong,
+.dcPage h1,
+.dcPage h2,
+.dcPage h3,
+.dcPage strong,
+.atlasPage h1,
+.atlasPage h2,
+.atlasPage h3,
+.atlasPage strong {
+  color: var(--tw-white) !important;
+  opacity: 1 !important;
+}
+.dcButton,
+.dcButton *,
+.dcTopbarCta,
+.dcTopbarCta *,
+.atlasToolbar button,
+.atlasToolbar button *,
+.loginForm button,
+.loginForm button *,
+.praxisEditorPanel button,
+.praxisEditorPanel button * {
+  color: inherit !important;
+}
+
+/* Terminal Workbench QA patch 5: dynamic note/run detail pages. */
+.runCardGrid,
+.runHistoryPanel,
+.noteGrid,
+.atlasNoteGrid,
+.atlasMarkdown,
+.markdown,
+.panel.markdown,
+.runCard,
+.noteHeader,
+.runHistoryPanel * {
+  max-width: 100% !important;
+  min-width: 0 !important;
+  overflow-wrap: anywhere !important;
+  word-break: break-word !important;
+}
+.runCardGrid {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)) !important;
+  overflow: hidden !important;
+}
+.runCard {
+  overflow: hidden !important;
+}
+.noteGrid,
+.atlasNoteGrid {
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 360px) !important;
+  overflow: hidden !important;
+}
+.markdown table,
+.atlasMarkdown table {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow-x: auto !important;
+}
+.markdown pre,
+.atlasMarkdown pre {
+  white-space: pre-wrap !important;
+  overflow-wrap: anywhere !important;
+}
+@media (max-width: 900px) {
+  .noteGrid,
+  .atlasNoteGrid { grid-template-columns: 1fr !important; }
+  .runCardGrid { grid-template-columns: 1fr !important; }
+}
+
+/* Visual Ralph: Praxis source split + calmer terminal type scale. */
+.dcPageHero h1,
+.dcHero h1,
+.atlasSubHero h1,
+.atlasHero h1,
+h1 {
+  font-size: clamp(34px, 4.2vw, 64px) !important;
+  line-height: 1.04 !important;
+  letter-spacing: -0.035em !important;
+}
+.dcCompactHero { min-height: 0 !important; }
+.dcPageHero,
+.dcHeroCopy,
+.dcPipelineSection,
+.dcSplitSection,
+.dcListSection,
+.dcSourceMap,
+.dcBoardHeader,
+.dcReportsPanel {
+  padding: clamp(22px, 4vw, 40px) !important;
+}
+.dcLede,
+.dcPageHero p,
+.dcMuted,
+.dcSectionIntro p:not(.dcEyebrow),
+.dcBentoCard p,
+.dcSignalCard p,
+.dcPraxisRow p,
+.dcTaskCard p,
+.dcAgentCard p,
+.dcPipeline p,
+.dcPage article p,
+.dcPage section p:not(.dcEyebrow) {
+  font-size: clamp(14px, 1.2vw, 17px) !important;
+  line-height: 1.48 !important;
+}
+.dcSectionIntro h2,
+.dcSplitSection h2,
+.dcReportsPanel h2,
+.dcSplitPanel h2,
+.dcBentoCard h2,
+.dcCategoryCard h2,
+.dcPraxisGroup header h3,
+h2 {
+  font-size: clamp(26px, 3vw, 44px) !important;
+  line-height: 1.02 !important;
+  letter-spacing: -0.032em !important;
+}
+.dcPraxisGroup header h3 { font-size: clamp(22px, 2.2vw, 34px) !important; }
+.dcMetricStrip strong,
+.dcMetricMatrix strong,
+.stat strong {
+  font-size: clamp(24px, 2.6vw, 38px) !important;
+  line-height: .98 !important;
+}
+.dcSignalCard strong,
+.dcListCard strong,
+.dcCategoryRow strong,
+.dcPraxisRow strong,
+.dcTaskCard h3,
+.dcAgentCard h2,
+.experimentCard h3,
+.ideaCard h3,
+.repoCard h3,
+.commandCard h3,
+.noteCard h3,
+h3 {
+  font-size: clamp(16px, 1.45vw, 21px) !important;
+  line-height: 1.12 !important;
+  letter-spacing: -0.018em !important;
+}
+.dcEyebrow,
+.dcMetricStrip article span,
+.dcPraxisRow span,
+.dcPraxisRow em,
+.kanbanLane header span,
+.overviewMeta span,
+.overviewMeta em {
+  font-size: 11px !important;
+}
+.dcPraxisPage { gap: 32px !important; }
+.dcSourceSplitMetrics { grid-template-columns: repeat(5, minmax(0, 1fr)) !important; }
+.dcSourceSplitMetrics article { min-height: 118px !important; padding: 18px !important; }
+.dcSourceLane {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 20px;
+  align-items: end;
+}
+.dcLaneSummary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+  max-width: 420px;
+}
+.dcLaneSummary span {
+  border: 1px solid var(--tw-ash);
+  border-radius: var(--tw-radius);
+  background: #050505;
+  color: var(--tw-dim) !important;
+  padding: 8px 10px;
+  font-size: 11px !important;
+}
+.dcXKanbanWrap,
+.dcAtlasSourceLane {
+  scroll-margin-top: 96px;
+}
+.dcAtlasSourceLane .dcPraxisGroups { gap: 16px !important; }
+.dcAtlasSourceLane .dcPraxisGroup { grid-template-columns: minmax(190px, .24fr) minmax(0, 1fr) !important; }
+.dcAtlasSourceLane .dcPraxisGroup header { padding: 18px !important; }
+.dcAtlasSourceLane .dcPraxisRow {
+  grid-template-columns: 92px minmax(150px, .28fr) minmax(0, 1fr) minmax(140px, auto) !important;
+  gap: 12px !important;
+  padding: 14px !important;
+}
+.dcAtlasSourceLane .dcPraxisRow p {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.dcKanbanWrap .kanbanLane { padding: 12px !important; }
+.dcKanbanWrap .kanbanLane header h2 { font-size: 17px !important; }
+.dcKanbanWrap .experimentCard { padding: 14px !important; }
+.dcKanbanWrap .experimentCard p { font-size: 13px !important; line-height: 1.42 !important; }
+.dcKanbanWrap .overviewMeta { gap: 6px !important; }
+@media (max-width: 980px) {
+  .dcSourceSplitMetrics { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  .dcSourceLane,
+  .dcAtlasSourceLane .dcPraxisGroup { grid-template-columns: 1fr !important; }
+  .dcLaneSummary { justify-content: flex-start; max-width: none; }
+  .dcAtlasSourceLane .dcPraxisRow { grid-template-columns: 1fr !important; }
+}
+@media (max-width: 720px) {
+  .dcPageHero h1,
+  .dcHero h1,
+  .atlasSubHero h1,
+  h1 { font-size: clamp(32px, 10vw, 46px) !important; }
+  .dcSectionIntro h2,
+  h2 { font-size: clamp(24px, 8vw, 34px) !important; }
+  .dcSourceSplitMetrics { grid-template-columns: 1fr !important; }
+  .dcPageHero,
+  .dcSourceMap,
+  .dcBoardHeader { padding: 18px !important; }
+}
+
+/* Visual Ralph: keep filled CTA labels visible after terminal contrast sweep. */
+.dcButtonPrimary,
+.dcTopbarCta,
+.heroActions a:first-child,
+.loginForm button,
+.acpKeyForm button {
+  background: var(--tw-white) !important;
+  border-color: var(--tw-white) !important;
+  color: #050505 !important;
+}
+.dcButtonPrimary *,
+.dcTopbarCta *,
+.heroActions a:first-child * {
+  color: #050505 !important;
+}
+
+/* High-end Praxis redesign: categorized command atlas, not a dumped board. */
+.praxisV2 {
+  --pv-panel: rgba(12,12,12,.84);
+  --pv-panel-2: rgba(28,28,28,.72);
+  --pv-line: rgba(255,255,255,.12);
+  --pv-line-2: rgba(255,255,255,.22);
+  --pv-muted: rgba(255,255,255,.58);
+  --pv-faint: rgba(255,255,255,.38);
+  --pv-radius: 28px;
+  gap: 28px !important;
+}
+.praxisV2::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background:
+    radial-gradient(circle at 16% 10%, rgba(255,255,255,.08), transparent 24rem),
+    radial-gradient(circle at 86% 18%, rgba(130,130,130,.10), transparent 22rem),
+    radial-gradient(circle at 52% 92%, rgba(255,255,255,.06), transparent 28rem);
+  opacity: .9;
+}
+.praxisV2 > * { position: relative; z-index: 1; }
+.pvShell {
+  border: 1px solid rgba(255,255,255,.10) !important;
+  border-radius: calc(var(--pv-radius) + 8px) !important;
+  background: rgba(255,255,255,.035) !important;
+  padding: 6px !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.08) !important;
+}
+.pvCore {
+  border: 1px solid var(--pv-line) !important;
+  border-radius: var(--pv-radius) !important;
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.055), rgba(255,255,255,.018)),
+    var(--pv-panel) !important;
+  color: var(--tw-white) !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.10) !important;
+}
+.pvHero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(310px, .42fr);
+  gap: 6px;
+  min-height: 0;
+}
+.pvHeroCopy {
+  min-height: 360px;
+  display: grid;
+  align-content: center;
+  padding: clamp(28px, 5vw, 72px) !important;
+}
+.pvHeroCopy h1 {
+  max-width: 880px !important;
+  margin: 0 !important;
+  font-size: clamp(42px, 5.2vw, 76px) !important;
+  line-height: .98 !important;
+  letter-spacing: -.045em !important;
+  color: var(--tw-white) !important;
+}
+.pvHeroCopy p:not(.pvBadge) {
+  max-width: 690px;
+  margin: 18px 0 0 !important;
+  color: var(--pv-muted) !important;
+  font-size: clamp(15px, 1.25vw, 18px) !important;
+  line-height: 1.5 !important;
+}
+.pvBadge {
+  width: fit-content;
+  margin: 0 0 18px !important;
+  border: 1px solid var(--pv-line);
+  border-radius: 999px;
+  padding: 7px 10px;
+  color: var(--pv-muted) !important;
+  font-size: 10px !important;
+  line-height: 1 !important;
+  letter-spacing: .18em !important;
+  text-transform: uppercase !important;
+}
+.pvHeroPanel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: stretch;
+  overflow: hidden;
+}
+.pvHeroPanel div {
+  min-height: 150px;
+  display: grid;
+  align-content: end;
+  gap: 8px;
+  padding: 22px;
+  border-right: 1px solid var(--pv-line);
+  border-bottom: 1px solid var(--pv-line);
+}
+.pvHeroPanel div:nth-child(2n) { border-right: 0; }
+.pvHeroPanel div:nth-last-child(-n+2) { border-bottom: 0; }
+.pvHeroPanel strong {
+  color: var(--tw-white) !important;
+  font-size: clamp(28px, 3.2vw, 44px) !important;
+  line-height: .9;
+  letter-spacing: -.04em;
+}
+.pvHeroPanel span,
+.pvCardTop span,
+.pvCardTop em,
+.pvAtlasMeta span,
+.pvAtlasDrawer summary span,
+.pvAtlasDrawer summary em,
+.pvAtlasRow em {
+  color: var(--pv-faint) !important;
+  font-size: 11px !important;
+  font-style: normal;
+  letter-spacing: .04em;
+}
+.pvActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+.pvButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid var(--pv-line-2) !important;
+  border-radius: 999px !important;
+  padding: 6px 6px 6px 18px !important;
+  color: var(--tw-white) !important;
+  background: rgba(255,255,255,.035) !important;
+  transition: transform .55s cubic-bezier(.32,.72,0,1), border-color .55s cubic-bezier(.32,.72,0,1), background .55s cubic-bezier(.32,.72,0,1) !important;
+}
+.pvButton b {
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: rgba(255,255,255,.10);
+  color: var(--tw-white);
+  transition: transform .55s cubic-bezier(.32,.72,0,1) !important;
+}
+.pvButton:hover { transform: translateY(-2px); border-color: rgba(255,255,255,.42) !important; }
+.pvButton:hover b { transform: translate(3px,-1px) scale(1.04); }
+.pvButton:active { transform: scale(.98); }
+.pvButtonPrimary { background: var(--tw-white) !important; color: #050505 !important; }
+.pvButtonPrimary b { background: #050505 !important; color: var(--tw-white) !important; }
+.pvBoard {
+  border: 1px solid var(--pv-line) !important;
+  border-radius: calc(var(--pv-radius) + 8px) !important;
+  background: rgba(0,0,0,.58) !important;
+  padding: clamp(20px, 3.2vw, 42px) !important;
+  color: var(--tw-white) !important;
+}
+.pvSectionHead {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.pvSectionHead h2,
+.pvSourceIntro h2 {
+  max-width: 820px;
+  margin: 0 !important;
+  color: var(--tw-white) !important;
+  font-size: clamp(30px, 3.2vw, 50px) !important;
+  line-height: 1 !important;
+  letter-spacing: -.035em !important;
+}
+.pvSectionHead p:not(.pvBadge),
+.pvSourceIntro p:not(.pvBadge) {
+  max-width: 780px;
+  margin: 0 !important;
+  color: var(--pv-muted) !important;
+  font-size: 15px !important;
+  line-height: 1.5 !important;
+}
+.pvPriorityGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+.pvSmallGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.pvBriefCard {
+  display: block;
+  color: inherit !important;
+  min-width: 0;
+  transition: transform .55s cubic-bezier(.32,.72,0,1), background .55s cubic-bezier(.32,.72,0,1) !important;
+}
+.pvBriefCard:hover { transform: translateY(-4px); }
+.pvBriefCard article {
+  min-height: 275px;
+  display: grid;
+  align-content: space-between;
+  gap: 14px;
+  padding: 18px !important;
+}
+.pvCardTop {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.pvBriefCard h3 {
+  margin: 0 !important;
+  color: var(--tw-white) !important;
+  font-size: clamp(18px, 1.65vw, 24px) !important;
+  line-height: 1.08 !important;
+  letter-spacing: -.025em !important;
+}
+.pvBriefCard p {
+  margin: 0 !important;
+  color: var(--pv-muted) !important;
+  font-size: 13px !important;
+  line-height: 1.45 !important;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.pvBriefCard dl {
+  display: grid;
+  grid-template-columns: 1fr 110px;
+  gap: 10px;
+  margin: 0;
+}
+.pvBriefCard dt {
+  color: var(--pv-faint) !important;
+  font-size: 10px !important;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.pvBriefCard dd {
+  margin: 4px 0 0;
+  color: var(--tw-white) !important;
+  font-size: 12px;
+  line-height: 1.35;
+}
+.pvSourceBoard {
+  display: grid;
+  grid-template-columns: minmax(0, .78fr) minmax(420px, 1fr);
+  gap: 18px;
+  padding: 6px !important;
+}
+.pvSourceIntro { padding: 28px !important; }
+.pvSourceCards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+}
+.pvSourceCard { display: block; color: inherit !important; transition: transform .55s cubic-bezier(.32,.72,0,1) !important; }
+.pvSourceCard:hover { transform: translateY(-3px); }
+.pvSourceCard > span {
+  min-height: 230px;
+  display: grid;
+  align-content: space-between;
+  padding: 20px !important;
+}
+.pvSourceCard em {
+  color: var(--tw-white) !important;
+  font-size: 34px;
+  font-style: normal;
+  letter-spacing: -.05em;
+}
+.pvSourceCard strong { color: var(--tw-white) !important; font-size: 18px; line-height: 1.05; }
+.pvSourceCard small { color: var(--pv-muted) !important; font-size: 12px; line-height: 1.4; }
+.pvCategoryGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+.pvCategoryPanel summary,
+.pvAtlasDrawer summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 20px !important;
+}
+.pvCategoryPanel summary::-webkit-details-marker,
+.pvAtlasDrawer summary::-webkit-details-marker { display: none; }
+.pvCategoryPanel summary strong,
+.pvAtlasDrawer summary strong {
+  display: block;
+  color: var(--tw-white) !important;
+  font-size: clamp(20px, 2vw, 28px) !important;
+  line-height: 1;
+  letter-spacing: -.025em;
+  margin: 10px 0 8px;
+}
+.pvCategoryPanel summary p {
+  margin: 0 !important;
+  color: var(--pv-muted) !important;
+  font-size: 13px !important;
+  line-height: 1.42 !important;
+}
+.pvCategoryList {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+  padding-top: 6px;
+}
+.pvCategoryList .pvBriefCard article { min-height: 245px; }
+.pvAtlasMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: -10px 0 22px;
+}
+.pvAtlasMeta span {
+  border: 1px solid var(--pv-line);
+  border-radius: 999px;
+  padding: 7px 10px;
+}
+.pvAtlasGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.pvAtlasDrawer summary {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr) auto;
+  gap: 14px;
+  align-items: center;
+}
+.pvAtlasDrawer summary strong { margin: 0; }
+.pvAtlasRows {
+  display: grid;
+  gap: 0;
+  padding: 0 6px 6px;
+}
+.pvAtlasRow {
+  display: grid;
+  grid-template-columns: minmax(150px, .34fr) minmax(0, 1fr) minmax(130px, auto);
+  gap: 14px;
+  align-items: center;
+  border-top: 1px solid var(--pv-line) !important;
+  padding: 12px 14px;
+  color: inherit !important;
+}
+.pvAtlasRow strong {
+  color: var(--tw-white) !important;
+  font-size: 14px;
+  line-height: 1.15;
+  overflow-wrap: anywhere;
+}
+.pvAtlasRow p {
+  margin: 0 !important;
+  color: var(--pv-muted) !important;
+  font-size: 12px !important;
+  line-height: 1.35 !important;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.pvMore {
+  margin: 0 !important;
+  padding: 14px;
+  border-top: 1px solid var(--pv-line);
+  color: var(--pv-faint) !important;
+  font-size: 12px !important;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .pvHero,
+  .pvBoard,
+  .pvBriefCard,
+  .pvCategoryPanel,
+  .pvAtlasDrawer {
+    animation: pvRise .8s cubic-bezier(.32,.72,0,1) both;
+  }
+  .pvBoard:nth-of-type(2) { animation-delay: .06s; }
+  .pvBoard:nth-of-type(3) { animation-delay: .12s; }
+  @keyframes pvRise { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: translateY(0); } }
+}
+@media (max-width: 1100px) {
+  .pvHero,
+  .pvSourceBoard,
+  .pvPriorityGrid,
+  .pvCategoryGrid,
+  .pvAtlasGrid { grid-template-columns: 1fr !important; }
+  .pvSourceCards,
+  .pvCategoryList { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 760px) {
+  .praxisV2 { gap: 18px !important; }
+  .pvHeroCopy { min-height: 0; padding: 24px !important; }
+  .pvHeroCopy h1 { font-size: clamp(34px, 11vw, 48px) !important; }
+  .pvHeroPanel,
+  .pvSourceCards,
+  .pvCategoryList { grid-template-columns: 1fr !important; }
+  .pvHeroPanel div { min-height: 112px; border-right: 0; }
+  .pvPriorityGrid,
+  .pvSmallGrid { grid-template-columns: 1fr !important; }
+  .pvBriefCard article { min-height: 0; }
+  .pvBriefCard dl { grid-template-columns: 1fr; }
+  .pvBoard { padding: 16px !important; }
+  .pvSourceIntro { padding: 22px !important; }
+  .pvSourceCard > span { min-height: 170px; }
+  .pvAtlasDrawer summary { grid-template-columns: 1fr; gap: 8px; }
+  .pvAtlasRow { grid-template-columns: 1fr; gap: 8px; }
+}
+
+/* High-end Praxis audit adjustment: reduce hero dominance so category system appears faster. */
+.praxisV2 .pvHeroCopy {
+  min-height: 300px !important;
+  padding: clamp(24px, 4vw, 48px) !important;
+}
+.praxisV2 .pvHeroCopy h1 {
+  max-width: 760px !important;
+  font-size: clamp(34px, 4vw, 58px) !important;
+  line-height: 1.03 !important;
+}
+.praxisV2 .pvHeroCopy p:not(.pvBadge) {
+  max-width: 620px !important;
+  font-size: clamp(14px, 1.05vw, 16px) !important;
+}
+.praxisV2 .pvHeroPanel div { min-height: 126px !important; padding: 18px !important; }
+.praxisV2 .pvHeroPanel strong { font-size: clamp(24px, 2.4vw, 36px) !important; }
+.praxisV2 .pvBoard { padding: clamp(18px, 2.6vw, 34px) !important; }
+.praxisV2 .pvSectionHead h2,
+.praxisV2 .pvSourceIntro h2 { font-size: clamp(26px, 2.6vw, 40px) !important; }
+@media (max-width: 760px) {
+  .praxisV2 .pvHeroCopy { padding: 20px !important; }
+  .praxisV2 .pvHeroCopy h1 { font-size: clamp(30px, 9vw, 40px) !important; }
+}
+
+/* Praxis v2 tightening after visual audit: categories before dump, hero no longer dominates. */
+.praxisV2 .pvHero {
+  grid-template-columns: minmax(0, .9fr) minmax(300px, .46fr) !important;
+}
+.praxisV2 .pvHeroCopy {
+  min-height: 220px !important;
+  padding: clamp(20px, 3vw, 36px) !important;
+}
+.praxisV2 .pvHeroCopy h1 {
+  max-width: 620px !important;
+  font-size: clamp(34px, 3.5vw, 52px) !important;
+  line-height: 1 !important;
+}
+.praxisV2 .pvHeroCopy p:not(.pvBadge) {
+  margin-top: 14px !important;
+  max-width: 560px !important;
+}
+.praxisV2 .pvBadge { margin-bottom: 12px !important; }
+.praxisV2 .pvActions { margin-top: 20px !important; }
+.praxisV2 .pvHeroPanel div { min-height: 104px !important; padding: 16px !important; }
+.praxisV2 .pvHeroPanel strong { font-size: clamp(22px, 2vw, 30px) !important; }
+.praxisV2 .pvSourceBoard { margin-top: -8px; }
+.praxisV2 .pvSourceCard > span { min-height: 170px !important; }
+.praxisV2 .pvBoard { padding: clamp(16px, 2.2vw, 28px) !important; }
+@media (max-width: 760px) {
+  .praxisV2 .pvHero { grid-template-columns: 1fr !important; }
+  .praxisV2 .pvHeroCopy { padding: 18px !important; }
+  .praxisV2 .pvHeroCopy h1 { font-size: clamp(30px, 8vw, 38px) !important; }
+  .praxisV2 .pvHeroPanel { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  .praxisV2 .pvHeroPanel div { min-height: 86px !important; }
+}
+
+/* Praxis individual mission cards: evidence-first premium card anatomy. */
+.praxisV2 .pvMissionCard {
+  position: relative;
+  isolation: isolate;
+}
+.praxisV2 .pvMissionCard::before {
+  content: "";
+  position: absolute;
+  inset: 7px;
+  z-index: 0;
+  border-radius: var(--pv-radius);
+  background:
+    radial-gradient(circle at 18% 0%, rgba(255,255,255,.11), transparent 12rem),
+    linear-gradient(135deg, rgba(255,255,255,.045), transparent 42%);
+  opacity: .82;
+  pointer-events: none;
+}
+.praxisV2 .pvMissionCard article {
+  position: relative;
+  z-index: 1;
+  min-height: 310px !important;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto auto;
+  gap: 16px !important;
+  padding: 18px !important;
+}
+.praxisV2 .pvMissionTop {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 8px;
+  align-items: center;
+}
+.praxisV2 .pvMissionRank,
+.praxisV2 .pvMissionCategory,
+.praxisV2 .pvMissionTop em {
+  border: 1px solid var(--pv-line);
+  border-radius: 999px;
+  padding: 6px 8px;
+  color: var(--pv-faint) !important;
+  font-size: 10px !important;
+  font-style: normal;
+  line-height: 1;
+  white-space: nowrap;
+}
+.praxisV2 .pvMissionRank {
+  width: 34px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  color: var(--tw-white) !important;
+  background: rgba(255,255,255,.08);
+}
+.praxisV2 .pvMissionCategory {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.praxisV2 .pvMissionBody {
+  display: grid;
+  align-content: start;
+  gap: 10px;
+  min-width: 0;
+}
+.praxisV2 .pvMissionBody h3 {
+  margin: 0 !important;
+  color: var(--tw-white) !important;
+  font-size: clamp(18px, 1.55vw, 23px) !important;
+  line-height: 1.02 !important;
+  letter-spacing: -.03em !important;
+  overflow-wrap: anywhere;
+}
+.praxisV2 .pvMissionBody p {
+  margin: 0 !important;
+  color: var(--pv-muted) !important;
+  font-size: 12.5px !important;
+  line-height: 1.46 !important;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.praxisV2 .pvMissionTest {
+  border: 1px solid var(--pv-line);
+  border-radius: 18px;
+  background: rgba(0,0,0,.28);
+  padding: 12px;
+}
+.praxisV2 .pvMissionTest span {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--pv-faint) !important;
+  font-size: 10px !important;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.praxisV2 .pvMissionTest strong {
+  display: -webkit-box;
+  color: var(--tw-white) !important;
+  font-size: 12px !important;
+  font-weight: 400;
+  line-height: 1.35;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.praxisV2 .pvMissionFooter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+.praxisV2 .pvMissionFooter span,
+.praxisV2 .pvMissionFooter b {
+  border: 1px solid var(--pv-line);
+  border-radius: 999px;
+  padding: 7px 9px;
+  color: var(--pv-faint) !important;
+  font-size: 10.5px !important;
+  font-weight: 400;
+  line-height: 1;
+}
+.praxisV2 .pvMissionFooter b {
+  margin-left: auto;
+  color: #050505 !important;
+  background: var(--tw-white);
+  border-color: var(--tw-white);
+}
+.praxisV2 .pvMissionCard:hover .pvCore {
+  border-color: rgba(255,255,255,.28) !important;
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.08), rgba(255,255,255,.025)),
+    var(--pv-panel) !important;
+}
+.praxisV2 .pvMissionCard:hover .pvMissionFooter b {
+  transform: translate(2px,-1px);
+}
+@media (max-width: 760px) {
+  .praxisV2 .pvMissionCard article { min-height: 0 !important; }
+  .praxisV2 .pvMissionTop { grid-template-columns: auto 1fr; }
+  .praxisV2 .pvMissionTop em { grid-column: 1 / -1; width: fit-content; }
+  .praxisV2 .pvMissionFooter b { margin-left: 0; }
+}
+
+/* Praxis mission cards v2: compact learning briefs, not note dumps. */
+.praxisV2 .pvMissionCard {
+  transform-origin: center;
+}
+.praxisV2 .pvMissionCard::before {
+  inset: 5px;
+  border-radius: calc(var(--pv-radius) + 2px);
+  background:
+    radial-gradient(circle at 20% 0%, rgba(255,255,255,.13), transparent 10rem),
+    radial-gradient(circle at 95% 105%, rgba(255,255,255,.08), transparent 12rem),
+    linear-gradient(145deg, rgba(255,255,255,.05), rgba(255,255,255,.012) 48%, rgba(255,255,255,.04));
+}
+.praxisV2 .pvMissionCard article {
+  min-height: 326px !important;
+  grid-template-rows: auto minmax(0, 1fr) auto auto auto;
+  gap: 12px !important;
+  padding: 16px !important;
+}
+.praxisV2 .pvMissionTop {
+  grid-template-columns: 34px minmax(0, 1fr) auto;
+}
+.praxisV2 .pvMissionSource {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border: 1px solid var(--pv-line);
+  border-radius: 999px;
+  padding: 7px 9px;
+  color: rgba(255,255,255,.66) !important;
+  font-size: 10px !important;
+  line-height: 1;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  background: rgba(255,255,255,.035);
+}
+.praxisV2 .pvMissionTop em {
+  background: rgba(255,255,255,.08);
+  color: rgba(255,255,255,.74) !important;
+}
+.praxisV2 .pvMissionCategory {
+  width: fit-content;
+  max-width: 100%;
+  border-color: rgba(255,255,255,.18);
+  color: rgba(255,255,255,.72) !important;
+  background: rgba(255,255,255,.055);
+  text-transform: uppercase;
+  letter-spacing: .09em;
+}
+.praxisV2 .pvMissionBody {
+  gap: 9px;
+}
+.praxisV2 .pvMissionBody h3 {
+  font-size: clamp(17px, 1.35vw, 21px) !important;
+  line-height: 1.06 !important;
+  letter-spacing: -.025em !important;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.praxisV2 .pvMissionBody p {
+  font-size: 12px !important;
+  line-height: 1.45 !important;
+  -webkit-line-clamp: 3;
+}
+.praxisV2 .pvMissionLedger {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(72px, .62fr) minmax(54px, .42fr);
+  gap: 6px;
+}
+.praxisV2 .pvMissionLedger span {
+  min-width: 0;
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: 16px;
+  background: rgba(0,0,0,.20);
+  padding: 9px 10px;
+}
+.praxisV2 .pvMissionLedger small {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--pv-faint) !important;
+  font-size: 9px !important;
+  line-height: 1;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+.praxisV2 .pvMissionLedger strong {
+  display: block;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: rgba(255,255,255,.84) !important;
+  font-size: 11px !important;
+  font-weight: 500;
+  line-height: 1.1;
+}
+.praxisV2 .pvMissionTest {
+  border-radius: 20px;
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.055), rgba(255,255,255,.018)),
+    rgba(0,0,0,.30);
+  padding: 11px 12px;
+}
+.praxisV2 .pvMissionTest strong {
+  font-size: 11.5px !important;
+  line-height: 1.35;
+  -webkit-line-clamp: 2;
+}
+.praxisV2 .pvMissionFooter {
+  gap: 7px;
+}
+.praxisV2 .pvMissionFooter span {
+  color: rgba(255,255,255,.48) !important;
+}
+.praxisV2 .pvMissionFooter b {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+  padding: 5px 5px 5px 12px;
+  border-radius: 999px;
+  color: #050505 !important;
+  background: var(--tw-white);
+  border-color: var(--tw-white);
+  transition: transform .55s cubic-bezier(.32,.72,0,1) !important;
+}
+.praxisV2 .pvMissionFooter b span {
+  border: 0 !important;
+  padding: 0 !important;
+  color: #050505 !important;
+  background: transparent !important;
+  font-size: 10.5px !important;
+}
+.praxisV2 .pvMissionFooter b i {
+  width: 24px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  color: var(--tw-white);
+  background: #050505;
+  font-size: 11px;
+  font-style: normal;
+  transition: transform .55s cubic-bezier(.32,.72,0,1) !important;
+}
+.praxisV2 .pvMissionCard:hover .pvMissionFooter b i {
+  transform: translate(2px,-1px) scale(1.04);
+}
+@media (max-width: 760px) {
+  .praxisV2 .pvMissionCard article {
+    min-height: 0 !important;
+    gap: 11px !important;
+  }
+  .praxisV2 .pvMissionTop {
+    grid-template-columns: 34px minmax(0, 1fr);
+  }
+  .praxisV2 .pvMissionTop em {
+    grid-column: 1 / -1;
+    width: fit-content;
+  }
+  .praxisV2 .pvMissionLedger {
+    grid-template-columns: 1fr 1fr;
+  }
+  .praxisV2 .pvMissionLedger span:first-child {
+    grid-column: 1 / -1;
+  }
+  .praxisV2 .pvMissionFooter b {
+    width: 100%;
+    justify-content: space-between;
+    margin-left: 0;
+  }
+}
+
+/* Praxis density pass: smaller type scale for operator readability. */
+.praxisV2 {
+  gap: 22px !important;
+}
+.praxisV2 .pvHeroCopy h1 {
+  font-size: clamp(28px, 3vw, 44px) !important;
+  letter-spacing: -.035em !important;
+}
+.praxisV2 .pvHeroCopy p:not(.pvBadge),
+.praxisV2 .pvSectionHead p:not(.pvBadge),
+.praxisV2 .pvSourceIntro p:not(.pvBadge) {
+  font-size: clamp(12.5px, .9vw, 14px) !important;
+  line-height: 1.45 !important;
+}
+.praxisV2 .pvSectionHead h2,
+.praxisV2 .pvSourceIntro h2 {
+  font-size: clamp(22px, 2.15vw, 34px) !important;
+  letter-spacing: -.028em !important;
+}
+.praxisV2 .pvBadge {
+  font-size: 9px !important;
+  padding: 6px 9px !important;
+}
+.praxisV2 .pvHeroPanel strong,
+.praxisV2 .pvSourceCard em {
+  font-size: clamp(20px, 1.75vw, 28px) !important;
+}
+.praxisV2 .pvSourceCard strong {
+  font-size: 15px !important;
+}
+.praxisV2 .pvSourceCard small,
+.praxisV2 .pvAtlasRow p,
+.praxisV2 .pvCategoryPanel summary p {
+  font-size: 11.5px !important;
+}
+.praxisV2 .pvMissionBody h3 {
+  font-size: clamp(15.5px, 1.12vw, 18px) !important;
+  line-height: 1.08 !important;
+}
+.praxisV2 .pvMissionBody p,
+.praxisV2 .pvMissionTest strong {
+  font-size: 11px !important;
+}
+.praxisV2 .pvMissionSource,
+.praxisV2 .pvMissionCategory,
+.praxisV2 .pvMissionTop em,
+.praxisV2 .pvMissionFooter span,
+.praxisV2 .pvMissionFooter b span {
+  font-size: 9.5px !important;
+}
+.praxisV2 .pvMissionLedger strong {
+  font-size: 10.5px !important;
+}
+.praxisV2 .pvMissionCard article {
+  min-height: 296px !important;
+}
+@media (max-width: 760px) {
+  .praxisV2 {
+    gap: 16px !important;
+  }
+  .praxisV2 .pvHeroCopy h1 {
+    font-size: clamp(26px, 7vw, 34px) !important;
+  }
+  .praxisV2 .pvSectionHead h2,
+  .praxisV2 .pvSourceIntro h2 {
+    font-size: clamp(21px, 6vw, 28px) !important;
+  }
+  .praxisV2 .pvMissionBody h3 {
+    font-size: clamp(15px, 4.6vw, 17px) !important;
+  }
+}
+
+/* Praxis density pass v2: quieter typography, more SaaS-operator than poster. */
+.praxisV2 {
+  gap: 18px !important;
+}
+.praxisV2 .pvHeroCopy {
+  min-height: 190px !important;
+}
+.praxisV2 .pvHeroCopy h1 {
+  font-size: clamp(25px, 2.45vw, 36px) !important;
+  line-height: 1.04 !important;
+}
+.praxisV2 .pvHeroCopy p:not(.pvBadge),
+.praxisV2 .pvSectionHead p:not(.pvBadge),
+.praxisV2 .pvSourceIntro p:not(.pvBadge) {
+  font-size: clamp(11.5px, .82vw, 13px) !important;
+  line-height: 1.42 !important;
+}
+.praxisV2 .pvSectionHead h2,
+.praxisV2 .pvSourceIntro h2 {
+  font-size: clamp(19px, 1.78vw, 28px) !important;
+  line-height: 1.08 !important;
+}
+.praxisV2 .pvBadge {
+  font-size: 8.5px !important;
+  letter-spacing: .15em !important;
+}
+.praxisV2 .pvHeroPanel div {
+  min-height: 88px !important;
+}
+.praxisV2 .pvHeroPanel strong,
+.praxisV2 .pvSourceCard em {
+  font-size: clamp(18px, 1.45vw, 24px) !important;
+}
+.praxisV2 .pvHeroPanel span,
+.praxisV2 .pvAtlasMeta span,
+.praxisV2 .pvAtlasDrawer summary span,
+.praxisV2 .pvAtlasDrawer summary em,
+.praxisV2 .pvAtlasRow em {
+  font-size: 10px !important;
+}
+.praxisV2 .pvSourceCard > span {
+  min-height: 142px !important;
+}
+.praxisV2 .pvSourceCard strong,
+.praxisV2 .pvAtlasDrawer summary strong {
+  font-size: 14px !important;
+}
+.praxisV2 .pvSourceCard small,
+.praxisV2 .pvAtlasRow p,
+.praxisV2 .pvCategoryPanel summary p {
+  font-size: 10.5px !important;
+}
+.praxisV2 .pvMissionCard article {
+  min-height: 270px !important;
+  gap: 10px !important;
+}
+.praxisV2 .pvMissionBody h3 {
+  font-size: clamp(14px, 1vw, 16px) !important;
+  line-height: 1.1 !important;
+}
+.praxisV2 .pvMissionBody p,
+.praxisV2 .pvMissionTest strong {
+  font-size: 10.5px !important;
+  line-height: 1.35 !important;
+}
+.praxisV2 .pvMissionSource,
+.praxisV2 .pvMissionCategory,
+.praxisV2 .pvMissionTop em,
+.praxisV2 .pvMissionFooter span,
+.praxisV2 .pvMissionFooter b span {
+  font-size: 8.75px !important;
+}
+.praxisV2 .pvMissionLedger small,
+.praxisV2 .pvMissionTest span {
+  font-size: 8px !important;
+}
+.praxisV2 .pvMissionLedger strong {
+  font-size: 9.75px !important;
+}
+.praxisV2 .pvMissionLedger span {
+  padding: 8px 9px !important;
+}
+.praxisV2 .pvMissionTest {
+  padding: 10px 11px !important;
+}
+.praxisV2 .pvMissionFooter b i {
+  width: 22px !important;
+  height: 22px !important;
+  font-size: 10px !important;
+}
+@media (max-width: 760px) {
+  .praxisV2 .pvHeroCopy h1 {
+    font-size: clamp(24px, 6.2vw, 30px) !important;
+  }
+  .praxisV2 .pvSectionHead h2,
+  .praxisV2 .pvSourceIntro h2 {
+    font-size: clamp(18px, 5.2vw, 24px) !important;
+  }
+  .praxisV2 .pvMissionBody h3 {
+    font-size: clamp(14px, 4.1vw, 16px) !important;
+  }
+  .praxisV2 .pvMissionBody p,
+  .praxisV2 .pvMissionTest strong {
+    font-size: 10px !important;
+  }
+}
+
+/* Praxis density pass v3: hard clamp nested text after legacy paragraph rules. */
+.praxisV2.praxisV2 .pvBriefCard .pvMissionBody > p {
+  font-size: 10.5px !important;
+  line-height: 1.36 !important;
+}
+.praxisV2.praxisV2 .pvBriefCard .pvMissionBody > h3 {
+  font-size: clamp(14px, .98vw, 16px) !important;
+  line-height: 1.09 !important;
+}
+.praxisV2.praxisV2 .pvBriefCard .pvMissionTest > strong {
+  font-size: 10.25px !important;
+  line-height: 1.34 !important;
+}
+.praxisV2.praxisV2 .pvSectionHead > h2,
+.praxisV2.praxisV2 .pvSourceIntro > h2 {
+  font-size: clamp(18px, 1.65vw, 26px) !important;
+}
+.praxisV2.praxisV2 .pvHeroCopy > h1 {
+  font-size: clamp(24px, 2.25vw, 34px) !important;
+}
+@media (max-width: 760px) {
+  .praxisV2.praxisV2 .pvBriefCard .pvMissionBody > p {
+    font-size: 10px !important;
+  }
+  .praxisV2.praxisV2 .pvBriefCard .pvMissionBody > h3 {
+    font-size: clamp(13.5px, 3.9vw, 15.5px) !important;
+  }
+  .praxisV2.praxisV2 .pvSectionHead > h2,
+  .praxisV2.praxisV2 .pvSourceIntro > h2 {
+    font-size: clamp(17px, 4.85vw, 22px) !important;
+  }
+  .praxisV2.praxisV2 .pvHeroCopy > h1 {
+    font-size: clamp(23px, 5.8vw, 28px) !important;
+  }
+}
+
+/* Praxis typography hierarchy v4: deliberate scale, no billboard typography. */
+.praxisV2.praxisV2 {
+  --pv-type-hero: clamp(24px, 2.05vw, 30px);
+  --pv-type-section: clamp(17px, 1.42vw, 22px);
+  --pv-type-card-title: clamp(13.25px, .88vw, 15px);
+  --pv-type-body: 10.5px;
+  --pv-type-caption: 8.5px;
+  --pv-type-metric: clamp(17px, 1.28vw, 22px);
+}
+.praxisV2.praxisV2 .pvHeroCopy > h1 {
+  font-size: var(--pv-type-hero) !important;
+  line-height: 1.08 !important;
+  letter-spacing: -.025em !important;
+}
+.praxisV2.praxisV2 .pvSectionHead > h2,
+.praxisV2.praxisV2 .pvSourceIntro > h2 {
+  font-size: var(--pv-type-section) !important;
+  line-height: 1.12 !important;
+  letter-spacing: -.018em !important;
+}
+.praxisV2.praxisV2 .pvHeroCopy > p:not(.pvBadge),
+.praxisV2.praxisV2 .pvSectionHead > p:not(.pvBadge),
+.praxisV2.praxisV2 .pvSourceIntro > p:not(.pvBadge) {
+  font-size: 11.5px !important;
+  line-height: 1.42 !important;
+  max-width: 620px !important;
+}
+.praxisV2.praxisV2 .pvBadge {
+  font-size: var(--pv-type-caption) !important;
+  letter-spacing: .14em !important;
+}
+.praxisV2.praxisV2 .pvHeroPanel strong,
+.praxisV2.praxisV2 .pvSourceCard em {
+  font-size: var(--pv-type-metric) !important;
+  line-height: .95 !important;
+}
+.praxisV2.praxisV2 .pvSourceCard strong,
+.praxisV2.praxisV2 .pvAtlasDrawer summary strong {
+  font-size: 13px !important;
+  line-height: 1.1 !important;
+}
+.praxisV2.praxisV2 .pvBriefCard .pvMissionBody > h3 {
+  font-size: var(--pv-type-card-title) !important;
+  line-height: 1.12 !important;
+  letter-spacing: -.012em !important;
+}
+.praxisV2.praxisV2 .pvBriefCard .pvMissionBody > p,
+.praxisV2.praxisV2 .pvBriefCard .pvMissionTest > strong,
+.praxisV2.praxisV2 .pvSourceCard small,
+.praxisV2.praxisV2 .pvAtlasRow p,
+.praxisV2.praxisV2 .pvCategoryPanel summary p {
+  font-size: var(--pv-type-body) !important;
+  line-height: 1.38 !important;
+}
+.praxisV2.praxisV2 .pvMissionSource,
+.praxisV2.praxisV2 .pvMissionCategory,
+.praxisV2.praxisV2 .pvMissionTop em,
+.praxisV2.praxisV2 .pvMissionFooter span,
+.praxisV2.praxisV2 .pvMissionFooter b span,
+.praxisV2.praxisV2 .pvHeroPanel span,
+.praxisV2.praxisV2 .pvAtlasMeta span,
+.praxisV2.praxisV2 .pvAtlasDrawer summary span,
+.praxisV2.praxisV2 .pvAtlasDrawer summary em,
+.praxisV2.praxisV2 .pvAtlasRow em {
+  font-size: var(--pv-type-caption) !important;
+}
+.praxisV2.praxisV2 .pvMissionLedger small,
+.praxisV2.praxisV2 .pvMissionTest span {
+  font-size: 7.75px !important;
+}
+.praxisV2.praxisV2 .pvMissionLedger strong {
+  font-size: 9.5px !important;
+}
+@media (max-width: 760px) {
+  .praxisV2.praxisV2 {
+    --pv-type-hero: clamp(22px, 5.25vw, 26px);
+    --pv-type-section: clamp(16.5px, 4.45vw, 20px);
+    --pv-type-card-title: clamp(13.25px, 3.55vw, 14.5px);
+    --pv-type-body: 9.75px;
+    --pv-type-caption: 8px;
+    --pv-type-metric: clamp(16px, 4.5vw, 20px);
+  }
+}
+
+/* Dashboard adapter readability pass: make connection UI visible, not buried under poster type. */
+.dcDashboardPage.dcDashboardPage .dcPageHero h1 {
+  max-width: 860px !important;
+  font-size: clamp(30px, 3.8vw, 52px) !important;
+  line-height: 1.04 !important;
+  letter-spacing: -.035em !important;
+}
+.dcDashboardPage.dcDashboardPage .dcPageHero p {
+  max-width: 740px !important;
+  font-size: 13px !important;
+  line-height: 1.5 !important;
+}
+.dcDashboardPage.dcDashboardPage .dcHeroActionsCard {
+  align-content: center !important;
+}
+.dcDashboardPage.dcDashboardPage .dcAdapterConnectPanel {
+  padding: 24px !important;
+}
+.dcDashboardPage.dcDashboardPage .dcAdapterConnectPanel .dcSectionIntro h2 {
+  max-width: 760px !important;
+  font-size: clamp(24px, 2.8vw, 38px) !important;
+  line-height: 1.08 !important;
+  letter-spacing: -.03em !important;
+}
+.dcDashboardPage.dcDashboardPage .dcAdapterConnectPanel .dcSectionIntro p {
+  max-width: 780px !important;
+  font-size: 12px !important;
+  line-height: 1.45 !important;
+}
+.dcDashboardPage.dcDashboardPage .dcAdapterConnectCard {
+  padding: 16px !important;
+  gap: 12px !important;
+}
+.dcDashboardPage.dcDashboardPage .dcAdapterConnectCard header strong {
+  font-size: clamp(18px, 1.35vw, 22px) !important;
+}
+.dcDashboardPage.dcDashboardPage .dcAdapterConnectCard header em,
+.dcDashboardPage.dcDashboardPage .dcAdapterConnectCard p,
+.dcDashboardPage.dcDashboardPage .dcAdapterConnectCard dd,
+.dcDashboardPage.dcDashboardPage .dcAdapterStatusLine b {
+  font-size: 11px !important;
+  line-height: 1.42 !important;
+}
+.dcDashboardPage.dcDashboardPage .dcAdapterEndpointBox code {
+  font-size: 10px !important;
+}
+@media (max-width: 720px) {
+  .dcDashboardPage.dcDashboardPage .dcPageHero h1 {
+    font-size: clamp(28px, 8.8vw, 36px) !important;
+  }
+  .dcDashboardPage.dcDashboardPage .dcAdapterConnectPanel .dcSectionIntro h2 {
+    font-size: clamp(22px, 7vw, 30px) !important;
+  }
+  .dcDashboardPage.dcDashboardPage .dcAdapterConnectPanel {
+    padding: 18px !important;
+  }
+}
+
+/* Praxis learning report cards: stop paper-theme bleed inside the black workbench. */
+.dcPraxisLearningPanel.dcPraxisLearningPanel {
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.045), transparent 36%),
+    rgba(0,0,0,.82) !important;
+}
+.dcPraxisLearningPanel.dcPraxisLearningPanel .dcMcpCards > *,
+.dcPraxisLearningPanel.dcPraxisLearningPanel .dcUsageBox,
+.dcPraxisLearningPanel.dcPraxisLearningPanel .dcAggregateBox,
+.dcPraxisLearningPanel.dcPraxisLearningPanel .dcCommandBox,
+.dcPraxisLearningPanel.dcPraxisLearningPanel .dcBlockedList,
+.dcPraxisLearningPanel.dcPraxisLearningPanel .dcLearningReportCard {
+  border: 1px solid rgba(255,255,255,.13) !important;
+  border-radius: 14px !important;
+  background:
+    linear-gradient(145deg, rgba(255,255,255,.055), rgba(255,255,255,.018)),
+    #101010 !important;
+  color: var(--tw-white) !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.06) !important;
+}
+.dcPraxisLearningPanel.dcPraxisLearningPanel .dcMcpCards > *:hover,
+.dcPraxisLearningPanel.dcPraxisLearningPanel .dcLearningReportCard:hover {
+  background:
+    linear-gradient(145deg, rgba(255,255,255,.075), rgba(255,255,255,.026)),
+    #151515 !important;
+  border-color: rgba(255,255,255,.24) !important;
+  transform: translateY(-1px) !important;
+}
+.dcLearningReportStack {
+  display: grid !important;
+  gap: 10px !important;
+  border: 0 !important;
+  background: transparent !important;
+}
+.dcLearningReportCard.dcLearningReportCard {
+  display: grid !important;
+  gap: 12px !important;
+  padding: 16px 18px !important;
+}
+.dcLearningReportCard header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  justify-content: space-between;
+}
+.dcLearningReportCard header span,
+.dcPraxisLearningPanel.dcPraxisLearningPanel .dcMcpCards span span,
+.dcPraxisLearningPanel.dcPraxisLearningPanel .dcUsageBox span,
+.dcPraxisLearningPanel.dcPraxisLearningPanel .dcAggregateBox span,
+.dcPraxisLearningPanel.dcPraxisLearningPanel .dcCommandBox span {
+  color: rgba(255,255,255,.50) !important;
+  font-size: 10px !important;
+  line-height: 1.2 !important;
+  letter-spacing: .08em !important;
+  text-transform: uppercase !important;
+}
+.dcLearningReportCard strong,
+.dcPraxisLearningPanel.dcPraxisLearningPanel .dcMcpCards strong,
+.dcPraxisLearningPanel.dcPraxisLearningPanel .dcUsageBox strong,
+.dcPraxisLearningPanel.dcPraxisLearningPanel .dcAggregateBox strong {
+  color: rgba(255,255,255,.94) !important;
+  font-size: clamp(15px, 1.2vw, 18px) !important;
+  line-height: 1.14 !important;
+  letter-spacing: -.015em !important;
+}
+.dcLearningReportCard ul {
+  display: grid;
+  gap: 6px;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+.dcLearningReportCard li,
+.dcPraxisLearningPanel.dcPraxisLearningPanel .dcUsageBox p,
+.dcPraxisLearningPanel.dcPraxisLearningPanel .dcAggregateBox p,
+.dcPraxisLearningPanel.dcPraxisLearningPanel .dcBlockedList p {
+  color: rgba(255,255,255,.58) !important;
+  font-size: 12px !important;
+  line-height: 1.42 !important;
+}
+.dcLearningReportCard li::before {
+  content: "•";
+  color: rgba(255,255,255,.78);
+  margin-right: 8px;
+}
+.dcLearningReportCard em {
+  border-top: 1px solid rgba(255,255,255,.10);
+  padding-top: 10px;
+  color: rgba(255,255,255,.54) !important;
+  font-size: 11px !important;
+  line-height: 1.35 !important;
+  font-style: normal !important;
+}
+.dcPraxisLearningPanel.dcPraxisLearningPanel .dcCommandBox code {
+  border-color: rgba(255,255,255,.11) !important;
+  background: #050505 !important;
+  color: rgba(255,255,255,.84) !important;
+  font-size: 11px !important;
+}
+.dcDashboardPage.dcDashboardPage .dcReportRow,
+.dcDashboardPage.dcDashboardPage .dcAgentMiniCard,
+.dcDashboardPage.dcDashboardPage .dcMcpCards > * {
+  border: 1px solid rgba(255,255,255,.13) !important;
+  border-radius: 14px !important;
+  background:
+    linear-gradient(145deg, rgba(255,255,255,.052), rgba(255,255,255,.018)),
+    #101010 !important;
+  color: var(--tw-white) !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.06) !important;
+}
+.dcDashboardPage.dcDashboardPage .dcReportRow:hover,
+.dcDashboardPage.dcDashboardPage .dcAgentMiniCard:hover,
+.dcDashboardPage.dcDashboardPage .dcMcpCards > *:hover {
+  background:
+    linear-gradient(145deg, rgba(255,255,255,.072), rgba(255,255,255,.026)),
+    #151515 !important;
+  border-color: rgba(255,255,255,.24) !important;
+}
+.dcDashboardPage.dcDashboardPage .dcReportRow strong,
+.dcDashboardPage.dcDashboardPage .dcAgentMiniCard strong,
+.dcDashboardPage.dcDashboardPage .dcMcpCards strong {
+  color: rgba(255,255,255,.94) !important;
+}
+.dcDashboardPage.dcDashboardPage .dcReportRow span,
+.dcDashboardPage.dcDashboardPage .dcReportRow li,
+.dcDashboardPage.dcDashboardPage .dcAgentMiniCard span,
+.dcDashboardPage.dcDashboardPage .dcAgentMiniCard p,
+.dcDashboardPage.dcDashboardPage .dcMcpCards span,
+.dcDashboardPage.dcDashboardPage .dcMcpCards p {
+  color: rgba(255,255,255,.58) !important;
+}
+@media (max-width: 720px) {
+  .dcDashboardPage.dcDashboardPage {
+    width: 100% !important;
+    overflow: hidden !important;
+  }
+  .dcDashboardPage.dcDashboardPage .dcMain,
+  .dcDashboardPage.dcDashboardPage .dcPage,
+  .dcDashboardPage.dcDashboardPage .dcDashboardPanel,
+  .dcDashboardPage.dcDashboardPage .dcPageHero,
+  .dcDashboardPage.dcDashboardPage .dcAdapterConnectPanel {
+    width: 100% !important;
+    overflow: hidden !important;
+  }
+  .dcDashboardPage.dcDashboardPage,
+  .dcDashboardPage.dcDashboardPage * {
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  .dcDashboardPage.dcDashboardPage .dcDashboardHero,
+  .dcDashboardPage.dcDashboardPage .dcPageHero,
+  .dcDashboardPage.dcDashboardPage .dcHeroActionsCard,
+  .dcDashboardPage.dcDashboardPage .dcAdapterConnectGrid,
+  .dcDashboardPage.dcDashboardPage .dcAdapterConnectCard dl,
+  .dcDashboardPage.dcDashboardPage .dcAdapterFlow,
+  .dcDashboardPage.dcDashboardPage .dcMcpCards,
+  .dcDashboardPage.dcDashboardPage .dcMetricStrip,
+  .dcDashboardPage.dcDashboardPage .dcDashboardGrid,
+  .dcDashboardPage.dcDashboardPage .dcLaneBoard {
+    grid-template-columns: 1fr !important;
+  }
+  .dcDashboardPage.dcDashboardPage .dcHeroActionsCard,
+  .dcDashboardPage.dcDashboardPage .dcHeroActionsCard a,
+  .dcDashboardPage.dcDashboardPage .dcButton,
+  .dcDashboardPage.dcDashboardPage .dcAdapterStatusLine a {
+    width: 100% !important;
+  }
+  .dcDashboardPage.dcDashboardPage .dcAdapterStatusLine {
+    display: grid !important;
+    gap: 10px !important;
+  }
+  .dcDashboardPage.dcDashboardPage .dcSectionIntro h2,
+  .dcDashboardPage.dcDashboardPage .dcAdapterConnectPanel .dcSectionIntro h2,
+  .dcDashboardPage.dcDashboardPage .dcPageHero h1,
+  .dcDashboardPage.dcDashboardPage .dcPageHero p,
+  .dcDashboardPage.dcDashboardPage .dcAdapterConnectCard p,
+  .dcDashboardPage.dcDashboardPage .dcAdapterConnectCard dd,
+  .dcDashboardPage.dcDashboardPage .dcAdapterEndpointBox code {
+    overflow-wrap: anywhere !important;
+    word-break: break-word !important;
+    text-wrap: wrap !important;
+    white-space: normal !important;
+  }
+  .dcDashboardPage.dcDashboardPage .dcPageHero h1 {
+    font-size: clamp(26px, 7.5vw, 32px) !important;
+    line-height: 1.08 !important;
+  }
+  .dcDashboardPage.dcDashboardPage .dcAdapterConnectPanel .dcSectionIntro h2,
+  .dcDashboardPage.dcDashboardPage .dcSectionIntro h2 {
+    font-size: clamp(22px, 6.2vw, 26px) !important;
+    line-height: 1.12 !important;
+  }
+  .dcDashboardPage.dcDashboardPage .dcPageHero p,
+  .dcDashboardPage.dcDashboardPage .dcSectionIntro p,
+  .dcDashboardPage.dcDashboardPage .dcAdapterConnectCard p {
+    font-size: 12px !important;
+    line-height: 1.42 !important;
+  }
+  .dcDashboardPage.dcDashboardPage .dcAdapterEndpointBox {
+    overflow-x: auto !important;
+  }
+  .dcDashboardPage.dcDashboardPage .dcAdapterEndpointBox code {
+    white-space: normal !important;
+  }
+  .dcLearningReportCard.dcLearningReportCard {
+    padding: 14px !important;
+  }
+  .dcLearningReportCard header {
+    display: grid;
+    justify-content: stretch;
+  }
+}
+
+/* Dashboard workbench buttons: prevent white SaaS-button blocks inside the black operator UI. */
+.dcDashboardPage.dcDashboardPage .dcButtonPrimary,
+.dcDashboardPage.dcDashboardPage .dcTopbarCta,
+.dcPraxisLearningPanel.dcPraxisLearningPanel .dcButtonPrimary {
+  border: 1px solid rgba(255,255,255,.18) !important;
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.10), rgba(255,255,255,.035)),
+    #121212 !important;
+  color: rgba(255,255,255,.92) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.08),
+    0 12px 34px rgba(0,0,0,.22) !important;
+}
+.dcDashboardPage.dcDashboardPage .dcButtonPrimary:hover,
+.dcDashboardPage.dcDashboardPage .dcTopbarCta:hover,
+.dcPraxisLearningPanel.dcPraxisLearningPanel .dcButtonPrimary:hover {
+  border-color: rgba(246,202,124,.38) !important;
+  background:
+    linear-gradient(135deg, rgba(246,202,124,.16), rgba(255,255,255,.045)),
+    #17130d !important;
+  color: #fff5dd !important;
+}
+.dcDashboardPage.dcDashboardPage .dcAdapterStatusLine a,
+.dcPraxisLearningPanel.dcPraxisLearningPanel .dcAdapterStatusLine a {
+  border-color: rgba(255,255,255,.18) !important;
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.095), rgba(255,255,255,.032)),
+    #121212 !important;
+  color: rgba(255,255,255,.9) !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.07) !important;
+}
+.dcDashboardPage.dcDashboardPage .dcAdapterStatusLine a:hover,
+.dcPraxisLearningPanel.dcPraxisLearningPanel .dcAdapterStatusLine a:hover {
+  border-color: rgba(246,202,124,.34) !important;
+  background:
+    linear-gradient(135deg, rgba(246,202,124,.14), rgba(255,255,255,.04)),
+    #17130d !important;
+}
+.dcShell.dcShell .dcTopbarCta {
+  border-color: rgba(255,255,255,.18) !important;
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.09), rgba(255,255,255,.03)),
+    #121212 !important;
+  color: rgba(255,255,255,.9) !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.07) !important;
+}
+.dcShell.dcShell .dcTopbarCta:hover {
+  border-color: rgba(246,202,124,.34) !important;
+  background:
+    linear-gradient(135deg, rgba(246,202,124,.14), rgba(255,255,255,.04)),
+    #17130d !important;
+}
+
+/* All-pages terminal workbench CTA sweep: no large white controls outside intentional tiny logo marks. */
+.dcShell.dcShell .dcButtonPrimary,
+.dcShell.dcShell .heroActions a:first-child,
+.dcShell.dcShell .buttonRow a:first-child,
+.dcShell.dcShell .repoActions a:first-child,
+.atlasPage.atlasPage .atlasToolbar button,
+.atlasPage.atlasPage .buttonRow a:first-child,
+.atlasPage.atlasPage .repoActions a:first-child,
+.loginForm.loginForm button,
+.praxisV2.praxisV2 .pvButtonPrimary,
+.praxisV2.praxisV2 .pvMissionFooter b {
+  border: 1px solid rgba(255,255,255,.18) !important;
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.10), rgba(255,255,255,.035)),
+    #121212 !important;
+  color: rgba(255,255,255,.92) !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.075) !important;
+}
+.dcShell.dcShell .dcButtonPrimary *,
+.dcShell.dcShell .heroActions a:first-child *,
+.dcShell.dcShell .buttonRow a:first-child *,
+.dcShell.dcShell .repoActions a:first-child *,
+.atlasPage.atlasPage .atlasToolbar button *,
+.atlasPage.atlasPage .buttonRow a:first-child *,
+.atlasPage.atlasPage .repoActions a:first-child *,
+.loginForm.loginForm button *,
+.praxisV2.praxisV2 .pvButtonPrimary *,
+.praxisV2.praxisV2 .pvMissionFooter b * {
+  color: rgba(255,255,255,.92) !important;
+}
+.praxisV2.praxisV2 .pvButtonPrimary b,
+.praxisV2.praxisV2 .pvMissionFooter b i {
+  border: 1px solid rgba(255,255,255,.14) !important;
+  background: rgba(0,0,0,.45) !important;
+  color: rgba(255,255,255,.92) !important;
+}
+.dcShell.dcShell .dcButtonPrimary:hover,
+.dcShell.dcShell .heroActions a:first-child:hover,
+.dcShell.dcShell .buttonRow a:first-child:hover,
+.dcShell.dcShell .repoActions a:first-child:hover,
+.atlasPage.atlasPage .atlasToolbar button:hover,
+.atlasPage.atlasPage .buttonRow a:first-child:hover,
+.atlasPage.atlasPage .repoActions a:first-child:hover,
+.loginForm.loginForm button:hover,
+.praxisV2.praxisV2 .pvButtonPrimary:hover,
+.praxisV2.praxisV2 .pvMissionFooter b:hover {
+  border-color: rgba(246,202,124,.36) !important;
+  background:
+    linear-gradient(135deg, rgba(246,202,124,.15), rgba(255,255,255,.04)),
+    #17130d !important;
+}
+
+@media (max-width: 720px) {
+  .filterBar.groupedFilters,
+  .atlasFilters.groupedFilters,
+  .repoFilters.groupedFilters,
+  .actionFilters.groupedFilters {
+    display: grid !important;
+    gap: 10px !important;
+    max-width: 100% !important;
+    overflow: visible !important;
+  }
+  .filterBar.groupedFilters .filterGroup,
+  .atlasFilters.groupedFilters .filterGroup,
+  .repoFilters.groupedFilters .filterGroup,
+  .actionFilters.groupedFilters .filterGroup {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    overflow: hidden !important;
+  }
+  .filterBar.groupedFilters .categoryFilterGroup,
+  .atlasFilters.groupedFilters .categoryFilterGroup,
+  .repoFilters.groupedFilters .categoryFilterGroup,
+  .actionFilters.groupedFilters .categoryFilterGroup {
+    max-height: none !important;
+    overflow: visible !important;
+  }
+  .filterBar.groupedFilters .filterGroup > span,
+  .atlasFilters.groupedFilters .filterGroup > span,
+  .repoFilters.groupedFilters .filterGroup > span,
+  .actionFilters.groupedFilters .filterGroup > span {
+    flex: 0 0 100% !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .filterBar.groupedFilters .filterGroup a,
+  .atlasFilters.groupedFilters .filterGroup a,
+  .repoFilters.groupedFilters .filterGroup a,
+  .actionFilters.groupedFilters .filterGroup a {
+    max-width: 100% !important;
+    overflow-wrap: anywhere !important;
+    white-space: normal !important;
+  }
+}

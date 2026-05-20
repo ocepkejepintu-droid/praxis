@@ -11,6 +11,13 @@ const tenantRoot = path.join(process.cwd(), 'research-vault', 'tenants');
 const radarTenantRoot = path.join(process.cwd(), '.radar', 'tenants');
 
 try {
+  delete process.env.HERMES_RUNTIME_MODE;
+  delete process.env.HERMES_READONLY_WORKSPACE_DIR;
+  delete process.env.HERMES_READONLY_WORKFLOW_DIR;
+  delete process.env.HERMES_READONLY_LOG_DIR;
+  delete process.env.HERMES_READONLY_STATE_DIR;
+  delete process.env.OMX_RUNTIME_MODE;
+  delete process.env.OMX_READONLY_WORKSPACE_DIR;
   delete process.env.HERMES_LEARNER_COMMAND;
   delete process.env.OPENCLAW_LEARNER_COMMAND;
   delete process.env.HERMES_LEARNER_ALLOW_EXTERNAL_COMMAND;
@@ -24,7 +31,17 @@ try {
   assert(alphaDashboard0.usage.jobsCreated === 0, 'new alpha tenant should start with zero jobs');
   assert(alphaDashboard0.paths.reports.includes(`research-vault/tenants/${alpha}/ops/`), 'alpha reports must be tenant-scoped');
   assert(alphaDashboard0.runtimeRunner.kind === 'mock', 'default runtime runner must be mock only');
-  assert(alphaDashboard0.settings.runtimeProviders.every((provider: { runtimeAvailable: boolean; secretExposed: boolean }) => provider.runtimeAvailable === false && provider.secretExposed === false), 'real providers must be blocked and not expose secrets');
+  assert(alphaDashboard0.settings.runtimeProviders.every((provider: { runtimeAvailable: boolean; secretExposed: boolean; realExecutionEnabled: boolean }) => provider.runtimeAvailable === false && provider.secretExposed === false && provider.realExecutionEnabled === false), 'real providers must be blocked and not expose secrets');
+
+
+  process.env.HERMES_RUNTIME_MODE = 'read-only';
+  process.env.HERMES_READONLY_WORKSPACE_DIR = `research-vault/tenants/${alpha}/workspaces/hermes`;
+  const readOnlyDashboard = saas.tenantPraxisLearningDashboard(alpha, 'alpha@example.com');
+  const readOnlyHermes = readOnlyDashboard.settings.runtimeProviders.find((provider: { agent: string }) => provider.agent === 'hermes');
+  assert(readOnlyHermes?.runtimeLabel === 'Runtime Status: Read-Only • Real execution disabled', 'Hermes read-only config should expose read-only status label');
+  assert(readOnlyHermes?.realExecutionEnabled === false && readOnlyHermes.enabled === false, 'Hermes read-only config must not enable real execution');
+  delete process.env.HERMES_RUNTIME_MODE;
+  delete process.env.HERMES_READONLY_WORKSPACE_DIR;
 
   const overPraxis = saas.validatePlanRequest(alpha, { agents: ['mock-hermes'], limit: alphaDashboard0.plan.maxPraxisPerRun + 1, xSearchCallsRequested: 0 });
   assert(!overPraxis.ok && overPraxis.violations.some((item: { field: string }) => item.field === 'maxPraxisPerRun'), 'over-limit Praxis request should be rejected');

@@ -52,7 +52,7 @@ export function AcpKeyManager({ initialKeys, defaultOwner }: { initialKeys: Publ
     <div className="acpConsole">
       <form className="acpKeyForm panel" onSubmit={createKey}>
         <div className="sectionHead"><h2>Create ACP API key</h2><span>shown once</span></div>
-        <p className="mutedCopy">Create one scoped adapter key per agent. Copy raw key once, then store it in Hermes/OpenClaw as Bearer auth. Hermes can connect, read context, create Praxies, and submit learning reports.</p>
+        <p className="mutedCopy">Create one scoped adapter key per agent. Copy raw key once, then store it in Hermes/OpenClaw as Bearer auth. Both adapters can connect, read Praxis context, and submit learning reports.</p>
         <label><span>Key name</span><input value={name} onChange={(event) => setName(event.target.value)} /></label>
         <label><span>Owner</span><input value={owner} onChange={(event) => setOwner(event.target.value)} /></label>
         <label><span>Adapter</span><select value={adapter} onChange={(event) => {
@@ -65,10 +65,10 @@ export function AcpKeyManager({ initialKeys, defaultOwner }: { initialKeys: Publ
           {permissions.map((permission) => <label key={permission}><input type="checkbox" checked={selectedPermissions.includes(permission)} onChange={() => togglePermission(permission)} /> <span>{formatPermission(permission)}</span></label>)}
         </div>
         <button>Create key</button>
-        {rawKey ? <div className="keyReveal"><span>copy now</span><code>{rawKey}</code><pre>{`HERMES_ACP_API_KEY=${rawKey}
+        {rawKey ? <div className="keyReveal"><span>copy now</span><code>{rawKey}</code><pre>{`${adapter === 'openclaw' ? 'OPENCLAW' : 'HERMES'}_ACP_API_KEY=${rawKey}
 GET /api/acp/connect
-GET /api/acp/hermes/learning-context
-POST /api/acp/hermes/learning-report`}</pre></div> : null}
+GET /api/acp/${adapter}/learning-context
+POST /api/acp/${adapter}/learning-report`}</pre></div> : null}
         {message ? <p className="mutedCopy">{message}</p> : null}
       </form>
       <section className="panel acpKeyTable">

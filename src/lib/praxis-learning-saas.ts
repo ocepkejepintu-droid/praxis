@@ -2,6 +2,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import type { RequestAuth } from './auth.ts';
+import { hermesRuntimeStatus } from '../../packages/runtime/contracts/hermes-contract.ts';
+import { openClawRuntimeStatus } from '../../packages/runtime/contracts/omx-contract.ts';
 import {
   getLatestPraxisLearningMorningReport,
   listPraxisLearningReports,
@@ -69,7 +71,11 @@ export type PraxisLearningJob = {
 export type PraxisRuntimeProviderStatus = {
   agent: 'hermes' | 'openclaw';
   enabled: false;
-  runtimeAvailable: false;
+  runtimeAvailable: boolean;
+  runtimeMode: 'mock' | 'read-only';
+  runtimeLabel: string;
+  readOnlyAvailable: boolean;
+  realExecutionEnabled: false;
   requiredConfig: string[];
   blockedReason: string;
   secretConfigured: boolean;
@@ -165,13 +171,19 @@ function emptyUsage(): PraxisLearningUsage {
 }
 
 export function runtimeRunnerStatus(): PraxisRuntimeProviderStatus[] {
+  const hermes = hermesRuntimeStatus();
+  const openclaw = openClawRuntimeStatus();
   return [
     {
       agent: 'hermes',
       enabled: false,
-      runtimeAvailable: false,
-      requiredConfig: ['REAL_PRAXIS_RUNTIME_RUNNER', 'HERMES_LEARNER_COMMAND_ALLOWLIST', 'HERMES_LEARNER_WORKSPACE_DIR'],
-      blockedReason: 'Real Hermes runtime is blocked until a repo-approved RuntimeRunner with allowlist, timeout, and workspace boundary exists.',
+      runtimeAvailable: hermes.readOnlyAvailable,
+      runtimeMode: hermes.readOnlyAvailable ? 'read-only' : 'mock',
+      runtimeLabel: hermes.label,
+      readOnlyAvailable: hermes.readOnlyAvailable,
+      realExecutionEnabled: false,
+      requiredConfig: hermes.requiredConfig.length ? hermes.requiredConfig : ['REAL_PRAXIS_RUNTIME_RUNNER', 'HERMES_LEARNER_COMMAND_ALLOWLIST', 'HERMES_LEARNER_WORKSPACE_DIR'],
+      blockedReason: hermes.blockers[0]?.message || 'Real Hermes runtime is blocked until a repo-approved RuntimeRunner with allowlist, timeout, and workspace boundary exists.',
       secretConfigured: Boolean(process.env.HERMES_LEARNER_SECRET_CONFIGURED === '1'),
       secretExposed: false,
     },
@@ -179,8 +191,12 @@ export function runtimeRunnerStatus(): PraxisRuntimeProviderStatus[] {
       agent: 'openclaw',
       enabled: false,
       runtimeAvailable: false,
-      requiredConfig: ['REAL_PRAXIS_RUNTIME_RUNNER', 'OPENCLAW_LEARNER_COMMAND_ALLOWLIST', 'OPENCLAW_LEARNER_WORKSPACE_DIR'],
-      blockedReason: 'Real OpenClaw runtime is blocked until a repo-approved RuntimeRunner with allowlist, timeout, and workspace boundary exists.',
+      runtimeMode: 'mock',
+      runtimeLabel: openclaw.label,
+      readOnlyAvailable: false,
+      realExecutionEnabled: false,
+      requiredConfig: openclaw.requiredConfig,
+      blockedReason: openclaw.blockers[0]?.message || 'Real OpenClaw runtime is blocked until a repo-approved RuntimeRunner with allowlist, timeout, and workspace boundary exists.',
       secretConfigured: Boolean(process.env.OPENCLAW_LEARNER_SECRET_CONFIGURED === '1'),
       secretExposed: false,
     },
