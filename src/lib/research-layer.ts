@@ -88,7 +88,18 @@ export type ResearchLayerResult = {
 };
 
 const LANES: ResearchLane[] = ['buildroom', 'verify', 'content', 'watch'];
-const ROOT = /* turbopackIgnore: true*/ process.cwd();
+const ROOT = '.';
+
+function repoPath(root: string, ...segments: string[]) {
+  if (root !== ROOT) throw new Error('Custom research-layer root must be handled before path resolution.');
+  const parts = segments.flatMap((segment) => segment.split(/[\/]+/).filter(Boolean));
+  const [scope, ...rest] = parts;
+  if (scope === 'research-vault') return path.join(process.cwd(), 'research-vault', ...rest);
+  if (scope === 'queue') return path.join(process.cwd(), 'queue', ...rest);
+  if (scope === '.omx') return path.join(process.cwd(), '.omx', ...rest);
+  throw new Error(`Unsupported research-layer path scope: ${scope || 'empty'}`);
+}
+
 
 function cleanString(value: unknown, max = 2000) {
   return typeof value === 'string' ? value.replace(/\s+/g, ' ').trim().slice(0, max) : '';
@@ -245,12 +256,12 @@ function normalizePayload(payload: ResearchJudgementPayload) {
 
 function ensureDirs(root: string) {
   for (const dir of ['research-vault/ops', 'research-vault/claims', 'research-vault/health', 'queue']) {
-    fs.mkdirSync(path.join(root, dir), { recursive: true });
+    fs.mkdirSync(repoPath(root, dir), { recursive: true });
   }
 }
 
 function writeText(root: string, rel: string, content: string) {
-  const file = path.join(root, rel);
+  const file = repoPath(root, rel);
   fs.mkdirSync(path.dirname(file), { recursive: true });
   fs.writeFileSync(file, content);
   return rel;
@@ -340,7 +351,7 @@ function collectUrls(row: Record<string, unknown>) {
 
 function readRunMerged(root: string, runId: string): { sourceBalance: Record<string, number>; sourceHosts: Record<string, number>; orphanCards: number; staleItems: number } {
   if (!runId || runId === 'manual') return { sourceBalance: {}, sourceHosts: {}, orphanCards: 0, staleItems: 0 };
-  const runDir = path.join(root, '.omx', 'ingestion-runs', runId);
+  const runDir = repoPath(root, '.omx', 'ingestion-runs', runId);
   const candidates = ['merged.json', 'normalized-cards.json', 'raw-cards.json'].map((file) => path.join(runDir, file));
   for (const file of candidates) {
     try {
@@ -377,7 +388,7 @@ function readRunStatus(root: string, runId: string) {
   const safeRunId = runId.replace(/[^a-zA-Z0-9_.-]/g, '');
   if (!safeRunId) return null;
   try {
-    return JSON.parse(fs.readFileSync(path.join(root, '.omx', 'ingestion-runs', `${safeRunId}.json`), 'utf8')) as ReturnType<typeof readIngestionRun>;
+    return JSON.parse(fs.readFileSync(repoPath(root, '.omx', 'ingestion-runs', `${safeRunId}.json`), 'utf8')) as ReturnType<typeof readIngestionRun>;
   } catch {
     return readIngestionRun(runId);
   }
@@ -496,7 +507,7 @@ function updateClaims(root: string, items: OperatorItem[], generatedAt: string) 
       if (!normalizedStatement) continue;
       const claimId = `claim-${stableHash(normalizedStatement)}`;
       const rel = `research-vault/claims/${claimId}.json`;
-      const full = path.join(root, rel);
+      const full = repoPath(root, rel);
       let existing: Record<string, unknown> = {};
       try { existing = JSON.parse(fs.readFileSync(full, 'utf8')) as Record<string, unknown>; } catch {}
       const existingSourceCardIds = Array.isArray(existing.sourceCardIds) ? existing.sourceCardIds.map(String) : [];
@@ -540,12 +551,12 @@ function updateClaims(root: string, items: OperatorItem[], generatedAt: string) 
 
 
 function normalizeClaimVault(root: string, generatedAt: string) {
-  const dir = path.join(root, 'research-vault/claims');
+  const dir = repoPath(root, 'research-vault/claims');
   if (!fs.existsSync(dir)) return [];
   const files: string[] = [];
   for (const file of fs.readdirSync(dir).filter((entry) => entry.endsWith('.json'))) {
     const rel = `research-vault/claims/${file}`;
-    const full = path.join(root, rel);
+    const full = repoPath(root, rel);
     let claim: Record<string, unknown>;
     try { claim = JSON.parse(fs.readFileSync(full, 'utf8')) as Record<string, unknown>; } catch { continue; }
     const claimId = typeof claim.claimId === 'string' ? claim.claimId : path.basename(file, '.json');
@@ -635,7 +646,17 @@ function operatorCockpit(dispatch: Record<string, unknown>, health: ReturnType<t
 }
 
 export function generateResearchLayer(payload: ResearchJudgementPayload, options: { root?: string; now?: Date; writtenFiles?: string[] } = {}): ResearchLayerResult {
-  const root = options.root || ROOT;
+  if (options.root && options.root !== ROOT) {
+    if (process.env.NODE_ENV === 'production') throw new Error('Custom research-layer root is disabled in production builds.');
+    const previousCwd = process.cwd();
+    process.chdir(options.root);
+    try {
+      return generateResearchLayer(payload, { ...options, root: ROOT });
+    } finally {
+      process.chdir(previousCwd);
+    }
+  }
+  const root = ROOT;
   const generatedAt = (options.now || new Date()).toISOString();
   ensureDirs(root);
   const runId = cleanString(payload.runId, 160) || 'manual';

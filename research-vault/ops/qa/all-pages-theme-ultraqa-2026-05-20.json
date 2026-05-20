@@ -1,0 +1,291 @@
+{
+  "status": "APPROVE",
+  "scope": "all main pages terminal-workbench white/gray leak QA",
+  "date": "2026-05-20",
+  "pagesScanned": [
+    "/",
+    "/dashboard",
+    "/praxies",
+    "/radar",
+    "/radar/runs",
+    "/repos",
+    "/operator",
+    "/learning",
+    "/login",
+    "/agents",
+    "/acp/settings",
+    "/experiments",
+    "/ideas",
+    "/ingestion",
+    "/actions"
+  ],
+  "viewports": [
+    "desktop 1440px",
+    "mobile 390px"
+  ],
+  "result": {
+    "badLightOrWashedBlocks": 0,
+    "overflowFindings": 0
+  },
+  "fixes": [
+    "Darkened global primary CTA patterns beyond dashboard: home hero, login form, atlas toolbar buttons, repo action primary links, Praxis hero CTA, and Praxis mission CTA.",
+    "Fixed mobile grouped filters so category chips wrap instead of creating horizontal overflow on repos/actions.",
+    "Extended praxis-status regression guard for all-pages CTA sweep and mobile filter wrapping."
+  ],
+  "scanSummary": [
+    {
+      "viewport": "desktop",
+      "route": "/",
+      "actual": "/",
+      "bad": 0,
+      "overflow": 0,
+      "scrollWidth": 1440
+    },
+    {
+      "viewport": "desktop",
+      "route": "/dashboard",
+      "actual": "/dashboard",
+      "bad": 0,
+      "overflow": 0,
+      "scrollWidth": 1440
+    },
+    {
+      "viewport": "desktop",
+      "route": "/praxies",
+      "actual": "/praxies",
+      "bad": 0,
+      "overflow": 0,
+      "scrollWidth": 1440
+    },
+    {
+      "viewport": "desktop",
+      "route": "/radar",
+      "actual": "/radar",
+      "bad": 0,
+      "overflow": 0,
+      "scrollWidth": 1440
+    },
+    {
+      "viewport": "desktop",
+      "route": "/radar/runs",
+      "actual": "/radar/runs",
+      "bad": 0,
+      "overflow": 0,
+      "scrollWidth": 1440
+    },
+    {
+      "viewport": "desktop",
+      "route": "/repos",
+      "actual": "/repos",
+      "bad": 0,
+      "overflow": 0,
+      "scrollWidth": 1440
+    },
+    {
+      "viewport": "desktop",
+      "route": "/operator",
+      "actual": "/dashboard",
+      "bad": 0,
+      "overflow": 0,
+      "scrollWidth": 1440
+    },
+    {
+      "viewport": "desktop",
+      "route": "/learning",
+      "actual": "/dashboard",
+      "bad": 0,
+      "overflow": 0,
+      "scrollWidth": 1440
+    },
+    {
+      "viewport": "desktop",
+      "route": "/login",
+      "actual": "/login",
+      "bad": 0,
+      "overflow": 0,
+      "scrollWidth": 1440
+    },
+    {
+      "viewport": "desktop",
+      "route": "/agents",
+      "actual": "/dashboard",
+      "bad": 0,
+      "overflow": 0,
+      "scrollWidth": 1440
+    },
+    {
+      "viewport": "desktop",
+      "route": "/acp/settings",
+      "actual": "/dashboard",
+      "bad": 0,
+      "overflow": 0,
+      "scrollWidth": 1440
+    },
+    {
+      "viewport": "desktop",
+      "route": "/experiments",
+      "actual": "/praxies",
+      "bad": 0,
+      "overflow": 0,
+      "scrollWidth": 1440
+    },
+    {
+      "viewport": "desktop",
+      "route": "/ideas",
+      "actual": "/ideas",
+      "bad": 0,
+      "overflow": 0,
+      "scrollWidth": 1440
+    },
+    {
+      "viewport": "desktop",
+      "route": "/ingestion",
+      "actual": "/ingestion",
+      "bad": 0,
+      "overflow": 0,
+      "scrollWidth": 1440
+    },
+    {
+      "viewport": "desktop",
+      "route": "/actions",
+      "actual": "/actions",
+      "bad": 0,
+      "overflow": 0,
+      "scrollWidth": 1440
+    },
+    {
+      "viewport": "mobile",
+      "route": "/",
+      "actual": "/",
+      "bad": 0,
+      "overflow": 0,
+      "scrollWidth": 390
+    },
+    {
+      "viewport": "mobile",
+      "route": "/dashboard",
+      "actual": "/dashboard",
+      "bad": 0,
+      "overflow": 0,
+      "scrollWidth": 390
+    },
+    {
+      "viewport": "mobile",
+      "route": "/praxies",
+      "actual": "/praxies",
+      "bad": 0,
+      "overflow": 0,
+      "scrollWidth": 390
+    },
+    {
+      "viewport": "mobile",
+      "route": "/radar",
+      "actual": "/radar",
+      "bad": 0,
+      "overflow": 0,
+      "scrollWidth": 390
+    },
+    {
+      "viewport": "mobile",
+      "route": "/radar/runs",
+      "actual": "/radar/runs",
+      "bad": 0,
+      "overflow": 0,
+      "scrollWidth": 390
+    },
+    {
+      "viewport": "mobile",
+      "route": "/repos",
+      "actual": "/repos",
+      "bad": 0,
+      "overflow": 0,
+      "scrollWidth": 390
+    },
+    {
+      "viewport": "mobile",
+      "route": "/operator",
+      "actual": "/dashboard",
+      "bad": 0,
+      "overflow": 0,
+      "scrollWidth": 390
+    },
+    {
+      "viewport": "mobile",
+      "route": "/learning",
+      "actual": "/dashboard",
+      "bad": 0,
+      "overflow": 0,
+      "scrollWidth": 390
+    },
+    {
+      "viewport": "mobile",
+      "route": "/login",
+      "actual": "/login",
+      "bad": 0,
+      "overflow": 0,
+      "scrollWidth": 390
+    },
+    {
+      "viewport": "mobile",
+      "route": "/agents",
+      "actual": "/dashboard",
+      "bad": 0,
+      "overflow": 0,
+      "scrollWidth": 390
+    },
+    {
+      "viewport": "mobile",
+      "route": "/acp/settings",
+      "actual": "/dashboard",
+      "bad": 0,
+      "overflow": 0,
+      "scrollWidth": 390
+    },
+    {
+      "viewport": "mobile",
+      "route": "/experiments",
+      "actual": "/praxies",
+      "bad": 0,
+      "overflow": 0,
+      "scrollWidth": 390
+    },
+    {
+      "viewport": "mobile",
+      "route": "/ideas",
+      "actual": "/ideas",
+      "bad": 0,
+      "overflow": 0,
+      "scrollWidth": 390
+    },
+    {
+      "viewport": "mobile",
+      "route": "/ingestion",
+      "actual": "/ingestion",
+      "bad": 0,
+      "overflow": 0,
+      "scrollWidth": 390
+    },
+    {
+      "viewport": "mobile",
+      "route": "/actions",
+      "actual": "/actions",
+      "bad": 0,
+      "overflow": 0,
+      "scrollWidth": 390
+    }
+  ],
+  "tests": [
+    "npm run lint",
+    "npm run test:praxis-status",
+    "npm run test:hermes-acp",
+    "npm run test:praxis-learning",
+    "npm run build",
+    "node /tmp/cdp-all-pages-light-scan-fast.mjs"
+  ],
+  "artifacts": [
+    ".omx/artifacts/ultraqa/all-pages-theme/scan-fast.json",
+    ".omx/artifacts/ultraqa/all-pages-theme/final/mobile-home.png",
+    ".omx/artifacts/ultraqa/all-pages-theme/final/mobile-praxies.png",
+    ".omx/artifacts/ultraqa/all-pages-theme/final/mobile-radar.png"
+  ]
+}

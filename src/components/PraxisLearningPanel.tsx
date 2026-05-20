@@ -55,11 +55,14 @@ export function PraxisLearningPanel({ authed, tenantDashboard }: { authed: boole
           {realBlocked.map((agent) => <p key={agent.agent}><strong>{agent.agent}</strong>: {agent.mode === 'read-only' ? 'Runtime Status: Read-Only • Real execution disabled' : agent.blockedReason}</p>)}
         </div>
       ) : null}
-      <div className="dcReportList">
+      <div className="dcReportList dcLearningReportStack">
         {reports.length ? reports.map((report) => (
-          <article className="dcReportRow" key={report.id}>
-            <strong>{report.agent} · {report.praxisTitle}</strong>
-            <span>{report.createdAt.slice(0, 10)} · {report.status}</span>
+          <article className="dcReportRow dcLearningReportCard" key={report.id}>
+            <header>
+              <span>{report.agent}</span>
+              <span>{report.createdAt.slice(0, 10)} · {report.status}</span>
+            </header>
+            <strong>{report.praxisTitle}</strong>
             <ul>
               {report.learned.slice(0, 3).map((item) => <li key={item}>{item}</li>)}
             </ul>

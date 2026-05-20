@@ -63,7 +63,7 @@ type JudgementBody = {
   actions?: JudgementAction[];
 };
 
-const ROOT = /* turbopackIgnore: true*/ process.cwd();
+type JudgementOutputDir = 'Ideas' | 'Experiments' | 'Actions';
 
 function slugifyFileName(value: string) {
   return value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 80) || 'card';
@@ -105,12 +105,12 @@ ${listYaml(item.claims)}
 `;
 }
 
-function writeMarkdown(dir: string, title: string, markdown: string) {
-  fs.mkdirSync(path.join(ROOT, dir), { recursive: true });
+function writeMarkdown(dir: JudgementOutputDir, title: string, markdown: string) {
+  fs.mkdirSync(dir, { recursive: true });
   const date = new Date().toISOString().slice(0, 10);
-  const file = path.join(ROOT, dir, `${date} ${slugifyFileName(title)}.md`);
+  const file = path.join(dir, `${date} ${slugifyFileName(title)}.md`);
   fs.writeFileSync(file, markdown);
-  return path.relative(ROOT, file);
+  return file;
 }
 
 function listMarkdown(items: string[] | undefined, fallback: string) {

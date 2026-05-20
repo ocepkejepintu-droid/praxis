@@ -70,6 +70,8 @@ function manifest() {
       acpConnect: '/api/acp/connect',
       hermesLearningContext: '/api/acp/hermes/learning-context',
       hermesLearningReport: '/api/acp/hermes/learning-report',
+      openClawLearningContext: '/api/acp/openclaw/learning-context',
+      openClawLearningReport: '/api/acp/openclaw/learning-report',
       userSessions: '/api/acp/sessions',
     },
   };

@@ -2,14 +2,16 @@ import { getAgentReport, rankPraxisCandidates } from './agent';
 import { getHermesAtlasPraxisMap } from './hermes-atlas';
 import { getAgentProfile, listLearningReports } from './learning';
 import { getOperatorDispatch, getResearchHealth, readHandoffQueue } from './operator';
-import type { PublicAcpApiKey } from './acp';
+import type { AcpAdapter, PublicAcpApiKey } from './acp';
 
-export function hermesAcpEndpoints(baseUrl = '') {
+export function acpAdapterEndpoints(adapter: AcpAdapter, baseUrl = '') {
   const base = baseUrl.replace(/\/$/, '');
+  const adapterPath = adapter === 'openclaw' ? 'openclaw' : 'hermes';
   return {
     connect: `${base}/api/acp/connect`,
-    learningContext: `${base}/api/acp/hermes/learning-context`,
-    learningReport: `${base}/api/acp/hermes/learning-report`,
+    learningContext: `${base}/api/acp/${adapterPath}/learning-context`,
+    learningReport: `${base}/api/acp/${adapterPath}/learning-report`,
+    genericLearningReports: `${base}/api/acp/learning-reports`,
     userSessions: `${base}/api/acp/sessions`,
     praxisLearningStatus: `${base}/api/acp/praxis-learning/status`,
     praxisLearningRun: `${base}/api/acp/praxis-learning/run`,
@@ -24,6 +26,10 @@ export function hermesAcpEndpoints(baseUrl = '') {
     mcpManifest: `${base}/api/mcp`,
     praxisCandidates: `${base}/api/agent/praxies/candidates`,
   };
+}
+
+export function hermesAcpEndpoints(baseUrl = '') {
+  return acpAdapterEndpoints('hermes', baseUrl);
 }
 
 export function hermesLearningReportTemplate(key?: PublicAcpApiKey) {
@@ -41,19 +47,23 @@ export function hermesLearningReportTemplate(key?: PublicAcpApiKey) {
 }
 
 export function getHermesAcpConnection(key: PublicAcpApiKey, baseUrl = '') {
+  return getAdapterAcpConnection(key, baseUrl);
+}
+
+export function getAdapterAcpConnection(key: PublicAcpApiKey, baseUrl = '') {
   return {
-    adapter: 'hermes' as const,
+    adapter: key.adapter,
     keyId: key.id,
     keyName: key.name,
     owner: key.owner,
     status: key.status,
     permissions: key.permissions,
     profile: getAgentProfile(key.id),
-    endpoints: hermesAcpEndpoints(baseUrl),
+    endpoints: acpAdapterEndpoints(key.adapter, baseUrl),
     nextSteps: [
       'GET /api/acp/connect with Authorization: Bearer <ACP_KEY>.',
-      'GET /api/acp/hermes/learning-context to read Praxi material.',
-      'POST /api/acp/hermes/learning-report to report what Hermes learned.',
+      `GET /api/acp/${key.adapter}/learning-context to read Praxis material.`,
+      `POST /api/acp/${key.adapter}/learning-report to report what ${key.adapter === 'openclaw' ? 'OpenClaw' : 'Hermes'} learned.`,
       'POST /api/acp/praxis-learning/run to run a safe mock Hermes/OpenClaw Praxis learning loop.',
       'POST /api/acp/praxis-learning/jobs to create a tenant-scoped durable learning job with plan limits and usage counters.',
       'GET /api/acp/praxis-learning/jobs to read only this tenant’s jobs.',
@@ -66,8 +76,12 @@ export function getHermesAcpConnection(key: PublicAcpApiKey, baseUrl = '') {
 }
 
 export function getHermesLearningContext(key: PublicAcpApiKey, baseUrl = '') {
+  return getAdapterLearningContext(key, baseUrl);
+}
+
+export function getAdapterLearningContext(key: PublicAcpApiKey, baseUrl = '') {
   return {
-    connection: getHermesAcpConnection(key, baseUrl),
+    connection: getAdapterAcpConnection(key, baseUrl),
     reportBrief: getAgentReport(),
     praxisCandidates: rankPraxisCandidates({ limit: 15 }),
     operator: {
@@ -86,6 +100,7 @@ export function getHermesLearningContext(key: PublicAcpApiKey, baseUrl = '') {
     contract: {
       sourceOfTruth: 'markdown + ACP event log',
       auth: 'Authorization: Bearer <ACP_KEY>',
+      adapter: key.adapter,
       schoolAdapter: 'Use SCHOOL_ACP_PROVIDER=mock-school for local QA, or SCHOOL_ACP_BASE_URL plus SCHOOL_ACP_API_KEY/SCHOOL_ACP_OAUTH_TOKEN for real LMS.',
       rule: 'Do not fake evidence. Weak signals stay verify/watch until source proof improves.',
     },

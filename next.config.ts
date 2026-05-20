@@ -6,6 +6,15 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: path.resolve(__dirname),
   },
+  outputFileTracingExcludes: {
+    '/*': [
+      './next.config.*',
+      './.next/**/*',
+      './.git/**/*',
+      './.omx/artifacts/**/*',
+      './tsconfig.tsbuildinfo',
+    ],
+  },
 };
 
 export default nextConfig;

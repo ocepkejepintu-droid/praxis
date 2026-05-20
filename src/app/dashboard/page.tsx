@@ -3,6 +3,7 @@ import { AcpKeyManager } from '@/components/AcpKeyManager';
 import { UserSessionManager } from '@/components/UserSessionManager';
 import { SchoolProgressPanel } from '@/components/SchoolProgressPanel';
 import { PraxisLearningPanel } from '@/components/PraxisLearningPanel';
+import { AdapterConnectPanel } from '@/components/AdapterConnectPanel';
 import { getAuthenticatedUser, hasEditToken, isAuthenticatedCookie } from '@/lib/auth';
 import { acpPermissions, listAcpApiKeys } from '@/lib/acp';
 import { readAcpEvents } from '@/lib/agent';
@@ -44,14 +45,15 @@ export default async function AgentDashboardPage() {
         <section className="dcPageHero dcDashboardHero">
           <div>
             <p className="dcEyebrow">Agent dashboard</p>
-            <h1>Connect an agent first.</h1>
-            <p>Operator, ACP, MCP, reports, and agent progress now live in one dashboard. The full cockpit appears after a Hermes or OpenClaw key exists.</p>
+            <h1>Connect Hermes or OpenClaw.</h1>
+            <p>Create a scoped ACP key, give it to the adapter, then Hermes/OpenClaw can read Praxis context and submit learning reports back into this dashboard.</p>
           </div>
           <div className="dcHeroActionsCard">
             {authed ? <a className="dcButton dcButtonPrimary" href="#create-key">Create ACP key</a> : <Link className="dcButton dcButtonPrimary" href={hasEditToken() ? '/login?next=/dashboard' : '/dashboard'}>{hasEditToken() ? 'Login to create key' : 'Set edit token'}</Link>}
             <Link className="dcButton dcButtonOutline" href="/api/mcp">View MCP manifest</Link>
           </div>
         </section>
+        <AdapterConnectPanel keys={keys} />
         <section className="dcAdapterFlow" aria-label="Agent access flow">
           <article><strong>Hermes</strong><p>Reads X/community ingestion, summarizes signal chaos, proposes Praxies, writes report-grade briefs.</p></article>
           <article><strong>OpenClaw</strong><p>Reads Praxies, selects useful attempts, runs allowed experiments, submits learning reports.</p></article>
@@ -78,6 +80,8 @@ export default async function AgentDashboardPage() {
           <Link className="dcTextLink" href="/api/mcp">Open MCP manifest</Link>
         </div>
       </section>
+
+      <AdapterConnectPanel keys={keys} />
 
       <section className="dcMetricStrip" aria-label="Unified agent dashboard metrics">
         <MetricCard label="connected agents" value={String(publicKeyCount)} copy={`${agents.length} profiles · ${agents.filter((agent) => agent.adapter === 'hermes').length} Hermes · ${agents.filter((agent) => agent.adapter === 'openclaw').length} OpenClaw`} />
@@ -120,7 +124,7 @@ export default async function AgentDashboardPage() {
       </section>
 
       {authed ? <>
-        <AcpKeyManager initialKeys={keys} defaultOwner={owner} />
+        <div id="create-key"><AcpKeyManager initialKeys={keys} defaultOwner={owner} /></div>
         <PraxisLearningPanel authed={authed} tenantDashboard={tenantDashboard} />
         <SchoolProgressPanel authed={authed} />
         {user ? <UserSessionManager initialSessions={sessions} /> : <section className="dcEmptyPanel"><h2>User sessions need account login</h2><p>Legacy token can manage keys, but saved sessions belong to real user accounts.</p></section>}
